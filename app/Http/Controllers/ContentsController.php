@@ -2,18 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Http\Request;
+use App\Content;
 
-class MainController extends BaseController
+class ContentsController extends Controller
 {
-       public function banana()
-    {
-        return view('banana');
-    }
-    
     public function index()
     {
         
@@ -46,7 +39,6 @@ class MainController extends BaseController
         $content = new Content;
         $content->content = $request->content;
         $content->name = $request->name;
-        $content->review = $request->review;
         $content->save();
         $contents = Content::all();
         
@@ -55,4 +47,5 @@ class MainController extends BaseController
             'contents' => $contents,
             ]);
     }
+
 }
