@@ -2,14 +2,29 @@
 <html lang="en" >
 
 <head>
-  <meta charset="UTF-8">
-  <title>Cool Layout with Complex Chainable Animation</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <meta charset="UTF-8">
+    <title>Sasorich KAI</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    
+    <!--Chat機能 Firebase接続-->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-      <link rel="stylesheet" href="css/index.css">
-
+    
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <!--最初の画面-->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--チャットのCSS-->
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    
+    
   
 </head>
 
@@ -157,10 +172,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 7</h2>
+            <h2 class="el__heading">チャット</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">チャット機能だお
+            @include('chat')
+            
+            </div>
+            
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -180,9 +199,9 @@
 
   
   
-
+<!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
-
+    <script src="js/chat.js"></script>
 
 
 
