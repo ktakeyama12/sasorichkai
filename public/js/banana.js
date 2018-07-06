@@ -1,11 +1,11 @@
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyBXz2bkeatbZ1IbR1ZpWPFhM8-p51bQS84",
-    authDomain: "test-df547.firebaseapp.com",
-    databaseURL: "https://test-df547.firebaseio.com",
-    projectId: "test-df547",
-    storageBucket: "test-df547.appspot.com",
-    messagingSenderId: "1081612857750"
+    apiKey: "AIzaSyDpIjgw-8yHTIpOo-xiMMzaqtmz8ET0zXA",
+    authDomain: "magical-banana.firebaseapp.com",
+    databaseURL: "https://magical-banana.firebaseio.com",
+    projectId: "magical-banana",
+    storageBucket: "magical-banana.appspot.com",
+    messagingSenderId: "517488892965"
   };
   firebase.initializeApp(config);
 
@@ -15,6 +15,7 @@ var messagesRef = firebase.database().ref();
 var messageField = $('#messageInput');
 var nameField = $('#nameInput');
 var messageList = $('#messages');
+var last = $('#last');
 
 // ENTERキーを押した時に発動する
 messageField.keypress(function (e) {
@@ -56,4 +57,12 @@ messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     messageList[0].scrollTop = messageList[0].scrollHeight;
     $('#scroller').animate({scrollTop: $('#scroller')[0].scrollHeight}, 'fast');
     // $(window).scrollTop(target.offset().top);
+});
+
+
+messagesRef.limitToLast(2).on('child_added', function (snapshot) {
+    var data2 = snapshot.val();
+    var lastmessage = data2.text;
+    
+    last.append(lastmessage)
 });
