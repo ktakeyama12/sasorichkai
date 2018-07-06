@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
+
+Route::get('index', 'ContentsController@index')->name('contents.index');
+Route::get('branch', 'ContentsController@branch')->name('contents.branch');
+Route::post('contents.store', 'ContentsController@store')->name('contents.store');
