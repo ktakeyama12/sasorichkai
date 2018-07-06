@@ -47,13 +47,16 @@
           <div class="el__content">
             <div class="el__text">
               <div class="el__title">Coupon Top5</div>
-              <ol>
-    <li>Rakuten services</li>
-    <li>Cafe & Restaurant around office</li>
-    <li>Movie & Karaoke</li>
-    <li>Amusement park & pool</li>
-    <li>Shopping</li>
-</ol></div>
+    
+    <ol class="suuji">
+                <li>Rakuten services</li>
+                <li>Cafe & Restaurant around office</li>
+                <li>Movie & Karaoke</li>
+                <li>Amusement park & pool</li>
+                <li>Shopping</li>
+    </ol>            
+    
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
