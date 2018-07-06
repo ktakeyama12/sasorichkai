@@ -29,6 +29,8 @@
 </head>
 
 <body>
+  
+  <h1>Hello guys! this is Yoda trying to change your file from my brunch</h1>
 
   <div class="cont s--inactive">
   <!-- cont inner start -->
@@ -39,10 +41,19 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 1</h2>
+            
+            <h2 class="el__heading">Coupon</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+              <div class="el__title">Coupon Top5</div>
+              <ol>
+    <li>Rakuten services</li>
+    <li>Cafe & Restaurant around office</li>
+    <li>Movie & Karaoke</li>
+    <li>Amusement park & pool</li>
+    <li>Shopping</li>
+</ol></div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -149,10 +160,13 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 6</h2>
+            <h2 class="el__heading">Magical Banana</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+                 {!! link_to_route('banana', 'banana') !!}
+                
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
