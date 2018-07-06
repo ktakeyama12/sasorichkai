@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     
-  
+   @include('layouts.navbar')
 </head>
 
 <body>
