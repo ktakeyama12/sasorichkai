@@ -14,18 +14,12 @@
     </head>
     
     <body>
-        
+
          <div class="animsition">
              <ul>
     <li href="./resources/views/cafe.html" class="animsition-link">飲料水</li>
     <li href="./resources/views/cafe.html" class="animsition-link">サソリ</li>
-  
-
-<a href "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg">
-    
-    
-
-
-</a>
+ 
+    <a href "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg"></a>
 </div>
 </body>
