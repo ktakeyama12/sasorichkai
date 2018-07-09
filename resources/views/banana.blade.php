@@ -7,9 +7,15 @@
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     
     <!--Chat機能 Firebase接続-->
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>-->
+    
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
     <!--Bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -29,6 +35,17 @@
 </head>
 
 <body>
+    リアルタイムマジカルバナナ
+    <br>
+    <div id="bananashow"></div>と言ったら
+            <div>
+                
+            <input id="name" placeholder="名前">
+            <input id="message" placeholder="メッセージ">
+            <button id="send">投稿</button>
+        </div>
+        <ul id="messages">
+        </ul>
     
     <!--<div class="panel-default">-->
     <!--    <div class="panel-heading">-->
@@ -46,10 +63,10 @@
     <!--</div>-->
     <!--<div>-->
     <!--    <ul id='last'></ul>-->
- d
-            <div id='last'></ul>
-        w
-    </div>
+
+            <!--<div id='last'></div>-->
+    <!--        <div id='last'></div>と言ったら-->
+    <!--</div>-->
     <script src="js/banana.js"></script>
     
 </body>
