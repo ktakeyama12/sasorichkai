@@ -55,4 +55,9 @@ class MainController extends BaseController
             'contents' => $contents,
             ]);
     }
+    
+    public function show(){
+    
+     return view('users.show');
+    }
 }

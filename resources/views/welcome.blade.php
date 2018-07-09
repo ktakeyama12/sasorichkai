@@ -92,10 +92,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 3</h2>
+            <h2 class="el__heading">GALLERY</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">{!! link_to_route('contents.gallery', 'GALLERY') !!}</div>
             <div class="el__close-btn"></div>
           </div>
         </div>
