@@ -19,12 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('test', 'AController@test')->name('test');
+
+
 Route::get('/banana', 'MainController@banana')->name('banana');
+Route::get('/quiz', 'MainController@quiz')->name('quiz');
 
 Route::get('index', 'ContentsController@index')->name('contents.index');
 
 // branch
 Route::get('branch', 'ContentsController@branch')->name('contents.branch');
+
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
 Route::get('tokyo', 'ContentsController@branchs')->name('contents.tokyo');
 Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
@@ -34,3 +39,8 @@ Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 Route::post('contents.storeF', 'ContentsController@store')->name('contents.storeF');
 
 Route::get('users.show', 'MainController@show')->name('users.show');
+
+Route::post('contents.store', 'ContentsController@store')->name('contents.store');
+
+Route::get('/phpfirebase_sdk','FirebaseController@index');
+

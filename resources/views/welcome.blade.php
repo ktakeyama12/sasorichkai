@@ -14,9 +14,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     
+              <!--JQuery-->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
     <!--最初の画面-->
     <link rel="stylesheet" href="css/index.css">
@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">
@@ -45,13 +44,27 @@
           <div class="el__content">
             <div class="el__text">
               <div class="el__title">Coupon Top5</div>
-              <ol>
-    <li>Rakuten services</li>
-    <li>Cafe & Restaurant around office</li>
-    <li>Movie & Karaoke</li>
-    <li>Amusement park & pool</li>
-    <li>Shopping</li>
-</ol></div>
+
+              
+             
+                   
+    <ol class="suuji">
+                   
+                      <li class="el__coupon"> <a href="test">Rakuten services</a></li>
+                      <li class="animsition-link"> <a href="./resources/views/cafe.html" >Cafe & Restaurant around office</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
+                     </ol>
+                     </div>
+                   
+                   
+                   
+                   
+                   
+                   
+
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -136,10 +149,12 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 5</h2>
+            <h2 class="el__heading">RAKUTEN QUIZ</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+              {!! link_to_route('quiz', 'quiz') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>

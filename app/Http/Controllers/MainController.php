@@ -9,9 +9,14 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class MainController extends BaseController
 {
-       public function banana()
+    public function banana()
     {
         return view('banana');
+    }
+    
+    public function quiz()
+    {
+        return view('quiz');
     }
     
     public function index()
