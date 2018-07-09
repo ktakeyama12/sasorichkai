@@ -44,8 +44,7 @@
         
             </ul>
         
-        文字が<span class="c">ピョンピョン</span>とランダムで跳ねます。
-        
+       
         
     </body>
 </html>
