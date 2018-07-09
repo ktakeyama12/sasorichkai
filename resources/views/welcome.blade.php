@@ -138,10 +138,13 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 5</h2>
+            <h2 class="el__heading">全国の楽天</h2>
+            
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">全国の楽天</div>
+            {!! link_to_route('branch', '全国の楽天') !!}
+            
             <div class="el__close-btn"></div>
           </div>
         </div>

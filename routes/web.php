@@ -20,3 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
+
+Route::get('/branch', 'MainController@branch')->name('branch');
+
+Route::get('tokyo', 'MainController@branchs')->name('tokyo');
+Route::get('fukuoka', 'MainController@fukuoka')->name('fukuoka');
+Route::get('osaka', 'MainController@osaka')->name('osaka');

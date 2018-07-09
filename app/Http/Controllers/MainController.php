@@ -13,4 +13,22 @@ class MainController extends BaseController
     {
         return view('banana');
     }
+    public function branch()
+    {
+        return view('contents.branch');
+    }
+     public function branchs()
+    {
+        return view('contents.tokyo');
+    }
+    public function fukuoka()
+    {
+        return view('contents.fukuoka');
+    }
+    public function osaka()
+    {
+        return view('contents.osaka');
+    }
+
+    
 }
