@@ -16,24 +16,55 @@ class ContentsController extends Controller
     public function gallery()
     {
         
+        return view('contents.gallery');
+    }
+    
+     public function branch()
+    {
+        
+        
         return view('contents.branch');
     }
     
-    public function branch()
+    public function fukuoka()
     {
         
          $content = new Content;
          $contents = Content::all();
         
-        return view('contents.branch',[
+        return view('contents.fukuoka',[
+            'content' => $content,
+            'contents' => $contents,
+            ]);
+    }
+    
+     public function tokyo()
+    {
+        
+         $content = new Content;
+         $contents = Content::all();
+        
+        return view('contents.tokyo',[
+            'content' => $content,
+            'contents' => $contents,
+            ]);
+    }
+    
+    public function osaka()
+    {
+        
+         $content = new Content;
+         $contents = Content::all();
+        
+        return view('contents.osaka',[
             'content' => $content,
             'contents' => $contents,
             ]);
     }
     
     
-    
-    public function store(Request $request)
+  
+    public function storeF(Request $request)
     {
        
         $content = new Content;
@@ -42,7 +73,7 @@ class ContentsController extends Controller
         $content->save();
         $contents = Content::all();
         
-         return view('contents.branch',[
+         return view('contents.fukuoka',[
             'content' => $content,
             'contents' => $contents,
             ]);
