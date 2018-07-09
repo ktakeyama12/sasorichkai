@@ -70,8 +70,9 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
         if (change.type === 'added') {
             $('<li>').text(change.doc.data().name + ': ' + change.doc.data().body).prependTo('#messages');
             var button = document.createElement("button");
-            button.innerHTML = "削除";
+            // button.innerHTML = "削除";
             var body = document.getElementsByTagName("li")[0];
+            button.className ="glyphicon glyphicon-trash";
             body.appendChild(button);
             button.onclick = function(){
                 var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',change.doc.data().timestamp);
@@ -94,7 +95,8 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                 
                 
                 var button = document.createElement("button");
-                            button.innerHTML = "削除";
+                            // button.innerHTML = "削除";
+                            button.className ="glyphicon glyphicon-trash";
                             var body = document.getElementsByTagName("li")[0];
                             body.appendChild(button);
                             button.onclick = function(){
