@@ -9,31 +9,39 @@ var config = {
 };
 firebase.initializeApp(config);
 
+
 var quizRef = firebase.firestore().collection('quizzes');
-    quizRef.orderBy("date").get().then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            quizzes=[];
-            var quizData = doc.data().question
-            var answerData = doc.data().answer
-            console.log(quizData)
-            // var kotaeValue = document.getElementById("kotae").value;
-            // if(answerData == kotaeValue){
-            //     document.getElementById("yesno").innerHTML = "正解";
-            // }else{
-            //     document.getElementById("yesno").innerHTML = "違います";
-            // }
-            document.getElementById("quizzes").innerHTML = quizData;
-            
-            $('#send').click(function() {
-        var kotaeValue = document.getElementById("kotae").value;
-        if(answerData == kotaeValue){
-            document.getElementById("yesno").innerHTML = "正解";
-        }else{
-            document.getElementById("yesno").innerHTML = "違います";
-        }
-        document.getElementById("quizzes").innerHTML = quizData;
-});
-            
-        });
+quizRef.orderBy("date").get().then(function(querySnapshot) {
+    const quizData = []
+    const answerData = []
+    querySnapshot.forEach(function(doc) {
+        quizzes=[];
+        quizData.push(doc.data().question)
+        answerData.push(doc.data().answer)
     });
+    console.log(quizData)
+});
+
+
+function initQuiz(){
+    var number = 0;
+}
+
+
+
+console.log(quizData)
+console.log(answerData)
+var number = 0;
+quiz = quizData[number];
+answer = answerData[number];
+document.getElementById("quizzes").innerHTML = quiz;
+
+$('#send').click(function() {
+    var kotaeValue = document.getElementById("kotae").value;
+    if(kotaeValue == answer){
+        document.getElementById("yesno").innerHTML = "正解";
+    }else{
+        document.getElementById("yesno").innerHTML = "違います";
+    };
+});
     
