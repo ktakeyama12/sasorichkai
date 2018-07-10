@@ -11,7 +11,3 @@ document.querySelector('.cont_modal').className = "cont_modal";
 c++;    
   }  
 } 
-
-
-
-
