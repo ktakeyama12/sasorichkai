@@ -10,6 +10,11 @@ var config = {
 firebase.initializeApp(config);
 
 
+messagesRef.orderBy("date").onSnapshot(function(snapshot) {
+    snapshot.docChanges.forEach(function(change) {
+
+
+
 var quizRef = firebase.firestore().collection('quizzes');
 quizRef.orderBy("date").get().then(function(querySnapshot) {
     const quizData = []
@@ -20,6 +25,27 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
         answerData.push(doc.data().answer)
     });
     console.log(quizData)
+    console.log(answerData)
+    console.log(quizData.length)
+    document.getElementById("quizzes").innerHTML = quizData;
+    var i=1;
+    
+    quizData=[a,b,c];
+    
+    
+
+    // 解答送信フォーム
+    $('#send').click(function() {
+        var kotaeValue = document.getElementById("kotae").value;
+        if(kotaeValue == answer){
+            document.getElementById("yesno").innerHTML = "正解";
+        }else{
+            document.getElementById("yesno").innerHTML = "違います";
+        };
+    });
+    
+    
+    
 });
 
 
@@ -29,19 +55,22 @@ function initQuiz(){
 
 
 
-console.log(quizData)
-console.log(answerData)
-var number = 0;
-quiz = quizData[number];
-answer = answerData[number];
-document.getElementById("quizzes").innerHTML = quiz;
+// console.log(quizData)
+// console.log(answerData)
 
-$('#send').click(function() {
-    var kotaeValue = document.getElementById("kotae").value;
-    if(kotaeValue == answer){
-        document.getElementById("yesno").innerHTML = "正解";
-    }else{
-        document.getElementById("yesno").innerHTML = "違います";
-    };
-});
+// var number = 0;
+
+// foreach(quizd)
+// quiz = quizData[number];
+// answer = answerData[number];
+// document.getElementById("quizzes").innerHTML = quiz;
+
+// $('#send').click(function() {
+//     var kotaeValue = document.getElementById("kotae").value;
+//     if(kotaeValue == answer){
+//         document.getElementById("yesno").innerHTML = "正解";
+//     }else{
+//         document.getElementById("yesno").innerHTML = "違います";
+//     };
+// });
     
