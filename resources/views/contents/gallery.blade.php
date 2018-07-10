@@ -165,6 +165,21 @@
                 </div>
                 <div class="projectInfo"><h2>二子玉川を一望できる広々とした空間はリラックス効果抜群。</h2></div>
             </li>
+            </li>
+            <li>
+                <a href="images/rakuten_gallery/lunch.jpeg"></a>
+                <img data-original="images/rakuten_gallery/lunch t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+
+                <div class="overLayer"></div>
+                <div class="infoLayer">
+                    <ul>
+                        <li><h2>Lunch</h2></li>
+                        <li><p>View</p></li>
+                        <li><p>ランチ</p></li>
+                    </ul>
+                </div>
+                <div class="projectInfo"><h2>無料とは思えないクオリティ＆ボリューム！</h2></div>
+            </li>
             
             <li>
                 <a href="images/rakuten_gallery/aquarium.jpeg"></a>
@@ -434,8 +449,8 @@
                 <div class="projectInfo"><h2>充実した設備とお手頃価格が、<br><br>男女問わず多くの社員に大人気</h2></div>
             </li>
             <li>
-                <a href="images/rakuten_gallery/hariup.jpeg"></a>
-                <img data-original="images/rakuten_gallery/hariup t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <a href="images/rakuten_gallery/beauty.jpeg"></a>
+                <img data-original="images/rakuten_gallery/beauty t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
