@@ -9,12 +9,19 @@
 
         <!-- Bootstrap CSS-->
         <link href="css/branch.css" rel="stylesheet" type="text/css">        <!-- jQuery -->
-        <script type="text/javascript" src="js/gallery.js"></script>
+        <script type="text/javascript" src="js/branch.js"></script>
     </head>
     <body>
         
-        <h1>全国の楽天</h1>
-            
+        <div>
+            <p><a href="/branch">
+                RAKUTEN &nbsp; &nbsp; BRANCHES
+             </a></p>
+        </div>
+        
+        <br>
+        <br>
+        
         <p>
             <img class="japan" src="/images/japan.jpg">
         </p>
@@ -43,6 +50,9 @@
                 
         
             </ul>
-        
+        <div id="container">
+  
+</div>
+    
     </body>
 </html>
