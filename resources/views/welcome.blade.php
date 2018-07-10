@@ -25,11 +25,10 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     
-  
+   @include('layouts.navbar')
 </head>
 
 <body>
-
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">
@@ -45,23 +44,34 @@
           <div class="el__content">
             <div class="el__text">
               <div class="el__title">Coupon Top5</div>
+
               
              
+<<<<<<< HEAD
                    <ol>
                      <div class="animsition">
                       <li class="el__coupon"> <a href="./layouts/test">Rakuten services</a></li>
                       <li class="animsition-link"> <a href="test" >Cafe & Restaurant around office</a></li>
+=======
+                   
+    <ol class="suuji">
+                   
+                      <li class="el__coupon"> <a href="test">Rakuten services</a></li>
+                      <li class="animsition-link"> <a href="./resources/views/cafe.html" >Cafe & Restaurant around office</a></li>
+>>>>>>> e0306d2c8c2cd557d235401257e608b52897fdac
                       <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
-                     </div></ol></div>
+                     </ol>
+                     </div>
                    
                    
                    
                    
                    
                    
+
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -80,10 +90,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 2</h2>
+            <h2 class="el__heading">BRANCH</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">{!! link_to_route('contents.branch', 'BRANCH') !!}</div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -146,10 +156,12 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 5</h2>
+            <h2 class="el__heading">RAKUTEN QUIZ</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+              {!! link_to_route('quiz', 'quiz') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -168,10 +180,13 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 6</h2>
+            <h2 class="el__heading">Magical Banana</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+                 {!! link_to_route('banana', 'banana') !!}
+                
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>

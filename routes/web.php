@@ -18,4 +18,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('test', 'AController@test')->name('test');
+
+
+Route::get('/banana', 'MainController@banana')->name('banana');
+Route::get('/quiz', 'MainController@quiz')->name('quiz');
+
+Route::get('index', 'ContentsController@index')->name('contents.index');
+Route::get('branch', 'ContentsController@branch')->name('contents.branch');
+Route::post('contents.store', 'ContentsController@store')->name('contents.store');
+
+Route::get('/phpfirebase_sdk','FirebaseController@index');
+
