@@ -33,11 +33,14 @@
 
 <body>
             <div id="quizzes"></div>
+            <input type="text" name="name" id="name" value="" />
             <input type="text" name="kotae" id="kotae" value="" />
             <button id="send">投稿</button>
             <div id="yesno"></div>
             ====
+            <div id="bangou"></div>問目
             <div id="mondaidesu"></div>
+            <div id="kaitousha"></div>
 
     <script src="js/answer.js"></script>
     
