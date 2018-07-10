@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 
 <head><meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
-    <link rel="stylesheet" href="/css/gallery.css">
-    <script type="text/javascript" src="/js/gallery.js"></script>
+    <link rel="stylesheet" href="/css/fukuoka.css">
+    <script type="text/javascript" src="/js/fukuoka.js"></script>
 </head>
 
 <body>
@@ -27,9 +26,9 @@
     
         <div class="cont_detalles">
           <h3>Fukuoka Office</h3>
-          <p>〒812-0011<br>
-          福岡市博多区博多駅前2丁目2番1号<br>
-          福岡センタービル12F</p>
+          <p>&nbsp;&nbsp;〒812-0011<br>
+          &nbsp;&nbsp;福岡市博多区博多駅前2丁目2番1号<br>
+          &nbsp;&nbsp;福岡センタービル12F</p>
         </div>
       </div>
   
@@ -83,8 +82,8 @@
       <div class="col-xs-offset-3 col-xs-6">
           <head>
 
-              <link href="css/gallery.css" rel="stylesheet" type="text/css">
-              <link rel="stylesheet" href="{{ secure_asset('css/gallery.css') }}">
+              <link href="css/fukuoka.css" rel="stylesheet" type="text/css">
+              <link rel="stylesheet" href="{{ secure_asset('css/fukuoka.css') }}">
 
               <!-- Bootstrap -->
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -92,7 +91,7 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
           </head>
             <body>
-                  {!! Form::model($content, ['route' => 'contents.store']) !!}
+                  {!! Form::model($content, ['route' => 'contents.storeF']) !!}
                     <div class='form-group'>
                       {!! Form::label('name', 'なまえ') !!}
                       {!! Form::text('name',null, ['class' => 'form-control']) !!}
@@ -124,53 +123,3 @@
 </div>
 
 </body>
-=======
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Bootstrap Template</title>
-
-        <!-- Bootstrap CSS-->
-        <link href="css/branch.css" rel="stylesheet" type="text/css">        <!-- jQuery -->
-        <script type="text/javascript" src="js/gallery.js"></script>
-    </head>
-    <body>
-        
-        <h1>全国の楽天</h1>
-            
-        <p>
-            <img class="japan" src="/images/japan.jpg">
-        </p>
-            
-            <ul>
-                <li>①札幌支社</li>
-                <li>②仙台支社</li>
-                <li>③盛岡オフィス</li>
-                <li>④新潟支社</li>
-                <li>⑤さいたま支社</li>
-                {!! link_to_route('contents.tokyo', '⑥楽天クリムゾンハウス') !!}
-                <li>⑦千葉支社</li>
-                <li>⑧横浜支社</li>
-                <li>⑨松本オフィス</li>
-                <li>⑩静岡支社</li>
-                <li>⑪名古屋支社</li>
-                <li>⑫金沢支社</li>
-                <li>⑬京都支社</li>
-                {!! link_to_route('contents.osaka', '⑭大阪支社') !!}
-                <li>⑮神戸支社</li>
-                <li>⑯広島支社</li>
-                <li>⑰松山支社</li>
-                {!! link_to_route('contents.fukuoka', '⑱福岡支社') !!}
-                <li>⑲鹿児島支社</li>
-                <li>⑳沖縄支社</li>
-                
-        
-            </ul>
-        
-    </body>
-</html>
->>>>>>> f73c4443408796d41c4d6f7b325fdfbc9e7ce9a8
