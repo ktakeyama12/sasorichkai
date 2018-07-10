@@ -39,7 +39,7 @@ Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
-Route::post('contents.storeF', 'ContentsController@store')->name('contents.storeF');
+Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.storeF');
 
 Route::get('users.show', 'MainController@show')->name('users.show');
 
