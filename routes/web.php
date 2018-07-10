@@ -23,7 +23,10 @@ Route::get('test', 'AController@test')->name('test');
 
 
 Route::get('/banana', 'MainController@banana')->name('banana');
-Route::get('/quiz', 'MainController@quiz')->name('quiz');
+Route::get('/sakusei', 'QuizController@sakusei')->name('sakusei');
+Route::get('/answer', 'QuizController@answer')->name('answer');
+Route::post('quiz.store', 'QuizController@store')->name('quiz.store');
+Route::post('quiz.answerinput', 'QuizController@answerinput')->name('quiz.answerinput');
 
 Route::get('index', 'ContentsController@index')->name('contents.index');
 

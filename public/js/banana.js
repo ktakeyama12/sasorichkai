@@ -62,15 +62,13 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
             //     $(userData).clone()
             // );
         });
-
-})
+    })
 
     
     snapshot.docChanges.forEach(function(change) {
         if (change.type === 'added') {
             $('<li>').text(change.doc.data().name + ': ' + change.doc.data().body).prependTo('#messages');
             var button = document.createElement("button");
-            // button.innerHTML = "削除";
             var body = document.getElementsByTagName("li")[0];
             button.className ="glyphicon glyphicon-trash";
             body.appendChild(button);
@@ -92,32 +90,24 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                 querySnapshot.forEach(function(doc) {
                     $('<li>').text(doc.data().name + ': ' + doc.data().body).prependTo('#messages');
                     console.log(doc.id, " => ", doc.data());
-                
-                
-                var button = document.createElement("button");
-                            // button.innerHTML = "削除";
-                            button.className ="glyphicon glyphicon-trash";
-                            var body = document.getElementsByTagName("li")[0];
-                            body.appendChild(button);
-                            button.onclick = function(){
-                                var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',doc.data().timestamp);
-                                jobskill_query.get().then(function(querySnapshot) {
-                                  querySnapshot.forEach(function(doc) {
-                                    doc.ref.delete();
-                                  });
-                                });
-                                $("#messages").find('li').remove()
-                                
-                            }
-            
-            
+                    var button = document.createElement("button");
+                    // button.innerHTML = "削除";
+                    button.className ="glyphicon glyphicon-trash";
+                    var body = document.getElementsByTagName("li")[0];
+                    body.appendChild(button);
+                    button.onclick = function(){
+                        var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',doc.data().timestamp);
+                        jobskill_query.get().then(function(querySnapshot) {
+                            querySnapshot.forEach(function(doc) {
+                                doc.ref.delete();
+                            });
+                        });
+                        $("#messages").find('li').remove()
+                    }
                 });
-                
-                });
-            
+            });
         }
     });
-    
 });
 
 $('#send').click(function() {
@@ -130,45 +120,36 @@ $('#send').click(function() {
         date: date
     });
     lastRef.set({
-    name: $('#name').val(),
-    body: $('#message').val(),
-    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        name: $('#name').val(),
+        body: $('#message').val(),
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    
     var documentReference = firebase.firestore().collection('last').doc('lastbanana');
     documentReference.get().then(function(documentSnapshot) {
-      var data = documentSnapshot.data().timestamp;
-      var current = firebase.firestore.FieldValue.serverTimestamp();
-      
-   
+        var data = documentSnapshot.data().timestamp;
+        var current = firebase.firestore.FieldValue.serverTimestamp();
     });
-    
 });
 
 $('#message').keypress(function (e){
     if (e.keyCode == 13) {
         const date = Date.now();
         messagesRef.add({
-        name: $('#name').val(),
-        body: $('#message').val(),
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        date: date
-    });
-    lastRef.set({
-        name: $('#name').val(),
-        body: $('#message').val(),
-        timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    });
- 
-   
-    
-    var documentReference = firebase.firestore().collection('last').doc('lastbanana');
-    documentReference.get().then(function(documentSnapshot) {
-      var data = documentSnapshot.data().timestamp;
-      var current = firebase.firestore.FieldValue.serverTimestamp();
-      
-   
-    });
+            name: $('#name').val(),
+            body: $('#message').val(),
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            date: date
+        });
+        lastRef.set({
+            name: $('#name').val(),
+            body: $('#message').val(),
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        });
+        var documentReference = firebase.firestore().collection('last').doc('lastbanana');
+        documentReference.get().then(function(documentSnapshot) {
+            var data = documentSnapshot.data().timestamp;
+            var current = firebase.firestore.FieldValue.serverTimestamp();
+        });
     }
 });
 
