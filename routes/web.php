@@ -39,16 +39,17 @@ Route::get('index', 'ContentsController@index')->name('contents.index');
 Route::get('branch', 'ContentsController@branch')->name('contents.branch');
 
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
-Route::get('tokyo', 'ContentsController@branchs')->name('contents.tokyo');
+Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
 Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
-Route::post('contents.storeF', 'ContentsController@store')->name('contents.storeF');
+Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.storeF');
 
 Route::get('users.show', 'MainController@show')->name('users.show');
 
 Route::post('contents.store', 'ContentsController@store')->name('contents.store');
 
 Route::get('/phpfirebase_sdk','FirebaseController@index');
+
 

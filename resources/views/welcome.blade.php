@@ -39,7 +39,7 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
             
-            <h2 class="el__heading">Coupon</h2>
+            <h2 class="el__heading">STAFF<br>BENEFIT</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -76,6 +76,7 @@
         </div>
       </div>
     </div>
+    
     <!-- el end -->
     <!-- el start -->
     <div class="el">
@@ -83,10 +84,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">BRANCH</h2>
+            <h2 class="el__heading">BRANCH<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">{!! link_to_route('contents.branch', 'BRANCH') !!}</div>
+            <div class="el__text">
+              <p><h3>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみなるかも！</h3></p>
+            
+              {!! link_to_route('contents.branch', '→ SEARCH THE BRANCHES') !!}
+              </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -105,10 +110,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">GALLERY</h2>
+            <h2 class="el__heading">RAKUTEN<br>GALLERY</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">{!! link_to_route('contents.gallery', 'GALLERY') !!}</div>
+            <div class="el__text">
+            <p><h3>楽天社内の様子をご紹介。社員に人気のスポットや、隠れスポットを見てみよう！</h3></p>
+            
+            {!! link_to_route('contents.gallery', '→ GO TO THE GALLERY') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -127,10 +136,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 4</h2>
+            <h2 class="el__heading">WORK<br>STYLE<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">WORKSTYLE INFORMATION</div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -149,7 +158,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">RAKUTEN QUIZ</h2>
+            <h2 class="el__heading">RAKUTEN<br>QUIZ</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -178,7 +187,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Magical Banana</h2>
+            <h2 class="el__heading">RAKUTEN<br>GAME</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -204,10 +213,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">チャット</h2>
+            <h2 class="el__heading">COFFEE<br>BREAK</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">チャット機能だお
+            <div class="el__text">Let's have a cofee break!
             @include('chat')
             
             </div>
