@@ -27,6 +27,14 @@ Route::get('/quiz', 'MainController@quiz')->name('quiz');
 
 Route::get('index', 'ContentsController@index')->name('contents.index');
 
+Route::get('/sakusei', 'QuizController@sakusei')->name('sakusei');
+Route::get('/answer', 'QuizController@answer')->name('answer');
+Route::post('quiz.store', 'QuizController@store')->name('quiz.store');
+Route::post('quiz.answerinput', 'QuizController@answerinput')->name('quiz.answerinput');
+
+Route::get('index', 'ContentsController@index')->name('contents.index');
+
+// branch
 Route::get('branch', 'ContentsController@branch')->name('contents.branch');
 
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');

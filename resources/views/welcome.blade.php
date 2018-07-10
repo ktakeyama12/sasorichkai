@@ -153,7 +153,12 @@
           </div>
           <div class="el__content">
             <div class="el__text">
+<<<<<<< HEAD
               {!! link_to_route('quiz', 'quiz') !!}
+=======
+              {!! link_to_route('sakusei', 'sakusei') !!}
+              {!! link_to_route('answer', 'answer') !!}
+>>>>>>> c8dbbd326e0b5bf4f4ca0836491751e93e3b9a5e
             </div>
             <div class="el__close-btn"></div>
           </div>
