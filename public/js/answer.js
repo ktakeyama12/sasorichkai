@@ -13,7 +13,7 @@ var quizRef = firebase.firestore().collection('quizzes');
 
 
 
-
+var firstloop = 0;
 var number=0;
 quizRef.orderBy("date").get().then(function(querySnapshot) {
     const quizData = []
@@ -60,17 +60,22 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
 
             $('#send').click(function() {
                 var kotaeValue = document.getElementById("kotae").value;
-                console.log(currentAnswer)
-                if(kotaeValue == currentAnswer){
+                // console.log(currentAnswer)
+                if(kotaeValue == currentAnswer && firstloop == 0){
                     document.getElementById("yesno").innerHTML = "正解";
-                    document.getElementById("kotae").value = "";
                     number = number + 1;
-                                lastRef.set({
-                question: quizData[number],
-                answer: answerData[number],
-            });
-                    console.log(number)
-                    
+                    lastRef.set({
+                        question: quizData[number],
+                        answer: answerData[number],
+                    });
+                    firstloop = 1;
+                    // console.log(number)
+                }else if(firstloop == 1){
+                    document.getElementById("yesno").innerHTML = "正解w";
+                    console.log("kotaeValue => " + kotaeValue + "currentAnswer =>" + currentAnswer + number)
+                    if(kotaeValue != currentAnswer){
+                        firstloop = 0;
+                    }
                 }else{
                     document.getElementById("yesno").innerHTML = "違います";
                 };
