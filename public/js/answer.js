@@ -9,13 +9,12 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
-messagesRef.orderBy("date").onSnapshot(function(snapshot) {
-    snapshot.docChanges.forEach(function(change) {
-
-
-
 var quizRef = firebase.firestore().collection('quizzes');
+
+
+
+
+var number=0;
 quizRef.orderBy("date").get().then(function(querySnapshot) {
     const quizData = []
     const answerData = []
@@ -24,29 +23,70 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
         quizData.push(doc.data().question)
         answerData.push(doc.data().answer)
     });
-    console.log(quizData)
-    console.log(answerData)
-    console.log(quizData.length)
-    document.getElementById("quizzes").innerHTML = quizData;
+    // var lastRef = firebase.firestore().collection('lastquiz').doc('currentQuiz');
+    // lastRef.set({
+    //     question: quizData[0],
+    //     answer: answerData[0],
+    // });
+    // console.log(quizData)
+    // console.log(answerData)
+    // console.log(quizData.length)
+    // document.getElementById("quizzes").innerHTML = quizData;
     var i=1;
     
-    quizData=[a,b,c];
-    
-    
-
     // 解答送信フォーム
-    $('#send').click(function() {
-        var kotaeValue = document.getElementById("kotae").value;
-        if(kotaeValue == answer){
-            document.getElementById("yesno").innerHTML = "正解";
-        }else{
-            document.getElementById("yesno").innerHTML = "違います";
-        };
+
+    
+   
+    
+    var lastRef = firebase.firestore().collection('lastquiz');
+    var lastRef2 = firebase.firestore().collection('lastquiz').doc('currentQuiz');
+                lastRef2.set({
+                question: quizData[number],
+                answer: answerData[number],
+            });
+    
+    lastRef.onSnapshot(function(snapshot) {
+        snapshot.docChanges.forEach(function(change) {
+            var lastRef = firebase.firestore().collection('lastquiz').doc('currentQuiz');
+
+            
+            var currentQuiz = change.doc.data().question
+            var currentAnswer = change.doc.data().answer
+            document.getElementById("mondaidesu").innerHTML = currentQuiz;
+            // console.log(number)
+            // console.log(currentAnswer)
+            // console.log(quizData[1])
+
+            $('#send').click(function() {
+                var kotaeValue = document.getElementById("kotae").value;
+                console.log(currentAnswer)
+                if(kotaeValue == currentAnswer){
+                    document.getElementById("yesno").innerHTML = "正解";
+                    document.getElementById("kotae").value = "";
+                    number = number + 1;
+                                lastRef.set({
+                question: quizData[number],
+                answer: answerData[number],
+            });
+                    console.log(number)
+                    
+                }else{
+                    document.getElementById("yesno").innerHTML = "違います";
+                };
+            });
+    
+            // console.log(quizData[number])
+            // lastRef.doc('currentQuiz').set({
+            //     question: quizData[number],
+            //     answer: answerData[number],
+            // });
+        });
     });
     
     
-    
 });
+
 
 
 function initQuiz(){

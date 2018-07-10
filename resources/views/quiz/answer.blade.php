@@ -36,6 +36,10 @@
             <input type="text" name="kotae" id="kotae" value="" />
             <button id="send">投稿</button>
             <div id="yesno"></div>
+            ====
+            <div id="mondaidesu"></div>
+
     <script src="js/answer.js"></script>
+    
     
 </body>
