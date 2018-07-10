@@ -51,7 +51,7 @@
     <ol class="suuji">
                    
                       <li class="el__coupon"> <a href="test">Rakuten services</a></li>
-                      <li class="animsition-link"> <a href="./resources/views/cafe.html" >Cafe & Restaurant around office</a></li>
+                      <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>

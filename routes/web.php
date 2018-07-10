@@ -19,7 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('test', 'AController@test')->name('test');
+Route::get('rakuten', 'AController@rakuten')->name('rakuten');
+Route::get('cafe', 'AController@cafe')->name('cafe');
 
 
 Route::get('/banana', 'MainController@banana')->name('banana');
