@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Bootstrap Template</title>
+        <title>Rakuten Branchs</title>
 
         <!-- Bootstrap CSS-->
         <link href="css/branch.css" rel="stylesheet" type="text/css">        <!-- jQuery -->
@@ -20,7 +20,7 @@
             
             
             
-            <svg    width="40%" height="40%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <svg     viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                  <path id="path">
                     <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
                 </path>
@@ -58,7 +58,7 @@
                 <li>⑲鹿児島支社</li>
                 <li>⑳沖縄支社</li>
             </ul>
-            </div>
+        </div>
             
     </body>
 </html>
