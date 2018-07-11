@@ -11,7 +11,8 @@ firebase.initializeApp(config);
 
 
 document.getElementById("show").style.display = 'none';
-document.getElementById("ready").style.display = 'none';
+document.getElementById("ready2").style.display = 'none';
+document.getElementById("ingame").style.display = 'none';
 
 var quizRef = firebase.firestore().collection('quizzes');
 
@@ -168,7 +169,7 @@ $('#usertouroku').unbind().click(function() {
     }
     // document.getElementById("show").style.display = 'block';
     document.getElementById("show2").style.display = 'none';
-    document.getElementById("ready").style.display = 'block';
+    document.getElementById("ready2").style.display = 'block';
 });
 
 
@@ -214,11 +215,26 @@ $('#reset').unbind().click(function() {
     readyRef2.set({
         ready: 0,
     });
+});
+
+$('#reset2').unbind().click(function() {
+    var jobskill_query = userRef;
+    jobskill_query.get().then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+        doc.ref.delete();
+      });
+    });
+    window.location.reload(true);
     
+    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+    
+    readyRef2.set({
+        ready: 0,
+    });
 });
 
 $('#ready').unbind().click(function() {
-    document.getElementById("ready").style.display = 'none';
+    document.getElementById("ready2").style.display = 'none';
     // document.getElementById("show").style.display = 'block';
     
     var readyRef2 = firebase.firestore().collection('ready').doc('ready');
@@ -232,9 +248,15 @@ $('#ready').unbind().click(function() {
 var readyRef = firebase.firestore().collection('ready');
 readyRef.onSnapshot(function(snapshot) {
     snapshot.docChanges.forEach(function(change) {
+        var username = document.getElementById("username").value;
         var ready = change.doc.data().ready
-        if(ready==1){
+        if(username && ready==1){
             document.getElementById("show").style.display = 'block';
+            document.getElementById("show2").style.display = 'none';
+            document.getElementById("ready2").style.display = 'none';
+        }else if(!username && ready==1){
+            document.getElementById("ingame").style.display = 'block';
+            document.getElementById("show2").style.display = 'none';
         }
     });
 });
