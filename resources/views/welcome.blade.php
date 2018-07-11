@@ -29,8 +29,11 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   
   
+=======
+>>>>>>> fb0181dc87dcc9cb39516e56e5adbef45a9645f9
 
   <div class="cont s--inactive">
   <!-- cont inner start -->
