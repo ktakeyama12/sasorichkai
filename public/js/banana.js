@@ -69,6 +69,7 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
         if (change.type === 'added') {
             $('<li>').text(change.doc.data().name + ': ' + change.doc.data().body).prependTo('#messages');
             var button = document.createElement("button");
+
             var body = document.getElementsByTagName("li")[0];
             button.className ="glyphicon glyphicon-trash";
             body.appendChild(button);
@@ -90,6 +91,32 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                 querySnapshot.forEach(function(doc) {
                     $('<li>').text(doc.data().name + ': ' + doc.data().body).prependTo('#messages');
                     console.log(doc.id, " => ", doc.data());
+                
+                
+                var button = document.createElement("button");
+                            // button.innerHTML = "削除";
+                            button.className ="glyphicon glyphicon-trash";
+                            var body = document.getElementsByTagName("li")[0];
+                            body.appendChild(button);
+                            button.onclick = function(){
+                                var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',doc.data().timestamp);
+                                jobskill_query.get().then(function(querySnapshot) {
+                                  querySnapshot.forEach(function(doc) {
+                                    doc.ref.delete();
+                                  });
+                                });
+                                $("#messages").find('li').remove()
+                                
+                            }
+            
+            
+                });
+                
+                });
+            
+        }
+    });
+    
                     var button = document.createElement("button");
                     // button.innerHTML = "削除";
                     button.className ="glyphicon glyphicon-trash";
@@ -104,11 +131,11 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                         });
                         $("#messages").find('li').remove()
                     }
-                });
+                
             });
-        }
-    });
-});
+        
+  
+
 
 $('#send').click(function() {
     // 新規メッセージを投稿
