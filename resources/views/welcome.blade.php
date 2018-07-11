@@ -29,6 +29,7 @@
 </head>
 
 <body>
+  <header><h1>Hello, Rakutenians !<br>Enjoy Our Workplace.</h1></header>
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">

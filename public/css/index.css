@@ -10,6 +10,15 @@ body {
   
 }
 
+header h1{
+    font-size: 100px;
+    margin: 0px auto;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    color:#ccc;
+}
+
 .cont {
   position: relative;
   overflow: hidden;
@@ -321,7 +330,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("/images/rakuten_gallery/top 1.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide1.JPG");
 }
 .el:nth-child(2) {
   -webkit-transform: translate3d(100.2083333333%, 0, 0);
@@ -346,7 +355,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("/images/rakuten_gallery/top 2.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide2.JPG");
 }
 .el:nth-child(3) {
   -webkit-transform: translate3d(200.4166666667%, 0, 0);
@@ -371,7 +380,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("/images/rakuten_gallery/top 3.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide3.JPG");
 }
 .el:nth-child(4) {
   -webkit-transform: translate3d(300.625%, 0, 0);
@@ -396,7 +405,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("/images/rakuten_gallery/top 4.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide4.JPG");
 }
 .el:nth-child(5) {
   -webkit-transform: translate3d(400.8333333333%, 0, 0);
@@ -421,7 +430,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(5) .el__bg:before {
   transition-delay: 0.4s;
-  background-image: url("/images/rakuten_gallery/top 5.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide5.JPG");
 }
 
 .el:nth-child(6) {
@@ -447,7 +456,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(6) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("/images/rakuten_gallery/top 6.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide6.JPG");
 }
 
 .el:nth-child(7) {
@@ -473,7 +482,7 @@ a:active { color: #FFFFFF; }
 }
 .el:nth-child(7) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("/images/rakuten_gallery/top 7.jpeg");
+  background-image: url("/images/rakuten_gallery/top_black/Slide7.JPG");
 }
 
 
