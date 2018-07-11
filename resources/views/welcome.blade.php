@@ -54,7 +54,7 @@
                       <li class="el__coupon"> <a href="rakuten">Rakuten services</a></li>
                       <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
                       <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
+                      <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
                      </ol>
                      </div>
@@ -164,7 +164,7 @@
             <div class="el__text">
               {!! link_to_route('sakusei', 'sakusei') !!}
               {!! link_to_route('answer', 'answer') !!}
-              <!--{!! link_to_route('quiz', 'quiz') !!}-->
+
             </div>
             <div class="el__close-btn"></div>
           </div>
