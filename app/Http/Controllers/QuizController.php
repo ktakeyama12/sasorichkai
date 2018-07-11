@@ -59,8 +59,6 @@ class QuizController extends Controller
     }
     
     public function answer(){
-        $quiz = Quiz::inRandomOrder()->first();
-        $quizall = Quiz::select('quiz')->get();
         return view('quiz.answer');
     }
     
