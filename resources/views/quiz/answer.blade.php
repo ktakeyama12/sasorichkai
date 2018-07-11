@@ -34,6 +34,7 @@
 <body>
             <div id="hello"></div>
             <br>
+            <button id="ready">ゲームを始める</button>
             <div id="show">
                 <div id="quizzes"></div>
                 <!--USERNAME:-->
@@ -45,17 +46,22 @@
                 <input type="text" name="kotae" id="kotae" value="" />
                 <button id="send">投稿</button>
                 <div id="yesno"></div>
-                ====
-
-                <div id="kaitousha"></div>
                 <br>
+                ====
+                <br>
+入室しているユーザー
+                <div id="kaitousha"></div>
+                <div id="answer"></div>
+                
                 <ul id="score"></div>
             </div>
             
             <div id="show2">
-                まずは↓にニックネームを入れて、登録してね<br>
+                まずは↓にニックネームを入れて、入室してね<br>
                 <input type="text" name="username" id="username" value="" />
-                <button id="usertouroku">登録</button>
+                <button id="usertouroku">入室</button>
+                <br><br><br>
+                <button id="reset">全員強制退出（ゲームをやり直す）</button>
             </div>
     <script src="js/answer.js"></script>
     

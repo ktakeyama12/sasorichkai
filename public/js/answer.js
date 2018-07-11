@@ -11,6 +11,7 @@ firebase.initializeApp(config);
 
 
 document.getElementById("show").style.display = 'none';
+document.getElementById("ready").style.display = 'none';
 
 var quizRef = firebase.firestore().collection('quizzes');
 
@@ -42,8 +43,12 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
     lastRef.onSnapshot(function(snapshot) {
         snapshot.docChanges.forEach(function(change) {
             var currentKaitousha = change.doc.data().kaitousha
+            var oldanswer = change.doc.data().oldanswer
             if(currentKaitousha){
                 document.getElementById("kaitousha").innerHTML = currentKaitousha + "が正解しました！！"||"";
+            }
+            if(oldanswer){
+                document.getElementById("answer").innerHTML = "答えは" + oldanswer + "でした！"||"";
             }
 
             
@@ -61,7 +66,7 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                 var number = document.getElementById("bangou").value;
                 var kotaeValue = document.getElementById("kotae").value;
                 if(kotaeValue == currentAnswer){
-                    console.log("kotaeValue => " + kotaeValue + " currentAnswer =>" + currentAnswer + " number => " + number )
+                    // console.log("kotaeValue => " + kotaeValue + " currentAnswer =>" + currentAnswer + " number => " + number )
                     document.getElementById("yesno").innerHTML = "正解";
                     if(kotaeValue == currentAnswer){
                         var number = change.doc.data().bangou
@@ -70,6 +75,7 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                         lastRef.set({
                             question: quizData[number],
                             answer: answerData[number],
+                            oldanswer: answerData[number-1],
                             kaitousha: kaitousha,
                             bangou: number,
                         });
@@ -103,32 +109,120 @@ $('#usertouroku').unbind().click(function() {
         document.getElementById("hello").innerHTML = "ようこそ、" + username + "さん";
         document.getElementById("hello").value = username;
     }
-    document.getElementById("show").style.display = 'block';
+    // document.getElementById("show").style.display = 'block';
     document.getElementById("show2").style.display = 'none';
+    document.getElementById("ready").style.display = 'block';
 });
 
 
+var userData= {}
+var scoreData = {}
+var scoreall = ""
 var userRef = firebase.firestore().collection('users');
 userRef.onSnapshot(function(snapshot) {
-    const userData= []
-    const scoreData = []
     snapshot.docChanges.forEach(function(change) {
-        $('<li>').remove()
-        userRef.get().then(function(querySnapshot) {
-            var username = change.doc.data().username
-            var points = change.doc.data().points
-            console.log("username => " + username + " points => " + points)
-            $('<li>').text(username + ': ' + points).prependTo('#score');
-        });
-        // userData.push(change.doc.data().username)
-        // scoreData.push(change.doc.data().points)
+        var username = change.doc.data().username
+        username = username.toString()
+        // console.log(username)
+        var points = change.doc.data().points
+        points = points.toString()
+        userData[username] = username
+        scoreData[username] = points
+        var scoreall = ""
+        Object.keys(userData).forEach(function(element){
+            scoreall += userData[element]
+            scoreall += "は"
+            scoreall += scoreData[element]
+            scoreall += "点<br />"
+        })
+        console.log(scoreData)
+        document.getElementById("score").innerHTML = scoreall;
         
-    //   var username = change.doc.data().username
-    //   console.log(username)
-    //   var points = change.doc.data().points
-    //   $('<li>').text(username + ': ' + points).prependTo('#score');
     });
-    console.log(userData)
-    console.log(scoreData)
+    console.log(userData["kazu"] + "unchi")
+});
+
+
+$('#reset').unbind().click(function() {
+    var jobskill_query = userRef;
+    jobskill_query.get().then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+        doc.ref.delete();
+      });
+    });
+    window.location.reload(true);
+    
+    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+    
+    readyRef2.set({
+        ready: 0,
+    });
     
 });
+
+$('#ready').unbind().click(function() {
+    document.getElementById("ready").style.display = 'none';
+    // document.getElementById("show").style.display = 'block';
+    
+    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+    
+    readyRef2.set({
+        ready: 1,
+    });
+    
+});
+
+var readyRef = firebase.firestore().collection('ready');
+readyRef.onSnapshot(function(snapshot) {
+    snapshot.docChanges.forEach(function(change) {
+        var ready = change.doc.data().ready
+        if(ready==1){
+            document.getElementById("show").style.display = 'block';
+        }
+    });
+});
+
+// var userRef = firebase.firestore().collection('users');
+// userRef.get().then(function(querySnapshot) {
+//     const userData= []
+//     const scoreData = []
+//     querySnapshot.forEach(function(doc) {
+//         var username = doc.data().username
+//         var points = doc.data().points
+//         // // $('<li>').text(username + ': ' + points).prependTo('#score');
+//         // $('<li><div class="prependto">').text(username).prependTo('#score');
+//         // $(".prependto").eq(1).remove()
+//     });
+//     console.log("unchi")
+// });
+
+// var userRef = firebase.firestore().collection('users');
+// userRef.onSnapshot(function(snapshot) {
+//     const userData= []
+//     const scoreData = []
+//     snapshot.docChanges.forEach(function(change) {
+        
+//         userRef.get().then(function(querySnapshot) {
+//             querySnapshot.forEach(function(doc) {
+//                 var username = change.doc.data().username
+//                 var points = change.doc.data().points
+//                 // $('<li>').text(username + ': ' + points).prependTo('#score');
+//                 $('<li><div class="prependto">').text(username).prependTo('#score');
+//                 $(".prependto").eq(1).remove()
+                
+//                 // $('<li><div class="prepended"> + username + ': ' + points').prependTo('#score');
+//         });
+//             // console.log("username => " + username + " points => " + points)
+//         });
+//         // userData.push(change.doc.data().username)
+//         // scoreData.push(change.doc.data().points)
+        
+//     //   var username = change.doc.data().username
+//     //   console.log(username)
+//     //   var points = change.doc.data().points
+//     //   $('<li>').text(username + ': ' + points).prependTo('#score');
+//     });
+//     console.log(userData)
+//     console.log(scoreData)
+    
+// });
