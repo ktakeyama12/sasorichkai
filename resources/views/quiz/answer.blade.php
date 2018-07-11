@@ -32,13 +32,31 @@
 </head>
 
 <body>
-            <div id="quizzes"></div>
-            <input type="text" name="kotae" id="kotae" value="" />
-            <button id="send">投稿</button>
-            <div id="yesno"></div>
-            ====
-            <div id="mondaidesu"></div>
+            <div id="hello"></div>
+            <br>
+            <div id="show">
+                <div id="quizzes"></div>
+                <!--USERNAME:-->
+                <!--<input type="text" name="name" id="name" value="" />-->
+                <div id="bangou"></div>
+                <div id="mondaidesu"></div>
+                <br>
+                答え:
+                <input type="text" name="kotae" id="kotae" value="" />
+                <button id="send">投稿</button>
+                <div id="yesno"></div>
+                ====
 
+                <div id="kaitousha"></div>
+                <br>
+                <ul id="score"></div>
+            </div>
+            
+            <div id="show2">
+                まずは↓にニックネームを入れて、登録してね<br>
+                <input type="text" name="username" id="username" value="" />
+                <button id="usertouroku">登録</button>
+            </div>
     <script src="js/answer.js"></script>
     
     
