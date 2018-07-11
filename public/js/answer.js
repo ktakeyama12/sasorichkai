@@ -60,6 +60,9 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
             var number = change.doc.data().bangou
             document.getElementById("mondaidesu").innerHTML = currentQuiz;
             document.getElementById("bangou").value = number;
+            if(number=="finish"){
+                document.getElementById("bangou").innerHTML = "";
+            }
             document.getElementById("bangou").innerHTML = parseInt(number) + 1 + "問目";
 
             $('#send').unbind().click(function() {
@@ -72,13 +75,23 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                         var number = change.doc.data().bangou
                         number = parseInt(number) + 1;
                         var kaitousha = document.getElementById("hello").value;
-                        lastRef.set({
-                            question: quizData[number],
-                            answer: answerData[number],
-                            oldanswer: answerData[number-1],
-                            kaitousha: kaitousha,
-                            bangou: number,
-                        });
+                        if(quizData[number]){
+                            lastRef.set({
+                                question: quizData[number],
+                                answer: answerData[number],
+                                oldanswer: answerData[number-1],
+                                kaitousha: kaitousha,
+                                bangou: number,
+                            });
+                        }else{
+                            lastRef.set({
+                                question: "おわり",
+                                answer: "",
+                                oldanswer: answerData[number-1],
+                                kaitousha: kaitousha,
+                                bangou: "owari",
+                            });
+                        }
                         var username = document.getElementById("hello").value;
                         var userRef = firebase.firestore().collection('users').doc(username);
                         points = points + 1;
@@ -91,6 +104,50 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                 }else{
                     document.getElementById("yesno").innerHTML = "違います";
                 };
+            });
+            
+            
+            $('#kotae').keypress(function (e){
+                if (e.keyCode == 13) {
+                    var number = document.getElementById("bangou").value;
+                    var kotaeValue = document.getElementById("kotae").value;
+                    if(kotaeValue == currentAnswer){
+                        // console.log("kotaeValue => " + kotaeValue + " currentAnswer =>" + currentAnswer + " number => " + number )
+                        document.getElementById("yesno").innerHTML = "正解";
+                        if(kotaeValue == currentAnswer){
+                            var number = change.doc.data().bangou
+                            number = parseInt(number) + 1;
+                            var kaitousha = document.getElementById("hello").value;
+                            if(quizData[number]){
+                                lastRef.set({
+                                    question: quizData[number],
+                                    answer: answerData[number],
+                                    oldanswer: answerData[number-1],
+                                    kaitousha: kaitousha,
+                                    bangou: number,
+                                });
+                            }else{
+                                lastRef.set({
+                                    question: "おわり",
+                                    answer: "",
+                                    oldanswer: answerData[number-1],
+                                    kaitousha: kaitousha,
+                                    bangou: "owari",
+                                });
+                            }
+                            var username = document.getElementById("hello").value;
+                            var userRef = firebase.firestore().collection('users').doc(username);
+                            points = points + 1;
+                            console.log(points)
+                                userRef.set({
+                                    username : username,
+                                    points : parseInt(points),
+                                });
+                        }
+                    }else{
+                        document.getElementById("yesno").innerHTML = "違います";
+                    };
+                }
             });
 
         });
