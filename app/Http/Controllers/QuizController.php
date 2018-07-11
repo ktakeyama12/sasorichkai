@@ -61,29 +61,10 @@ class QuizController extends Controller
     public function answer(){
         $quiz = Quiz::inRandomOrder()->first();
         $quizall = Quiz::select('quiz')->get();
-        return view('quiz.answer', [
-            'quiz' => $quiz,
-            'message' => "",
-            "quizall" => $quizall,
-              'gotoulist' => "",
-        ]);
+        return view('quiz.answer');
     }
     
     public function answerinput(Request $request){
-        //print $request->answerinput;
-        if($request->oldanswer==$request->answerinput){
-            $message="正解";
-        }else{
-            $message=$request->oldanswer;
-            $quiz = Gotou::insert(['quizid' => $request->oldid, 'gotou' => $request->answerinput]);
-        }
-        $quiz = Quiz::inRandomOrder()->first();
-        $gotoulist = Gotou::where('quizid', $request->oldid)->pluck('gotou');
-    
-        return view('quiz.answer', [
-            'quiz' => $quiz,
-            'message' => $message,
-            'gotoulist' => $gotoulist,
-        ]);
+        return view('quiz.answer');
     }
 }
