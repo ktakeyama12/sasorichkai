@@ -23,6 +23,14 @@ h3{
     text-align: center;
     color:#ccc;
 }
+p1{
+    font-size: 30px;
+    margin: 0px auto;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    color:#ccc;
+}
 p{
     font-size: 20px;
     margin: 0px auto;
@@ -38,7 +46,7 @@ p{
 
 
 header h2{
-    font-size: 12px;
+    font-size: 20px;
     margin: 0px auto;
     padding: 10px 0;
     width: 90%;
@@ -56,6 +64,7 @@ section {
     box-shadow: none;
     margin:0;
     padding:0;
+    
 }
 section li a,
 section li .overLayer, section li .infoLayer {
@@ -63,7 +72,9 @@ section li .overLayer, section li .infoLayer {
     width: 640px;
     border-radius:10px;
     border: 5px solid #FFF;
+    
 }
+
 section li .infoLayer ul li {
     padding: 5px 0 0;
 }
