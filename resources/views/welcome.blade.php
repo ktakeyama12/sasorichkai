@@ -51,10 +51,9 @@
                    
     <ol class="suuji">
                    
-                      <li class="el__coupon"> <a href="test">Rakuten services</a></li>
+                      <li class="el__coupon"> <a href="rakuten">Rakuten services</a></li>
                       <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
+                      <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
                       <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
                      </ol>
@@ -165,6 +164,10 @@
             <div class="el__text">
               {!! link_to_route('sakusei', 'sakusei') !!}
               {!! link_to_route('answer', 'answer') !!}
+<<<<<<< HEAD
+              {!! link_to_route('quiz', 'quiz') !!}
+=======
+>>>>>>> d4cd24711d4dde6eef5d9a3c62d4ecfc17a4aec6
             </div>
             <div class="el__close-btn"></div>
           </div>
