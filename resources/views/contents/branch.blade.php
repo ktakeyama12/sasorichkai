@@ -10,22 +10,32 @@
         <!-- Bootstrap CSS-->
         <link href="css/branch.css" rel="stylesheet" type="text/css">        <!-- jQuery -->
         <script type="text/javascript" src="js/branch.js"></script>
+        
+        
+    
     </head>
     <body>
-        
-        <div>
-            <p><a href="/branch">
-                RAKUTEN &nbsp; &nbsp; BRANCHES
-             </a></p>
-        </div>
-        
+        <div class="main">
+            <div class="main_background-image"></div>
+            
+            
+            
+            <svg    width="40%" height="40%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                 <path id="path">
+                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
+                </path>
+                <text font-size="50" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+                    <textPath xlink:href="#path">  RRakuten Branches</svg>
+                    </textPath>
+                </text>
+            
+            
         <br>
         <br>
         
         <p>
-            <img class="japan" src="/images/japan.jpg">
+            <img class="japan" src="/images/japan.png">
         </p>
-            
             <ul>
                 <li>①札幌支社</li>
                 <li>②仙台支社</li>
@@ -47,12 +57,8 @@
                 {!! link_to_route('contents.fukuoka', '⑱福岡支社') !!}
                 <li>⑲鹿児島支社</li>
                 <li>⑳沖縄支社</li>
-                
-        
             </ul>
-        <div id="container">
-  
-</div>
-    
+            </div>
+            
     </body>
 </html>
