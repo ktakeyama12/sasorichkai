@@ -131,11 +131,11 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                         });
                         $("#messages").find('li').remove()
                     }
-                });
+                
             });
-        }
-    });
-});
+        
+  
+
 
 $('#send').click(function() {
     // 新規メッセージを投稿
