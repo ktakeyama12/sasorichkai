@@ -106,29 +106,87 @@ $('#usertouroku').unbind().click(function() {
     document.getElementById("show").style.display = 'block';
     document.getElementById("show2").style.display = 'none';
 });
-
-
+    var userData= {}
+    var scoreData = {}
+var scoreall = ""
 var userRef = firebase.firestore().collection('users');
 userRef.onSnapshot(function(snapshot) {
-    const userData= []
-    const scoreData = []
+
     snapshot.docChanges.forEach(function(change) {
-        $('<li>').remove()
-        userRef.get().then(function(querySnapshot) {
-            var username = change.doc.data().username
-            var points = change.doc.data().points
-            console.log("username => " + username + " points => " + points)
-            $('<li>').text(username + ': ' + points).prependTo('#score');
-        });
-        // userData.push(change.doc.data().username)
-        // scoreData.push(change.doc.data().points)
+        var username = change.doc.data().username
+        username = username.toString()
+        // console.log(username)
+        var points = change.doc.data().points
+        points = points.toString()
+        userData[username] = username
+        scoreData[username] = points
+        var scoreall = ""
+        Object.keys(userData).forEach(function(element){
+            scoreall += userData[element]
+            scoreall += "は"
+            scoreall += scoreData[element]
+            scoreall += "点\n"
+        })
+        console.log(scoreData)
+        document.getElementById("score").innerHTML = scoreall;
         
-    //   var username = change.doc.data().username
-    //   console.log(username)
-    //   var points = change.doc.data().points
-    //   $('<li>').text(username + ': ' + points).prependTo('#score');
     });
-    console.log(userData)
-    console.log(scoreData)
-    
+    console.log(userData["kazu"] + "unchi")
 });
+
+
+$('#reset').unbind().click(function() {
+    var jobskill_query = userRef;
+    jobskill_query.get().then(function(querySnapshot) {
+      querySnapshot.forEach(function(doc) {
+        doc.ref.delete();
+      });
+    });
+
+});
+
+
+// var userRef = firebase.firestore().collection('users');
+// userRef.get().then(function(querySnapshot) {
+//     const userData= []
+//     const scoreData = []
+//     querySnapshot.forEach(function(doc) {
+//         var username = doc.data().username
+//         var points = doc.data().points
+//         // // $('<li>').text(username + ': ' + points).prependTo('#score');
+//         // $('<li><div class="prependto">').text(username).prependTo('#score');
+//         // $(".prependto").eq(1).remove()
+//     });
+//     console.log("unchi")
+// });
+
+// var userRef = firebase.firestore().collection('users');
+// userRef.onSnapshot(function(snapshot) {
+//     const userData= []
+//     const scoreData = []
+//     snapshot.docChanges.forEach(function(change) {
+        
+//         userRef.get().then(function(querySnapshot) {
+//             querySnapshot.forEach(function(doc) {
+//                 var username = change.doc.data().username
+//                 var points = change.doc.data().points
+//                 // $('<li>').text(username + ': ' + points).prependTo('#score');
+//                 $('<li><div class="prependto">').text(username).prependTo('#score');
+//                 $(".prependto").eq(1).remove()
+                
+//                 // $('<li><div class="prepended"> + username + ': ' + points').prependTo('#score');
+//         });
+//             // console.log("username => " + username + " points => " + points)
+//         });
+//         // userData.push(change.doc.data().username)
+//         // scoreData.push(change.doc.data().points)
+        
+//     //   var username = change.doc.data().username
+//     //   console.log(username)
+//     //   var points = change.doc.data().points
+//     //   $('<li>').text(username + ': ' + points).prependTo('#score');
+//     });
+//     console.log(userData)
+//     console.log(scoreData)
+    
+// });

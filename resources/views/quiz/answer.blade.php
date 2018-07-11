@@ -56,6 +56,8 @@
                 まずは↓にニックネームを入れて、登録してね<br>
                 <input type="text" name="username" id="username" value="" />
                 <button id="usertouroku">登録</button>
+                <br><br><br>
+                <button id="reset">リセット（ゲームをやり直す）</button>
             </div>
     <script src="js/answer.js"></script>
     
