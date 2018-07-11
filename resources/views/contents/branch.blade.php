@@ -12,6 +12,7 @@
         <link href="css/branch.css" rel="stylesheet" type="text/css">        <!-- jQuery -->
 
         <script type="text/javascript" src="js/branch.js"></script>
+
     </head>
     <body>
         <h1>全国の楽天</h1>
@@ -20,44 +21,57 @@
                 RAKUTEN &nbsp; &nbsp; BRANCHES
              </a></p>
         </div>
+
         
+    
+    </head>
+    <body>
+        <div class="main">
+            <div class="main_background-image"></div>
+            
+            
+            
+            <svg    width="40%" height="40%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                 <path id="path">
+                    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
+                </path>
+                <text font-size="50" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'>
+                    <textPath xlink:href="#path">  RRakuten Branches</svg>
+                    </textPath>
+                </text>
+            
+            
         <br>
         <br>
  
         <p>
-            <img class="japan" src="/images/japan.jpg">
+            <img class="japan" src="/images/japan.png">
         </p>
-        </div>
-       
-            <div class = "entry-content">
-            <ol>
-                <li>札幌支社</li>
-                <li>仙台支社</li>
-                <li>盛岡オフィス</li>
-                <li>新潟支社</li>
-                <li>さいたま支社</li>
-                <li>{!! link_to_route('contents.tokyo', '楽天クリムゾンハウス') !!}</li>
-                <li>千葉支社</li>
-                <li>横浜支社</li>
-                <li>松本オフィス</li>
-                <li>静岡支社</li>
-                <li>名古屋支社</li>
-                <li>金沢支社</li>
-                <li>京都支社</li>
-                <li>{!! link_to_route('contents.osaka', '大阪支社') !!}</li>
-                <li>神戸支社</li>
-                <li>広島支社</li>
-                <li>松山支社</li>
-                <li>{!! link_to_route('contents.fukuoka', '福岡支社') !!}</li>
-                <li>鹿児島支社</li>
-                <li>沖縄支社</li>
-                
-        
 
+            <ul>
+                <li>①札幌支社</li>
+                <li>②仙台支社</li>
+                <li>③盛岡オフィス</li>
+                <li>④新潟支社</li>
+                <li>⑤さいたま支社</li>
+                {!! link_to_route('contents.tokyo', '⑥楽天クリムゾンハウス') !!}
+                <li>⑦千葉支社</li>
+                <li>⑧横浜支社</li>
+                <li>⑨松本オフィス</li>
+                <li>⑩静岡支社</li>
+                <li>⑪名古屋支社</li>
+                <li>⑫金沢支社</li>
+                <li>⑬京都支社</li>
+                {!! link_to_route('contents.osaka', '⑭大阪支社') !!}
+                <li>⑮神戸支社</li>
+                <li>⑯広島支社</li>
+                <li>⑰松山支社</li>
+                {!! link_to_route('contents.fukuoka', '⑱福岡支社') !!}
+                <li>⑲鹿児島支社</li>
+                <li>⑳沖縄支社</li>
             </ul>
-        <div id="container">
-  
-</div>
+            </div>
+            
 
     </body>
 </html>
