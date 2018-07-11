@@ -25,4 +25,9 @@ class AController extends BaseController
     {
         return view('movie');
     }
+    
+    public function amusement()
+    {
+        return view('amusement');
+    }
 }
