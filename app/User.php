@@ -51,6 +51,7 @@ class User extends Authenticatable
         $fukuoka_favorite->branchfavorites()->attach($branch_id);
         }
         return redirect('/');
+
     }
 }
 

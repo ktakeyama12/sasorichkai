@@ -21,10 +21,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
 Route::get('cafe', 'AController@cafe')->name('cafe');
-
+Route::get('movie', 'AController@movie')->name('movie');
+Route::get('amusement', 'AController@amusement')->name('amusement');
+Route::get('shopping', 'AController@shopping')->name('shopping');
+Route::get('workinfo', 'AController@workinfo')->name('workinfo');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
+Route::get('/match', 'MainController@match')->name('match');
+Route::get('/shooting', 'MainController@shooting')->name('shooting');
 Route::get('/quiz', 'MainController@quiz')->name('quiz');
+Route::get('/mihon', 'MainController@mihon')->name('mihon');
 
 Route::get('index', 'ContentsController@index')->name('contents.index');
 
@@ -65,3 +71,4 @@ Route::post('contents.store/{id}', 'ContentsController@store')->name('contents.s
 Route::get('/phpfirebase_sdk','FirebaseController@index');
 
 
+Route::get('test', 'MainController@test')->name('test');

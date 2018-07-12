@@ -19,4 +19,25 @@ class AController extends BaseController
     {
         return view('cafe');
     }
+    
+    
+     public function movie()
+    {
+        return view('movie');
+    }
+    
+    public function amusement()
+    {
+        return view('amusement');
+    }
+    
+     public function shopping()
+    {
+        return view('shopping');
+    }
+    
+    public function workinfo()
+    {
+        return view('workinfo');
+    }
 }

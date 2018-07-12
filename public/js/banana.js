@@ -93,7 +93,8 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
                     console.log(doc.id, " => ", doc.data());
                 
                 
-                var button = document.createElement("button");
+                    var button = document.createElement("button");
+                    console.log("button")
                             // button.innerHTML = "削除";
                             button.className ="glyphicon glyphicon-trash";
                             var body = document.getElementsByTagName("li")[0];
@@ -117,27 +118,28 @@ messagesRef.orderBy("date").onSnapshot(function(snapshot) {
         }
     });
     
-                    var button = document.createElement("button");
-                    // button.innerHTML = "削除";
-                    button.className ="glyphicon glyphicon-trash";
-                    var body = document.getElementsByTagName("li")[0];
-                    body.appendChild(button);
-                    button.onclick = function(){
-                        var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',doc.data().timestamp);
-                        jobskill_query.get().then(function(querySnapshot) {
-                            querySnapshot.forEach(function(doc) {
-                                doc.ref.delete();
-                            });
-                        });
-                        $("#messages").find('li').remove()
-                    }
+                    // var button = document.createElement("button");
+                    // console.log("button")
+                    // // button.innerHTML = "削除";
+                    // button.className ="glyphicon glyphicon-trash";
+                    // var body = document.getElementsByTagName("li")[0];
+                    // body.appendChild(button);
+                    // button.onclick = function(){
+                    //     var jobskill_query = firebase.firestore().collection('messages').where('timestamp','==',doc.data().timestamp);
+                    //     jobskill_query.get().then(function(querySnapshot) {
+                    //         querySnapshot.forEach(function(doc) {
+                    //             doc.ref.delete();
+                    //         });
+                    //     });
+                    //     $("#messages").find('li').remove()
+                    // }
                 
             });
         
   
 
 
-$('#send').click(function() {
+$('#send').unbind().click(function() {
     // 新規メッセージを投稿
     const date = Date.now();
     messagesRef.add({
@@ -158,7 +160,7 @@ $('#send').click(function() {
     });
 });
 
-$('#message').keypress(function (e){
+$('#message').unbind().keypress(function (e){
     if (e.keyCode == 13) {
         const date = Date.now();
         messagesRef.add({

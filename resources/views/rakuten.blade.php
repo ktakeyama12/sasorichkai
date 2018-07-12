@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <h2>Rakuten Gallery</h2>
+        <h2>Rakuten services</h2>
     </header>
 
     <!--  least.js gallery -->
@@ -33,8 +33,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>Rakuten Travel</h3></li>
-                        
-                        <li><p>3,000円OFF</p></li>
+                        <li><p>Relo</p></li>
+                        <li><p1>3,000円OFF</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Travel</div>
@@ -42,13 +42,15 @@
             <li>
                 <a href="images/gallery/p2.jpg"></a>
                 <img data-original="images/gallery/haircut.jpg" src="img/effects/white.gif" alt="Photo 2" />
-
+                
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>Rakuten Hair Salon</h3></li>
                         
-                        <li><p>500円OFF</p></li>
+                        <li><h3>Rakuten Hair Salon</h3></li>
+                        <li><p>Relo</p></li>
+                        <li><p1>500円OFF</p1></li>
+                        
                     </ul>
                 </div>
                 <div class="projectInfo">Hair Salon</div>
@@ -61,8 +63,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>9F Fitness</h3></li>
-                        
-                        <li><p>500円OFF</p></li>
+                        <li><p>Relo</p></li>
+                        <li><p1>500円OFF</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Fitness</div>

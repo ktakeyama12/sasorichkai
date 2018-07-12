@@ -30,6 +30,10 @@
 
 <body>
   <header><h1>Hello, Rakutenians !<br>Enjoy Our Workplace.</h1></header>
+  
+  
+
+
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">
@@ -51,12 +55,11 @@
                    
     <ol class="suuji">
                    
-                      <li class="el__coupon"> <a href="test">Rakuten services</a></li>
+                      <li class="el__coupon"> <a href="rakuten">Rakuten services</a></li>
                       <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
+                      <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
+                      <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>
+                      <li class="coupon"> <a href="shopping">Shopping</a></li>
                      </ol>
                      </div>
                    
@@ -140,7 +143,11 @@
             <h2 class="el__heading">WORK<br>STYLE<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">WORKSTYLE INFORMATION</div>
+            <div class="el__text">
+            <p><h3>大きな出来事があると休みがもらえる可能性あり！<br>どんな時に休暇をとれるのかな？詳細をCheck！！</h3></p>
+            
+            {!! link_to_route('workinfo', '→ GO TO THE GALLERY') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -163,8 +170,8 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              {!! link_to_route('sakusei', 'sakusei') !!}
               {!! link_to_route('answer', 'answer') !!}
+
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -188,7 +195,10 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-                 {!! link_to_route('banana', 'banana') !!}
+                 {!! link_to_route('banana', 'banana') !!}<br>
+                 {!! link_to_route('match', '自分に合った支社を見つけよう') !!}<br>
+                 {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}
+                 
                 
             </div>
             <div class="el__close-btn"></div>

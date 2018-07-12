@@ -148,6 +148,7 @@
                     </div>
                       <br>{!! Form::submit('投稿', ['class' => 'btn btn-warning'])!!}
                   {!! Form::close() !!}
+
                   
             <br><br>
             <div>
