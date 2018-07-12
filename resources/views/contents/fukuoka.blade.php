@@ -1,5 +1,12 @@
-
-<head><meta charset="UTF-8">
+<!--
+福岡をfavoriteできるようになる。
+ー中間テーブルはいらない。
+ー一対多の関係を構築する。
+ー福岡テーブルはid user_idになるんじゃないか？
+-->
+<head>
+  
+  <meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
     <script type="text/javascript" src="/js/fukuoka.js"></script>
@@ -16,9 +23,16 @@
         </div>
     
         <div class="cont_mins">
-          <div class="sub_mins">
-            <h3>福岡</h3>
-          </div>
+          <!--<div class="sub_mins">-->
+          <!--  <h3>福岡</h3>-->
+          <!--</div>-->
+              <div class="sub_mins">
+                          
+                    <h3><?php
+                    print $count;
+                    ?></h3>
+                    <br><h8>いいね !</h8>
+              </div>
           <div class="cont_icon_right">
             <a href="#">  <i class="material-icons">&#xE8E7;</i></a>
           </div>
@@ -26,9 +40,9 @@
     
         <div class="cont_detalles">
           <h3>Fukuoka Office</h3>
-          <p>&nbsp;&nbsp;〒812-0011<br>
-          &nbsp;&nbsp;福岡市博多区博多駅前2丁目2番1号<br>
-          &nbsp;&nbsp;福岡センタービル12F</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;〒812-0011<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;福岡市博多区博多駅前2丁目2番1号<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;福岡センタービル12F</p>
         </div>
       </div>
   
@@ -74,23 +88,55 @@
   
       </div>
       
-      
-      
     </div>
+    <br>
+    <div class = "btn-toolbar">
+            
+                      <div class="btn btn-lg">
+                      
+                      <?php
+                        $user_id =  \Auth::user()->id;
+                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 2");
+                      
+                         if(!$exist){
+                      ?>
+                            {!! Form::open(['route' => ['fukuokafavorite']]) !!}
+                               <input type="hidden" value="2" name="fukuoka_id" />
+                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                          }
+                         else{
+                      ?>
+                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
+                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                         }
+                      ?>
+                      </div>
+                 
+          </div>
+    
+            
+  
     <br><br><br><br><br><br><br>
+    
+   
 
       <div class="col-xs-offset-3 col-xs-6">
-          <head>
+
+         
 
               <link href="css/fukuoka.css" rel="stylesheet" type="text/css">
               <link rel="stylesheet" href="{{ secure_asset('css/fukuoka.css') }}">
 
-               Bootstrap 
+               <!--Bootstrap -->
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          </head>
-            <body>
+        
+              <br><br><br>
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
                     <div class='form-group'>
                       {!! Form::label('name', 'なまえ') !!}
@@ -102,15 +148,7 @@
                     </div>
                       <br>{!! Form::submit('投稿', ['class' => 'btn btn-warning'])!!}
                   {!! Form::close() !!}
-                  
-                  {!! Form::open(['route' => 'microposts.store']) !!}
-                      <div class="form-group">
-                          {!! Form::textarea('content', old('content'), ['class' => 'form-control', 'rows' => '2']) !!}
-                          {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
-                      </div>
-                  {!! Form::close() !!}
-                
-            </body>
+
                   
             <br><br>
             <div>

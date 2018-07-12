@@ -4,6 +4,11 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\User; // 追加
+use App\Branch; // add
+use DB;
 
 class User extends Authenticatable
 {
@@ -28,8 +33,27 @@ class User extends Authenticatable
     ];
     
     
-     public function favorites()
+   public function branchfavorites()
     {
-        return $this->belongsToMany(Branches::class, 'favorites', 'user_id', 'favorite_id')->withTimestamps();
+        return $this->belongsToMany(Branch::class, 'branchfavorites', 'user_id', 'favorite_id')->withTimestamps();
+    }
+    
+    
+    public function fukuokafavorite()
+    {
+        $user_id = \Auth::user()->id;
+        $branch_id = DB::select("select*from branches where where user_id = $user_id and id = 3");
+        
+        if(DB::select("select * from branchfavorites where where user_id = $user_id and favorite_id = $branch_id" )){
+            DB::delete("delete from branchfavorites where where user_id = $user_id and favorite_id = $branch_id");
+        }else{
+        $fukuoka_favorite = Branch::find($branch_id);
+        $fukuoka_favorite->branchfavorites()->attach($branch_id);
+        }
+        return redirect('/');
+
     }
 }
+
+
+
