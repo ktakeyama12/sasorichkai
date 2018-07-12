@@ -162,7 +162,6 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              {!! link_to_route('sakusei', 'sakusei') !!}
               {!! link_to_route('answer', 'answer') !!}
 
             </div>

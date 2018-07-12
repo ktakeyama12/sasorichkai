@@ -212,35 +212,39 @@ userRef.onSnapshot(function(snapshot) {
 
 
 $('#reset').unbind().click(function() {
-    var jobskill_query = userRef;
-    jobskill_query.get().then(function(querySnapshot) {
-      querySnapshot.forEach(function(doc) {
-        doc.ref.delete();
-      });
-    });
-    window.location.reload(true);
-    
-    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
-    
-    readyRef2.set({
-        ready: 0,
-    });
+    if (confirm('進行中のゲームを中断してしまいますが、よろしいですか？')) {
+        var jobskill_query = userRef;
+        jobskill_query.get().then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+            doc.ref.delete();
+          });
+        });
+        window.location.reload(true);
+        
+        var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+        
+        readyRef2.set({
+            ready: 0,
+        });
+    }
 });
 
 $('#reset2').unbind().click(function() {
-    var jobskill_query = userRef;
-    jobskill_query.get().then(function(querySnapshot) {
-      querySnapshot.forEach(function(doc) {
-        doc.ref.delete();
-      });
-    });
-    window.location.reload(true);
-    
-    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
-    
-    readyRef2.set({
-        ready: 0,
-    });
+    if (confirm('進行中のゲームを中断してしまいますが、よろしいですか？')) {
+        var jobskill_query = userRef;
+        jobskill_query.get().then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+            doc.ref.delete();
+          });
+        });
+        window.location.reload(true);
+        
+        var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+        
+        readyRef2.set({
+            ready: 0,
+        });
+    }
 });
 
 $('#ready').unbind().click(function() {
@@ -268,3 +272,6 @@ readyRef.onSnapshot(function(snapshot) {
         }
     });
 });
+
+
+
