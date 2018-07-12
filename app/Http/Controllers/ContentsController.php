@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Content;
+use DB;
+use App\Branchfavorites;
 
 class ContentsController extends Controller
 {
@@ -31,10 +33,13 @@ class ContentsController extends Controller
         
          $content = new Content;
          $contents = Content::all();
-        
+         $count = Branchfavorites::where("favorite_id", 2)->count();
+                                    //  $count = DB::select('select count(favorite_id) from branchfavorites where favorite_id = 2');
+                        
         return view('contents.fukuoka',[
             'content' => $content,
             'contents' => $contents,
+            'count' => $count,
             ]);
     }
     
@@ -72,10 +77,12 @@ class ContentsController extends Controller
         $content->name = $request->name;
         $content->save();
         $contents = Content::all();
+        $count = Branchfavorites::where("favorite_id", 2)->count();
         
          return view('contents.fukuoka',[
             'content' => $content,
             'contents' => $contents,
+            'count' => $count,
             ]);
     }
 
