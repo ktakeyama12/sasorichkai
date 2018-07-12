@@ -24,6 +24,7 @@ Route::get('cafe', 'AController@cafe')->name('cafe');
 Route::get('movie', 'AController@movie')->name('movie');
 Route::get('amusement', 'AController@amusement')->name('amusement');
 
+Route::get('shopping', 'AController@shopping')->name('shopping');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
 Route::get('/quiz', 'MainController@quiz')->name('quiz');
