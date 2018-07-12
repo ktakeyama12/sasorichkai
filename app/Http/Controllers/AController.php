@@ -35,4 +35,9 @@ class AController extends BaseController
     {
         return view('shopping');
     }
+    
+    public function workinfo()
+    {
+        return view('workinfo');
+    }
 }

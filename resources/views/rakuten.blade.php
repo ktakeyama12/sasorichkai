@@ -42,13 +42,15 @@
             <li>
                 <a href="images/gallery/p2.jpg"></a>
                 <img data-original="images/gallery/haircut.jpg" src="img/effects/white.gif" alt="Photo 2" />
-
+                
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
+                        
                         <li><h3>Rakuten Hair Salon</h3></li>
                         <li><p>Relo</p></li>
                         <li><p1>500円OFF</p1></li>
+                        
                     </ul>
                 </div>
                 <div class="projectInfo">Hair Salon</div>

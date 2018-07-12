@@ -139,7 +139,11 @@
             <h2 class="el__heading">WORK<br>STYLE<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">WORKSTYLE INFORMATION</div>
+            <div class="el__text">
+            <p><h3>大きな出来事があると休みがもらえる可能性あり！<br>どんな時に休暇をとれるのかな？詳細をCheck！！</h3></p>
+            
+            {!! link_to_route('workinfo', '→ GO TO THE GALLERY') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
