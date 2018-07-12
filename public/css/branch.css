@@ -1,28 +1,34 @@
 
 
 .japan {
-  float: left;
-  margin-left: -20%;
-  vertical-align: middle;
-  /*width: 700px;*/
-  /*height: 700px;*/
+  /*float: left;*/
+  margin-left: -10%;
+  margin-top: 34%;
+  margin-bottom: 0%;
+  padding-left: 0;
+  /*vertical-align: middle;*/
+  width: 700px;
+  height: 700px;
+  align-items: center;
 }
  
   ul {
   list-style: none;
-  float: left;
+  float: right;
   margin:0px;
-  color:black;
+  /*color:black;*/
   margin-left: 5%;
+  margin-top: 35%;
+  margin-right: 10%;
+  font-size: large;
+  font-weight: bolder;
   /*width: 350px;*/
   /*height: 350px;*/
+  align-items: center;
   }
   
-  /*以下工事中*/
   
-
-
-
+  /*以下工事中*/
 
 
 /*title*/
@@ -30,7 +36,7 @@
 html, body {
   /*height: 100%;*/
   /*width: 100%;*/
-  margin-left: 15%;
+  margin-left: 0%;
   /*display: flex;*/
   justify-content: center;
   align-items: center;
@@ -56,35 +62,147 @@ html, body {
 }
 .main{
   /*width: 50px;*/
-  /*height: 100%;*/
-  margin-left: 0%;
-  margin-right: 0%;
-  align-items: center; /* 縦方向中央揃え */
-  justify-content: center; /* 横方向中央揃え */
+  height: 50%;
+  margin-left: 0px;
+  /*margin-right: 0%;*/
+  /*align-items: center;  縦方向中央揃え */
+  /*justify-content: center; */
+}
+textpath{
+ font-family: 'Georgia', serif; 
 }
 
 
 
 
-.mozi{
-  margin:0;
-  /*width:100%; */
-  /*height:100vh;*/
-  /*overflow:hidden;*/
-  background:hsla(0, 5%, 5%, 1);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  align-items: center; /* 縦方向中央揃え */
-  justify-content: center; /* 横方向中央揃え */ 
-  /*width: 50px;*/
-  /*height: 50px;*/
-  overflow: auto;
+
   
   /*font-size: 100%;*/
   /*background-image: linear-gradient(to right top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,1));*/
+  
+  
+
+/*県*/
+
+.Iam {
+  padding: 0em 0em;
+  font: normal 40px/50px 'Lato', 'Noto Sans Japanese', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: black;
+  width: 40%;
+
 }
-/*svg{*/
-  /*width:50%;*/
-  /*padding: 0;*/
-  /*height:50vh;*/
-/*}*/
+.Iam p {
+  height: 10px;
+  width: 40%;
+  float: left;
+  margin-right: 0.3em;
+  margin-top: 10%;
+  font:  40px/50px ;
+  font-family: 'Georgia', serif; 
+}
+
+.Iam b {
+  float: left;
+  overflow: hidden;
+  /*position: relative;*/
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  /*display: inline-block;*/
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 50;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+
+
+
+/*支社*/
+
+p {
+  height: 50px;
+  line-height: 45px;
+  padding: 0 10px;
+  transition: all 0.4s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/*
+** The hover interaction
+*/
+.Words:hover p {
+  transform: translate3d(0, -50px, 0);
+}
+
+
+ul, ol {
+  color: #668ad8; 
+  border: double 5px #668ad8;/*二重線 太さ 色*/
+  background: #f1f8ff; 
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul li, ol li {
+  line-height: 0.5;
+  padding: 0.5em 0;
+}
