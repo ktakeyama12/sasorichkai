@@ -27,7 +27,15 @@
   align-items: center;
   }
   
-  
+  .sample-box-2 {
+    background-color: #e7efff;
+    color: #1c66fe;
+    margin: 2em 0;
+    padding: 2em;
+    margin-top: -3%;
+}
+
+
   /*以下工事中*/
 
 

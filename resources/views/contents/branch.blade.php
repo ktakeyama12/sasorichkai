@@ -54,7 +54,9 @@
                 
             </text>
     
-        
+    
+    <div class="sample-box-2">  </div>
+     
             <img class="japan" src="/images/japan.png">
             
             
