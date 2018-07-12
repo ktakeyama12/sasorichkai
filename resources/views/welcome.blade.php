@@ -55,7 +55,7 @@
                       <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
                       <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
                       <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>
-                      <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
+                      <li class="coupon"> <a href="shopping">Shopping</a></li>
                      </ol>
                      </div>
                    

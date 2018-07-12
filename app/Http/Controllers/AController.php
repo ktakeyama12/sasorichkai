@@ -30,4 +30,9 @@ class AController extends BaseController
     {
         return view('amusement');
     }
+    
+     public function shopping()
+    {
+        return view('shopping');
+    }
 }
