@@ -27,6 +27,8 @@ Route::get('shopping', 'AController@shopping')->name('shopping');
 Route::get('workinfo', 'AController@workinfo')->name('workinfo');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
+Route::get('/match', 'MainController@match')->name('match');
+Route::get('/shooting', 'MainController@shooting')->name('shooting');
 Route::get('/quiz', 'MainController@quiz')->name('quiz');
 Route::get('/mihon', 'MainController@mihon')->name('mihon');
 

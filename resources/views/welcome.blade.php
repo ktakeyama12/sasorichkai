@@ -30,6 +30,10 @@
 
 <body>
   <header><h1>Hello, Rakutenians !<br>Enjoy Our Workplace.</h1></header>
+  
+  
+
+
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">
@@ -191,7 +195,10 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-                 {!! link_to_route('banana', 'banana') !!}
+                 {!! link_to_route('banana', 'banana') !!}<br>
+                 {!! link_to_route('match', '自分に合った支社を見つけよう') !!}<br>
+                 {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}
+                 
                 
             </div>
             <div class="el__close-btn"></div>
