@@ -14,9 +14,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-    
-    <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     
+              <!--JQuery-->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
     <!--最初の画面-->
     <link rel="stylesheet" href="css/index.css">
@@ -25,15 +25,14 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     
-  
+   @include('layouts.navbar')
 </head>
 
 <body>
-<<<<<<< HEAD
+  <header><h1>Hello, Rakutenians !<br>Enjoy Our Workplace.</h1></header>
   
   
-=======
->>>>>>> fb0181dc87dcc9cb39516e56e5adbef45a9645f9
+
 
   <div class="cont s--inactive">
   <!-- cont inner start -->
@@ -45,18 +44,32 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
             
-            <h2 class="el__heading">Coupon</h2>
+            <h2 class="el__heading">STAFF<br>BENEFIT</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
               <div class="el__title">Coupon Top5</div>
-              <ol>
-    <li>Rakuten services</li>
-    <li>Cafe & Restaurant around office</li>
-    <li>Movie & Karaoke</li>
-    <li>Amusement park & pool</li>
-    <li>Shopping</li>
-</ol></div>
+
+              
+             
+                   
+    <ol class="suuji">
+                   
+                      <li class="el__coupon"> <a href="test">Rakuten services</a></li>
+                      <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Rakuten services</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Movie & Karaoke</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Amusement park & pool</a></li>
+                      <li class="coupon"> <a href="./resources/views/cafe.html">Shopping</a></li>
+                     </ol>
+                     </div>
+                   
+                   
+                   
+                   
+                   
+                   
+
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -68,6 +81,7 @@
         </div>
       </div>
     </div>
+    
     <!-- el end -->
     <!-- el start -->
     <div class="el">
@@ -75,10 +89,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 2</h2>
+            <h2 class="el__heading">BRANCH<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+              <p><h3>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみなるかも！</h3></p>
+            
+              {!! link_to_route('contents.branch', '→ SEARCH THE BRANCHES') !!}
+              </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -97,10 +115,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 3</h2>
+            <h2 class="el__heading">RAKUTEN<br>GALLERY</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+            <p><h3>楽天社内の様子をご紹介。社員に人気のスポットや、隠れスポットを見てみよう！</h3></p>
+            
+            {!! link_to_route('contents.gallery', '→ GO TO THE GALLERY') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -119,10 +141,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 4</h2>
+            <h2 class="el__heading">WORK<br>STYLE<br>INFO</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">WORKSTYLE INFORMATION</div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -141,10 +163,13 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Section 5</h2>
+            <h2 class="el__heading">RAKUTEN<br>QUIZ</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">Whatever</div>
+            <div class="el__text">
+              {!! link_to_route('sakusei', 'sakusei') !!}
+              {!! link_to_route('answer', 'answer') !!}
+            </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
@@ -163,7 +188,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">Magical Banana</h2>
+            <h2 class="el__heading">RAKUTEN<br>GAME</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -189,10 +214,10 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">チャット</h2>
+            <h2 class="el__heading">COFFEE<br>BREAK</h2>
           </div>
           <div class="el__content">
-            <div class="el__text">チャット機能だお
+            <div class="el__text">Let's have a cofee break!
             @include('chat')
             
             </div>

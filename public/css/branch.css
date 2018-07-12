@@ -1,0 +1,77 @@
+
+
+.japan {
+  float: left;
+  margin-left: -20%;
+  vertical-align: middle;
+  width: 700px;
+  height: 700px;
+}
+ 
+  ul {
+  list-style: none;
+  float: left;
+  margin:0px;
+  color:black;
+  margin-left: 5%;
+  }
+  
+  /*以下工事中*/
+  
+
+
+
+
+
+/*title*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin-left: 15%;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   /*background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");*/
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.main_background-image {
+  position: fixed;
+  z-index: -1;   
+  width: 100%;
+  height: 100%;
+  background-image:url("/images/cafeteria.jpg");
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center center;
+   
+}
+
+
+
+
+
+.mozi{
+  margin:0;
+  width:100%; 
+  height:100vh;
+  overflow:hidden;
+  background:hsla(0, 5%, 5%, 1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center; /* 縦方向中央揃え */
+  justify-content: center; /* 横方向中央揃え 
+  /*font-size: 100%;*/
+  /*background-image: linear-gradient(to right top, hsla(0, 5%,15%, 0.5), hsla(0, 5%, 5%,1));*/
+}
+svg{
+  width:100%;
+  padding: 0;
+  /*height:50vh;*/
+}
