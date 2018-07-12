@@ -50,10 +50,6 @@
             top: 200px;
             visibility: hidden;
         }
-        
-        #enemyImage{
-            float: right ;
-        }
     </style>
     <script src="../js/jquery-1.7.1.min.js"></script>
     <script>
@@ -61,8 +57,6 @@
     </script>
 </head>
 <body>
-    
-    <img id='enemyImage' src="amazon.ico" width='35', length='35'>
     
     <div id='background'></div>
     <div id='hero'></div>
@@ -82,8 +76,7 @@
     var lastLoopRun = 0;
     var score =0;
     
-   
-
+    
     
     
     var controller = new Object();
@@ -97,7 +90,6 @@
         result.y = y;
         result.w = w;
         result.h = h;
-        
         
         return result;
     }
@@ -234,6 +226,8 @@
                 element.id = enemy.element;
                 element.className = 'enemy';
                 document.children[0].appendChild(element);
+                
+                enemies[enemies.length] = enemy;
                 
             }
         }
