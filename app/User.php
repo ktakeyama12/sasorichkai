@@ -26,4 +26,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    
+     public function favorites()
+    {
+        return $this->belongsToMany(Branches::class, 'favorites', 'user_id', 'favorite_id')->withTimestamps();
+    }
 }

@@ -14,6 +14,16 @@ class MainController extends BaseController
         return view('banana');
     }
     
+    public function match()
+    {
+        return view('match');
+    }
+    
+    public function shooting()
+    {
+        return view('shooting');
+    }
+    
     public function quiz()
     {
         return view('quiz');
