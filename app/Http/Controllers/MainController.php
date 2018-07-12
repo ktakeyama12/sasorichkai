@@ -65,4 +65,9 @@ class MainController extends BaseController
     
      return view('users.show');
     }
+    
+    public function mihon(){
+    
+     return view('mihon');
+    }
 }
