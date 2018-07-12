@@ -31,7 +31,7 @@ html, body {
 
 /*赤色とかのBOX*/
 .wrap{
-  margin-left:20px;
+  /*margin-left:20px;*/
 }
 .box{
   width:40%;
@@ -57,7 +57,7 @@ h4{
 }
 h5{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);

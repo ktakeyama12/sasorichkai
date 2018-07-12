@@ -43,9 +43,15 @@
                     </h3>
                 </div>
                 <br>
-                <h4>
+                <h5>
                     <button id="ready">全員の準備ができたら<br>ゲームを始める</button>
-                </h4>
+                </h5>
+                <div class="box box2 shadow2">
+                    <h3>
+                        入室しているユーザー：
+                        <div id="score2"></div>
+                    </h3>
+                </div>
             </div>
             <div id="show">
                 <div id="quizzes"></div>
@@ -63,16 +69,18 @@
                             答え:
                             <input type="text" name="kotae" id="kotae" value="" />
                             <button id="send">送信</button>
+                            <div id="yesno"></div>
                         </h3>
                     </div>
-                    <div id="yesno"></div>
+                    
                     <br>
                     <br>
                     <div class="box box3 shadow3">  
                         <h3>
-                            入室しているユーザー：
                             <div id="kaitousha"></div>
                             <div id="answer"></div>
+                            <br>
+                            点数：
                             <ul id="score"></ul>
                         </h3>
                     </div>

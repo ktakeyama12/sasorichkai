@@ -43,6 +43,8 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
 
     lastRef.onSnapshot(function(snapshot) {
         snapshot.docChanges.forEach(function(change) {
+            $("#kaitousha").fadeOut();
+            $("#answer").fadeOut();
             var currentKaitousha = change.doc.data().kaitousha
             var oldanswer = change.doc.data().oldanswer
             if(currentKaitousha){
@@ -51,15 +53,17 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
             if(oldanswer){
                 document.getElementById("answer").innerHTML = "答えは" + oldanswer + "でした！"||"";
             }
+            $("#kaitousha").fadeIn();
+            $("#answer").fadeIn();
 
             
             var lastRef = firebase.firestore().collection('lastquiz').doc('currentQuiz');
-
-            
             var currentQuiz = change.doc.data().question
             var currentAnswer = change.doc.data().answer
             var number = change.doc.data().bangou
+            $("#mondaidesu").fadeOut();
             document.getElementById("mondaidesu").innerHTML = currentQuiz;
+            $("#mondaidesu").fadeIn();
             document.getElementById("bangou").value = number;
             if(number=="finish"){
                 document.getElementById("bangou").innerHTML = "";
@@ -176,6 +180,7 @@ $('#usertouroku').unbind().click(function() {
 var userData= {}
 var scoreData = {}
 var scoreall = ""
+
 var userRef = firebase.firestore().collection('users');
 userRef.onSnapshot(function(snapshot) {
     snapshot.docChanges.forEach(function(change) {
@@ -187,15 +192,20 @@ userRef.onSnapshot(function(snapshot) {
         userData[username] = username
         scoreData[username] = points
         var scoreall = ""
+        var userplay = ""
         Object.keys(userData).forEach(function(element){
             scoreall += userData[element]
             scoreall += "は"
             scoreall += scoreData[element]
             scoreall += "点<br />"
+            userplay += userData[element]
+            userplay += "<br />"
         })
+        $("#score").fadeOut();
         console.log(scoreData)
         document.getElementById("score").innerHTML = scoreall;
-        
+        document.getElementById("score2").innerHTML = userplay;
+        $("#score").fadeIn();
     });
     console.log(userData["kazu"] + "unchi")
 });
@@ -235,8 +245,6 @@ $('#reset2').unbind().click(function() {
 
 $('#ready').unbind().click(function() {
     document.getElementById("ready2").style.display = 'none';
-    // document.getElementById("show").style.display = 'block';
-    
     var readyRef2 = firebase.firestore().collection('ready').doc('ready');
     
     readyRef2.set({
@@ -260,48 +268,3 @@ readyRef.onSnapshot(function(snapshot) {
         }
     });
 });
-
-// var userRef = firebase.firestore().collection('users');
-// userRef.get().then(function(querySnapshot) {
-//     const userData= []
-//     const scoreData = []
-//     querySnapshot.forEach(function(doc) {
-//         var username = doc.data().username
-//         var points = doc.data().points
-//         // // $('<li>').text(username + ': ' + points).prependTo('#score');
-//         // $('<li><div class="prependto">').text(username).prependTo('#score');
-//         // $(".prependto").eq(1).remove()
-//     });
-//     console.log("unchi")
-// });
-
-// var userRef = firebase.firestore().collection('users');
-// userRef.onSnapshot(function(snapshot) {
-//     const userData= []
-//     const scoreData = []
-//     snapshot.docChanges.forEach(function(change) {
-        
-//         userRef.get().then(function(querySnapshot) {
-//             querySnapshot.forEach(function(doc) {
-//                 var username = change.doc.data().username
-//                 var points = change.doc.data().points
-//                 // $('<li>').text(username + ': ' + points).prependTo('#score');
-//                 $('<li><div class="prependto">').text(username).prependTo('#score');
-//                 $(".prependto").eq(1).remove()
-                
-//                 // $('<li><div class="prepended"> + username + ': ' + points').prependTo('#score');
-//         });
-//             // console.log("username => " + username + " points => " + points)
-//         });
-//         // userData.push(change.doc.data().username)
-//         // scoreData.push(change.doc.data().points)
-        
-//     //   var username = change.doc.data().username
-//     //   console.log(username)
-//     //   var points = change.doc.data().points
-//     //   $('<li>').text(username + ': ' + points).prependTo('#score');
-//     });
-//     console.log(userData)
-//     console.log(scoreData)
-    
-// });
