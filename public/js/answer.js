@@ -174,6 +174,7 @@ $('#usertouroku').unbind().click(function() {
     // document.getElementById("show").style.display = 'block';
     document.getElementById("show2").style.display = 'none';
     document.getElementById("ready2").style.display = 'block';
+    
 });
 
 

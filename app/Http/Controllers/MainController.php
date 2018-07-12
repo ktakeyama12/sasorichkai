@@ -62,12 +62,15 @@ class MainController extends BaseController
     }
     
     public function show(){
-    
-     return view('users.show');
+        return view('users.show');
     }
     
     public function mihon(){
+        return view('mihon');
+    }
     
-     return view('mihon');
+    public function test(){
+    
+     return view('test');
     }
 }

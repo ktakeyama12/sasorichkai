@@ -57,3 +57,4 @@ Route::post('contents.store', 'ContentsController@store')->name('contents.store'
 Route::get('/phpfirebase_sdk','FirebaseController@index');
 
 
+Route::get('test', 'MainController@test')->name('test');
