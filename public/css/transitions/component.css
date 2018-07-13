@@ -316,7 +316,7 @@ html, body { height: 100%; }
 
 #username{
     position: absolute;
-    top: 22%;
+    top: 26%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
