@@ -29,26 +29,13 @@
                  <path id="path">
                     <animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite"/>
                 </path>
-                <text font-size="50.5" fill='hsl(0, 72%, 55%)'>
+                <text font-size="50" fill='hsl(0, 72%, 55%)'>
                 <textPath xlink:href="#path"  >  Rakuten Branches
                 </textPath>
             </svg>
                     
                     
-                    <div class="Iam">
-                    <p>Which branch do you like... </p>
-                    <b>
-                    
-                    <div class="innerIam">
-                        楽天クリムゾンハウス？<br /> 
-                        千葉支社？<br />
-                        大阪支社？<br />
-                        福岡支社？<br />
-                        SCROLL　DOWN！！！
-                    
-                    </div>
-                    </b>
-                    </div>
+                   
                     
                                 
                 

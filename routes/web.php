@@ -47,6 +47,8 @@ Route::get('branch', 'ContentsController@branch')->name('contents.branch');
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
 Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
 Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
+Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 

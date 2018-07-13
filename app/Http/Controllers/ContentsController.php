@@ -61,6 +61,17 @@ class ContentsController extends Controller
             'contents' => $contents,
             ]);
     }
+    public function okinawa()
+    {
+        
+         $content = new Content;
+         $contents = Content::all();
+        
+        return view('contents.okinawa',[
+            'content' => $content,
+            'contents' => $contents,
+            ]);
+    }
     
     
   
