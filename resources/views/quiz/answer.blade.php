@@ -232,12 +232,13 @@
 	                <div id="mondaidesu"></div>
 				</h1></span>
 				<h2><span>
+					<div id="yesno"></div>
                 Answer:
                 <input type="text" name="kotae" id="kotae" value="" />
                 
                 <button id="send">送信</button>
                 <br><br><br>
-                <div id="yesno"></div>
+                
 				</h2></span>
 				
 				<h4><span>
