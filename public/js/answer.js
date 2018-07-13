@@ -30,16 +30,31 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
         answerData.push(doc.data().answer)
     });
     
-    var lastRef = firebase.firestore().collection('lastquiz');
+    
     var lastRef2 = firebase.firestore().collection('lastquiz').doc('currentQuiz');
     var userRef = firebase.firestore().collection('users');
+    var lastRef = firebase.firestore().collection('lastquiz');
+    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
     
-    lastRef2.set({
-        question: quizData[0],
-        answer: answerData[0],
-        kaitousha: "",
-        bangou: "0",
-    });
+    var readyRef = firebase.firestore().collection('ready');
+	readyRef.onSnapshot(function(snapshot) {
+    	snapshot.docChanges.forEach(function(change) {
+	        readykana = change.doc.data().ready
+	        if(readykana==0){
+	        		    lastRef2.set({
+	        question: quizData[0],
+	        answer: answerData[0],
+	        kaitousha: "",
+	        bangou: "0",
+	    });
+	        }
+	        console.log(readykana)
+    	});
+	});
+    
+    
+    
+
 
 
     lastRef.onSnapshot(function(snapshot) {
@@ -278,14 +293,23 @@ $('#reset2').unbind().click(function() {
     }
 });
 
-// $('#ready').unbind().click(function() {
-//     document.getElementById("ready2").style.display = 'none';
+$('#ready').unbind().click(function() {
+    // document.getElementById("ready2").style.display = 'none';
+    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+    
+    readyRef2.set({
+        ready: 1,
+    });
+});
+
+// $('#readytochuu').unbind().click(function() {
+//     // document.getElementById("ready2").style.display = 'none';
 //     var readyRef2 = firebase.firestore().collection('ready').doc('ready');
     
 //     readyRef2.set({
 //         ready: 1,
 //     });
-    
+
 // });
 
 var readyRef = firebase.firestore().collection('ready');
