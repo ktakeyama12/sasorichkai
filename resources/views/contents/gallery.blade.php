@@ -16,12 +16,13 @@
     
 </head>
 <body>
+    
     <header>
         <h2>Rakuten Gallery</h2>
     </header>
 
     <!--  least.js gallery -->
-    <section>
+    <section style="border:1px solid black;width:200px;height:800px;overflow:scroll;">
         <ul id="gallery">
             <li id="fullPreview"></li>
 
@@ -539,4 +540,5 @@
 
 
 </body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>
