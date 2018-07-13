@@ -195,8 +195,8 @@
                 <!--<h1><span>A collection of</span><strong>あいおうｗ</strong> Transitions</h1>-->
 
 	                <h1><span>
-	                		                	                <div id="ingame">
-                	ゲームが進行中です
+	                <div id="ingame">
+                		ゲームが進行中です
                 	</div>
 	                	Name
 
@@ -208,7 +208,12 @@
 			<div class="pt-page pt-page-2"><h1>
 				<!--<span>A collection of</span><strong>Page</strong> Transitions-->
                        <h1><span><div id="hello"></div></span></h1>
-                    	<button id="ready">START</button>
+                       <div id="hatsu">
+                       	<button id="ready">START</button>
+                       </div>
+                    	<!--<div id="tochuu">-->
+                    	<!--<button id="readytochuu">START2</button>	-->
+                    	<!--</div>-->
                         <h2><span>
                         	<!--<u>Users</u><br><br><br><br>-->
                         <div id="score2"></div>
