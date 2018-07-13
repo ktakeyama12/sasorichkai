@@ -197,13 +197,15 @@
 	                <h1><span>
 	                <div id="ingame">
                 		ゲームが進行中です
+                		<br>
+                		<br>
                 	</div>
 	                	Name
 
                 	</span></h1><br>
 	                <input type="text" name="username" id="username" value="" />
 	                <button id="usertouroku" class="pt-touch-button">入室</button>
-                <!--<button id="reset">全員強制退出（ゲームをやり直す）</button>-->
+                <button id="reset">全員強制退出（ゲームをやり直す）</button>
 			</div>
 			<div class="pt-page pt-page-2"><h1>
 				<!--<span>A collection of</span><strong>Page</strong> Transitions-->
