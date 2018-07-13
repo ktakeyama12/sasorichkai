@@ -248,7 +248,7 @@ userRef.onSnapshot(function(snapshot) {
             userplay += "<br />"
         })
         $("#score").fadeOut();
-        console.log(scoreData)
+        // console.log(scoreData)
         document.getElementById("score").innerHTML = scoreall;
         document.getElementById("score2").innerHTML = userplay;
         $("#score").fadeIn();
@@ -263,15 +263,18 @@ $('#reset').unbind().click(function() {
         jobskill_query.get().then(function(querySnapshot) {
           querySnapshot.forEach(function(doc) {
             doc.ref.delete();
+            console.log(doc)
           });
         });
-        window.location.reload(true);
+        
         
         var readyRef2 = firebase.firestore().collection('ready').doc('ready');
         
         readyRef2.set({
             ready: 0,
         });
+        
+        // window.location.reload(true);
     }
 });
 
@@ -382,7 +385,7 @@ var PageTransitions = (function() {
 		} );
 		
 		$iterate2.on( 'click', function() {
-			console.log("unchi")
+			// console.log("unchi")
 			if( isAnimating ) {
 				return false;
 			}
