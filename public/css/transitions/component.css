@@ -339,7 +339,7 @@ html, body { height: 100%; }
     top: 30%;
     /*left: 50%;*/
     margin-right: -50%;
-    transform: translate(0%, 450%);
+    transform: translate(0%, 350%);
         border: none;
     font-size: 13px;
     font-weight: 700;
@@ -362,6 +362,6 @@ html, body { height: 100%; }
     top: 67%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 50%);
     
 }
