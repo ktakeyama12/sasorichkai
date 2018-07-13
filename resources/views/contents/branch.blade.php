@@ -2,6 +2,98 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+    background: url('https://ihatetomatoes.net/assets/icon-background.png') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #909090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    height: 2000px;
+}
+
+a {
+    color: #fff; 
+    border-bottom: 1px #fff dotted;
+    text-decoration: none;
+}
+a:hover {border-bottom: 1px #fff solid;}
+
+#page-content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+h1, h2, h3 {
+    color: #efefef;
+}
+#intro {
+    font-size: 18px;
+    line-height: 24px;
+}
+    #intro strong {
+        color: #fff;
+    }
+#gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    #gallery li {
+        float: left;
+        margin-right: 10px;
+    }
+    #gallery li img {
+      width: 100px;
+      height: 100px;
+      display: block;
+    }
+.highlight {
+    color: #ebebeb;
+    background-color: rgba(255,255,255,0.2);
+    padding: 0 5px;
+}
+
+#windowWTxt,
+#topOffsetTxt {
+  color: #fff;
+  font-weight: bold;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+</style>
+    
+    
 <div class="all">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
