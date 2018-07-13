@@ -29,7 +29,13 @@
 </head>
 
 <body>
-  <header><h1>Hello, Rakutenians !<br>Enjoy Our Workplace.</h1></header>
+  <header>
+    <br>
+    <div><img class="logo" src="/images/logo.jpg"></div>
+    <h1>みんなに嬉しい、楽天プライム。</h1>
+  <h3 class="wakuwaku">― 毎日のお勤めにワクワクを ―</h3>
+  <br>
+  </header>
   
   
 
@@ -44,7 +50,7 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
             
-            <h2 class="el__heading">STAFF<br>BENEFIT</h2>
+            <h3 class="el__heading">ハッピー<br>手当<br></h3>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -74,9 +80,9 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back">R</div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda6.png"></div>
         <div class="el__index-front">
-          <div class="el__index-overlay" data-index="R">R</div>
+          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
@@ -88,7 +94,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">BRANCH<br>INFO</h2>
+            <h2 class="el__heading">ラッキー<br>社割</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -101,9 +107,9 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back">A</div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda3.png"></div>
         <div class="el__index-front">
-          <div class="el__index-overlay" data-index="A">A</div>
+          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
@@ -114,7 +120,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">RAKUTEN<br>GALLERY</h2>
+            <h2 class="el__heading">ウキウキ<br>支社</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -127,9 +133,9 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back">K</div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda4.png"></div>
         <div class="el__index-front">
-          <div class="el__index-overlay" data-index="K">K</div>
+          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
@@ -140,7 +146,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">WORK<br>STYLE<br>INFO</h2>
+            <h2 class="el__heading">ほっこり<br>ブレイク</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -153,9 +159,9 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back">U</div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda.png"></div>
         <div class="el__index-front">
-          <div class="el__index-overlay" data-index="U">U</div>
+          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
@@ -166,7 +172,7 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">RAKUTEN<br>QUIZ</h2>
+            <h2 class="el__heading">キラキラ<br>ギャラリー</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
@@ -178,67 +184,67 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back">T</div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda5.png"></div>
         <div class="el__index-front">
-          <div class="el__index-overlay" data-index="T">T</div>
+          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
     <!-- el end -->
         <!-- el start -->
-    <div class="el">
-      <div class="el__overflow">
-        <div class="el__inner">
-          <div class="el__bg"></div>
-          <div class="el__preview-cont">
-            <h2 class="el__heading">RAKUTEN<br>GAME</h2>
-          </div>
-          <div class="el__content">
-            <div class="el__text">
-                 {!! link_to_route('banana', 'banana') !!}<br>
-                 {!! link_to_route('match', '自分に合った支社を見つけよう') !!}<br>
-                 {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}
+    <!--<div class="el">-->
+    <!--  <div class="el__overflow">-->
+    <!--    <div class="el__inner">-->
+    <!--      <div class="el__bg"></div>-->
+    <!--      <div class="el__preview-cont">-->
+    <!--        <h2 class="el__heading">RAKUTEN<br>GAME</h2>-->
+    <!--      </div>-->
+    <!--      <div class="el__content">-->
+    <!--        <div class="el__text">-->
+    <!--             {!! link_to_route('banana', 'banana') !!}<br>-->
+    <!--             {!! link_to_route('match', '自分に合った支社を見つけよう') !!}<br>-->
+    <!--             {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}-->
                  
                 
-            </div>
-            <div class="el__close-btn"></div>
-          </div>
-        </div>
-      </div>
-      <div class="el__index">
-        <div class="el__index-back">E</div>
-        <div class="el__index-front">
-          <div class="el__index-overlay" data-index="E">E</div>
-        </div>
-      </div>
-    </div>
+    <!--        </div>-->
+    <!--        <div class="el__close-btn"></div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--  <div class="el__index">-->
+    <!--    <div class="el__index-back">E</div>-->
+    <!--    <div class="el__index-front">-->
+    <!--      <div class="el__index-overlay" data-index="E">E</div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
     <!-- el end -->
     
             <!-- el start -->
-    <div class="el">
-      <div class="el__overflow">
-        <div class="el__inner">
-          <div class="el__bg"></div>
-          <div class="el__preview-cont">
-            <h2 class="el__heading">COFFEE<br>BREAK</h2>
-          </div>
-          <div class="el__content">
-            <div class="el__text">Let's have a cofee break!
-            @include('chat')
+    <!--<div class="el">-->
+    <!--  <div class="el__overflow">-->
+    <!--    <div class="el__inner">-->
+    <!--      <div class="el__bg"></div>-->
+    <!--      <div class="el__preview-cont">-->
+    <!--        <h2 class="el__heading">COFFEE<br>BREAK</h2>-->
+    <!--      </div>-->
+    <!--      <div class="el__content">-->
+    <!--        <div class="el__text">Let's have a cofee break!-->
+    <!--        @include('chat')-->
             
-            </div>
+    <!--        </div>-->
             
-            <div class="el__close-btn"></div>
-          </div>
-        </div>
-      </div>
-      <div class="el__index">
-        <div class="el__index-back">N</div>
-        <div class="el__index-front">
-          <div class="el__index-overlay" data-index="N">N</div>
-        </div>
-      </div>
-    </div>
+    <!--        <div class="el__close-btn"></div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--  <div class="el__index">-->
+    <!--    <div class="el__index-back">N</div>-->
+    <!--    <div class="el__index-front">-->
+    <!--      <div class="el__index-overlay" data-index="N">N</div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
     <!-- el end -->
     
   </div>

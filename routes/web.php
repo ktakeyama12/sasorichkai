@@ -54,6 +54,8 @@ Route::post('fukuokaunfavorite', 'UsersController@fukuokaunfavorite')->name('fuk
 
 Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
 Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
+Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
