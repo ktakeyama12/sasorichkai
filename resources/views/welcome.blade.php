@@ -54,19 +54,13 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              <div class="el__title">Coupon Top5</div>
+              <!--<div class="el__title">Coupon Top5</div>-->
 
               
              
-                   
-    <ol class="suuji">
-                   
-                      <li class="el__coupon"> <a href="rakuten">Rakuten services</a></li>
-                      <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
-                      <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
-                      <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>
-                      <li class="coupon"> <a href="shopping">Shopping</a></li>
-                     </ol>
+            <p><h3>大きな出来事があると休みがもらえる可能性あり！<br>どんな時に休暇をとれるのかな？詳細をCheck！！</h3></p>
+            
+            {!! link_to_route('workinfo', '→ GO TO THE GALLERY') !!}
                      </div>
                    
                    
@@ -98,9 +92,20 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              <p><h3>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみなるかも！</h3></p>
-            
-              {!! link_to_route('contents.branch', '→ SEARCH THE BRANCHES') !!}
+<div class="el__title">Coupon Top5</div>
+
+              
+             
+                   
+    <ol class="suuji">
+                   
+                      <li class="el__coupon"> <a href="rakuten">Rakuten services</a></li>
+                      <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>
+                      <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>
+                      <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>
+                      <li class="coupon"> <a href="shopping">Shopping</a></li>
+                     </ol>
+                     
               </div>
             <div class="el__close-btn"></div>
           </div>
@@ -124,9 +129,9 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-            <p><h3>楽天社内の様子をご紹介。社員に人気のスポットや、隠れスポットを見てみよう！</h3></p>
+              <p><h3>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみなるかも！</h3></p>
             
-            {!! link_to_route('contents.gallery', '→ GO TO THE GALLERY') !!}
+              {!! link_to_route('contents.branch', '→ SEARCH THE BRANCHES') !!}
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -150,9 +155,11 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-            <p><h3>大きな出来事があると休みがもらえる可能性あり！<br>どんな時に休暇をとれるのかな？詳細をCheck！！</h3></p>
-            
-            {!! link_to_route('workinfo', '→ GO TO THE GALLERY') !!}
+                 {!! link_to_route('answer', 'RAKUTEN QUIZ') !!}
+                 {!! link_to_route('banana', 'banana') !!}
+                 {!! link_to_route('match', '自分に合った支社を見つけよう') !!}
+                 {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}
+                 <!--@include('chat')-->
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -176,7 +183,9 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              {!! link_to_route('answer', 'answer') !!}
+                          <p><h3>楽天社内の様子をご紹介。社員に人気のスポットや、隠れスポットを見てみよう！</h3></p>
+            
+            {!! link_to_route('contents.gallery', '→ GO TO THE GALLERY') !!}
 
             </div>
             <div class="el__close-btn"></div>
