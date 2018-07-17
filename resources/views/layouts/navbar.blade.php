@@ -4,10 +4,12 @@
     <link rel="stylesheet" href="/css/nav.css">
    
 </head>
-
-<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-    
-    <a href="{{ url('/home') }}" class="btn">Home</a>
-    <a href="#" class="btn">R-Chat</a>
-    <a href="#" class="btn">User</a>
-    <a href="#" class="btn">Contact</a>
+<body>
+<ul>
+    <li><a href="#">nav01</a></li>
+    <li><a href="#">nav02</a></li>
+    <li><a href="#">nav03</a></li>
+    <li><a href="#">nav04</a></li>
+    <li><a href="#">nav05</a></li>
+</ul>
+</body>
