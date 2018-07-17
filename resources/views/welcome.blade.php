@@ -28,20 +28,20 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     
-   @include('layouts.navbar')
+   
 </head>
 
 <body>
-<div id="loader"><img src="images/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
+<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
 <div id="fade"></div>
  
 <div id="container" style="display:none">
   
-  
+  @include('layouts.navbar')
   <header>
     <br>
     <div><img class="logo" src="/images/logo.jpg"></div>
-    <h1>みんなに嬉しい、楽天プライム。</h1>
+    <h1>新卒に嬉しい、楽天プライム。</h1>
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
