@@ -62,7 +62,7 @@ li {
     list-style-type: none;
 }
  
-a {
+.nao {
     display: block;
     padding: 20px 0;
     text-align: center;
@@ -73,6 +73,6 @@ a {
     width:100%;
 }
  
-a:hover {
+.nav:hover {
     background-color: #f7a;
 }
