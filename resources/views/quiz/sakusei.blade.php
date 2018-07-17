@@ -36,5 +36,13 @@
             <input id="answer" placeholder="答え">
             <button id="send">投稿</button>
     <script src="js/sakusei.js"></script>
+ 
+ <script type="text/javascript" src="js/loadgo/loadgo.js"></script>
+<script>
+$('#rich').loadgo();
+</script>
+    
+    <img src="images/Rich_Golden.jpg" id="rich"></img>
+
     
 </body>
