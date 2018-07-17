@@ -15,10 +15,10 @@
 
 
 <ul>
-    <li><a href="#">ホーム</a></li>
-    <li><a href="#">マイページ</a></li>
-    <li><a href="#">お問い合わせ</a></li>
-    <li><a href="#">ログアウト</a></li>
+    <li><a class="nao" href="#">ホーム</a></li>
+    <li><a class="nao" href="#">マイページ</a></li>
+    <li><a class="nao" href="#">お問い合わせ</a></li>
+    <li><a class="nao" href="#">ログアウト</a></li>
 </ul>
 
 </body>
