@@ -1,28 +1,56 @@
-@extends('layouts.app')
 
-@section('content')
-    <div class="text-center">
-        <h1>Log in</h1>
+<section class="user">
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">アカウント作成</h2>
+        <p class="user_unregistered-text">新卒のためのお得な情報が盛り沢山！会員登録して情報を✓</p>
+        <button class="user_unregistered-signup" id="signup-button">新規作成</button>
+      </div>
+
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">既存ユーザー</h2>
+        <p class="user_registered-text">今日もお得な情報がザクザク。ログインして情報をgetしよう！！</p>
+        <button class="user_registered-login" id="login-button">ログイン</button>
+      </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-
-            {!! Form::open(['route' => 'login.post']) !!}
-                <div class="form-group">
-                    {!! Form::label('email', 'Email') !!}
-                    {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
-                </div>
-
-                <div class="form-group">
-                    {!! Form::label('password', 'Password') !!}
-                    {!! Form::password('password', ['class' => 'form-control']) !!}
-                </div>
-
-                {!! Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) !!}
-            {!! Form::close() !!}
-
-            <p>New user? {!! link_to_route('signup.get', 'Sign up now!') !!}</p>
-        </div>
+    
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">Login</h2>
+        <form class="forms_form" method="post" action="login">
+            {{ csrf_field() }}
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required autofocus />
+            </div>
+            <div class="forms_field">
+              <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+            <input type="submit" value="Log In" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+      <div class="user_forms-signup">
+        <h2 class="forms_title">Sign Up</h2>
+        <form class="forms_form" method="post" action="signup">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required />
+            </div>
+            
+            <div class="forms_field">
+              <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Sign up" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
     </div>
-@endsection
+  </div>
+</section>
