@@ -14,7 +14,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-     
+    <!--ロード画面 -->
+    
+    
+    
               <!--JQuery-->
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
@@ -29,6 +32,12 @@
 </head>
 
 <body>
+<div id="loader"><img src="images/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
+<div id="fade"></div>
+ 
+<div id="container">
+  
+  
   <header>
     <br>
     <div><img class="logo" src="/images/logo.jpg"></div>
@@ -297,9 +306,9 @@
 <!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
     <script src="js/chat.js"></script>
+    <script src="js/loader.js"></script>
 
-
-
+</div>
 </body>
 
 </html>

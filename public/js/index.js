@@ -21,3 +21,5 @@ $closeBtnsArr.forEach(function($btn) {
     document.querySelector('.el.s--active').classList.remove('s--active');
   });
 });
+
+// ローディング
