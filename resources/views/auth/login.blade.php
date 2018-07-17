@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    
-    <meta charset="utf-8">
-        
-        <link href="css/login.css" rel="stylesheet" type="text/css">  
-        <!-- jQuery -->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-       
-    
-    
-    
-</head>
-
-
-
-<!--
-  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
-  I am @hurickkrugner on Twitter or @hk95 on GitHub. Feel free to message me anytime.
--->
 
 <section class="user">
   <div class="user_options-container">
@@ -75,5 +54,3 @@
     </div>
   </div>
 </section>
-
- <script type="text/javascript" src="js/login.js"></script>
