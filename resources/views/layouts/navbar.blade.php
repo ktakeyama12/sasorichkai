@@ -18,7 +18,7 @@
     <li><a class="nao" href="#">ホーム</a></li>
     <li><a class="nao" href="#">マイページ</a></li>
     <li><a class="nao" href="#">お問い合わせ</a></li>
-    <li><a class="nao" href="#">ログアウト</a></li>
+    <li><a class="nao" href="login">ログアウト</a></li>
 </ul>
 
 </body>
