@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
@@ -22,6 +24,8 @@
 
     <!--  least.js gallery -->
     <section>
+        <button id="button" class="btn btn-danger" type="button" onclick="history.back()" style="margin-right: 90%;
+  margin-bottom: 0%; margin-top: 1%;" >戻る</button>
         <ul id="gallery">
             <li id="fullPreview"></li>
 
