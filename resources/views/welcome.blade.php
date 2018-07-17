@@ -35,7 +35,7 @@
 <div id="loader"><img src="images/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
 <div id="fade"></div>
  
-<div id="container">
+<div id="container" style="display:none">
   
   
   <header>
@@ -46,7 +46,7 @@
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
   <br>社員同士で交流できるサービスもご用意しています。</h4>
-  </header>
+</header>
   
   
 
@@ -301,14 +301,14 @@
   <!-- cont inner end -->
 </div>
 
-  
+</div>  
   
 <!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
     <script src="js/chat.js"></script>
     <script src="js/loader.js"></script>
 
-</div>
+
 </body>
 
 </html>
