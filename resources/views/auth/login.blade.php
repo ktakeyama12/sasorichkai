@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+        
+        <link href="css/login.css" rel="stylesheet" type="text/css">  
+        <!-- jQuery -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+       
+    
+    
+    
+</head>
 
 <section class="user">
   <div class="user_options-container">
@@ -39,11 +53,11 @@
         <form class="forms_form" method="post" action="signup">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required />
+              <input type="text" name="name" placeholder="Full Name" value="{{ csrf_token() }}" class="forms_field-input" required />
             </div>
             
             <div class="forms_field">
-              <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" name="password" placeholder="Password" value="{{ csrf_token() }}" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
@@ -54,3 +68,5 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript" src="js/login.js"></script>
