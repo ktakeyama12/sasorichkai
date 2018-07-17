@@ -4,7 +4,6 @@
 <head>
 <style>
     body {
-    background: url('https://ihatetomatoes.net/assets/icon-background.png') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #909090;
