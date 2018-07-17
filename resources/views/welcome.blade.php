@@ -14,7 +14,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-     
+    <!--ロード画面 -->
+    
+    
+    
               <!--JQuery-->
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
@@ -25,19 +28,29 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     
-   @include('layouts.navbar')
+   
 </head>
 
 <body>
+
+<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
+
+<div id="fade"></div>
+ 
+<div id="container" style="display:none">
+  
+
+  @include('layouts.navbar')
   <header>
     <br>
     <div><img class="logo" src="/images/logo.jpg"></div>
     <h1>新卒に嬉しい、楽天プライム。</h1>
+
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
   <br>社員同士で交流できるサービスもご用意しています。</h4>
-  </header>
+</header>
   
   
 
@@ -295,12 +308,12 @@
   <!-- cont inner end -->
 </div>
 
-  
+</div>  
   
 <!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
     <script src="js/chat.js"></script>
-
+    <script src="js/loader.js"></script>
 
 
 </body>
