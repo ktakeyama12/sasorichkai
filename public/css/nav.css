@@ -54,6 +54,7 @@
     overflow: hidden;
     align-items: center;
     padding-left:25%;
+    color:white;
 }
 
  
@@ -63,6 +64,17 @@ li {
     list-style-type: none;
 }
  
+.nao:visited {
+  color : white  ;
+}
+.nao:link { color:white; }
+
+.nao:hover { 
+  color: gray; 
+  text-decoration: none;
+}
+.nao:active { color: gray; }
+
 
 .nao {
     display: block;
@@ -71,7 +83,7 @@ li {
     font-weight: bold;
     text-decoration: none;
     background-color: #f57;
-    color: #fff;
+    color: white;
 }
  
 
