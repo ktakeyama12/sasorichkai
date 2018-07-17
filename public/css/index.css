@@ -5,9 +5,13 @@
 }
 
 body {
+  background: #fcfaf9;
   background-color: #FFFAFA		;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   padding:20px;
+  /*横スクロールしないようにする*/
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .logo{
   height: 20%;
@@ -184,7 +188,7 @@ h4{
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 100px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s;
@@ -195,26 +199,42 @@ h4{
   pointer-events: auto;
   transition: all 0.5s 1.4s;
 }
+
 .el__text {
   text-transform: uppercase;
-  font-size: 40px;
-  color: white;
+  font-size: 24px;
+  color: #3A322F; 
+ 
+  background: rgba(255,255,255,0.5);   
+  padding: 1em 0.5em 0.5em 1.5em;
 }
+
+.el__text_game{
+  font_size: 24px;
+}
+
 .el__title{
   font-size: 5vw;
 }
 
 a:visited {
-  color : white  ;
+  color : #626567  ;
 }
-a:link { color:white; }
+a:link { color:#3A322F; }
 
 a:hover { 
-  color: white; 
+  color: #f57; 
   text-decoration: none;
 }
-a:active { color: white; }
+a:active { color: #f57; }
 
+.coupon{
+  float:left;
+}
+
+.el__text_title{
+  font-weight: bold;
+}
 
 .el__close-btn {
   z-index: -1;
@@ -566,3 +586,36 @@ a:active { color: white; }
   padding:50px;
   margin:0px;
   }
+  
+
+.coupon_index{
+  font-size:24px;
+}
+  
+  
+
+/*ろーでぃんぐ*/
+#loader {
+    /*width: 370px;*/
+    /*height: 230px;*/
+    display: none;
+    position: fixed;
+    _position: absolute; /* IE6対策 */
+    top: 50%;
+    left: 50%;
+    margin-top: -150px; 
+    margin-left: -150px; 
+    z-index: 100;
+}
+ 
+#fade {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+}
+

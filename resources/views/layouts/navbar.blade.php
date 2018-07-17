@@ -5,7 +5,7 @@
    
 </head>
 <body>
-    
+
 <!--<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>-->
     
 <!--    <a href="{{ url('/home') }}" class="btn">Home</a>-->
@@ -14,7 +14,7 @@
 <!--    <a href="#" class="btn">Contact</a>-->
 
 
-<ul>
+<ul class="nav_ul">
     <li><a class="nao" href="#">ホーム</a></li>
     <li><a class="nao" href="#">マイページ</a></li>
     <li><a class="nao" href="#">お問い合わせ</a></li>

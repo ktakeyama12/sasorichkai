@@ -49,12 +49,14 @@
 /*  margin-top:400px;*/
 /*}*/
 
-ul {
+.nav_ul {
     width: 1500px;
     overflow: hidden;
     align-items: center;
     padding-left:25%;
+    color:white;
 }
+
  
 li {
     float: left;
@@ -62,6 +64,18 @@ li {
     list-style-type: none;
 }
  
+.nao:visited {
+  color : white  ;
+}
+.nao:link { color:white; }
+
+.nao:hover { 
+  color: gray; 
+  text-decoration: none;
+}
+.nao:active { color: gray; }
+
+
 .nao {
     display: block;
     padding: 20px 0;
@@ -69,9 +83,10 @@ li {
     font-weight: bold;
     text-decoration: none;
     background-color: #f57;
-    color: #fff;
-    width:100%;
+    color: white;
 }
+ 
+
  
 .nav:hover {
     background-color: #f7a;
