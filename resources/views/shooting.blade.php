@@ -10,6 +10,11 @@
             position: absolute;
         }
         
+        #heroImage{
+            height: 20px;
+            width: 20px;
+        }
+        
         #background{
             background: #000000;
             width: 500px;
@@ -27,7 +32,9 @@
         }
         
         .enemy{
-            background: #0000ff;
+            background: white;
+            background-image: url("/images/amazon.ico");
+            background-size: 35px 35px;
             width: 35px;
             height: 35px;
             position: absolute;
@@ -43,7 +50,7 @@
         }
         
         #gameover{
-            color: #ff0000;
+            color: red;
             font-size: 20px;
             position: absolute;
             left: 160px;
@@ -59,7 +66,7 @@
 <body>
     
     <div id='background'></div>
-    <div id='hero'></div>
+    <div id='hero'><img  id="heroImage" src="/images/rakuten.jpg"></div>
     <div id = 'laser'></div>
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
@@ -204,7 +211,7 @@
             }
             
             var scoreElement = document.getElementById('score');
-            scoreElement.innerHTML = 'SCORE: ' + score;
+            scoreElement.innerHTML = '利益: ' + score;
         }
         
         function updatePositions(){
