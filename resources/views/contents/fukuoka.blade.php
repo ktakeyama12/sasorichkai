@@ -167,4 +167,6 @@
 
 </div>
 
+<button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
+
 </body>
