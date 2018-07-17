@@ -109,13 +109,15 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-          <h3 class="el__heading">ハッピー<br>手当<br></h3>
+          <h3 class="el__heading">ハッピー<br>&nbsp;&nbsp;&nbsp;手当&nbsp;<br></h3>
           </div>
           <div class="el__content">
             <div class="el__text">
-            <h3>大きな出来事があると休みがもらえる可能性あり！<br>どんな時に休暇をとれるのかな？詳細をCheck！！</h3>
+            <h1 class="el__text_title">ハッピー手当</h1>
+            <h3><br>ワークアズライフを充実させよう。<br><br>楽天で快適なワークスタイルを送るために必ず知っておくべき「休暇」「転勤時手当」などの社内情報について紹介。</h3>
             
-            {!! link_to_route('workinfo', '→ GO TO THE GALLERY') !!}
+            <br>
+            <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('workinfo', ' ハッピー手当一覧を見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -135,24 +137,20 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">ラッキー<br>社割</h2>
+            <h2 class="el__heading">ラッキー<br>&nbsp;&nbsp;&nbsp;社割&nbsp;</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
-<div class="el__title"></div>
-
-              
-             
-                   
-    <ol class="suuji">
-                   
-                      <li class="el__coupon"> <a href="rakuten">社内で使えるサービス</a></li>
-                      <li class="coupon"> <a href="cafe" >飲食店</a></li>
-                      <li class="coupon"> <a href="movie">映画 ＆ カラオケ</a></li>
-                      <li class="coupon"> <a href="amusement">アミューズ</a></li>
-                      <li class="coupon"> <a href="shopping">ショッピング</a></li>
-                     </ol>
-                     
+            <h1 class="el__text_title">ラッキー社割</h1>
+            <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
+                  <div class="coupon_index">
+                      <br><a href="rakuten">1.社内で使えるサービス</a>
+                      <br><a href="cafe" >2.飲食店</a>
+                      <br><a href="movie">3.映画 ＆ カラオケ</a>
+                      <br><a href="amusement">4.アミューズ</a>
+                      <br><a href="shopping">5.ショッピング</a>
+                  </div>
+         　
               </div>
             <div class="el__close-btn"></div>
           </div>
@@ -172,13 +170,14 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">ウキウキ<br>支社</h2>
+            <h2 class="el__heading">ウキウキ<br>&nbsp;&nbsp;&nbsp;支社</h2>
           </div>
           <div class="el__content">
             <div class="el__text">
-              <p><h3>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみなるかも！</h3></p>
+              <h1 class="el__text_title">ウキウキ支社</h1>
+              <h3><br>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみになるかも！</h3>
             
-              {!! link_to_route('contents.branch', '→ SEARCH THE BRANCHES') !!}
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.branch', ' 支社情報を見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -202,10 +201,13 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-                 {!! link_to_route('answer', 'RAKUTEN QUIZ') !!}
-                 {!! link_to_route('banana', 'banana') !!}
-                 {!! link_to_route('match', '自分に合った支社を見つけよう') !!}
-                 {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}
+              <h1 class="el__text_title">ほっこりブレイク</h1>
+              <h3><br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。</h3>
+              
+                 <br>{!! link_to_route('answer', '1.RAKUTEN QUIZ') !!}
+                 <br>{!! link_to_route('banana', '2.magical banana') !!}
+                 <br>{!! link_to_route('match', '3.自分に合った支社を見つけよう') !!}
+                 <br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}
                  <!--@include('chat')-->
             </div>
             <div class="el__close-btn"></div>
@@ -230,8 +232,9 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-
-
+              <p><h3>楽天のおしゃれな写真をラインナップ！<br>あなたのスライドや資料にぴったりな写真が見つかるかも！</h3></p>
+            
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.gallery', '楽天ギャラリーを見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
