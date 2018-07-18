@@ -54,11 +54,11 @@
           {{ csrf_field() }}
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" value="{{ csrf_token() }}" class="forms_field-input" required />
+              <input type="text" name="name" placeholder="Full Name" value="" class="forms_field-input" required />
             </div>
             
             <div class="forms_field">
-              <input type="password" name="password" placeholder="Password" value="{{ csrf_token() }}" class="forms_field-input" required />
+              <input type="password" name="password" placeholder="Password" value="" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">

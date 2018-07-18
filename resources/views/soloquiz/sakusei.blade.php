@@ -33,7 +33,7 @@
 
 @auth
 <br><br><br><br>
-    {!! Form::model($quiz, ['route' => 'quiz.store']) !!}
+    {!! Form::model($quiz, ['route' => 'soloquiz.store']) !!}
         
         {!! Form::label('quiz', 'QUESTION:') !!}
         {!! Form::text('quiz') !!}

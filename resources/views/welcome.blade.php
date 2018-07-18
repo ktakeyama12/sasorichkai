@@ -8,7 +8,7 @@
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     
     <!--Chat機能 Firebase接続-->
-    <!--<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
     <!--Bootstrap-->
@@ -203,13 +203,19 @@
           <div class="el__content">
             <div class="el__text">
               <h1 class="el__text_title">
+                <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
+                <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
+                <br>
+                <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
+                <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
                 <!--<a  href="soloanswer">-->
-                  <a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1" border="0"></a></h1>
-                                   <a href="answer"><img src="images/buttons/solobutton2.png" id="i2" border="0"><a/>
+                  <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1" border="0"></a></h1>-->
+                                   <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2" border="0"><a/>-->
                  <!--<a href="banana"><img src="images/buttons/solobutton3.png" id="i3"><a/>-->
                  <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
                   <!--<a/>-->
-                ほっこりブレイク</h1>
+                  <br>
+                ↑CLICK</h1>
               <h3>
                 <!--<br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。-->
                 
@@ -323,7 +329,7 @@
   </div>
   <!-- cont inner end -->
 </div>
-
+@include('chat')
 </div>  
   
 <!--ロードが完了してから読み込むJavascript-->
