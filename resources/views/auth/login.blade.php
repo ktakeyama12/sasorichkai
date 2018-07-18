@@ -51,6 +51,7 @@
       <div class="user_forms-signup">
         <h2 class="forms_title">Sign Up</h2>
         <form class="forms_form" method="post" action="signup">
+          {{ csrf_field() }}
           <fieldset class="forms_fieldset">
             <div class="forms_field">
               <input type="text" name="name" placeholder="Full Name" value="{{ csrf_token() }}" class="forms_field-input" required />

@@ -21,7 +21,7 @@
     @auth
     <li><a class="nao" href="logout">ログアウト</a></li>
     @else
-    <li><a class="nao" href="signup">ログイン/会員登録</a></li>
+    <li><a class="nao" href="login">ログイン/会員登録</a></li>
     @endauth
 </ul>
 
