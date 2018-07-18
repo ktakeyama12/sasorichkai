@@ -329,7 +329,11 @@
   </div>
   <!-- cont inner end -->
 </div>
+
+<div id="chat" style="display:none">
+  
 @include('chat')
+<button><img src="images/buttons/close.png" id="close"></button> 
 </div>  
   
 <!--ロードが完了してから読み込むJavascript-->

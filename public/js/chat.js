@@ -57,3 +57,15 @@ messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     $('#scroller').animate({scrollTop: $('#scroller')[0].scrollHeight}, 'fast');
     // $(window).scrollTop(target.offset().top);
 });
+
+
+
+$(document).ready(function(){
+    // $("button").click(function(){
+        $("#chat").delay(6000).fadeIn(2000);
+    // });
+});
+
+$("button").click(function(){
+        $("#chat").fadeOut(1000);
+});

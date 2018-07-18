@@ -5,12 +5,19 @@ ul,li{
     text-align: left;
 }
 #scroller {
-    height: 500px;
+    height: 200px;
     overflow: auto;
 }
-
+.panel-body{
+    background:white;
+}
 .panel-default{
     background-color: white;
+    width:400px;
+    height:100px;
+    position: fixed;
+    bottom: 30%;
+    right:0;
 }
 
 /*******************************
@@ -18,7 +25,7 @@ ul,li{
 ********************************/
 .left_balloon {
     position: relative;
-    background: black;
+    background: grey;
     border: 0px solid #777;
     margin: 5px 5px;
     padding: 5px 10px;
@@ -34,11 +41,12 @@ ul,li{
     color: #fff;
     position: relative;
     background: #0084ff;
+    /*#0084ff*/
     border: 0px solid #777;
     margin: 5px 10px;
     padding: 5px 10px;
     border-radius: 15px;
-    width: 400px;
+    width: 300px;
     clear: both;
     float: right;
 }
@@ -60,4 +68,12 @@ ul,li{
 .sender_name.me{
     float: right;
     padding: 0 20px 0 0;
+}
+
+#close{
+    width: 31px;
+    height: auto;
+    position: fixed;
+    bottom: 40%;
+    right:0;
 }
