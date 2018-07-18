@@ -619,3 +619,10 @@ a:active { color: #f57; }
     z-index: 50;
 }
 
+#i1, #i2, #i3, #i4{
+    width: 10px;
+    height: auto;
+    /*position: absolute;*/
+    /*margin-top: 19%;*/
+    /*left: 23%;*/
+}

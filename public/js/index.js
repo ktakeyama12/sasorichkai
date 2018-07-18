@@ -22,4 +22,7 @@ $closeBtnsArr.forEach(function($btn) {
   });
 });
 
-// ローディング
+// BOTAN
+function image(a) {
+    window.open(a);
+}
