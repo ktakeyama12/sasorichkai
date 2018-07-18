@@ -13,3 +13,4 @@
         <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください">
     </div>
 </div>
+

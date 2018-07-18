@@ -51,13 +51,28 @@ messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     }
     //HTMLに取得したデータを追加する
     messageList.append(messageElement)
-
+    $('#scroller').scrollTop($('#messages').height());
     //一番下にスクロールする
-    messageList[0].scrollTop = messageList[0].scrollHeight;
-    $('#scroller').animate({scrollTop: $('#scroller')[0].scrollHeight}, 'fast');
+    // messageList[0].scrollTop = messageList[0].scrollHeight;
+    // $("scroller").scrollTop(1000);
+    console.log("a");
+    
+    // $('#scroller').animate({scrollTop: $('#scroller')[0].scrollHeight}, 'fast');
+    // window.scrollTo(0,document.querySelector("#scroller").scrollHeight);
     // $(window).scrollTop(target.offset().top);
 });
 
+// $('#scroller').delay(100).scrollTop($('#messages').height());
+
+window.onscroll = function (e) {  
+  messageList[0].scrollTop = messageList[0].scrollHeight;
+    console.log("a")
+} 
+
+function down(){
+    messageList[0].scrollTop = messageList[0].scrollHeight;
+    console.log("a")
+}
 
 
 $(document).ready(function(){

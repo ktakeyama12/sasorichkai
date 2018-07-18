@@ -263,7 +263,7 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda5.png"></div>
+        <div class="el__index-back"><img src="/images/rakuten_gallery/panda5.png" id="loadpanda"></div>
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
@@ -335,6 +335,13 @@
 @include('chat')
 <button><img src="images/buttons/close.png" id="close"></button> 
 </div>  
+
+<!--ロード時間計測-->
+<img src="images/rakuten_gallery/top_white/Slide7.JPG" id="loadtime1" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide5.JPG" id="loadtime2" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide2.JPG" id="loadtime3" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide1.jpg" id="loadtime4" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide4.JPG" id="loadtime5" style="display:none">
   
 <!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
