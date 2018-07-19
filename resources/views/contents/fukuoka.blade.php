@@ -15,6 +15,7 @@
 
 <body>
 <div class="cont_principal">
+  <br>
   <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  ><span class="glyphicon glyphicon-backward"> 戻る</span></button>
   <div class="cont_central">
   
