@@ -13,33 +13,39 @@
     
 </head>
 
+
+
+<!--
+  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
+  I am @hurickkrugner on Twitter or @hk95 on GitHub. Feel free to message me anytime.
+-->
+
 <section class="user">
   <div class="user_options-container">
     <div class="user_options-text">
       <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">アカウント作成</h2>
-        <p class="user_unregistered-text">新卒のためのお得な情報が盛り沢山！会員登録して情報を✓</p>
-        <button class="user_unregistered-signup" id="signup-button">新規作成</button>
+        <h2 class="user_unregistered-title">Don't have an account?</h2>
+        <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
       </div>
 
       <div class="user_options-registered">
-        <h2 class="user_registered-title">既存ユーザー</h2>
-        <p class="user_registered-text">今日もお得な情報がザクザク。ログインして情報をgetしよう！！</p>
-        <button class="user_registered-login" id="login-button">ログイン</button>
+        <h2 class="user_registered-title">Have an account?</h2>
+        <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+        <button class="user_registered-login" id="login-button">Login</button>
       </div>
     </div>
     
     <div class="user_options-forms" id="user_options-forms">
       <div class="user_forms-login">
         <h2 class="forms_title">Login</h2>
-        <form class="forms_form" method="post" action="login">
-            {{ csrf_field() }}
+        <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required autofocus />
+              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
             </div>
             <div class="forms_field">
-              <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
+              <input type="password" placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
@@ -50,15 +56,16 @@
       </div>
       <div class="user_forms-signup">
         <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form" method="post" action="signup">
-          {{ csrf_field() }}
+        <form class="forms_form">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" value="" class="forms_field-input" required />
+              <input type="text" placeholder="Full Name" class="forms_field-input" required />
             </div>
-            
             <div class="forms_field">
-              <input type="password" name="password" placeholder="Password" value="" class="forms_field-input" required />
+              <input type="email" placeholder="Email" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
           <div class="forms_buttons">
@@ -70,4 +77,4 @@
   </div>
 </section>
 
-<script type="text/javascript" src="js/login.js"></script>
+ <script type="text/javascript" src="js/login.js"></script>

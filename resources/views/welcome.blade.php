@@ -34,7 +34,7 @@
 
 <body>
 
-<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
+<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...<br><div id="progress">%</div></center></div>
 
 <div id="fade"></div>
  
@@ -237,12 +237,36 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              <h1 class="el__text_title">ゲーム</h1>
-              <h3><br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。</h3>
-              
-                 <br>{!! link_to_route('answer', '1.RAKUTEN QUIZ') !!}
-                 <br>{!! link_to_route('banana', '2.magical banana') !!}
-                 <br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}
+
+              <h1 class="el__text_title">
+                <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
+                <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
+                <br>
+                <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
+                <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
+                <!--<a  href="soloanswer">-->
+                  <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1" border="0"></a></h1>-->
+                                   <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2" border="0"><a/>-->
+                 <!--<a href="banana"><img src="images/buttons/solobutton3.png" id="i3"><a/>-->
+                 <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
+                  <!--<a/>-->
+                  <br>
+                ↑CLICK</h1>
+              <h3>
+                <!--<br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。-->
+                
+                 <div id="press">
+                 <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1"><a/>-->
+                 <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2"><a/>-->
+                 <!--<a href="banana"><img src="images/buttons/solobutton3.png" id="i3"><a/>-->
+                 <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
+                 </div>
+                 </h3>
+                 <!--{!! link_to_route('answer', '1.RAKUTEN QUIZ') !!}-->
+                 <!--<br>{!! link_to_route('banana', '2.magical banana') !!}-->
+                 <!--<br>{!! link_to_route('match', '3.自分に合った支社を見つけよう') !!}-->
+                 <!--<br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}-->
+
                  <!--@include('chat')-->
             </div>
             <div class="el__close-btn"></div>
@@ -276,19 +300,21 @@
             <div class="el__text">
               <p><h3>楽天のおしゃれな写真をラインナップ！<br>あなたのスライドや資料にぴったりな写真が見つかるかも！</h3></p>
             
-              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.gallery', '楽天ギャラリーを見る') !!}</span></h2>
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member', '楽天ギャラリーを見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
       </div>
       <div class="el__index">
+
         <div class="el__index-back">
           <div class="mokuzi">
               &nbsp;&nbsp;きれいな
               <br>&nbsp;&nbsp;&nbsp;写真が満載！
           </div>
-          <img src="/images/rakuten_gallery/panda5.png"></div>
+ <img src="/images/rakuten_gallery/panda5.png" id="loadpanda"></div>
+
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
@@ -355,7 +381,18 @@
   <!-- cont inner end -->
 </div>
 
+<div id="chat" style="display:none">
+  
+@include('chat')
+<button><img src="images/buttons/close.png" id="close"></button> 
 </div>  
+
+<!--ロード時間計測-->
+<img src="images/rakuten_gallery/top_white/Slide7.JPG" id="loadtime1" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide5.JPG" id="loadtime2" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide2.JPG" id="loadtime3" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide1.jpg" id="loadtime4" style="display:none">
+<img src="images/rakuten_gallery/top_white/Slide4.JPG" id="loadtime5" style="display:none">
   
 <!--ロードが完了してから読み込むJavascript-->
     <script  src="js/index.js"></script>
