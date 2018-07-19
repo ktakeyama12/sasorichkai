@@ -15,7 +15,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->rakuten==0){
-            $user->rakuten = 1;
+            $user->rakuten = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         return view('rakuten');
@@ -32,7 +33,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->cafe==0){
-            $user->cafe = 1;
+            $user->cafe = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
  
@@ -51,7 +53,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->movie==0){
-            $user->movie = 1;
+            $user->movie = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
 
@@ -68,7 +71,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->amusement==0){
-            $user->amusement = 1;
+            $user->amusement = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         return view('amusement');
@@ -84,7 +88,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->shopping==0){
-            $user->shopping = 1;
+            $user->shopping = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         return view('shopping');
@@ -100,7 +105,8 @@ class AController extends BaseController
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->workinfo==0){
-            $user->workinfo = 1;
+            $user->workinfo = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         return view('workinfo');

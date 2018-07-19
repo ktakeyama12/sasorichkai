@@ -27,7 +27,8 @@ class ContentsController extends Controller
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->branches==0){
-            $user->branches = 1;
+            $user->branches = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         
@@ -39,7 +40,8 @@ class ContentsController extends Controller
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->fukuoka==0){
-            $user->fukuoka = 1;
+            $user->fukuoka = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
         
@@ -65,7 +67,8 @@ class ContentsController extends Controller
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->tokyo==0){
-            $user->tokyo = 1;
+            $user->tokyo = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
          $content = new Content;
@@ -82,7 +85,8 @@ class ContentsController extends Controller
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->osaka==0){
-            $user->osaka = 1;
+            $user->osaka = 10;
+            $user->point = $user->point + 10;
             $user->save();
         }
          $content = new Content;
