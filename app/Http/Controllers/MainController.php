@@ -96,8 +96,6 @@ class MainController extends BaseController
         }elseif($prime == 1){
             return view("gallery");
             
-        }else{
-            print("１０円くれ！");
         }
     }
     
