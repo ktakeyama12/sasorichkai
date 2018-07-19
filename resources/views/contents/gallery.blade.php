@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- add styles -->
     <link href="css/least.min.css" rel="stylesheet" type="text/css" />
@@ -23,9 +25,10 @@
 
     <!--  least.js gallery -->
     <section style="border:1px solid black;width:200px;height:800px;overflow:scroll;">
+        
         <ul id="gallery">
             <li id="fullPreview"></li>
-
+            <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
             <li>
                 <a href="images/rakuten_gallery/cafelogo.jpeg"></a>
                 <img data-original="images/rakuten_gallery/cafelogo t.jpeg" src="img/effects/white.gif" alt="Photo 1" />
@@ -38,7 +41,8 @@
                         <li><p>楽天のロゴ</p></li>
                     </ul>
                 </div>
-                <div class="projectInfo"><h2>楽天のロゴ。赤丸にRが象徴的。</h2></div>
+                <div class="projectInfo"><h2>楽天のロゴ。赤丸にRが象徴的。
+                <button id="button" class="btn btn-danger" type="button" href="/gallery" >一覧へ戻る</button></h2></div>
             </li>
             <li>
                 <a href="images/rakuten_gallery/cafemenu.jpeg"></a>
