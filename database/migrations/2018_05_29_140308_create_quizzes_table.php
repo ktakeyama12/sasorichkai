@@ -17,7 +17,6 @@ class CreateQuizzesTable extends Migration
             $table->increments('id');
             $table->string('nameshutsudai');
             $table->string('namekaitou');
-
             $table->string('quiz');
             $table->string('answer');
             $table->timestamps();
