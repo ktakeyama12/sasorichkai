@@ -28,15 +28,18 @@
 		
 			<br><h1>{{$user->point}} POINTS</h1> 
 	    </p>
+</div>
+		<center>楽天理解度王者ランキング</center>
 	    <?php
 		    foreach($alldata as $data){
-		    	?><p><?php
+		    	?><div class="box_6"><?php
 	            print $data->name;
+	            print "さん ";
 	            print $data->point;
-	            ?><p><?php
+	            print "ポイント";
+	            ?></div><?php
         }
 	    ?>
-</div>
 	   
 		
 	</body>
