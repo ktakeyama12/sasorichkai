@@ -97,3 +97,19 @@ li#fullPreview{
 li#fullPreview .fullCaption{
 	color: #696969;
 }
+
+#container-example .colour-4 {
+  background: transparent;
+}
+#container-example .colour-4 a {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-image: linear-gradient(-135deg, #fff, #fff 50%, darkred 50%, darkred);
+  background-size: 100% 500%;
+  background-position: bottom;
+  transition: all 0.4s ease;
+}
+#container-example .colour-4 a:hover {
+  background-position: top;
+  color: #8d78b1;
+}

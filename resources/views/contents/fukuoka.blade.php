@@ -9,13 +9,20 @@
   <meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script type="text/javascript" src="/js/fukuoka.js"></script>
      @include('layouts.navbar')
 </head>
 
 <body>
 <div class="cont_principal">
-  <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  ><span class="glyphicon glyphicon-backward"> 戻る</span></button>
+  
+  <div id="container-example">
+              <div class='strip colour-4'>
+                <a class="" onclick="history.back()">戻る</a>
+              </div>
+            </div>
+  
   <div class="cont_central">
   
     <div class="cont_modal cont_modal_active">

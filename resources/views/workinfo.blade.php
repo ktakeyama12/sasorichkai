@@ -15,12 +15,21 @@
         <!-- Bootstrap JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Rakuten Work Info</title>
+        
+        @include('layouts.navbar')
+        
     </head>
     
     <body>
-      <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
-        <div class="cards">
-
+      
+      <div class="cards">
+        
+        <div id="container-example">
+          <div class='strip colour-4'>
+            <a class="" onclick="history.back()">戻る</a>
+          </div>
+        </div>
+        
   <div class="card">
     <img src="images/gallery/vacation.jpg">
     <div class="card-title">

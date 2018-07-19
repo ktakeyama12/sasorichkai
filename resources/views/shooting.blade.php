@@ -64,8 +64,11 @@
     <script>
        
     </script>
+    
 </head>
 <body>
+    
+    
     
     <div id='background'></div>
     <div id='hero'><img  id="heroImage" src="/images/rakuten.jpg"></div>

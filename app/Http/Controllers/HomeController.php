@@ -35,5 +35,9 @@ class HomeController extends Controller
     {
         return view('banana');
     }
+     public function contact()
+    {
+        return view('contact');
+    }
 }
 
