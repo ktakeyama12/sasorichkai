@@ -29,7 +29,12 @@
 			<br><h1>{{$user->point}} POINTS</h1> 
 	    </p>
 	    <?php
-
+		    foreach($alldata as $data){
+		    	?><p><?php
+	            print $data->name;
+	            print $data->point;
+	            ?><p><?php
+        }
 	    ?>
 </div>
 	   

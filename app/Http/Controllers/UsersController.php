@@ -35,10 +35,7 @@ class UsersController extends Controller
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();
-        foreach($alldata as $data){
-            print $data->point;
-        }
-        exit;
+
         return view('users.show',[
             'user' => $user,
             'points' => $points,

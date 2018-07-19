@@ -24,6 +24,13 @@ class AController extends BaseController
     
     public function rakutenprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->rakuten==0){
+            $user->rakuten = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('rakutenprime');
     }
     
@@ -44,6 +51,13 @@ class AController extends BaseController
 
     public function cafeprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->cafe==0){
+            $user->cafe = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('cafeprime');
     }
     
@@ -63,6 +77,13 @@ class AController extends BaseController
     
     public function movieprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->movie==0){
+            $user->movie = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('movieprime');
     }
     
@@ -80,6 +101,13 @@ class AController extends BaseController
     
     public function amusementprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->amusement==0){
+            $user->amusement = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('amusementprime');
     }
     
@@ -97,6 +125,13 @@ class AController extends BaseController
     
     public function shoppingprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->shopping==0){
+            $user->shopping = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('shoppingprime');
     }
     
@@ -115,6 +150,13 @@ class AController extends BaseController
     
     public function workinfoprime()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->workinfo==0){
+            $user->workinfo = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         return view('workinfoprime');
     }
 }
