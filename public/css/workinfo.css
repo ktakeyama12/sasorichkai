@@ -174,3 +174,65 @@ div.card.show div.flap2 {
   /*position:relative;*/
   /*z-index:9998;  */
 }
+
+#container-example {
+  position: relative;
+}
+#container-example *, #container-example *::after, #container-example *::before {
+  box-sizing: border-box;
+}
+#container-example .strip {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #a3d7ef;
+}
+
+#container-example a {
+    font-size: 9pt;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    padding: 6px 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+}
+#container-example .colour-1 {
+  background: #a3d7ef;
+}
+#container-example .colour-1 a::after {
+  width: 100%;
+  height: 0;
+  background: #fff;
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  margin: auto;
+}
+
+#container-example .colour-4 {
+  background: transparent;
+}
+#container-example .colour-4 a {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-image: linear-gradient(-135deg, #fff, #fff 50%, darkred 50%, darkred);
+  background-size: 100% 500%;
+  background-position: bottom;
+  transition: all 0.4s ease;
+}
+#container-example .colour-4 a:hover {
+  background-position: top;
+  color: #8d78b1;
+}

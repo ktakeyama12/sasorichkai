@@ -44,7 +44,7 @@
   @include('layouts.navbar')
   
   <header>
-    <br>
+    <br><br><br><br>
     <div><img class="logo" src="/images/logo.jpg"></div>
     <h1>新卒に嬉しい、楽天プライム。</h1>
 
@@ -60,51 +60,7 @@
   <div class="cont s--inactive">
   <!-- cont inner start -->
   <div class="cont__inner">
-    <!-- el start -->
-    <!--<div class="el">-->
-    <!--  <div class="el__overflow">-->
-    <!--    <div class="el__inner">-->
-    <!--      <div class="el__bg"></div>-->
-    <!--      <div class="el__preview-cont">-->
-            
-    <!--        <h3 class="el__heading">ハッピー<br>手当<br></h3>-->
-    <!--      </div>-->
-    <!--      <div class="el__content">-->
-    <!--        <div class="el__text">-->
-    <!--          <div class="el__title"></div>-->
-
-              
-             
-                   
-    <!--<ol class="suuji">-->
-                   
-    <!--                  <li class="el__coupon"> <a href="rakuten"></a></li>-->
-    <!--                  <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>-->
-    <!--                  <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>-->
-    <!--                  <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>-->
-    <!--                  <li class="coupon"> <a href="shopping">Shopping</a></li>-->
-    <!--                 </ol>-->
-    <!--                 </div>-->
-                   
-                   
-                   
-                   
-                   
-                   
-
-    <!--        <div class="el__close-btn"></div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--  <div class="el__index">-->
-    <!--    <div class="el__index-back"><img src="/images/rakuten_gallery/panda6.png"></div>-->
-    <!--    <div class="el__index-front">-->
-          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</div>-->
-    
-    <!-- el end -->
+   
     
     <div class="el">
       <div class="el__overflow">
@@ -112,12 +68,7 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
           <h2 class="el__heading">手当<br><br>
-            <!--<ul>-->
-            <!--  <li>&nbsp;&nbsp;&nbsp;・有給の公布日</li>-->
-            <!--  <li>&nbsp;&nbsp;&nbsp;・特別休暇</li>-->
-            <!--  <li>&nbsp;&nbsp;&nbsp;・出産手当</li>-->
-            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc</li>-->
-            <!--</ul>-->
+           
             </h2>
           </div>
           <div class="el__content">

@@ -8,6 +8,7 @@
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
@@ -22,6 +23,13 @@
 
     <!--  least.js gallery -->
     <section>
+        
+        <div id="container-example">
+          <div class='strip colour-4'>
+            <a class="" onclick="history.back()">戻る</a>
+          </div>
+        </div>
+        
         <ul id="gallery">
             <li id="fullPreview"></li>
 

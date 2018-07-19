@@ -1,11 +1,66 @@
+
+#container-example {
+  /*position: relative;*/
+  padding-top: 0;
+}
+#container-example *, #container-example *::after, #container-example *::before {
+  box-sizing: border-box;
+}
+#container-example .strip {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #a3d7ef;
+}
+
+#container-example a {
+    font-size: 9pt;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    position: relative;
+    text-align: center;
+    padding: 6px 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+}
+
+
+#container-example .colour-4 {
+  background: transparent;
+}
+#container-example .colour-4 a {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background-image: linear-gradient(-135deg, #fff, #fff 50%, darkred 50%, darkred);
+  background-size: 100% 500%;
+  background-position: bottom;
+  transition: all 0.4s ease;
+}
+#container-example .colour-4 a:hover {
+  background-position: top;
+  color: #8d78b1;
+}
+
+/*ナブバー*/
+
 #menu {
-  width:530px;
+  width:100%;
+
   padding:0;
   margin:0;
   list-style-type: none;
 }
 #menu li {
-  width:20%;
+
+  width:25%;
+
   float:left;
   padding:0;
   margin:0;
@@ -35,3 +90,23 @@
 #menu li:last-child a{
   border-radius:0 5px 5px 0;
 }
+
+
+#home{
+  color: pink;
+}
+#mypage{
+  color: gray;
+  width: 25%;
+}
+#oto{
+  color: pink;
+}
+#logout{
+  color: gray;
+}
+#login{
+   color: pink;
+  
+}
+
