@@ -35,7 +35,7 @@
              
                 ?>
                 <br>
-                {!! Form::model($quiz, ['route' => 'quiz.answerinput']) !!}
+                {!! Form::model($quiz, ['route' => 'soloquiz.answerinput']) !!}
             
                 {!! Form::label('answerinput', 'ANSWER:') !!}
                 {!! Form::text('answerinput') !!}
