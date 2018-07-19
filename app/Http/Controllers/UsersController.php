@@ -20,7 +20,7 @@ class UsersController extends Controller
         
         $user = \Auth::user();
         $userdata = User::find($user->id);
-        $alldata = User::orderBy('point');
+        $alldata = User::all()->sortByDesc('point');
         $points =
         $userdata->workinfo
         + $userdata->rakuten
@@ -35,6 +35,10 @@ class UsersController extends Controller
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();
+        foreach($alldata as $data){
+            print $data->point;
+        }
+        exit;
         return view('users.show',[
             'user' => $user,
             'points' => $points,
