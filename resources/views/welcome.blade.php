@@ -57,7 +57,7 @@
   
 
 
-  <div class="cont s--inactive">
+  <div class="cont s--inactive" onmousedown="WhichButton(event)">
   <!-- cont inner start -->
   <div class="cont__inner">
    
