@@ -34,7 +34,7 @@
 
 <body>
 
-<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
+<div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...<br><div id="progress">%</div></center></div>
 
 <div id="fade"></div>
  

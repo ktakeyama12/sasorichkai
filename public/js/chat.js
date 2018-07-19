@@ -77,7 +77,7 @@ function down(){
 
 $(document).ready(function(){
     // $("button").click(function(){
-        $("#chat").delay(6000).fadeIn(2000);
+        // $("#chat").delay(6000).fadeIn(2000);
     // });
 });
 
