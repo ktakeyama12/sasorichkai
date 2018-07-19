@@ -46,7 +46,7 @@
 			<br><h1>{{$user->point}} POINTS</h1> 
 	    </p>
 </div>
-		<center>楽天理解度王者ランキング</center>
+		<div id="rankingname">楽天理解度王者ランキング</div>
 	    <?php
 		    foreach($alldata as $data){
 		    	?><div class="box_6"><?php
