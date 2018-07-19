@@ -14,8 +14,10 @@
 <!--    <a href="#" class="btn">Contact</a>-->
 
 
+
 <ul class="nav_ul">
     <li><a class="nao" href="/">ホーム</a></li>
+
     <li><a class="nao" href="/users.show">マイページ</a></li>
     <li><a class="nao" href="#">お問い合わせ</a></li>
     @auth
