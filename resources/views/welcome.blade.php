@@ -235,7 +235,7 @@
             <div class="el__text">
               <p><h3>楽天のおしゃれな写真をラインナップ！<br>あなたのスライドや資料にぴったりな写真が見つかるかも！</h3></p>
             
-              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.gallery', '楽天ギャラリーを見る') !!}</span></h2>
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member', '楽天ギャラリーを見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>

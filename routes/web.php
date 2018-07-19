@@ -88,3 +88,6 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 
+
+//isPrime
+Route::get('member', 'MainController@isPrime')->name('member');
