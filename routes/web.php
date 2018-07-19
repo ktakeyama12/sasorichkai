@@ -101,11 +101,11 @@ Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 //isPrime
 Route::get('member', 'MainController@isPrime')->name('member');
 
-Route::get('member.rakutenPrime', 'MainController@rakutenPrime')->name('member.rakutenPrime');
-Route::get('member.amusePrime', 'MainController@amusePrime')->name('member.amusePrime');
-Route::get('member.shoppingPrime', 'MainController@shoppingPrime')->name('member.shoppingPrime');
-Route::get('member.cafePrime', 'MainController@cafePrime')->name('member.cafePrime');
-Route::get('member.moviePrime', 'MainController@moviePrime')->name('member.moviePrime');
+Route::get('rakutenPrime', 'MainController@rakutenPrime')->name('rakutenPrime');
+Route::get('amusePrime', 'MainController@amusePrime')->name('amusePrime');
+Route::get('shoppingPrime', 'MainController@shoppingPrime')->name('shoppingPrime');
+Route::get('cafePrime', 'MainController@cafePrime')->name('cafePrime');
+Route::get('moviePrime', 'MainController@moviePrime')->name('moviePrime');
 
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');

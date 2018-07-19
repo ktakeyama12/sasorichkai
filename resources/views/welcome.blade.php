@@ -161,11 +161,11 @@
             <h1 class="el__text_title">社割</h1>
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
-                      {!! link_to_route('member.rakutenPrime', '社内で使えるサービス') !!}
-                      {!! link_to_route('member.cafePrime', '飲食店') !!} 
-                      {!! link_to_route('member.moviePrime', '映画　＆　カラオケ') !!}
-                      {!! link_to_route('member.amusePrime', ' アミューズ') !!}
-                      {!! link_to_route('member.shoppingPrime', ' ショッピング') !!}
+                      <br>{!! link_to_route('rakutenPrime', '社内で使えるサービス') !!}<br>
+                      {!! link_to_route('cafePrime', '飲食店') !!} <br>
+                      {!! link_to_route('moviePrime', '映画　＆　カラオケ') !!}<br>
+                      {!! link_to_route('amusePrime', ' アミューズ') !!}<br>
+                      {!! link_to_route('shoppingPrime', ' ショッピング') !!}<br>
                   </div>
          　
               </div>
