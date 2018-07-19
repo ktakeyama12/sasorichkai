@@ -75,7 +75,7 @@ Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.stor
         Route::delete('unfavorite', 'BranchfavoritesController@destroy')->name('micropost.unfavorite');
    
 
-Route::get('users.show', 'MainController@show')->name('users.show');
+Route::get('users.show', 'UsersController@show')->name('users.show');
 
 Route::post('contents.store/{id}', 'ContentsController@store')->name('contents.store');
 
@@ -97,7 +97,12 @@ Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('sign
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 
 
+
+//isPrime
+Route::get('member', 'MainController@isPrime')->name('member');
+
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
 Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
+

@@ -15,6 +15,7 @@
 
 <body>
 <div class="cont_principal">
+  <br>
   <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  ><span class="glyphicon glyphicon-backward"> 戻る</span></button>
   <div class="cont_central">
   
@@ -152,25 +153,27 @@
             <br><br>
             <div>
               
-              <?php
-                if($user->point < 30){
-                  $result = '<img src="images/rakuten_gallery/bronze.jpg">';
-                }
-                elseif($user->point >=100){
-                  $result = '<img src="images/rakuten_gallery/silver.jpg">';
-                }
-                else{
-                   $result = '<img src="images/rakuten_gallery/gold.jpg">';
-                }
-              ?>
+              
               
               
               <?php
               if(count($count)>0){
                 foreach($contents as $content){
               ?>
-                    <div class="box5"><?php echo $result?> {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
-                   
+                    <div class="box5">
+                        <?php 
+                              if($content->user_point < 30){
+                                 $result = '<img src="images/rakuten_gallery/bronze.jpg">';
+                              }
+                              elseif($content->user_point >=100){
+                                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
+                              }
+                              else{
+                                $result = '<img src="images/rakuten_gallery/gold.jpg">';
+                              }
+                              echo $result
+                        ?>  {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                  
                     
                     
                     <?php
@@ -187,3 +190,10 @@
 
 
 </body>
+<!--<script>-->
+<!--  var userPoint = $content->user_point;-->
+<!--  var result;-->
+<!--  if(userPoint < 30){-->
+<!--    document.getElementById('reuslt').innerHTML = reuslt;-->
+<!--  }-->
+<!--</script>-->
