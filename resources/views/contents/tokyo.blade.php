@@ -1,34 +1,50 @@
-
-<head><meta charset="UTF-8">
+<!--
+福岡をfavoriteできるようになる。
+ー中間テーブルはいらない。
+ー一対多の関係を構築する。
+ー福岡テーブルはid user_idになるんじゃないか？
+-->
+<head>
+  
+  <meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
-    <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
+    <script type="text/javascript" src="/js/fukuoka.js"></script>
+     @include('layouts.navbar')
 </head>
 
 <body>
 <div class="cont_principal">
-  <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
+  <br>
+  <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  ><span class="glyphicon glyphicon-backward"> 戻る</span></button>
   <div class="cont_central">
   
     <div class="cont_modal cont_modal_active">
       <div class="cont_photo">
         <div class="cont_img_back">
-          <img src="images/tokyo.jpg" alt="tokyo" />
+          <img src="images/fukuoka.jpg" alt="hakata" />
         </div>
     
         <div class="cont_mins">
-          <div class="sub_mins">
-            <h3>東京クリムゾンハウス</h3>
-          </div>
-          <div class="cont_icon_right">
-            <a href="#">  <i class="material-icons">&#xE8E7;</i></a>
-          </div>
+          <!--<div class="sub_mins">-->
+          <!--  <h3>福岡</h3>-->
+          <!--</div>-->
+              <div class="sub_mins">
+                          
+                    <h3><?php
+                    print $count;
+                    ?></h3>
+                    <br><span class="glyphicon glyphicon-thums-up"><h8>いいね !</h8></span>
+              </div>
+          <!--<div class="cont_icon_right">-->
+          <!--  <a href="#">  <i class="material-icons">&#xE8E7;</i></a>-->
+          <!--</div>-->
         </div>
     
         <div class="cont_detalles">
           <h3>Rakuten Crimson House</h3>
-          <p>&nbsp;&nbsp;〒158-0094<br>
-          &nbsp;&nbsp;東京都世田谷区玉川一丁目14番1号<br>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;〒158-0094<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;東京都世田谷区玉川一丁目14番1号<br>
         </div>
       </div>
   
@@ -63,66 +79,112 @@
             </div>
           </div>  
         
-          <div class="cont_btn_mas_dets">
-            <a href="#"><i class="material-icons">&#xE313;</i></a>
-          </div>
+          <!--<div class="cont_btn_mas_dets">-->
+          <!--  <a href="#"><i class="material-icons">&#xE313;</i></a>-->
+          <!--</div>-->
         
         </div>
-          <div class="cont_btn_open_dets">
-            <a href="#e" onclick="open_close()"><i class="material-icons">&#xE314;</i></a>
-          </div>
+          <!--<div class="cont_btn_open_dets">-->
+          <!--  <a href="#e" onclick="open_close()"><i class="material-icons">&#xE314;</i></a>-->
+          <!--</div>-->
   
       </div>
       
-      
-      
     </div>
+    <br>
+    <div class = "btn-toolbar">
+            
+                      <div class="btn btn-lg">
+                      
+                      <?php
+                        $user_id =  \Auth::user()->id;
+                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 1");
+                      
+                         if(!$exist){
+                      ?>
+                            {!! Form::open(['route' => ['tokyofavorite']]) !!}
+                               <input type="hidden" value="1" name="tokyo_id" />
+                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                          }
+                         else{
+                      ?>
+                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
+                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                         }
+                      ?>
+                      </div>
+                 
+          </div>
+    
+            
+  
     <br><br><br><br><br><br><br>
+    
+   
 
       <div class="col-xs-offset-3 col-xs-6">
-          <head>
 
-              <link href="css/tokyo.css" rel="stylesheet" type="text/css">
-              <link rel="stylesheet" href="{{ secure_asset('css/tokyo.css') }}">
+         
 
-               Bootstrap 
+              <link href="css/fukuoka.css" rel="stylesheet" type="text/css">
+              <link rel="stylesheet" href="{{ secure_asset('css/fukuoka.css') }}">
+
+               <!--Bootstrap -->
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          </head>
-            <body>
-                  {!! Form::model($content, ['route' => 'contents.storeF']) !!}
+        
+              <br><br><br>
+              
+                  福岡支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
+                  {!! Form::model($content, ['route' => 'contents.storeT']) !!}
                     <div class='form-group'>
-                      {!! Form::label('name', 'なまえ') !!}
-                      {!! Form::text('name',null, ['class' => 'form-control']) !!}
-                    </div>
-                    <div class='form-group'>
-                      {!! Form::label('content', 'コメント') !!}
+                      {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
                     </div>
-                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-warning'])!!}
+                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-info'])!!}
                   {!! Form::close() !!}
-                
-            </body>
-                  
             <br><br>
             <div>
-              @if (count($contents) > 0)
-                      <ul>
-                          @foreach ($contents as $content)
-                          <br><div class="alert alert-warning" role="alert">{{ $content->name }} :<br>{{ $content->content }}</div>
-                          @endforeach
-                      </ul>
-               @endif
+              
+              
+              
+              
+              <?php
+              if(count($count)>0){
+                foreach($contents as $content){
+              ?>
+                    <div class="box5">
+                        <?php 
+                              if($content->user_point < 30){
+                                 $result = '<img src="images/rakuten_gallery/bronze.jpg">';
+                              }
+                              elseif($content->user_point >=100){
+                                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
+                              }
+                              else{
+                                $result = '<img src="images/rakuten_gallery/gold.jpg">';
+                              }
+                              echo $result
+                        ?>  {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                  
+                    
+                    
+                    <?php
+                }
+              }
+              ?>
             </div>        
-      
       </div>
 
     
   </div>
 
 </div>
-
 
 
 </body>
