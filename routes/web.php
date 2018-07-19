@@ -22,6 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
 Route::get('cafe', 'AController@cafe')->name('cafe');
+Route::get('cafeprime', 'AController@cafeprime')->name('cafeprime');
 Route::get('movie', 'AController@movie')->name('movie');
 Route::get('amusement', 'AController@amusement')->name('amusement');
 Route::get('shopping', 'AController@shopping')->name('shopping');
@@ -89,5 +90,12 @@ Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('sign
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 
 
+
 //isPrime
 Route::get('member', 'MainController@isPrime')->name('member');
+
+Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
+Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
+Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
+Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
+

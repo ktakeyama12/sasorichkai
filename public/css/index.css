@@ -619,3 +619,28 @@ a:active { color: #f57; }
     z-index: 50;
 }
 
+#i1, #i3{
+    width: 300px;
+    height: auto;
+    /*position: absolute;*/
+    /*margin-top: 19%;*/
+    /*left: 23%;*/
+}
+
+#i2{
+    width: 300px;
+    height: auto;
+    float:right;
+    /*position: absolute;*/
+    /*margin-top: 19%;*/
+    /*left: 23%;*/
+}
+
+#i4{
+    width: 270px;
+    height: auto;
+    float:right;
+    position: absolute;
+    right: 15%;
+    bottom: 16%
+}

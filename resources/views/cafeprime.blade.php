@@ -17,42 +17,113 @@
 </head>
 <body>
     <header>
-        <h2>Cafe & Restaurant around office</h2>
+        <h2>Cafe & Restaurant around office RANKING</h2>
     </header>
-
+    <center><b><font_size="20">人気度ランキング</font_size></b></center>
     <!--  least.js gallery -->
     <section>
         <ul id="gallery">
             <li id="fullPreview"></li>
 
             <li>
-                <a href="images/gallery/p1.jpg"></a>
-                <img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />
+                <img data-original="images//gallery/pot.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>i Beer</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><h3>1位：温野菜</h3></li>
+                        <li><p>Relo</p></li>
+                        <li><p1>100円off</p1></li>
                     </ul>
                 </div>
+                
+                <!--<a href="images/gallery/p1.jpg"></a>-->
+                <!--<img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />-->
+
+                <!--<div class="overLayer"></div>-->
+                <!--<div class="infoLayer">-->
+                <!--    <ul>-->
+                <!--        <li><h3>i Beer</h3></li>-->
+                <!--        <li><p>rise</p></li>-->
+                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--    </ul>-->
+                <!--</div>-->
                 <div class="projectInfo">Drinking</div>
             </li>
             <li>
                 <a href="images/gallery/p2.jpg"></a>
+                <img data-original="images//gallery/bills.jpg" src="img/effects/white.gif" alt="Photo 3" />
+
+                <div class="overLayer"></div>
+                <div class="infoLayer">
+                    <ul>
+                        <li><h3>2位：Bills</h3></li>
+                        <li><p>Relo</p></li>
+                        <li><p1>1 drink or 200円off</p1></li>
+                    </ul>
+                </div>
+                <!--<img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />-->
+
+                <!--<div class="overLayer"></div>-->
+                <!--<div class="infoLayer">-->
+                <!--    <ul>-->
+                <!--        <li><h3>McDonald's</h3></li>-->
+                <!--        <li><p>rise</p></li>-->
+                <!--        <li><p1>ポテト150円</p1></li>-->
+                <!--    </ul>-->
+                <!--</div>-->
+                <div class="projectInfo">McDonald's</div>
+            </li>
+            <li>
+                <a href="images/gallery/p3.jpg"></a>
+                                <img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />
+
+                <div class="overLayer"></div>
+                <div class="infoLayer">
+                    <ul>
+                        <li><h3>3位：KUAAINA</h3></li>
+                        <li><p>rise</p></li>
+                        <li><p1>10% OFF</p1></li>
+                    </ul>
+                </div>
+                <!--<img data-original="images//gallery/cinamon.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
+
+                <!--<div class="overLayer"></div>-->
+                <!--<div class="infoLayer">-->
+                <!--    <ul>-->
+                <!--        <li><h3>CINNABON</h3></li>-->
+                <!--        <li><p>rise</p></li>-->
+                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--    </ul>-->
+                <!--</div>-->
+                <div class="projectInfo">CINNABON</div>
+            </li>
+            
+            <li>
+                <a href="images/gallery/p3.jpg"></a>
                 <img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>McDonald's</h3></li>
+                        <li><h3>4位：McDonald's</h3></li>
                         <li><p>rise</p></li>
                         <li><p1>ポテト150円</p1></li>
                     </ul>
                 </div>
-                <div class="projectInfo">McDonald's</div>
+                <!--<img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
+
+                <!--<div class="overLayer"></div>-->
+                <!--<div class="infoLayer">-->
+                <!--    <ul>-->
+                <!--        <li><h3>KUAAINA</h3></li>-->
+                <!--        <li><p>rise</p></li>-->
+                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--    </ul>-->
+                <!--</div>-->
+                <div class="projectInfo">KUAAINA</div>
             </li>
+            
             <li>
                 <a href="images/gallery/p3.jpg"></a>
                 <img data-original="images//gallery/cinamon.jpg" src="img/effects/white.gif" alt="Photo 3" />
@@ -63,36 +134,6 @@
                         <li><h3>CINNABON</h3></li>
                         <li><p>rise</p></li>
                         <li><p1>10% OFF</p1></li>
-                    </ul>
-                </div>
-                <div class="projectInfo">CINNABON</div>
-            </li>
-            
-            <li>
-                <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />
-
-                <div class="overLayer"></div>
-                <div class="infoLayer">
-                    <ul>
-                        <li><h3>KUAAINA</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
-                    </ul>
-                </div>
-                <div class="projectInfo">KUAAINA</div>
-            </li>
-            
-            <li>
-                <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/bills.jpg" src="img/effects/white.gif" alt="Photo 3" />
-
-                <div class="overLayer"></div>
-                <div class="infoLayer">
-                    <ul>
-                        <li><h3>Bills</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>1 drink or 200円off</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -116,14 +157,14 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/pot.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>温野菜</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><h3>i Beer</h3></li>
+                        <li><p>rise</p></li>
+                        <li><p1>10% OFF</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
