@@ -26,7 +26,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <img data-original="images/gallery/amu.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/disney.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -52,7 +52,7 @@
             </li>
             <li>
                 <a href="images/gallery/p2.jpg"></a>
-                <img data-original="images//gallery/pool.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/summer.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -76,7 +76,7 @@
             </li>
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                                <img data-original="images//gallery/aqua2.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/enoshima.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -101,7 +101,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/pool4.jpg" src="img/effects/white.gif" alt="Photo 2" />
+                <img data-original="images//gallery/rank/ooiso.png" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -126,7 +126,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="10% OFF" src="images//gallery/amu2.jpg" alt="Photo 3" />
+                <img data-original="10% OFF" src="images//gallery/rank/picnic.png" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -141,7 +141,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="10% OFF" src="images//gallery/aqua.jpg" alt="Photo 3" />
+                <img data-original="10% OFF" src="images//gallery/rank/sea.png" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -156,7 +156,7 @@
             
              <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="10% OFF" src="images//gallery/amu3.jpg" alt="Photo 3" />
+                <img data-original="10% OFF" src="images//gallery/rank/joy.png" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">

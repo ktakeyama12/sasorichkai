@@ -27,7 +27,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <img data-original="images//gallery/movie.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/109.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -53,7 +53,7 @@
             </li>
             <li>
                 <a href="images/gallery/p2.jpg"></a>
-                <img data-original="images//gallery/movie4.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/toho.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -77,7 +77,7 @@
             </li>
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                                <img data-original="images/gallery/karaoke.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/okekan.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -102,7 +102,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/karaoke3.jpg" src="img/effects/white.gif" alt="Photo 2" />
+                <img data-original="images//gallery/rank/bigecho.png" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -127,7 +127,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/movie2.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/aion.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -143,7 +143,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images/gallery/karaoke2.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/shidax.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -158,7 +158,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/karaoke7.jpg" src="img/effects/white.gif" alt="Photo 1" />
+                <img data-original="images//gallery/rank/tetsujin.png" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -173,7 +173,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/karaoke3.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/utahiroba.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -188,7 +188,7 @@
             
              <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/karaoke4.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/utamura.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -201,20 +201,7 @@
                 <div class="projectInfo">KUAAINA</div>
             </li>
             
-             <li>
-                <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/karaoke5.jpg" src="img/effects/white.gif" alt="Photo 3" />
-
-                <div class="overLayer"></div>
-                <div class="infoLayer">
-                    <ul>
-                        <li><h3>10位：コート・ダジュール</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>室料20% OFF</p1></li>
-                    </ul>
-                </div>
-                <div class="projectInfo">KUAAINA</div>
-            </li>
+             
         </ul>
     </section>
 

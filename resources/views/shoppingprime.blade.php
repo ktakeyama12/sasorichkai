@@ -26,12 +26,12 @@
             <li id="fullPreview"></li>
 
             <li>
-                <img data-original="images//gallery/rank/john.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/john.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>1位：john masters organics</h3></li>
+                        <li><h3>1位：john masters</h3></li>
                         <li><p>Relo</p></li>
                         <li><p1>20% off</p1></li>
                     </ul>
@@ -52,7 +52,7 @@
             </li>
             <li>
                 <a href="images/gallery/p2.jpg"></a>
-                <img data-original="images//gallery/rank/taka.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/taka.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -76,7 +76,7 @@
             </li>
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                                <img data-original="images//gallery/rank/loc.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                 <img data-original="images//gallery/rank/loc.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -101,7 +101,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/rank/abc.jpg" src="img/effects/white.gif" alt="Photo 2" />
+                <img data-original="images//gallery/rank/abc.png" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -126,7 +126,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/rank/vis.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/vis.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -142,7 +142,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/rank/amphi.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/amphi.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -157,7 +157,7 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/rank/tabio.jpg" src="img/effects/white.gif" alt="Photo 1" />
+                <img data-original="images//gallery/rank/tabio.png" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">

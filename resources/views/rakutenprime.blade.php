@@ -26,7 +26,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <img data-original="images/gallery/trip.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/rakuten.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -52,7 +52,7 @@
             </li>
             <li>
                 <a href="images/gallery/p2.jpg"></a>
-                <img data-original="images//gallery/haircut.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/hair.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -76,7 +76,7 @@
             </li>
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                                <img data-original="images//gallery/gym.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/gym.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
