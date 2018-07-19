@@ -1,5 +1,17 @@
-@extends('layouts.app')
-
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+        
+        <link href="css/login.css" rel="stylesheet" type="text/css">  
+        <!-- jQuery -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+       
+    
+    
+    
+</head>
 
 <section class="user">
   <div class="user_options-container">
@@ -59,4 +71,3 @@
 </section>
 
 <script type="text/javascript" src="js/login.js"></script>
-
