@@ -176,10 +176,17 @@ h4{
   transition: all 0.5s;
 }
 .el__heading {
-  color: white;
+  color: 	#FFFAFA;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
+}
+.mokuzi{
+  color: 	#FFFAFA	;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height:30px;
 }
 .el__content {
   z-index: -1;

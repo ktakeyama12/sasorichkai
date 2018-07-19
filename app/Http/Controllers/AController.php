@@ -20,7 +20,6 @@ class AController extends BaseController
         return view('cafe');
     }
     
-    
      public function movie()
     {
         return view('movie');
