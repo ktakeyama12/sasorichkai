@@ -140,7 +140,7 @@
         
               <br><br><br>
               
-                  福岡支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
+                  東京本社についての感想や、疑問に思ったことをコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeT']) !!}
                     <div class='form-group'>
                       {!! Form::label('content', ' ') !!}
