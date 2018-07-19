@@ -14,6 +14,11 @@ class AController extends BaseController
         return view('rakuten');
     }
     
+    public function rakutenprime()
+    {
+        return view('rakutenprime');
+    }
+    
     
      public function cafe()
     {
@@ -31,9 +36,19 @@ class AController extends BaseController
         return view('movie');
     }
     
+    public function movieprime()
+    {
+        return view('movieprime');
+    }
+    
     public function amusement()
     {
         return view('amusement');
+    }
+    
+    public function amusementprime()
+    {
+        return view('amusementprime');
     }
     
      public function shopping()
@@ -41,8 +56,18 @@ class AController extends BaseController
         return view('shopping');
     }
     
+    public function shoppingprime()
+    {
+        return view('shoppingprime');
+    }
+    
     public function workinfo()
     {
         return view('workinfo');
+    }
+    
+    public function workinfoprime()
+    {
+        return view('workinfoprime');
     }
 }
