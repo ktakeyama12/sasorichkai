@@ -84,4 +84,21 @@ class MainController extends BaseController
      return view('test');
     }
     
+    
+//コントローラーでユーザーが有料会員であるかないか確かめる。
+//isPrime()で有料会員か見極める。
+
+    public function isPrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("free");
+        
+        }elseif($prime == 1){
+            return view("gallery");
+            
+        }else{
+            print("１０円くれ！");
+        }
+    }
+    
 }
