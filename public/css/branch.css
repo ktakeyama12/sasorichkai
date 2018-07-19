@@ -14,13 +14,16 @@
  
   ul {
   list-style: none;
-  float: right;
+  position: absolute;
+  right:10%;
+  top:100px;
+  /*float: right;*/
   margin:0px;
   /*color:black;*/
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  margin-right: 10%;
+  /*margin-left: 5%;*/
+  /*margin-top: 5%;*/
+  /*margin-bottom: 0%;*/
+  /*margin-right: 10%;*/
   font-size: large;
   font-weight: bolder;
   /*width: 350px;*/
@@ -108,3 +111,47 @@ ul li, ol li {
   /*position:relative;*/
   /*z-index:9998;  */
 }
+
+.resize{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-top: 19%;
+    left: 23%;
+}
+
+#setsumei{
+    position: absolute;
+    margin-top: 16%;
+    left: 15%;
+}
+
+#container{
+  display:none;
+}
+
+/*ろーでぃんぐ*/
+#loader {
+    /*width: 370px;*/
+    /*height: 230px;*/
+    display: none;
+    position: fixed;
+    _position: absolute; /* IE6対策 */
+    top: 50%;
+    left: 50%;
+    margin-top: -150px; 
+    margin-left: -150px; 
+    z-index: 100;
+}
+ 
+#fade {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+}
+

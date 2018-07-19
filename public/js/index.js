@@ -22,4 +22,16 @@ $closeBtnsArr.forEach(function($btn) {
   });
 });
 
-// ローディング
+// BOTAN
+function image1() {
+    window.location.href = "soloquiz.answer";
+}
+function image2() {
+    window.location.href = "answer";
+}
+function image3() {
+    window.location.href = "banana";
+}
+function image4() {
+    window.location.href = "shooting";
+}

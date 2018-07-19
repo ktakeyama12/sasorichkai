@@ -202,13 +202,34 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              <h1 class="el__text_title">ほっこりブレイク</h1>
-              <h3><br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。</h3>
-              
-                 <br>{!! link_to_route('answer', '1.RAKUTEN QUIZ') !!}
-                 <br>{!! link_to_route('banana', '2.magical banana') !!}
-                 <br>{!! link_to_route('match', '3.自分に合った支社を見つけよう') !!}
-                 <br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}
+              <h1 class="el__text_title">
+                <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
+                <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
+                <br>
+                <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
+                <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
+                <!--<a  href="soloanswer">-->
+                  <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1" border="0"></a></h1>-->
+                                   <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2" border="0"><a/>-->
+                 <!--<a href="banana"><img src="images/buttons/solobutton3.png" id="i3"><a/>-->
+                 <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
+                  <!--<a/>-->
+                  <br>
+                ↑CLICK</h1>
+              <h3>
+                <!--<br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。-->
+                
+                 <div id="press">
+                 <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1"><a/>-->
+                 <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2"><a/>-->
+                 <!--<a href="banana"><img src="images/buttons/solobutton3.png" id="i3"><a/>-->
+                 <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
+                 </div>
+                 </h3>
+                 <!--{!! link_to_route('answer', '1.RAKUTEN QUIZ') !!}-->
+                 <!--<br>{!! link_to_route('banana', '2.magical banana') !!}-->
+                 <!--<br>{!! link_to_route('match', '3.自分に合った支社を見つけよう') !!}-->
+                 <!--<br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}-->
                  <!--@include('chat')-->
             </div>
             <div class="el__close-btn"></div>
@@ -309,6 +330,10 @@
   <!-- cont inner end -->
 </div>
 
+<div id="chat" style="display:none">
+  
+@include('chat')
+<button><img src="images/buttons/close.png" id="close"></button> 
 </div>  
   
 <!--ロードが完了してから読み込むJavascript-->
