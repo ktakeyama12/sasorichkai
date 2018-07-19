@@ -24,6 +24,23 @@
 	              
 	              
 	        ?>
+	        <?php
+	        $free = "あなたは無料会員です。今すぐ10円払おう！";
+	        $prime = "あなたはプライム会員です。ポイントもっとためましょう！";
+	        $error = "Who the hell are you? get the hell out of here";
+	        
+	        
+	        if($user->prime == 0){
+	        	echo $free;
+	        }elseif($user->prime == 1){
+	        	$img = '<img src="images/prime.png">';
+	        	echo $img;
+	        	echo $prime;
+	        }else{
+	        	echo $error;
+	        }
+	        
+	        ?>
 	        
 		
 			<br><h1>{{$user->point}} POINTS</h1> 
