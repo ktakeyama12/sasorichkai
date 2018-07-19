@@ -15,9 +15,17 @@ class CreatContentsTable extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('content');    // content add column
+            // $table->string('name');
+            $table->string('content');
+            $table->integer('user_id')->unsigned()->index();
+            $table->string('user_name');
             $table->timestamps();
+            
+             // Foreign key constraint
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
+            // $table->foreign('user_name')->references('name')->on('users')->onDelete('cascade');;
+            
+           
         });
     }
 

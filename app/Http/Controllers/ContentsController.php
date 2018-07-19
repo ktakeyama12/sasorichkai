@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Content;
+use App\User;
 use DB;
 use App\Branchfavorites;
 
@@ -30,13 +31,17 @@ class ContentsController extends Controller
     
     public function fukuoka()
     {
-        
+         $user = \Auth::user();
+         $users = User::all();
          $content = new Content;
          $contents = Content::all();
          $count = Branchfavorites::where("favorite_id", 2)->count();
+        
                                     //  $count = DB::select('select count(favorite_id) from branchfavorites where favorite_id = 2');
                         
         return view('contents.fukuoka',[
+            'user' => $user,
+            'users' =>$users,
             'content' => $content,
             'contents' => $contents,
             'count' => $count,
@@ -82,15 +87,20 @@ class ContentsController extends Controller
   
     public function storeF(Request $request)
     {
-       
+        $user = \Auth::user();
+        $users = User::all();
         $content = new Content;
         $content->content = $request->content;
-        $content->name = $request->name;
+        $content->user_id = $user->id;
+        $content->user_name = $user->name;
         $content->save();
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 2)->count();
+       
         
          return view('contents.fukuoka',[
+            'user' => $user,
+            'users' =>$users,
             'content' => $content,
             'contents' => $contents,
             'count' => $count,
