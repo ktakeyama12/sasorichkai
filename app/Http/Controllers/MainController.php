@@ -99,4 +99,61 @@ class MainController extends BaseController
         }
     }
     
+     public function amusePrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("amusement");
+        
+        }elseif($prime == 1){
+            return view("amusementprime");
+            
+        }
+    }
+    
+     public function shoppingPrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("shopping");
+        
+        }elseif($prime == 1){
+            return view("shoppingprime");
+            
+        }
+    }
+    
+     public function moviePrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("movie");
+        
+        }elseif($prime == 1){
+            return view("movieprime");
+            
+        }
+    }
+    
+     public function rakutenPrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("rakuten");
+        
+        }elseif($prime == 1){
+            return view("rakutenprime");
+            
+        }
+    }
+    
+     public function cafePrime(){
+        $prime = \Auth::user()->prime;
+        if($prime == 0){
+            return view("cafe");
+        
+        }elseif($prime == 1){
+            return view("cafeprime");
+            
+        }
+    }
+    
+    
+    
 }
