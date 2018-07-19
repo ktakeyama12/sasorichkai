@@ -140,16 +140,15 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
-  
+              
+                  福岡支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
                     <div class='form-group'>
-                      {!! Form::label('content', 'コメント') !!}
+                      {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
                     </div>
                       <br>{!! Form::submit('投稿', ['class' => 'btn btn-info'])!!}
                   {!! Form::close() !!}
-
-                  
             <br><br>
             <div>
               
@@ -190,10 +189,3 @@
 
 
 </body>
-<!--<script>-->
-<!--  var userPoint = $content->user_point;-->
-<!--  var result;-->
-<!--  if(userPoint < 30){-->
-<!--    document.getElementById('reuslt').innerHTML = reuslt;-->
-<!--  }-->
-<!--</script>-->

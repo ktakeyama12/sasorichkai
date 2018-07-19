@@ -52,9 +52,18 @@ Route::get('index', 'ContentsController@index')->name('contents.index');
 
 // branch
 Route::get('contents.branch', 'ContentsController@branch')->name('contents.branch');
+// fukuoka
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
 Route::post('fukuokafavorite', 'UsersController@fukuokafavorite')->name('fukuokafavorite');
 Route::post('fukuokaunfavorite', 'UsersController@fukuokaunfavorite')->name('fukuokaunfavorite');
+// tokyo
+Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
+Route::post('tokyofavorite', 'UsersController@tokyofavorite')->name('tokyofavorite');
+Route::post('tokyounfavorite', 'UsersController@tokyounfavorite')->name('tokyounfavorite');
+// osaka
+Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+Route::post('osakafavorite', 'UsersController@osakafavorite')->name('osakafavorite');
+Route::post('osakaunfavorite', 'UsersController@osakaunfavorite')->name('osakaunfavorite');
 // Route::group(['prefix' => 'branches/fukuoka'], function () {
 //         Route::post('fukuokafavorite', 'BranchfavoritesController@store')->name('fukuokafavorite');
 //         Route::delete('unfavorite', 'FavoriteController@destroy')->name('micropost.unfavorite');
@@ -62,13 +71,14 @@ Route::post('fukuokaunfavorite', 'UsersController@fukuokaunfavorite')->name('fuk
     
 
 Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
-Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
-Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
-Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
+// Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+// Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
+// Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
 Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.storeF');
+Route::post('contents.storeT', 'ContentsController@storeT')->name('contents.storeT');
 
 //branch favorite
         Route::post('branchfavorite/{id}', 'BranchfavoritesController@store')->name('branchfavorite');
