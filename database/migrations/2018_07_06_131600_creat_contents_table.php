@@ -19,6 +19,7 @@ class CreatContentsTable extends Migration
             $table->string('content');
             $table->integer('user_id')->unsigned()->index();
             $table->string('user_name');
+            $table->integer('user_point');
             $table->timestamps();
             
              // Foreign key constraint

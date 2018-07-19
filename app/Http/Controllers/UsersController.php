@@ -16,6 +16,25 @@ $branch_id = DB::select("select*from branches where id = 3");
 class UsersController extends Controller
 {
     
+    public function show(){
+        
+        $user = \Auth::user();
+        return view('users.show',[
+            'user' => $user,
+            ]);
+    }
+    
+    public function store(Request $request)
+    {
+        $user = \Auth::user();
+        $users = User::all();
+        $content->save();
+        
+         return view('users.show',[
+            'user' => $user,
+            'users' =>$users,
+            ]);
+    }
  
     
      public function fukuokafavorite(Request $request)

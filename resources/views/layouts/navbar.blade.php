@@ -16,7 +16,7 @@
 
 <ul class="nav_ul">
     <li><a class="nao" href="/home">ホーム</a></li>
-    <li><a class="nao" href="#">マイページ</a></li>
+    <li><a class="nao" href="/users.show">マイページ</a></li>
     <li><a class="nao" href="#">お問い合わせ</a></li>
     @auth
     <li><a class="nao" href="logout">ログアウト</a></li>
