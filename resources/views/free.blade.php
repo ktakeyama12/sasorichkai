@@ -11,7 +11,7 @@
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/least.min.free.js"></script>
+    <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     
 </head>
@@ -28,7 +28,7 @@
 
             <li>
                 <a href="images/rakuten_gallery/cafelogo.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafelogo t.jpeg" src="img/effects/white.gif" alt="Photo 1" />
+                <img  id="free" data-original="images/rakuten_gallery/cafelogo t.jpeg" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -42,7 +42,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/cafemenu.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafemenu t.jpeg" src="img/effects/white.gif" alt="Photo 2" />
+                <img  id="prime" data-original="images/rakuten_gallery/cafemenu t.jpeg" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -70,7 +70,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/rakutencafe.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutencafe t.jpeg" src="img/effects/white.gif" alt="Photo 3" />
+                <img id="free" data-original="images/rakuten_gallery/rakutencafe t.jpeg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -84,7 +84,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/rakutencafe2.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutencafe2 t.jpeg" src="img/effects/white.gif" alt="Photo 4" />
+                <img  id="free" data-original="images/rakuten_gallery/rakutencafe2 t.jpeg" src="img/effects/white.gif" alt="Photo 4" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -98,7 +98,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/rakutencafe3.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutencafe3 t.jpeg" src="img/effects/white.gif" alt="Photo 5" />
+                <img id="free" data-original="images/rakuten_gallery/rakutencafe3 t.jpeg" src="img/effects/white.gif" alt="Photo 5" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -108,11 +108,12 @@
                         <li><p>楽天カフェ</p></li>
                     </ul>
                 </div>
+                
                 <div class="projectInfo"><h2>光が差し込む楽天カフェ二子玉川店は、最高の休憩所。<br><br>楽天ペイ利用でドリンク半額！</h2></div>
             </li>
             <li>
-                <a href="images/rakuten_gallery/cafeteria.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafeteria t.jpeg" src="img/effects/white.gif" alt="Photo 6" />
+                <a  href="images/rakuten_gallery/cafeteria.jpeg"></a>
+                <img id="free" data-original="images/rakuten_gallery/cafeteria t.jpeg" src="img/effects/white.gif" alt="Photo 6" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -126,7 +127,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/cafeteria2.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafeteria2 t.jpeg" src="img/effects/white.gif" alt="Photo 7" />
+                <img id="free" data-original="images/rakuten_gallery/cafeteria2 t.jpeg" src="img/effects/white.gif" alt="Photo 7" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -140,7 +141,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/cafeteria3.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafeteria3 t.jpeg" src="img/effects/white.gif" alt="Photo 8" />
+                <img  id="prime" data-original="images/rakuten_gallery/cafeteria3 t.jpeg" src="img/effects/white.gif" alt="Photo 8" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -154,7 +155,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/cafeteria4.jpeg"></a>
-                <img data-original="images/rakuten_gallery/cafeteria4 t.jpeg" src="img/effects/white.gif" alt="Photo 9" />
+                <img id='prime' data-original="images/rakuten_gallery/cafeteria4 t.jpeg" src="img/effects/white.gif" alt="Photo 9" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -169,7 +170,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/lunch.jpeg"></a>
-                <img data-original="images/rakuten_gallery/lunch t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/lunch t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -184,7 +185,7 @@
             
             <li>
                 <a href="images/rakuten_gallery/aquarium.jpeg"></a>
-                <img data-original="images/rakuten_gallery/aquarium t.jpeg" src="img/effects/white.gif" alt="Photo 11" />
+                <img id='prime' data-original="images/rakuten_gallery/aquarium t.jpeg" src="img/effects/white.gif" alt="Photo 11" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -198,7 +199,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/crimsonstore2.jpeg"></a>
-                <img data-original="images/rakuten_gallery/crimsonstore2 t.jpeg" src="img/effects/white.gif" alt="Photo 12" />
+                <img id='prime' data-original="images/rakuten_gallery/crimsonstore2 t.jpeg" src="img/effects/white.gif" alt="Photo 12" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -212,7 +213,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/crimsonstore.jpeg"></a>
-                <img data-original="images/rakuten_gallery/crimsonstore t.jpeg" src="img/effects/white.gif" alt="Photo 13" />
+                <img id='prime' data-original="images/rakuten_gallery/crimsonstore t.jpeg" src="img/effects/white.gif" alt="Photo 13" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -226,7 +227,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/entrance.jpeg"></a>
-                <img data-original="images/rakuten_gallery/entrance t.jpeg" src="img/effects/white.gif" alt="Photo 14" />
+                <img id='prime' data-original="images/rakuten_gallery/entrance t.jpeg" src="img/effects/white.gif" alt="Photo 14" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -240,7 +241,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/landscape.jpeg"></a>
-                <img data-original="images/rakuten_gallery/landscape t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/landscape t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -254,7 +255,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/landscape3.jpeg"></a>
-                <img data-original="images/rakuten_gallery/landscape3 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/landscape3 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -268,7 +269,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/landscape4.jpeg"></a>
-                <img data-original="images/rakuten_gallery/landscape4 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/landscape4 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -282,7 +283,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/outlook.jpeg"></a>
-                <img data-original="images/rakuten_gallery/outlook t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/outlook t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -297,7 +298,7 @@
             
             <li>
                 <a href="images/rakuten_gallery/rakutenmap.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutenmap t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/rakutenmap t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -311,7 +312,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/rakutenmuseum.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutenmuseum t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/rakutenmuseum t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -325,7 +326,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/redchair.jpeg"></a>
-                <img data-original="images/rakuten_gallery/redchair t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/redchair t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -339,7 +340,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/uniform.jpeg"></a>
-                <img data-original="images/rakuten_gallery/uniform t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/uniform t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -353,7 +354,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/rakutentoday.jpeg"></a>
-                <img data-original="images/rakuten_gallery/rakutentoday t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/rakutentoday t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -367,7 +368,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/smoking.jpeg"></a>
-                <img data-original="images/rakuten_gallery/smoking t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/smoking t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -381,7 +382,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/opan.jpeg"></a>
-                <img data-original="images/rakuten_gallery/opan t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/opan t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -395,7 +396,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/yukataday.jpg"></a>
-                <img data-original="images/rakuten_gallery/yukataday t.jpg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/yukataday t.jpg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -409,7 +410,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/motherroom.jpeg"></a>
-                <img data-original="images/rakuten_gallery/motherroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/motherroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -423,7 +424,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/gym.jpeg"></a>
-                <img data-original="images/rakuten_gallery/gym t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/gym t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -437,7 +438,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/gym2.jpeg"></a>
-                <img data-original="images/rakuten_gallery/gym2 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/gym2 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -451,7 +452,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/beauty.jpeg"></a>
-                <img data-original="images/rakuten_gallery/beauty t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/beauty t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -465,7 +466,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/drone.jpeg"></a>
-                <img data-original="images/rakuten_gallery/drone t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/drone t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -479,7 +480,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/meetingroom.jpeg"></a>
-                <img data-original="images/rakuten_gallery/meetingroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/meetingroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -493,7 +494,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/guestroom.jpeg"></a>
-                <img data-original="images/rakuten_gallery/guestroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/guestroom t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -507,7 +508,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/garden.jpeg"></a>
-                <img data-original="images/rakuten_gallery/garden t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='prime' data-original="images/rakuten_gallery/garden t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -521,7 +522,7 @@
             </li>
             <li>
                 <a href="images/rakuten_gallery/garden2.jpeg"></a>
-                <img data-original="images/rakuten_gallery/garden2 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
+                <img id='free' data-original="images/rakuten_gallery/garden2 t.jpeg" src="img/effects/white.gif" alt="Photo 15" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
