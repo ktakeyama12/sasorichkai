@@ -115,6 +115,7 @@ class ContentsController extends Controller
         $content->content = $request->content;
         $content->user_id = $user->id;
         $content->user_name = $user->name;
+        $content->user_point = $user->point;
         $content->save();
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 2)->count();

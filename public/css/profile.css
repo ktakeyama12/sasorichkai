@@ -1,0 +1,20 @@
+.box_6 {
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    position: relative;
+    border: double 3px #009FB7;
+    }
+ 
+.box_6 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 210px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #009FB7;
+    font-weight: bold;
+    }

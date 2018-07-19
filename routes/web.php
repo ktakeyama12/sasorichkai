@@ -68,7 +68,7 @@ Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.stor
         Route::delete('unfavorite', 'BranchfavoritesController@destroy')->name('micropost.unfavorite');
    
 
-Route::get('users.show', 'MainController@show')->name('users.show');
+Route::get('users.show', 'UsersController@show')->name('users.show');
 
 Route::post('contents.store/{id}', 'ContentsController@store')->name('contents.store');
 
