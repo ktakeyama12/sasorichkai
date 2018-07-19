@@ -73,6 +73,10 @@ class SoloquizController extends Controller
         //print $request->answerinput;
         if($request->oldanswer==$request->answerinput){
             $message="正解";
+            $loginuser = \Auth::user();
+            $user = User::find($loginuser->id);
+            $user->point = $user->point + 3;
+            $user->save();
         }else{
             $message=$request->oldanswer;
             $quiz = Gotou::insert(['quizid' => $request->oldid, 'gotou' => $request->answerinput]);
@@ -80,7 +84,7 @@ class SoloquizController extends Controller
         $quiz = Quiz::inRandomOrder()->first();
         $gotoulist = Gotou::where('quizid', $request->oldid)->pluck('gotou');
     
-        return view('quiz.answer', [
+        return view('soloquiz.answer', [
             'quiz' => $quiz,
             'message' => $message,
             'gotoulist' => $gotoulist,

@@ -20,9 +20,31 @@ class UsersController extends Controller
     public function show(){
         
         $user = \Auth::user();
+        $userdata = User::find($user->id);
+        $alldata = User::all()->sortByDesc('point');
+        $points =
+        $userdata->workinfo
+        + $userdata->rakuten
+        + $userdata->cafe
+        + $userdata->movie
+        + $userdata->amusement
+        + $userdata->shopping
+        + $userdata->branches
+        + $userdata->tokyo
+        + $userdata->osaka
+        + $userdata->fukuoka;
+        $userdata->point = $points;
+        $userdata->save();
+        $user = \Auth::user();
+        foreach($alldata as $data){
+            print $data->point;
+        }
+        exit;
         return view('users.show',[
             'user' => $user,
-            ]);
+            'points' => $points,
+            'alldata' => $alldata,
+        ]);
     }
     
     public function store(Request $request)

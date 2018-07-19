@@ -20,12 +20,17 @@
 	              else{
 	                $result = '<img src="images/rakuten_gallery/gold.jpg">';
 	              }
-	              echo $result
+	              echo $result;
+	              
+	              
 	        ?>
 	        
 		
 			<br><h1>{{$user->point}} POINTS</h1> 
 	    </p>
+	    <?php
+
+	    ?>
 </div>
 	   
 		

@@ -25,13 +25,27 @@ class ContentsController extends Controller
     
      public function branch()
     {
-        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->branches==0){
+            $user->branches = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         
         return view('contents.branch');
     }
     
     public function fukuoka()
     {
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->fukuoka==0){
+            $user->fukuoka = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
+        
          $user = \Auth::user();
          $users = User::all();
          $content = new Content;
@@ -51,12 +65,22 @@ class ContentsController extends Controller
     
      public function tokyo()
     {
+
         
          $user = \Auth::user();
          $users = User::all();
          $content = new TokyoContent;
          $contents = TokyoContent::all();
          $count = Branchfavorites::where("favorite_id", 1)->count();
+
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->tokyo==0){
+            $user->tokyo = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
+ 
         
                                     //  $count = DB::select('select count(favorite_id) from branchfavorites where favorite_id = 2');
                         
@@ -71,7 +95,13 @@ class ContentsController extends Controller
     
     public function osaka()
     {
-        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->osaka==0){
+            $user->osaka = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
          $content = new Content;
          $contents = Content::all();
         
