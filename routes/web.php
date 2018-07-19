@@ -21,12 +21,19 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
+Route::get('rakutenprime', 'AController@rakutenprime')->name('rakutenprime');
 Route::get('cafe', 'AController@cafe')->name('cafe');
 Route::get('cafeprime', 'AController@cafeprime')->name('cafeprime');
 Route::get('movie', 'AController@movie')->name('movie');
+Route::get('movieprime', 'AController@movieprime')->name('movieprime');
 Route::get('amusement', 'AController@amusement')->name('amusement');
+Route::get('amusementprime', 'AController@amusementprime')->name('amusementprime');
 Route::get('shopping', 'AController@shopping')->name('shopping');
+Route::get('shoppingprime', 'AController@shoppingprime')->name('shoppingprime');
+
 Route::get('workinfo', 'AController@workinfo')->name('workinfo');
+
+
 
 Route::get('/banana', 'MainController@banana')->name('banana');
 Route::get('/match', 'MainController@match')->name('match');
