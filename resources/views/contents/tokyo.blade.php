@@ -34,7 +34,7 @@
     <div class="cont_modal cont_modal_active">
       <div class="cont_photo">
         <div class="cont_img_back">
-          <img src="images/fukuoka.jpg" alt="hakata" />
+          <img src="images/tokyo.jpg" alt="hakata" />
         </div>
     
         <div class="cont_mins">
@@ -122,7 +122,7 @@
                           }
                          else{
                       ?>
-                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
+                            {!! Form::open(['route' => ['tokyounfavorite']]) !!}
                             {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
                             {!! Form::close() !!}
                       <?php
