@@ -56,8 +56,12 @@
   
   
 
-
-  <div class="cont s--inactive">
+@auth
+ <div class="cont s--inactive">
+@else
+ <div class="cont s--inactive" onmousedown="WhichButton(event)">
+@endauth
+ 
   <!-- cont inner start -->
   <div class="cont__inner">
    
@@ -110,11 +114,13 @@
             <h1 class="el__text_title">社割</h1>
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
+
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.cafePrime', '  飲食店') !!} </span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.amusePrime', '  アミューズ') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.shoppingPrime', '  ショッピング') !!}</span></h2>
+
                   </div>
          　
               </div>

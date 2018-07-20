@@ -136,7 +136,11 @@ class ContentsController extends Controller
         $content->save();
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 2)->count();
-       
+        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        $user->point = $user->point + 10;
+        $user->save();
         
          return view('contents.fukuoka',[
             'user' => $user,
@@ -159,6 +163,11 @@ class ContentsController extends Controller
         $content->save();
         $contents = TokyoContent::all();
         $count = Branchfavorites::where("favorite_id", 1)->count();
+        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        $user->point = $user->point + 10;
+        $user->save();
        
         
          return view('contents.tokyo',[
