@@ -22,12 +22,12 @@ var quizRef = firebase.firestore().collection('quizzes');
 
 quizRef.orderBy("date").get().then(function(querySnapshot) {
     var points = 0;
-    const quizData = []
-    const answerData = []
+    const quizData = [];
+    const answerData = [];
     querySnapshot.forEach(function(doc) {
         quizzes=[];
-        quizData.push(doc.data().question)
-        answerData.push(doc.data().answer)
+        quizData.push(doc.data().question);
+        answerData.push(doc.data().answer);
     });
     
     
@@ -41,14 +41,13 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
     	snapshot.docChanges.forEach(function(change) {
 	        readykana = change.doc.data().ready
 	        if(readykana==0){
-	        		    lastRef2.set({
-	        question: quizData[0],
-	        answer: answerData[0],
-	        kaitousha: "",
-	        bangou: "0",
-	    });
-	        }
-	        console.log(readykana)
+	        	lastRef2.set({
+		        question: quizData[0],
+		        answer: answerData[0],
+		        kaitousha: "",
+		        bangou: "0",
+	    		});
+	    	}
     	});
 	});
     
@@ -115,18 +114,18 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                                 bangou: "owari",
                             });
                             
-                                                                    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+                            var readyRef2 = firebase.firestore().collection('ready').doc('ready');
         
-        readyRef2.set({
-            ready: 0,
-        });
-        var userRef = firebase.firestore().collection('users');
-        var jobskill_query = userRef;
-        jobskill_query.get().then(function(querySnapshot) {
-          querySnapshot.forEach(function(doc) {
-            doc.ref.delete();
-          });
-        });
+					        readyRef2.set({
+					            ready: 0,
+					        });
+					        var userRef = firebase.firestore().collection('users');
+					        var jobskill_query = userRef;
+					        jobskill_query.get().then(function(querySnapshot) {
+					          querySnapshot.forEach(function(doc) {
+					            doc.ref.delete();
+					          });
+					        });
                             
                         }
                         var username = document.getElementById("hello").value;
@@ -232,7 +231,7 @@ userRef.onSnapshot(function(snapshot) {
     snapshot.docChanges.forEach(function(change) {
         var username = change.doc.data().username
         username = username.toString()
-        // console.log(username)
+         console.log(username)
         var points = change.doc.data().points
         points = points.toString()
         userData[username] = username
@@ -240,10 +239,11 @@ userRef.onSnapshot(function(snapshot) {
         var scoreall = ""
         var userplay = "<u>Users</u><br/>"
         Object.keys(userData).forEach(function(element){
+        	scoreall += "<li>"
             scoreall += userData[element]
             scoreall += "は"
             scoreall += scoreData[element]
-            scoreall += "点<br />"
+            scoreall += "点</li>"
             userplay += userData[element]
             userplay += "<br />"
         })
@@ -274,7 +274,7 @@ $('#reset').unbind().click(function() {
             ready: 0,
         });
         
-        // window.location.reload(true);
+        window.location.reload(true);
     }
 });
 
@@ -286,14 +286,16 @@ $('#reset2').unbind().click(function() {
             doc.ref.delete();
           });
         });
-        window.location.reload(true);
+        
         
         var readyRef2 = firebase.firestore().collection('ready').doc('ready');
         
         readyRef2.set({
             ready: 0,
         });
+        window.location.reload(true);
     }
+    
 });
 
 $('#ready').unbind().click(function() {
