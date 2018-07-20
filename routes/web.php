@@ -69,10 +69,10 @@ Route::post('osakaunfavorite', 'UsersController@osakaunfavorite')->name('osakaun
 //         Route::post('fukuokafavorite', 'BranchfavoritesController@store')->name('fukuokafavorite');
 //         Route::delete('unfavorite', 'FavoriteController@destroy')->name('micropost.unfavorite');
 //     });
-    
+Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
-Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
-// Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+// Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
+// // Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
 // Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
 // Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
@@ -80,6 +80,7 @@ Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
 Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.storeF');
 Route::post('contents.storeT', 'ContentsController@storeT')->name('contents.storeT');
+Route::post('contents.storeO', 'ContentsController@storeO')->name('contents.storeO');
 
 //branch favorite
         Route::post('branchfavorite/{id}', 'BranchfavoritesController@store')->name('branchfavorite');

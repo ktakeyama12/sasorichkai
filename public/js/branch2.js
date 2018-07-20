@@ -1,15 +1,15 @@
 var coordinates = function(element) {
     element = $(element);
-    var top = element.position().top;
-    var left = element.position().left;
+    var top = element.position().top - $(".japan").offset().top;
+    var left = element.position().left - $(".japan").offset().left;
     $('#results').text('X: ' + left + ' ' + 'Y: ' + top);
-    if(left>200 && left<300 && top>130 && top<270){
+    if(left>-50 && left<90 && top>-20 && top<90){
         window.location.href = "tokyo";
     }
-    if(left>30 && left<160 && top>200 && top<340){
+    if(left>-220 && left<-120 && top>10 && top<120){
         window.location.href = "osaka";
     }
-    if(left>-160 && left<-40 && top>220 && top<340){
+    if(left>-430 && left<-300 && top>50 && top<210){
         window.location.href = "fukuoka";
     }
 }

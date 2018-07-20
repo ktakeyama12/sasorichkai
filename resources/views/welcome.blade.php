@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sasorich KAI</title>
+    <title>Rakuten Prime</title>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     
     <!--Chat機能 Firebase接続-->
@@ -51,13 +51,17 @@
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
-  <br>社員同士で交流できるサービスもご用意しています。</h4>
+  <br>社員同士で交流できるサービスもご用意しています。</h4><br>
 </header>
   
   
 
-
-  <div class="cont s--inactive">
+@auth
+ <div class="cont s--inactive">
+@else
+ <div class="cont s--inactive" onmousedown="WhichButton(event)">
+@endauth
+ 
   <!-- cont inner start -->
   <div class="cont__inner">
    
@@ -103,20 +107,20 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-          <h2 class="el__heading">社割<br><br>
-           
-            </h2>
+          <h2 class="el__heading">社割<br><br></h2>
           </div>
           <div class="el__content">
             <div class="el__text">
             <h1 class="el__text_title">社割</h1>
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
-                      <br>{!! link_to_route('rakutenPrime', '社内で使えるサービス') !!}<br>
-                      {!! link_to_route('cafePrime', '飲食店') !!} <br>
-                      {!! link_to_route('moviePrime', '映画　＆　カラオケ') !!}<br>
-                      {!! link_to_route('amusePrime', ' アミューズ') !!}<br>
-                      {!! link_to_route('shoppingPrime', ' ショッピング') !!}<br>
+
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('cafePrime', '  飲食店') !!} </span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('amusePrime', '  アミューズ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('shoppingPrime', '  ショッピング') !!}</span></h2>
+
                   </div>
          　
               </div>
@@ -178,7 +182,7 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
           <h2 class="el__heading">ゲーム<br><br>
-            <!--  <ul>-->
+            <!--  <ul><--></-->
             <!--  <li>・楽天クイズ</li>-->
             <!--  <li>・マジカルバナナ</li>-->
             <!--  <li>・シューティング<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ゲーム</li>-->
@@ -192,7 +196,7 @@
               <h1 class="el__text_title">
                 <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
                 <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
-                <br>
+              
                 <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
                 <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
                 <!--<a  href="soloanswer">-->
@@ -225,7 +229,11 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda.png"></div>
+        <div class="el__index-back">
+          <div class="mokuzi">
+              仕事の合間に、<br>ゲームでリフレッシュ！<br>同期と対戦しよう！
+          </div>
+          <img src="/images/rakuten_gallery/panda.png"></div>
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>

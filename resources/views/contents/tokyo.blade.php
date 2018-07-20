@@ -10,10 +10,9 @@
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
 
-    <link rel="stylesheet" href="/css/nav.css">
+    <!--<link rel="stylesheet" href="/css/nav.css">-->
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
 
-    <script type="text/javascript" src="/js/fukuoka.js"></script>
      @include('layouts.navbar')
 
 </head>
@@ -21,20 +20,21 @@
 <body>
 <div class="cont_principal">
 
-  
+  <br>
   <div id="container-example">
               <div class='strip colour-4'>
-                <a class="" onclick="history.back()">戻る</a>
+                <a class="" href="contents.branch">支社一覧に戻る</a>
               </div>
             </div>
-  
-
+ 
   <div class="cont_central">
   
     <div class="cont_modal cont_modal_active">
       <div class="cont_photo">
         <div class="cont_img_back">
-          <img src="images/fukuoka.jpg" alt="hakata" />
+
+          <img src="images/tokyo2.jpg" alt="rakuten crimson house" />
+
         </div>
     
         <div class="cont_mins">
@@ -57,6 +57,41 @@
           <h3>Rakuten Crimson House</h3>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;〒158-0094<br>
           &nbsp;&nbsp;&nbsp;&nbsp;東京都世田谷区玉川一丁目14番1号<br>
+          
+          
+          <div class = "btn-toolbar">
+            
+                      
+            
+                      <div class="btn .btn-sm">
+                      
+                      <?php
+                        $user_id =  \Auth::user()->id;
+                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 1");
+                      
+                         if(!$exist){
+                      ?>
+                            {!! Form::open(['route' => ['tokyofavorite']]) !!}
+                               <input type="hidden" value="1" name="tokyo_id" />
+                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                          }
+                         else{
+                      ?>
+                            {!! Form::open(['route' => ['tokyounfavorite']]) !!}
+                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-sm btn-block']) !!}
+                            {!! Form::close() !!}
+                            
+                            
+                      <?php
+                         }
+                      ?>
+                      
+      
+                      </div>
+                 
+          </div>
         </div>
       </div>
   
@@ -65,7 +100,7 @@
      
           <div class="cont_tabs">
               <ul>
-                <li><a href="#"><h4>楽天クリムゾンハウス本社</h4></a></li>
+                <li><h4>楽天クリムゾンハウス（東京本社）</h4></li>
               
               </ul>  
           </div>
@@ -104,37 +139,7 @@
       
     </div>
     <br>
-    <div class = "btn-toolbar">
-            
-                      <div class="btn btn-lg">
-                      
-                      <?php
-                        $user_id =  \Auth::user()->id;
-                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 1");
-                      
-                         if(!$exist){
-                      ?>
-                            {!! Form::open(['route' => ['tokyofavorite']]) !!}
-                               <input type="hidden" value="1" name="tokyo_id" />
-                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
-                            {!! Form::close() !!}
-                      <?php
-                          }
-                         else{
-                      ?>
-                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
-                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
-                            {!! Form::close() !!}
-                      <?php
-                         }
-                      ?>
-                      </div>
-                 
-          </div>
     
-            
-  
-    <br><br><br><br><br><br><br>
     
    
 

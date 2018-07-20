@@ -17,21 +17,23 @@
   <div class="user_options-container">
     <div class="user_options-text">
       <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">アカウント作成</h2>
-        <p class="user_unregistered-text">新卒のためのお得な情報が盛り沢山！会員登録して情報を✓</p>
-        <button class="user_unregistered-signup" id="signup-button">新規作成</button>
+         <span class="error">  <u>@include('commons.error_messages')</u> </span>
+        <h2 class="user_unregistered-title">ログイン</h2>
+       
+        <p class="user_unregistered-text">今日もお得な情報がザクザク。ログインして情報をgetしよう！！</p>
+        <button class="user_unregistered-signup" id="signup-button">はじめてご利用の方はこちら</button>
       </div>
 
       <div class="user_options-registered">
-        <h2 class="user_registered-title">既存ユーザー</h2>
-        <p class="user_registered-text">今日もお得な情報がザクザク。ログインして情報をgetしよう！！</p>
-        <button class="user_registered-login" id="login-button">ログイン</button>
+        <h2 class="user_registered-title">サインアップ</h2>
+        <p class="user_registered-text">新卒のためのお得な情報が盛り沢山！会員登録して情報をチェック</p>
+        <button class="user_registered-login" id="login-button">アカウントを持っている方はこちら</button>
       </div>
     </div>
     
     <div class="user_options-forms" id="user_options-forms">
       <div class="user_forms-login">
-        <h2 class="forms_title">Login</h2>
+        <h2 class="forms_title">ユーザーネームでログイン</h2>
         <form class="forms_form" method="post" action="login">
             {{ csrf_field() }}
           <fieldset class="forms_fieldset">
@@ -42,14 +44,16 @@
               <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
+          
           <div class="forms_buttons">
-            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <input type="submit" value="Log In" class="forms_buttons-action">
+            <button type="button" class="forms_buttons-forgot">パスワードをお忘れですか？</button>
+            <input type="submit" value="ログイン" class="forms_buttons-action">
+           
           </div>
         </form>
       </div>
       <div class="user_forms-signup">
-        <h2 class="forms_title">Sign Up</h2>
+        <h2 class="forms_title">新規会員登録</h2>
         <form class="forms_form" method="post" action="signup">
           {{ csrf_field() }}
           <fieldset class="forms_fieldset">
@@ -62,7 +66,8 @@
             </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
+            <input type="submit" value="アカウントを作成" class="forms_buttons-action">
+            
           </div>
         </form>
       </div>

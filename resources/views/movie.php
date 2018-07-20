@@ -170,7 +170,7 @@
             </li>
             
             <li>
-                <a href="images/gallery/p3.jpg"></a>
+                <a href="https://www.google.co.jp/search?q=%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B7%E3%83%8D%E3%83%9E&rlz=1C1GGRV_enJP791JP791&oq=%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%B7%E3%83%8D%E3%83%9E&aqs=chrome..69i57j0l5.1353j0j9&sourceid=chrome&ie=UTF-8"></a>
                 <img data-original="images//gallery/movie2.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
@@ -185,7 +185,7 @@
             </li>
             
             <li>
-                <a href="images/gallery/p3.jpg"></a>
+                <a href="https://www.google.co.jp/search?q=%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%A4%E3%82%AF%E3%82%B9%E3%83%94%E3%82%A2%E3%83%AA&rlz=1C1GGRV_enJP791JP791&oq=%E3%81%97%E3%81%AD%E3%81%BE%E3%81%84%E3%81%8F%E3%81%99&aqs=chrome.1.69i57j0l5.3651j0j9&sourceid=chrome&ie=UTF-8"></a>
                 <img data-original="images//gallery/movie3.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
@@ -200,7 +200,7 @@
             </li>
             
             <li>
-                <a href="images/gallery/p3.jpg"></a>
+                <a href="https://www.google.co.jp/search?q=toho+%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA&rlz=1C1GGRV_enJP791JP791&oq=toho+%E3%82%B7%E3%83%8D%E3%83%9E%E3%82%BA&aqs=chrome..69i57j0l5.2538j0j9&sourceid=chrome&ie=UTF-8"></a>
                 <img data-original="images//gallery/movie4.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>

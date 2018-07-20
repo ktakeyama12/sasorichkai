@@ -1,10 +1,11 @@
 .box_6 {
-    width: 500px;
+    width: 50%;
     margin: 60px auto;
     padding: 20px;
     position: relative;
     border: double 3px #009FB7;
     top: 13%;
+    margin-top: 0%;
     }
  
 .box_6 .box-title {
@@ -24,4 +25,21 @@
     position: absolute;
     top: 49%;
     /*left: 37%;*/
+}
+.logo{
+    padding-left: 28%;
+    padding-top: 5%;
+    
+}
+.border{
+    height: 50%;
+    width: 100%;
+    background-color: darkred;
+    
+}
+.border{
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+    
 }

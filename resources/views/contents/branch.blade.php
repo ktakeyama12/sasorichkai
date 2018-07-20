@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+<head>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +24,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/branch.css" rel="stylesheet" type="text/css"> 
         <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        
+      
 </head>
     <body>
         <div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
@@ -31,8 +34,11 @@
             
 
             <div id="container-example">
+              <!--<div class='strip colour-4'>-->
+              <!--  <a class="" onclick="history.back()">戻る</a>-->
+              <!--</div>-->
               <div class='strip colour-4'>
-                <a class="" onclick="history.back()">戻る</a>
+                <a class="" href="/">戻る</a>
               </div>
             </div>
         
@@ -47,6 +53,7 @@
                 <div id="map">
                     <img class="japan" src="/images/japan.png">
                 </div>
+                <div class = "branches_index">
                 <ul font-family="Noto Sans Japanese" >
                     <li>①札幌支社</li>
                     <li>②盛岡オフィス</li>
@@ -69,6 +76,7 @@
                     <li>⑲鹿児島支社</li>
                     <li>⑳沖縄支社</li>
                 </ul>
+                </div>
                 
             </div>
     

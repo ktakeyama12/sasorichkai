@@ -4,15 +4,20 @@
 /**
  * General configs
  */
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 1em;
 }
+
+ .error{
+  font-size: 50px;
+  line-height: 1em;
+  
+}
+  
+  
 
 button {
   background-color: transparent;
@@ -153,6 +158,8 @@ input::placeholder {
   background: url(../images/rakuten_gallery/landscape4.jpeg) no-repeat center;
   background-size: cover;
 }
+
+
 .user_options-container {
   position: relative;
   width: 80%;
@@ -356,4 +363,8 @@ input::placeholder {
   .user_options-unregistered {
     padding: 50px 45px;
   }
+  
+ 
+  
+  
 }
