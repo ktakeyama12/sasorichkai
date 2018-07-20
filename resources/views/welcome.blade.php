@@ -56,8 +56,12 @@
   
   
 
-
-  <div class="cont s--inactive" onmousedown="WhichButton(event)">
+@auth
+ <div class="cont s--inactive">
+@else
+ <div class="cont s--inactive" onmousedown="WhichButton(event)">
+@endauth
+ 
   <!-- cont inner start -->
   <div class="cont__inner">
    
