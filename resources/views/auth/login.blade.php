@@ -17,7 +17,9 @@
   <div class="user_options-container">
     <div class="user_options-text">
       <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">アカウント作成</h2>
+         <span class="error">  <u>@include('commons.error_messages')</u> </span>
+        <h2 class="user_unregistered-title">アカウント作成 </h2>
+       
         <p class="user_unregistered-text">新卒のためのお得な情報が盛り沢山！会員登録して情報を✓</p>
         <button class="user_unregistered-signup" id="signup-button">新規作成</button>
       </div>
@@ -42,9 +44,11 @@
               <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
             </div>
           </fieldset>
+          
           <div class="forms_buttons">
             <button type="button" class="forms_buttons-forgot">Forgot password?</button>
             <input type="submit" value="Log In" class="forms_buttons-action">
+           
           </div>
         </form>
       </div>
@@ -63,6 +67,7 @@
           </fieldset>
           <div class="forms_buttons">
             <input type="submit" value="Sign up" class="forms_buttons-action">
+            
           </div>
         </form>
       </div>
