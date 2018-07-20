@@ -9,13 +9,22 @@
   <meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script type="text/javascript" src="/js/fukuoka.js"></script>
      @include('layouts.navbar')
 </head>
 
 <body>
 <div class="cont_principal">
-  <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  ><span class="glyphicon glyphicon-backward"> 戻る</span></button>
+
+  
+  <div id="container-example">
+              <div class='strip colour-4'>
+                <a class="" onclick="history.back()">戻る</a>
+              </div>
+            </div>
+  
+
   <div class="cont_central">
   
     <div class="cont_modal cont_modal_active">
@@ -122,7 +131,7 @@
     
             
   
-    <br><br><br><br><br><br><br>
+    <br><br>
     
    
 
@@ -139,38 +148,39 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
-  
+              
+                  福岡支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
                     <div class='form-group'>
-                      {!! Form::label('content', 'コメント') !!}
+                      {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
                     </div>
                       <br>{!! Form::submit('投稿', ['class' => 'btn btn-info'])!!}
                   {!! Form::close() !!}
-
-                  
             <br><br>
             <div>
               
-              <?php
-                if($user->point < 30){
-                  $result = '<img src="images/rakuten_gallery/bronze.jpg">';
-                }
-                elseif($user->point >=100){
-                  $result = '<img src="images/rakuten_gallery/silver.jpg">';
-                }
-                else{
-                   $result = '<img src="images/rakuten_gallery/gold.jpg">';
-                }
-              ?>
+              
               
               
               <?php
               if(count($count)>0){
                 foreach($contents as $content){
               ?>
-                    <div class="box5"><?php echo $result?> {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
-                   
+                    <div class="box5">
+                        <?php 
+                              if($content->user_point < 30){
+                                 $result = '<img src="images/rakuten_gallery/bronze.jpg">';
+                              }
+                              elseif($content->user_point >=100){
+                                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
+                              }
+                              else{
+                                $result = '<img src="images/rakuten_gallery/gold.jpg">';
+                              }
+                              echo $result
+                        ?>  {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                  
                     
                     
                     <?php

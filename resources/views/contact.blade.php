@@ -1,0 +1,1 @@
+<img class="contact" src="/images/contact.png">

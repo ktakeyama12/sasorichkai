@@ -19,6 +19,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/contact', 'HomeController@contact')->name('contact');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
 Route::get('rakutenprime', 'AController@rakutenprime')->name('rakutenprime');
@@ -52,9 +53,18 @@ Route::get('index', 'ContentsController@index')->name('contents.index');
 
 // branch
 Route::get('contents.branch', 'ContentsController@branch')->name('contents.branch');
+// fukuoka
 Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
 Route::post('fukuokafavorite', 'UsersController@fukuokafavorite')->name('fukuokafavorite');
 Route::post('fukuokaunfavorite', 'UsersController@fukuokaunfavorite')->name('fukuokaunfavorite');
+// tokyo
+Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
+Route::post('tokyofavorite', 'UsersController@tokyofavorite')->name('tokyofavorite');
+Route::post('tokyounfavorite', 'UsersController@tokyounfavorite')->name('tokyounfavorite');
+// osaka
+Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+Route::post('osakafavorite', 'UsersController@osakafavorite')->name('osakafavorite');
+Route::post('osakaunfavorite', 'UsersController@osakaunfavorite')->name('osakaunfavorite');
 // Route::group(['prefix' => 'branches/fukuoka'], function () {
 //         Route::post('fukuokafavorite', 'BranchfavoritesController@store')->name('fukuokafavorite');
 //         Route::delete('unfavorite', 'FavoriteController@destroy')->name('micropost.unfavorite');
@@ -62,20 +72,21 @@ Route::post('fukuokaunfavorite', 'UsersController@fukuokaunfavorite')->name('fuk
     
 
 Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
-Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
-Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
-Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
+// Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
+// Route::get('fukuoka', 'ContentsController@fukuoka')->name('contents.fukuoka');
+// Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
 Route::get('gallery', 'ContentsController@gallery')->name('contents.gallery');
 
 Route::post('contents.storeF', 'ContentsController@storeF')->name('contents.storeF');
+Route::post('contents.storeT', 'ContentsController@storeT')->name('contents.storeT');
 
 //branch favorite
         Route::post('branchfavorite/{id}', 'BranchfavoritesController@store')->name('branchfavorite');
         Route::delete('unfavorite', 'BranchfavoritesController@destroy')->name('micropost.unfavorite');
    
 
-Route::get('users.show', 'MainController@show')->name('users.show');
+Route::get('users.show', 'UsersController@show')->name('users.show');
 
 Route::post('contents.store/{id}', 'ContentsController@store')->name('contents.store');
 
@@ -97,7 +108,18 @@ Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('sign
 Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
 
 
+
+//isPrime
+Route::get('member', 'MainController@isPrime')->name('member');
+
+Route::get('rakutenPrime', 'MainController@rakutenPrime')->name('rakutenPrime');
+Route::get('amusePrime', 'MainController@amusePrime')->name('amusePrime');
+Route::get('shoppingPrime', 'MainController@shoppingPrime')->name('shoppingPrime');
+Route::get('cafePrime', 'MainController@cafePrime')->name('cafePrime');
+Route::get('moviePrime', 'MainController@moviePrime')->name('moviePrime');
+
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
 Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
+

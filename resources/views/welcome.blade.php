@@ -42,8 +42,9 @@
   
 
   @include('layouts.navbar')
+  
   <header>
-    <br>
+    <br><br><br><br>
     <div><img class="logo" src="/images/logo.jpg"></div>
     <h1>新卒に嬉しい、楽天プライム。</h1>
 
@@ -55,77 +56,45 @@
   
   
 
-
-  <div class="cont s--inactive">
+@auth
+ <div class="cont s--inactive">
+@else
+ <div class="cont s--inactive" onmousedown="WhichButton(event)">
+@endauth
+ 
   <!-- cont inner start -->
   <div class="cont__inner">
-    <!-- el start -->
-    <!--<div class="el">-->
-    <!--  <div class="el__overflow">-->
-    <!--    <div class="el__inner">-->
-    <!--      <div class="el__bg"></div>-->
-    <!--      <div class="el__preview-cont">-->
-            
-    <!--        <h3 class="el__heading">ハッピー<br>手当<br></h3>-->
-    <!--      </div>-->
-    <!--      <div class="el__content">-->
-    <!--        <div class="el__text">-->
-    <!--          <div class="el__title"></div>-->
-
-              
-             
-                   
-    <!--<ol class="suuji">-->
-                   
-    <!--                  <li class="el__coupon"> <a href="rakuten"></a></li>-->
-    <!--                  <li class="coupon"> <a href="cafe" >Cafe & Restaurant around office</a></li>-->
-    <!--                  <li class="coupon"> <a href="movie">Movie & Karaoke</a></li>-->
-    <!--                  <li class="coupon"> <a href="amusement">Amusement park & pool</a></li>-->
-    <!--                  <li class="coupon"> <a href="shopping">Shopping</a></li>-->
-    <!--                 </ol>-->
-    <!--                 </div>-->
-                   
-                   
-                   
-                   
-                   
-                   
-
-    <!--        <div class="el__close-btn"></div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--  <div class="el__index">-->
-    <!--    <div class="el__index-back"><img src="/images/rakuten_gallery/panda6.png"></div>-->
-    <!--    <div class="el__index-front">-->
-          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</div>-->
-    
-    <!-- el end -->
+   
     
     <div class="el">
       <div class="el__overflow">
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-          <h3 class="el__heading">ハッピー<br>&nbsp;&nbsp;&nbsp;手当&nbsp;<br></h3>
+          <h2 class="el__heading">手当<br><br>
+           
+            </h2>
           </div>
           <div class="el__content">
             <div class="el__text">
-            <h1 class="el__text_title">ハッピー手当</h1>
+            <h1 class="el__text_title">手当</h1>
             <h3><br>ワークアズライフを充実させよう。<br><br>楽天で快適なワークスタイルを送るために必ず知っておくべき「休暇」「転勤時手当」などの社内情報について紹介。</h3>
             
             <br>
-            <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('workinfo', ' ハッピー手当一覧を見る') !!}</span></h2>
+            <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('workinfo', ' 手当一覧を見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda6.png"></div>
+        <div class="el__index-back">
+            <div class="mokuzi">
+              ・有給の交付日
+              <br>・特別休暇
+              <br>・出産手当
+          </div>
+            <img src="/images/rakuten_gallery/panda6.png"></div>
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
@@ -138,18 +107,20 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">ラッキー<br>&nbsp;&nbsp;&nbsp;社割&nbsp;</h2>
+          <h2 class="el__heading">社割<br><br>
+           
+            </h2>
           </div>
           <div class="el__content">
             <div class="el__text">
-            <h1 class="el__text_title">ラッキー社割</h1>
+            <h1 class="el__text_title">社割</h1>
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
-                      <br><a href="rakuten">1.社内で使えるサービス</a>
-                      <br><a href="cafe" >2.飲食店</a>
-                      <br><a href="movie">3.映画 ＆ カラオケ</a>
-                      <br><a href="amusement">4.アミューズ</a>
-                      <br><a href="shopping">5.ショッピング</a>
+                      <br>{!! link_to_route('rakutenPrime', '社内で使えるサービス') !!}<br>
+                      {!! link_to_route('cafePrime', '飲食店') !!} <br>
+                      {!! link_to_route('moviePrime', '映画　＆　カラオケ') !!}<br>
+                      {!! link_to_route('amusePrime', ' アミューズ') !!}<br>
+                      {!! link_to_route('shoppingPrime', ' ショッピング') !!}<br>
                   </div>
          　
               </div>
@@ -158,9 +129,14 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda3.png"></div>
+        <div class="el__index-back">
+            <div class="mokuzi">
+              ・社内サービス
+              <br>・映画＆カラオケ
+              <br>・飲食店
+          </div>
+          <img src="/images/rakuten_gallery/panda3.png"></div>
         <div class="el__index-front">
-          <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
       </div>
     </div>
@@ -171,11 +147,12 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">ウキウキ<br>&nbsp;&nbsp;&nbsp;支社</h2>
+          <h2 class="el__heading">支社<br><br>
+            </h2>
           </div>
           <div class="el__content">
             <div class="el__text">
-              <h1 class="el__text_title">ウキウキ支社</h1>
+              <h1 class="el__text_title">支社</h1>
               <h3><br>意外に知られていない地方支社。楽天クリムゾンハウス以外のオフィスをのぞいてみよう。<br>地方に行くのが楽しみになるかも！</h3>
             
               <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.branch', ' 支社情報を見る') !!}</span></h2>
@@ -185,7 +162,13 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda4.png"></div>
+        <div class="el__index-back">
+            <div class="mokuzi">
+              ・全国の支社分布
+              <br>・周辺情報
+              <br>・社食情報
+          </div>
+          <img src="/images/rakuten_gallery/panda4.png"></div>
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
@@ -198,10 +181,18 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">ほっこり<br>ブレイク</h2>
+          <h2 class="el__heading">ゲーム<br><br>
+            <!--  <ul>-->
+            <!--  <li>・楽天クイズ</li>-->
+            <!--  <li>・マジカルバナナ</li>-->
+            <!--  <li>・シューティング<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ゲーム</li>-->
+            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc</li>-->
+            <!--</ul>-->
+            </h2>
           </div>
           <div class="el__content">
             <div class="el__text">
+
               <h1 class="el__text_title">
                 <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
                 <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
@@ -230,6 +221,7 @@
                  <!--<br>{!! link_to_route('banana', '2.magical banana') !!}-->
                  <!--<br>{!! link_to_route('match', '3.自分に合った支社を見つけよう') !!}-->
                  <!--<br>{!! link_to_route('shooting', '4.Red Oceanを勝ち抜け！') !!}-->
+
                  <!--@include('chat')-->
             </div>
             <div class="el__close-btn"></div>
@@ -250,20 +242,34 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-            <h2 class="el__heading">キラキラ<br>ギャラリー</h2>
+          <h2 class="el__heading">ギャラリー<br><br>
+            <!--<ul>-->
+            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;・楽天カフェ</li>-->
+            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;・ジム</li>-->
+            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;・楽天パンダ</li>-->
+            <!--  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc</li>-->
+            <!--</ul>-->
+            </h2>
           </div>
           <div class="el__content">
             <div class="el__text">
               <p><h3>楽天のおしゃれな写真をラインナップ！<br>あなたのスライドや資料にぴったりな写真が見つかるかも！</h3></p>
             
-              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('contents.gallery', '楽天ギャラリーを見る') !!}</span></h2>
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member', '楽天ギャラリーを見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda5.png" id="loadpanda"></div>
+
+        <div class="el__index-back">
+          <div class="mokuzi">
+              &nbsp;&nbsp;きれいな
+              <br>&nbsp;&nbsp;&nbsp;写真が満載！
+          </div>
+ <img src="/images/rakuten_gallery/panda5.png" id="loadpanda"></div>
+
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>

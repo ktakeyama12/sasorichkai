@@ -49,17 +49,20 @@ $('#loadtime5').on('load', function(){
     showpage(progress);
 });
 
+var finished=0;
 function showpage(progress){
-            $('#scroller').scrollTop($('#messages').height());
-        messageList[0].scrollTop = messageList[0].scrollHeight;
+
     if(progress==100){
         var pageH = $("#container").height();
-
+        $('#scroller').scrollTop($('#messages').height());
+        messageList[0].scrollTop = messageList[0].scrollHeight;
         $("#fade").css("height", pageH).delay(900).fadeOut(800);
         $("#loader").delay(600).fadeOut(300);
         $("#container").css("display", "block");
         $("#chat").delay(4000).fadeIn(2000);
-
+        $('#scroller').scrollTop($('#messages').height());
+        finished = 1;
+        console.log("this")
     }
 }
 // if(document.getElementById("progress").innerHTML=="100"){
@@ -80,5 +83,21 @@ jQuery.event.add(window,"load",function() {
     $("#loader").delay(600).fadeOut(300);
     $("#container").css("display", "block");
     $("#chat").delay(4000).fadeIn(2000);
-
+    $('#scroller').scrollTop($('#messages').height());
+    finished += 1;
+    console.log("that")
 });
+
+
+
+
+$(function(){
+setInterval(oneSecondFunction, 100);
+});
+
+function oneSecondFunction() {
+    if(finished >= 1 && finished <= 5){
+        $('#scroller').scrollTop($('#messages').height());
+        finished=10;
+    }
+}

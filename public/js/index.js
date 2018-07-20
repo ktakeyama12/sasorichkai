@@ -35,3 +35,8 @@ function image3() {
 function image4() {
     window.location.href = "shooting";
 }
+
+// ログインしていないならはじく
+function WhichButton(event) {
+    alert("まずはログインしてね")
+}

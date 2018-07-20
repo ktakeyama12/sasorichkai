@@ -55,7 +55,7 @@ messagesRef.limitToLast(10).on('child_added', function (snapshot) {
     //一番下にスクロールする
     // messageList[0].scrollTop = messageList[0].scrollHeight;
     // $("scroller").scrollTop(1000);
-    console.log("a");
+
     
     // $('#scroller').animate({scrollTop: $('#scroller')[0].scrollHeight}, 'fast');
     // window.scrollTo(0,document.querySelector("#scroller").scrollHeight);
@@ -65,22 +65,25 @@ messagesRef.limitToLast(10).on('child_added', function (snapshot) {
 // $('#scroller').delay(100).scrollTop($('#messages').height());
 
 window.onscroll = function (e) {  
-  messageList[0].scrollTop = messageList[0].scrollHeight;
-    console.log("a")
+//   messageList[0].scrollTop = messageList[0].scrollHeight;
+    $('#scroller').scrollTop($('#messages').height());
+
 } 
 
 function down(){
     messageList[0].scrollTop = messageList[0].scrollHeight;
-    console.log("a")
+  
 }
 
 
-$(document).ready(function(){
-    // $("button").click(function(){
-        // $("#chat").delay(6000).fadeIn(2000);
-    // });
+$(window).load(function(){
+ $('#scroller').scrollTop($('#messages').height());
+
 });
 
 $("button").click(function(){
         $("#chat").fadeOut(1000);
 });
+
+$('#scroller').delay(1000).scrollTop($('#messages').height());
+

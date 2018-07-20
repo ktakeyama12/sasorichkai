@@ -41,6 +41,7 @@
             
         }
         
+        
         #score{
             color: #ffffff;
             font-size: 18px;
@@ -57,20 +58,23 @@
             top: 200px;
             visibility: hidden;
         }
+        
     </style>
     <script src="../js/jquery-1.7.1.min.js"></script>
     <script>
        
     </script>
+    
 </head>
 <body>
+    
+    
     
     <div id='background'></div>
     <div id='hero'><img  id="heroImage" src="/images/rakuten.jpg"></div>
     <div id = 'laser'></div>
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
-    
     <script>
     
     var LEFT_KEY = 37;

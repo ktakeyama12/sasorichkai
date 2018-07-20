@@ -21,13 +21,21 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Bootstrap JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="css/branch.css" rel="stylesheet" type="text/css">   
+        <link href="css/branch.css" rel="stylesheet" type="text/css"> 
+        <link href="css/nav.css" rel="stylesheet" type="text/css"> 
 </head>
     <body>
         <div id="loader"><img src="images/loading/panda.gif" alt="Loading..." /><br><center>Now Loading...</center></div>
         <div id="fade"></div>
         <div id="container" style="display:none">
-            <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
+            
+
+            <div id="container-example">
+              <div class='strip colour-4'>
+                <a class="" onclick="history.back()">戻る</a>
+              </div>
+            </div>
+        
             <div class="main">
                 <div id="setsumei">
                     楽天パンダを行きたいところにドラッグしてね！
