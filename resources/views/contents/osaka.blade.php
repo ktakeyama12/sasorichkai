@@ -2,7 +2,7 @@
 <head><meta charset="UTF-8">
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <!--<link rel="stylesheet" href="/css/nav.css">-->
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
 </head>
 
@@ -11,7 +11,7 @@
 
 <div id="container-example">
               <div class='strip colour-4'>
-                <a class="" onclick="history.back()">戻る</a>
+                <a class="" href="contents.branch">支社一覧に戻る</a>
               </div>
             </div>
 
@@ -56,12 +56,10 @@
               </div>
             <div class="cont_info_preparation">
               <p>京阪中之島線、渡辺橋駅【4番出口】より徒歩1分
-地下鉄四つ橋線、肥後橋駅【3番出口】より徒歩2分
-地下鉄御堂筋線・京阪本線、淀屋橋駅【7番出口】より徒歩7分
-JR東西線、北新地駅【11－5番出口】より徒歩7分
-※JR大阪駅【51番出口】より徒歩12分
-なんとか川ぞい　オフィス街　徒歩10分で梅田　
-              ジェシカ
+地下鉄御堂筋線・京阪本線、淀屋橋駅【7番出口】より徒歩7分。
+堂島川沿いにあり、落ち着いた雰囲気のオフェス街。
+徒歩10分で梅田駅まで行けるので買い物、食事にも困りません。
+
               <br></p>
               </div>  
             <div class="cont_text_det_preparation">
@@ -70,7 +68,10 @@ JR東西線、北新地駅【11－5番出口】より徒歩7分
                 <p>社食</p>
                 </div>
               <div class="cont_info_preparation">
-                <p>岡本さんの返事待ち
+                <p>朝食、昼食、夕食、3食無料です。
+                カフェテリアは一箇所でコーヒーやお菓子数種類も、社内で購入できます。
+              </div>
+
               </div>
         
             </div>

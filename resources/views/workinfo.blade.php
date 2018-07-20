@@ -16,7 +16,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Rakuten Work Info</title>
         
-        @include('layouts.navbar')
         
     </head>
     
