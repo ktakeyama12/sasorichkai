@@ -47,7 +47,8 @@
                 <div class="projectInfo">Drinking</div>
             </li>
             <li>
-                <a href="images/gallery/p2.jpg"></a>
+                <!--<a href="images/gallery/p2.jpg"></a>-->
+                <a href="gallery"></a>
                 <img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />
 
                 <div class="overLayer"></div>

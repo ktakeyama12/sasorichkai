@@ -115,11 +115,11 @@
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
 
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.cafePrime', '  飲食店') !!} </span></h2>
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.amusePrime', '  アミューズ') !!}</span></h2>
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.shoppingPrime', '  ショッピング') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('cafePrime', '  飲食店') !!} </span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('amusePrime', '  アミューズ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('shoppingPrime', '  ショッピング') !!}</span></h2>
 
                   </div>
          　
