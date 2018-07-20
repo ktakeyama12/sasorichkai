@@ -1,9 +1,11 @@
 .box_6 {
-    width: 500px;
+    width: 50%;
     margin: 60px auto;
     padding: 20px;
     position: relative;
     border: double 3px #009FB7;
+    top: 13%;
+    margin-top: 0%;
     }
  
 .box_6 .box-title {
@@ -18,3 +20,15 @@
     color: #009FB7;
     font-weight: bold;
     }
+    
+#rankingname{
+    position: absolute;
+    top: 49%;
+    /*left: 37%;*/
+}
+
+.cafelogo{
+    height: 50%;
+    width: 100%;
+    
+}

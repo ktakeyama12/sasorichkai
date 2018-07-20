@@ -7,6 +7,9 @@
 	</head>
 	<body>
 		
+		<img class="cafelogo" src="/images/rakuten_gallery/cafelogo.jpeg">
+		
+		
 <div class="box_6">
 	  <h1><span class="box-title">{{$user->name}} さん</span></h1>
 	    <p>
@@ -24,19 +27,39 @@
 	              
 	              
 	        ?>
+	        <?php
+	        $free = "あなたは無料会員です。今すぐ10円払おう！";
+	        $prime = "あなたはプライム会員です。ポイントもっとためましょう！";
+	        $error = "Who the hell are you? get the hell out of here";
+	        
+	        
+	        if($user->prime == 0){
+	        	echo $free;
+	        }elseif($user->prime == 1){
+	        	$img = '<img src="images/prime.png">';
+	        	echo $img;
+	        	echo $prime;
+	        }else{
+	        	echo $error;
+	        }
+	        
+	        ?>
 	        
 		
 			<br><h1>{{$user->point}} POINTS</h1> 
 	    </p>
+</div>
+		<div class="box_6"><center>楽天理解度王者ランキング</center></div>
 	    <?php
 		    foreach($alldata as $data){
-		    	?><p><?php
+		    	?><div class="box_6"><?php
 	            print $data->name;
+	            print "さん ";
 	            print $data->point;
-	            ?><p><?php
+	            print "ポイント";
+	            ?></div><?php
         }
 	    ?>
-</div>
 	   
 		
 	</body>

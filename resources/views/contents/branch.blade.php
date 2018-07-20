@@ -37,6 +37,9 @@
               <!--<div class='strip colour-4'>-->
               <!--  <a class="" onclick="history.back()">戻る</a>-->
               <!--</div>-->
+              <div class='strip colour-4'>
+                <a class="" href="/">戻る</a>
+              </div>
             </div>
         
             <div class="main">

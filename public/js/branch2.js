@@ -6,10 +6,10 @@ var coordinates = function(element) {
     if(left>200 && left<300 && top>130 && top<270){
         window.location.href = "tokyo";
     }
-    if(left>50 && left<160 && top>170 && top<250){
+    if(left>30 && left<160 && top>200 && top<340){
         window.location.href = "osaka";
     }
-    if(left>-160 && left<-40 && top>200 && top<340){
+    if(left>-160 && left<-40 && top>220 && top<340){
         window.location.href = "fukuoka";
     }
 }

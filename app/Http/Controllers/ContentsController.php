@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Content;
 use App\TokyoContent;
+use App\OsakaContent;
 use App\User;
 use DB;
 use App\Branchfavorites;
@@ -95,6 +96,12 @@ class ContentsController extends Controller
     
     public function osaka()
     {
+       $user = \Auth::user();
+         $users = User::all();
+         $content = new OsakaContent;
+         $contents = OsakaContent::all();
+         $count = Branchfavorites::where("favorite_id", 3)->count();
+
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
         if($user->osaka==0){
@@ -102,14 +109,16 @@ class ContentsController extends Controller
             $user->point = $user->point + 10;
             $user->save();
         }
-         $content = new Content;
-         $contents = Content::all();
         
         return view('contents.osaka',[
+            'user' => $user,
+            'users' =>$users,
             'content' => $content,
             'contents' => $contents,
+            'count' => $count,
             ]);
     }
+    
     public function okinawa()
     {
         
@@ -136,7 +145,11 @@ class ContentsController extends Controller
         $content->save();
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 2)->count();
-       
+        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        $user->point = $user->point + 10;
+        $user->save();
         
          return view('contents.fukuoka',[
             'user' => $user,
@@ -159,9 +172,42 @@ class ContentsController extends Controller
         $content->save();
         $contents = TokyoContent::all();
         $count = Branchfavorites::where("favorite_id", 1)->count();
+        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        $user->point = $user->point + 10;
+        $user->save();
        
         
          return view('contents.tokyo',[
+            'user' => $user,
+            'users' =>$users,
+            'content' => $content,
+            'contents' => $contents,
+            'count' => $count,
+            ]);
+    }
+    
+    public function storeO(Request $request)
+    {
+        $user = \Auth::user();
+        $users = User::all();
+        $content = new OsakaContent;
+        $content->content = $request->content;
+        $content->user_id = $user->id;
+        $content->user_name = $user->name;
+        $content->user_point = $user->point;
+        $content->save();
+        $contents = OsakaContent::all();
+        $count = Branchfavorites::where("favorite_id", 3)->count();
+        
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        $user->point = $user->point + 10;
+        $user->save();
+       
+        
+         return view('contents.osaka',[
             'user' => $user,
             'users' =>$users,
             'content' => $content,
