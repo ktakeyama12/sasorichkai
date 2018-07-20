@@ -10,14 +10,13 @@
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
     <link rel="stylesheet" href="/css/nav.css">
-    <script type="text/javascript" src="/js/fukuoka.js"></script>
-     @include('layouts.navbar')
+    <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
 </head>
-
 <body>
 <div class="cont_principal">
-
+   @include('layouts.navbar')
   
+  <br>
   <div id="container-example">
               <div class='strip colour-4'>
                 <a class="" href="contents.branch">支社一覧に戻る</a>
@@ -54,7 +53,38 @@
           <p>&nbsp;&nbsp;&nbsp;&nbsp;〒812-0011<br>
           &nbsp;&nbsp;&nbsp;&nbsp;福岡市博多区博多駅前2丁目2番1号<br>
           &nbsp;&nbsp;&nbsp;&nbsp;福岡センタービル12F</p>
+          
+           <div class = "btn-toolbar">
+            
+                      <div class="btn btn-lg">
+                      
+                      <?php
+                        $user_id =  \Auth::user()->id;
+                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 2");
+                      
+                         if(!$exist){
+                      ?>
+                            {!! Form::open(['route' => ['fukuokafavorite']]) !!}
+                               <input type="hidden" value="2" name="fukuoka_id" />
+                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
+                            {!! Form::close() !!}
+                      <?php
+                          }
+                         else{
+                      ?>
+                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
+                           
+                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-sm btn-block']) !!}
+                            {!! Form::close() !!}
+                        
+                      <?php
+                         }
+                      ?>
+                      </div>
+                 
+          </div>
         </div>
+        
       </div>
   
       <div class="cont_text_ingredients">
@@ -62,7 +92,10 @@
      
           <div class="cont_tabs">
               <ul>
-                <li><a href="#"><h4>福岡支社</h4></a></li>
+                <li><h4>福岡支社</h4></a>
+                </li>
+                
+                
               
               </ul>  
           </div>
@@ -83,7 +116,9 @@
               <div class="cont_info_preparation">
                 <p>ランチのみ無料です。
                 朝食や夕食は有料で提供されています。オフィス周辺の飲食店で利用できる食品券の支給があります。</p>
+                
               </div>
+              
         
             </div>
           </div>  
@@ -101,37 +136,11 @@
       
     </div>
     <br>
-    <div class = "btn-toolbar">
-            
-                      <div class="btn btn-lg">
-                      
-                      <?php
-                        $user_id =  \Auth::user()->id;
-                        $exist = DB::select("select * from branchfavorites where user_id = $user_id and favorite_id = 2");
-                      
-                         if(!$exist){
-                      ?>
-                            {!! Form::open(['route' => ['fukuokafavorite']]) !!}
-                               <input type="hidden" value="2" name="fukuoka_id" />
-                                {!! Form::submit('いいね！', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
-                            {!! Form::close() !!}
-                      <?php
-                          }
-                         else{
-                      ?>
-                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
-                            {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
-                            {!! Form::close() !!}
-                      <?php
-                         }
-                      ?>
-                      </div>
-                 
-          </div>
+   
     
             
   
-    <br><br>
+    <br>
     
    
 

@@ -212,6 +212,7 @@
   position: relative;
   float: right;
   margin-top: 16px;
+  
 }
 .cont_icon_right  > a  {
   margin: 16px;
@@ -256,55 +257,55 @@
 /* ---------------- Css Tabs -------- */
 
 /*タブの設定*/
-.cont_tabs {
-  position: relative;
-  float: left;
-  width: 410px;
-  height: 60px;
-  border-bottom: 3px solid #EDEDEC;
-}
+/*.cont_tabs {*/
+/*  position: relative;*/
+/*  float: left;*/
+/*  width: 410px;*/
+/*  height: 60px;*/
+/*  border-bottom: 3px solid #EDEDEC;*/
+/*}*/
 
-.cont_tabs > ul {
-  width: 300px;
-  background-color: #eee;
-}
+/*.cont_tabs > ul {*/
+/*  width: 300px;*/
+/*  background-color: #eee;*/
+/*}*/
 
-.cont_tabs > ul > li {
-  position: relative;
-  float: left;
-  width: 50%;
-  list-style: none;
-}
+/*.cont_tabs > ul > li {*/
+/*  position: relative;*/
+/*  float: left;*/
+/*  width: 50%;*/
+/*  list-style: none;*/
+/*}*/
 
-.cont_tabs > ul > li > a {
-  border-top: 7px solid #ED346C;
-  position: relative;
-  display: block;
-  float: left;
-  padding-top: 15px;
-  color: #241C3E;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
-}
+/*.cont_tabs > ul > li > a {*/
+/*  border-top: 7px solid #ED346C;*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  float: left;*/
+/*  padding-top: 15px;*/
+/*  color: #241C3E;*/
+/*  text-decoration: none;*/
+/*  margin-left: 15px;*/
+/*  font-size: 14px;*/
+/*}*/
 
-.cont_tabs > ul > li:first-child > a
-{
-  border-top: 7px solid rgba(237, 52, 108, 0);
-  margin-top: 0px;
-  color: #9A96A4;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  transition: all 0.2s;
-}
+/*.cont_tabs > ul > li:first-child > a*/
+/*{*/
+/*  border-top: 7px solid rgba(237, 52, 108, 0);*/
+/*  margin-top: 0px;*/
+/*  color: #9A96A4;*/
+/*  -webkit-transition: all 0.5s;*/
+/*  -o-transition: all 0.5s;*/
+/*  transition: all 0.5s;*/
+/*  transition: all 0.2s;*/
+/*}*/
 
-.cont_tabs > ul > li:first-child > a:hover {
-  border-top: 7px solid #ED346C;
-  padding-top: 15px;
-  color: #241C3E;
-  margin-top: 0px;
-}
+/*.cont_tabs > ul > li:first-child > a:hover {*/
+/*  border-top: 7px solid #ED346C;*/
+/*  padding-top: 15px;*/
+/*  color: #241C3E;*/
+/*  margin-top: 0px;*/
+/*}*/
 
 /*ページを広げるボタンの設定*/
 .cont_btn_open_dets {
@@ -487,6 +488,10 @@ box-shadow: 25px 10px 70px -5px rgba(0,0,0,0.3);
     padding: 0;
 }
 
+.btn-toolbar{
+  text-align:center;
+}
+
 
 /*戻るボタン*/
 #container-example {
@@ -537,3 +542,5 @@ box-shadow: 25px 10px 70px -5px rgba(0,0,0,0.3);
   background-position: top;
   color: #8d78b1;
 }
+
+

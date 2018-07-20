@@ -51,7 +51,7 @@
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
-  <br>社員同士で交流できるサービスもご用意しています。</h4>
+  <br>社員同士で交流できるサービスもご用意しています。</h4><br>
 </header>
   
   
@@ -229,7 +229,11 @@
         </div>
       </div>
       <div class="el__index">
-        <div class="el__index-back"><img src="/images/rakuten_gallery/panda.png"></div>
+        <div class="el__index-back">
+          <div class="mokuzi">
+              仕事の合間に、<br>ゲームでリフレッシュ！<br>同期と対戦しよう！
+          </div>
+          <img src="/images/rakuten_gallery/panda.png"></div>
         <div class="el__index-front">
           <!--<div class="el__index-overlay" data-index="R"><img src="/images/rakuten_gallery/panda.png"></div>-->
         </div>
