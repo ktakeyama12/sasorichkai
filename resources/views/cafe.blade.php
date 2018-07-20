@@ -18,10 +18,10 @@
 </head>
 <body>
     
-    <div class="headd">
-         <h2>Cafe & Restaurant around office</h2>
-    </div>
-
+    
+    <header>
+        <h2>Cafe & Restaurant around office</h2>
+    </header>
     <!--  least.js gallery -->
     <section>
         <div id="container-example">
