@@ -231,7 +231,7 @@ userRef.onSnapshot(function(snapshot) {
     snapshot.docChanges.forEach(function(change) {
         var username = change.doc.data().username
         username = username.toString()
-         console.log(username)
+        // console.log(username)
         var points = change.doc.data().points
         points = points.toString()
         userData[username] = username
@@ -239,6 +239,9 @@ userRef.onSnapshot(function(snapshot) {
         var scoreall = ""
         var userplay = "<u>Users</u><br/>"
         Object.keys(userData).forEach(function(element){
+        	if(element==username){
+        	
+        	}
         	scoreall += "<li>"
             scoreall += userData[element]
             scoreall += "は"
