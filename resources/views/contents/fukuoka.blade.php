@@ -20,7 +20,7 @@
   
   <div id="container-example">
               <div class='strip colour-4'>
-                <a class="" onclick="history.back()">戻る</a>
+                <a class="" href="contents.branch">支社一覧に戻る</a>
               </div>
             </div>
   

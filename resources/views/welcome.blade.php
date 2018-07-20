@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sasorich KAI</title>
+    <title>Rakuten Prime</title>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     
     <!--Chat機能 Firebase接続-->
@@ -103,20 +103,18 @@
         <div class="el__inner">
           <div class="el__bg"></div>
           <div class="el__preview-cont">
-          <h2 class="el__heading">社割<br><br>
-           
-            </h2>
+          <h2 class="el__heading">社割<br><br></h2>
           </div>
           <div class="el__content">
             <div class="el__text">
             <h1 class="el__text_title">社割</h1>
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
-                      {!! link_to_route('member.rakutenPrime', '社内で使えるサービス') !!}
-                      {!! link_to_route('member.cafePrime', '飲食店') !!} 
-                      {!! link_to_route('member.moviePrime', '映画　＆　カラオケ') !!}
-                      {!! link_to_route('member.amusePrime', ' アミューズ') !!}
-                      {!! link_to_route('member.shoppingPrime', ' ショッピング') !!}
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.cafePrime', '  飲食店') !!} </span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.amusePrime', '  アミューズ') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member.shoppingPrime', '  ショッピング') !!}</span></h2>
                   </div>
          　
               </div>

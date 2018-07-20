@@ -10,10 +10,11 @@
     <title>Welcome to Rakuten</title>
     <link rel="stylesheet" href="/css/fukuoka.css">
 
-    <link rel="stylesheet" href="/css/nav.css">
+    <!--<link rel="stylesheet" href="/css/nav.css">-->
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
 
     <script type="text/javascript" src="/js/fukuoka.js"></script>
+    
      @include('layouts.navbar')
 
 </head>
@@ -21,14 +22,13 @@
 <body>
 <div class="cont_principal">
 
-  
+  <br><br><br>
   <div id="container-example">
               <div class='strip colour-4'>
-                <a class="" onclick="history.back()">戻る</a>
+                <a class="" href="contents.branch">支社一覧に戻る</a>
               </div>
             </div>
-  
-
+ 
   <div class="cont_central">
   
     <div class="cont_modal cont_modal_active">

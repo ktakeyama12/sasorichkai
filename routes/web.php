@@ -69,7 +69,7 @@ Route::post('osakaunfavorite', 'UsersController@osakaunfavorite')->name('osakaun
 //         Route::post('fukuokafavorite', 'BranchfavoritesController@store')->name('fukuokafavorite');
 //         Route::delete('unfavorite', 'FavoriteController@destroy')->name('micropost.unfavorite');
 //     });
-    
+Route::get('okinawa', 'ContentsController@okinawa')->name('contents.okinawa');
 
 Route::get('tokyo', 'ContentsController@tokyo')->name('contents.tokyo');
 // Route::get('osaka', 'ContentsController@osaka')->name('contents.osaka');
