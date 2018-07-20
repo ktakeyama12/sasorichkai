@@ -1,14 +1,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Profile</title>
 	    <link rel="stylesheet" href="/css/profile.css">
 	     @include('layouts.navbar')
 	</head>
 	<body>
-		
-		<img class="cafelogo" src="/images/rakuten_gallery/cafelogo.jpeg">
-		
+	<div class="border">
+		<img class="logo" src="/images/logo.jpg">
+	</div>
+	<div class="glyphicon glyphicon-user">
+	</div>
+	
 		
 <div class="box_6">
 	  <h1><span class="box-title">{{$user->name}} さん</span></h1>

@@ -26,9 +26,20 @@
     top: 49%;
     /*left: 37%;*/
 }
-
-.cafelogo{
+.logo{
+    padding-left: 28%;
+    padding-top: 5%;
+    
+}
+.border{
     height: 50%;
     width: 100%;
+    background-color: darkred;
+    
+}
+.border{
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
     
 }
