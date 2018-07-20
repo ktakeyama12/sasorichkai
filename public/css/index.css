@@ -627,9 +627,9 @@ a:active { color: #f57; }
 }
 
 #i1, #i3,#i2,#i4{
-    width: 500px;
+    width: 360px;
     height: auto;
-        margin-left: 110px;
+       
     /*position: absolute;*/
     /*margin-top: 19%;*/
     /*left: 23%;*/
