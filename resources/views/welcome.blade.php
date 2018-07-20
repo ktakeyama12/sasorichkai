@@ -182,7 +182,7 @@
           <div class="el__bg"></div>
           <div class="el__preview-cont">
           <h2 class="el__heading">ゲーム<br><br>
-            <!--  <ul>-->
+            <!--  <ul><--></-->
             <!--  <li>・楽天クイズ</li>-->
             <!--  <li>・マジカルバナナ</li>-->
             <!--  <li>・シューティング<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ゲーム</li>-->
@@ -196,7 +196,7 @@
               <h1 class="el__text_title">
                 <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
                 <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
-                <br>
+              
                 <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
                 <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
                 <!--<a  href="soloanswer">-->
