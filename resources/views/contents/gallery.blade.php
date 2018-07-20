@@ -20,8 +20,11 @@
 <body>
     
     <header>
-        <h2>Rakuten Gallery</h2>
+        <h2>
+        楽天社内のおしゃれ写真がたくさん！スライド作成や広報など、使い道はたくさん。<br>プライム会員（月額１００円）ならダウンロードし放題！</p>
+        </h2>
     </header>
+    
 
     <!--  least.js gallery -->
     <section style="border:1px solid black;width:200px;height:800px;overflow:scroll;">

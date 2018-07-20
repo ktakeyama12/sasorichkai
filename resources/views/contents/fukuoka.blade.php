@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="/css/fukuoka.css">
     <link rel="stylesheet" href="/css/nav.css">
     <script type="text/javascript" src="/js/fukuoka.js"></script>
-     @include('layouts.navbar')
 </head>
-
 <body>
 <div class="cont_principal">
-
+   @include('layouts.navbar')
   
+  <br>
   <div id="container-example">
               <div class='strip colour-4'>
                 <a class="" onclick="history.back()">戻る</a>
@@ -62,7 +61,10 @@
      
           <div class="cont_tabs">
               <ul>
-                <li><a href="#"><h4>福岡支社</h4></a></li>
+                <li><a href="#"><h4>福岡支社</h4></a>
+                </li>
+                
+                
               
               </ul>  
           </div>
@@ -83,7 +85,9 @@
               <div class="cont_info_preparation">
                 <p>ランチのみ無料です。
                 朝食や夕食は有料で提供されています。オフィス周辺の飲食店で利用できる食品券の支給があります。</p>
+                
               </div>
+              
         
             </div>
           </div>  
@@ -122,6 +126,7 @@
                             {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
                             {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
                             {!! Form::close() !!}
+                        
                       <?php
                          }
                       ?>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/nav.css">
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
 
-    <script type="text/javascript" src="/js/fukuoka.js"></script>
+    <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
      @include('layouts.navbar')
 
 </head>
@@ -34,7 +34,7 @@
     <div class="cont_modal cont_modal_active">
       <div class="cont_photo">
         <div class="cont_img_back">
-          <img src="images/fukuoka.jpg" alt="hakata" />
+          <img src="images/tokyo.jpg" alt="rakuten crimson house" />
         </div>
     
         <div class="cont_mins">
@@ -65,7 +65,7 @@
      
           <div class="cont_tabs">
               <ul>
-                <li><a href="#"><h4>楽天クリムゾンハウス本社</h4></a></li>
+                <li><h4>クリムゾンハウス</h4></li>
               
               </ul>  
           </div>
@@ -122,7 +122,7 @@
                           }
                          else{
                       ?>
-                            {!! Form::open(['route' => ['fukuokaunfavorite']]) !!}
+                            {!! Form::open(['route' => ['tokyounfavorite']]) !!}
                             {!! Form::submit('やっぱり興味ないかなぁ',  ['class' => 'btn btn-info  btn-lg btn-block']) !!}
                             {!! Form::close() !!}
                       <?php
