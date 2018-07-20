@@ -7,6 +7,9 @@
 	</head>
 	<body>
 		
+		<img class="cafelogo" src="/images/rakuten_gallery/cafelogo.jpeg">
+		
+		
 <div class="box_6">
 	  <h1><span class="box-title">{{$user->name}} さん</span></h1>
 	    <p>
