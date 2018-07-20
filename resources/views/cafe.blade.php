@@ -33,7 +33,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <a href="https://www.google.co.jp/search?num=30&hl=en-JP&rlz=1C1GGRV_enJP791JP791&biw=1396&bih=700&ei=8jRRW82RINPyhwPY5q3wCg&q=%E3%82%A2%E3%82%A4%E3%83%93%E3%82%A2%E3%83%BC%E3%83%AB%E3%80%80%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D&oq=%E3%82%A2%E3%82%A4%E3%83%93%E3%82%A2%E3%83%BC%E3%83%AB%E3%80%80%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D&gs_l=psy-ab.3..0i13k1j0i8i13i30k1.1970.4032.0.4449.14.14.0.0.0.0.167.1518.5j9.14.0....0...1c.1j4.64.psy-ab..5.5.585...0i13i30k1j0i10i30k1j33i160k1.0.bEK5-nFuuvE"></a>
+                <a href="https://www.google.co.jp/search?rlz=1C1GGRV_enJP791JP792&ei=pIJRW5KeGIv78QWWs4WQDA&q=i+beer+%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D&oq=i+beer&gs_l=psy-ab.1.3.0l4j0i7i30k1l4.5232.5232.0.6940.1.1.0.0.0.0.122.122.0j1.1.0....0...1.1.64.psy-ab..0.1.121....0.kED0PFQ75uQ"></a>
                 <img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
@@ -41,7 +41,7 @@
                     <ul>
                         <li><h3>i Beer</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><p1>10% off</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Drinking</div>
@@ -56,7 +56,7 @@
                     <ul>
                         <li><h3>McDonald's</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>ポテト150円</p1></li>
+                        <li><p1>ポテト全サイズ 150円</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">McDonald's</div>
@@ -70,7 +70,7 @@
                     <ul>
                         <li><h3>CINNABON</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><p1>10% off</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -85,7 +85,7 @@
                     <ul>
                         <li><h3>KUAAINA</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><p1>10% off</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -99,8 +99,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>Bills</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>1 drink or 200円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>1 drinkサービス</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -115,8 +115,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>すみれ</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>100円 off</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -130,8 +130,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>温野菜</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>100円 off 予約時エントリー必須）</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -145,15 +145,15 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>Bubby's</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>100円 off (予約時エントリー必須)</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
             </li>
         </ul>
     </section>
-
+<p class=chuusyaku>※2018年7月20日現在</p>
 
 </body>
 </html>
