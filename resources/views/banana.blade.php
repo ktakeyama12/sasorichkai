@@ -35,38 +35,40 @@
 </head>
 
 <body>
-    リアルタイムマジカルバナナ
-    <br>
-    <div id="bananashow"></div>と言ったら
-            <div>
-                
-            <input id="name" placeholder="名前">
-            <input id="message" placeholder="メッセージ">
-            <button id="send">投稿</button>
-        </div>
-        <ul id="messages">
-        </ul>
-    
-    <!--<div class="panel-default">-->
-    <!--    <div class="panel-heading">-->
-    <!--    </div>-->
-    <!--    <div id="scroller" class="panel-body">-->
-    <!--        <ul id='messages'>-->
-    <!--        </ul>-->
-    <!--    </div>-->
-    <!--    <div class="panel-footer">-->
-    <!--        <input type='text' class="form-control" id="nameInput" placeholder="ユーザー名を入力してください">-->
-    <!--    </div>-->
-    <!--    <div class="panel-footer">-->
-    <!--        <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください">-->
-    <!--    </div>-->
-    <!--</div>-->
-    <!--<div>-->
-    <!--    <ul id='last'></ul>-->
-
-            <!--<div id='last'></div>-->
-    <!--        <div id='last'></div>と言ったら-->
-    <!--</div>-->
-    <script src="js/banana.js"></script>
-    
-</body>
+    <div class="main">
+    <div class="main_background-image"></div>    
+        <h1>リアルタイムマジカルバナナ</h1>
+        <br>
+        <div id="bananashow"></div>と言ったら
+                <div>
+                    
+                <input id="name" placeholder="名前">
+                <input id="message" placeholder="メッセージ">
+                    <button id="send">投稿</button>
+                </div>
+                <ul id="messages">
+                </ul>
+            
+            <!--<div class="panel-default">-->
+            <!--    <div class="panel-heading">-->
+            <!--    </div>-->
+            <!--    <div id="scroller" class="panel-body">-->
+            <!--        <ul id='messages'>-->
+            <!--        </ul>-->
+            <!--    </div>-->
+            <!--    <div class="panel-footer">-->
+            <!--        <input type='text' class="form-control" id="nameInput" placeholder="ユーザー名を入力してください">-->
+            <!--    </div>-->
+            <!--    <div class="panel-footer">-->
+            <!--        <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください">-->
+            <!--    </div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <ul id='last'></ul>-->
+        
+                    <!--<div id='last'></div>-->
+            <!--        <div id='last'></div>と言ったら-->
+            <!--</div>-->
+            <div class="js" ><script src="js/banana.js"></script></div>
+         </div>   
+        </body>
