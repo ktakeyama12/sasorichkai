@@ -75,7 +75,7 @@
                 <!--        <li><p1>ポテト150円</p1></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
-                <div class="projectInfo">McDonald's</div>
+                <div class="projectInfo"></div>
             </li>
             <li>
                 <a href="images/gallery/p3.jpg"></a>
