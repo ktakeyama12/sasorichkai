@@ -183,16 +183,16 @@
               ?>
                     <div class="box5">
                         <?php 
-                              if($content->user_point < 30){
+                              if($content->user_point < 50){
                                  $result = '<img src="images/rakuten_gallery/bronze.jpg">';
                               }
-                              elseif($content->user_point >=100){
+                              elseif($content->user_point >=50 && $content->user_point <200 ){
                                  $result = '<img src="images/rakuten_gallery/silver.jpg">';
                               }
-                              else{
+                              elseif($content->user_point >=200){
                                 $result = '<img src="images/rakuten_gallery/gold.jpg">';
                               }
-                              echo $result
+                              echo $result;
                         ?>  {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
                   
                     

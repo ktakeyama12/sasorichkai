@@ -34,10 +34,10 @@
 			 
 			    <p><center>
 			    	<?php 
-			              if($user->point < 30){
+			              if($user->point < 50){
 			                 $result = '<img src="images/rakuten_gallery/bronze.jpg">';
 			              }
-			              elseif($user->point >=100){
+			              elseif($user->point >=50 && $user->point <200){
 			                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
 			              }
 			              else{

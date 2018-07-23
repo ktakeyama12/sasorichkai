@@ -20,9 +20,7 @@
 <body>
     
     <header>
-        <h2>
-        楽天社内のおしゃれ写真がたくさん！スライド作成や広報など、使い道はたくさん。<br>プライム会員（月額１００円）ならダウンロードし放題！</p>
-        </h2>
+        <h2>Rakuten Gallery</h2>
     </header>
     
 
@@ -31,7 +29,7 @@
         
         <ul id="gallery">
             <li id="fullPreview"></li>
-            <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
+            
             <li>
                 <a href="images/rakuten_gallery/cafelogo.jpeg"></a>
                 <img data-original="images/rakuten_gallery/cafelogo t.jpeg" src="img/effects/white.gif" alt="Photo 1" />
