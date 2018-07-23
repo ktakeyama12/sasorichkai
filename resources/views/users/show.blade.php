@@ -68,7 +68,12 @@
 				<div class="tyuumoji">楽天理解度王者ランキング</div>
 			    <?php
 				    foreach($alldata as $data){
-				    
+				    		    	?><div class="box_6"><?php
+	            print $data->name;
+	            print "さん ";
+	            print $data->point;
+	            print "ポイント";
+	            ?></div><?php
 		        }
 			    ?>
 			    </center></p>
