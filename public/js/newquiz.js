@@ -320,11 +320,36 @@ function readyQuiz(){
     userRef.onSnapshot(function(snapshot) {
         snapshot.docChanges.forEach(function(change) {
             var ready1 = change.doc.data().ready1;
-            var name1 = change.doc.data().name1;
+            var name1 = change.doc.data().user1;
+            var ready2 = change.doc.data().ready2;
+            var name2 = change.doc.data().user2;
+            var ready3 = change.doc.data().ready3;
+            var name3 = change.doc.data().user3;
+            var ready4 = change.doc.data().ready4;
+            var name4 = change.doc.data().user4;
             if(ready1==1){
+                $('#name1').text(name1);
                 $('#ready1').text("NOT READY");
                 document.getElementById("name1").style.display = "block";
                 document.getElementById("ready1").style.display = "block";
+            }
+            if(ready2==1){
+                $('#name2').text(name2);
+                $('#ready2').text("NOT READY");
+                document.getElementById("name2").style.display = "block";
+                document.getElementById("ready2").style.display = "block";
+            }
+            if(ready3==1){
+                $('#name3').text(name3);
+                $('#ready3').text("NOT READY");
+                document.getElementById("name3").style.display = "block";
+                document.getElementById("ready3").style.display = "block";
+            }
+            if(ready4==1){
+                $('#name4').text(name4);
+                $('#ready4').text("NOT READY");
+                document.getElementById("name4").style.display = "block";
+                document.getElementById("ready4").style.display = "block";
             }
         });
     });
