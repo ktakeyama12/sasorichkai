@@ -292,5 +292,51 @@ class UsersController extends Controller
     }
     
     
+     public function osakafavorite(Request $request)
+    {
+        $favorite_id = $request->osaka_id;
+        $user_id = \Auth::user()->id;
+        $param = [
+            'user_id' => $user_id,
+            'favorite_id' =>$favorite_id,
+            ];
+        
+        DB::table('branchfavorites')->insert($param);
+        
+       
+         $user = \Auth::user();
+         $users = User::all();
+         $content = new Content;
+         $contents = Content::all();
+         $count = Branchfavorites::where("favorite_id", 3)->count();
+        
+        return view('contents.osaka',[
+            'user' => $user,
+            'users' =>$users,
+            'content' => $content,
+            'contents' => $contents,
+            'count' => $count,
+            ]);
+    }
+         
+     public function osakaunfavorite(Request $request){
+        $user_id = \Auth::user()->id;
+        DB::table('branchfavorites')->where('favorite_id', 3)->where('user_id', $user_id)->delete();
+        $user = \Auth::user();
+        $users = User::all();
+        $content = new Content;
+        $contents = Content::all();
+        $count = Branchfavorites::where("favorite_id", 3)->count();
+        
+        return view('contents.osaka',[
+            'user' => $user,
+            'users' =>$users,
+            'content' => $content,
+            'contents' => $contents,
+            'count' => $count,
+            ]);
+    }
+    
+    
   
 }

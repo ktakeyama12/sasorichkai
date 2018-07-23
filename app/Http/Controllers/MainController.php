@@ -156,6 +156,7 @@ class MainController extends BaseController
             
         }
     }
+
     
     public function welcomePrime(Request $request){
          $prime = $request->prime;
@@ -189,4 +190,5 @@ class MainController extends BaseController
     
     
     
+
 }
