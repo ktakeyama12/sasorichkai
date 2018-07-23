@@ -51,7 +51,7 @@
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
-  <br>社員同士で交流できるサービスもご用意しています。</h4><br>
+  <br>Rポイントを貯めながら、楽しく情報収集や社員交流をしましょう!。</h4><br>
 </header>
   
   
@@ -257,9 +257,12 @@
           </div>
           <div class="el__content">
             <div class="el__text">
-              <p><h3>楽天のおしゃれな写真をラインナップ！<br>あなたのスライドや資料にぴったりな写真が見つかるかも！</h3></p>
+              <h1 class="el__text_title">楽天ギャラリー</h1>
+              <p><h3>楽天のおしゃれな写真をラインナップ！<br><br>スライドや資料、広報など使い道はたくさん。あなたにぴったりな写真が見つかるかも。<br><br>プライム会員（月額１０円）ならダウンロードし放題！</p>
+  </h3></p>
             
-              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member', '楽天ギャラリーを見る') !!}</span></h2>
+              <br>
+              <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('member', ' 楽天ギャラリーを見る') !!}</span></h2>
             </div>
             <div class="el__close-btn"></div>
           </div>
@@ -357,6 +360,8 @@
     <script  src="js/index.js"></script>
     <script src="js/chat.js"></script>
     <script src="js/loader.js"></script>
+
+
 
 
 </body>
