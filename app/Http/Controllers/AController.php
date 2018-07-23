@@ -159,5 +159,8 @@ class AController extends BaseController
         }
         return view('workinfoprime');
     }
+    public function newquiz(){
+        return view("newquiz/newquiz");
+    }
 }
 

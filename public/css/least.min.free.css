@@ -13,6 +13,8 @@ section li a{display:block;width:240px;height:150px;position:absolute;top:10px;l
 section li .overLayer ul,section li .infoLayer ul{padding:50px 0 0 0}section li .overLayer ul li,section li .infoLayer ul li{display:block;margin:0 auto;width:200px;padding:0 0 5px 0}section li .overLayer ul li:first-child,section li .infoLayer ul li:first-child{border-bottom:2px #fff solid}section li .overLayer ul li:last-child,section li .infoLayer ul li:last-child{padding:5px 0 0 0;text-transform:lowercase}section li .overLayer ul li h2,section li .infoLayer ul li h2{font-size:25px}section li .projectInfo{display:none}
 
 #prime{
+
     filter: blur(3px);
+
     
 }

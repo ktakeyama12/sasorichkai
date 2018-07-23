@@ -59,6 +59,12 @@
             visibility: hidden;
         }
         
+        #new{
+            left: 400px;
+            top: 600px;
+            color: solid green;
+        }
+        
     </style>
     <script src="../js/jquery-1.7.1.min.js"></script>
     <script>
@@ -67,6 +73,7 @@
     
 </head>
 <body>
+    <button id='new' onclick="reload()">new game</button>
     
     
     
@@ -75,6 +82,8 @@
     <div id = 'laser'></div>
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
+    
+    
     <script>
     
     var LEFT_KEY = 37;
@@ -86,12 +95,18 @@
     
     var lastLoopRun = 0;
     var score =0;
+    var iterations = 0;
     
     
     
     
     var controller = new Object();
     var enemies = new Array();
+    
+    
+    function reload() {
+        location.reload();
+    }
     
     function createSprite(element, x, y, w, h){
         var result = new Object();
@@ -188,12 +203,13 @@
                     gameOver();
                     
                     
-                }else if(enemies[i].y + enemies[i].h >= 500){
+                }else if(enemies[i].y + enemies[i].h >= 480){
                     var element = document.getElementById(enemies[i].element);
                     element.style.visiblity = 'hidden';
                     element.parentNode.removeChild(element);
                     enemies.splice(i,1);
                     i--;
+                    score-=50;
                     }
                     
                 }
@@ -201,7 +217,6 @@
             
         function gameOver(){
             var element = document.getElementById(hero, element);
-            element.style.visibility = 'hidden';
             element = document.getElementById('gameover');
             element.style.visibility = 'visible';
         }
@@ -229,8 +244,16 @@
         }
         
         function addEnemy(){
+            var interval = 50;
+            if(iterations > 1500){
+                interval=5;
+            }else if(iterations > 1000){
+                interval=20;
+            }else if(iterations > 500){
+                interval=35;
+            }
             if(getRandom(50) == 0){
-                var elementName = 'enemy' + getRandom(10000);
+                var elementName = 'enemy' + getRandom(10000000);
                 var enemy = createSprite(elementName, getRandom(450), -40, 35, 35);
                 
                 var element = document.createElement('div');
@@ -258,6 +281,7 @@
                 showSprites();
                 
                 lastLoopRun = new Date().getTime();
+                iterations++;
             }
             setTimeout('loop();', 2);
         }
@@ -272,6 +296,8 @@
         
         var hero = createSprite('hero', 250, 460, 20, 20);
         var laser = createSprite('laser', 0, -120,2,50);
+        
+        
         
         
         loop();

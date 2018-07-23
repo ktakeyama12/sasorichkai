@@ -1,0 +1,19 @@
+/*#answerData1{*/
+/*    left : 0%;*/
+/*}*/
+/*#answerData2{*/
+/*    left : 25%;*/
+/*}*/
+/*#answerData3{*/
+/*    left : 50%;*/
+/*}*/
+/*#answerData4{*/
+/*    left : 75%;*/
+/*}*/
+
+#answerData1, #answerData2, #answerData3, #answerData4{
+    height : 30%;
+    text-align: center;
+vertical-align: middle;
+line-height: 2000%; 
+}

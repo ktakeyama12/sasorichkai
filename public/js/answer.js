@@ -41,11 +41,13 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
     	snapshot.docChanges.forEach(function(change) {
 	        readykana = change.doc.data().ready
 	        if(readykana==0){
+	        	const date = Date.now();
 	        	lastRef2.set({
-		        question: quizData[0],
-		        answer: answerData[0],
-		        kaitousha: "",
-		        bangou: "0",
+			        question: quizData[0],
+			        answer: answerData[0],
+			        kaitousha: "",
+			        bangou: "0",
+			        date: date
 	    		});
 	    	}
     	});
@@ -98,20 +100,24 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                         var kaitousha = document.getElementById("hello").value;
                         console.log(kaitousha)
                         if(quizData[number]){
+                        	const date = Date.now();
                             lastRef.set({
                                 question: quizData[number],
                                 answer: answerData[number],
                                 oldanswer: answerData[number-1],
                                 kaitousha: kaitousha,
                                 bangou: number,
+                                date : date,
                             });
                         }else{
+                        	const date = Date.now();
                             lastRef.set({
                                 question: "おわり",
                                 answer: "",
                                 oldanswer: answerData[number-1],
                                 kaitousha: kaitousha,
                                 bangou: "owari",
+                                date : date,
                             });
                             
                             var readyRef2 = firebase.firestore().collection('ready').doc('ready');
@@ -231,7 +237,7 @@ userRef.onSnapshot(function(snapshot) {
     snapshot.docChanges.forEach(function(change) {
         var username = change.doc.data().username
         username = username.toString()
-         console.log(username)
+        // console.log(username)
         var points = change.doc.data().points
         points = points.toString()
         userData[username] = username
@@ -239,6 +245,9 @@ userRef.onSnapshot(function(snapshot) {
         var scoreall = ""
         var userplay = "<u>Users</u><br/>"
         Object.keys(userData).forEach(function(element){
+        	if(element==username){
+        		scoreall += '<div id="blink">'
+        	}
         	scoreall += "<li>"
             scoreall += userData[element]
             scoreall += "は"
@@ -246,12 +255,16 @@ userRef.onSnapshot(function(snapshot) {
             scoreall += "点</li>"
             userplay += userData[element]
             userplay += "<br />"
+                    	if(element==username){
+        		scoreall += '</div>'
+        	}
         })
-        $("#score").fadeOut();
+        
         // console.log(scoreData)
         document.getElementById("score").innerHTML = scoreall;
         document.getElementById("score2").innerHTML = userplay;
-        $("#score").fadeIn();
+        $("#blink").fadeOut();
+        $("#blink").fadeIn();
     });
 
 });
