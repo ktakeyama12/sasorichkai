@@ -241,6 +241,9 @@ function nyuushitsu(){
     		  user1 : name,
     		  ready1 : 1,
     	    }, { merge: true });
+    	    usernumber=usercount;
+    	    console.log(usernumber)
+    	    $('#usernumber').text(usernumber);
             document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
             $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー1です");
@@ -253,6 +256,7 @@ function nyuushitsu(){
     		  user2 : name,
     		  ready2 : 1,
     	    }, { merge: true });
+    	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
             $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー2です");
@@ -265,6 +269,7 @@ function nyuushitsu(){
     		  user3 : name,
     		  ready3 : 1,
     	    }, { merge: true });
+    	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
             $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー3です");
@@ -277,6 +282,7 @@ function nyuushitsu(){
     		  user4 : name,
     		  ready4 : 1,
     	    }, { merge: true });
+    	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
             $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー4です");
@@ -290,23 +296,22 @@ function nyuushitsu(){
 
 function start(){
     var userRef = firebase.firestore().collection('users').doc('users');
-    usercount =  document.getElementById('usercount').innerHTML;
-    console.log(usercount);
-    if(usercount==1){
+    usernumber =  document.getElementById('usernumber').innerHTML;
+    if(usernumber==1){
         userRef.set({
-            ready1 : 1,
+            ready1 : 2,
         }, { merge: true });
-    }else if(usercount==2){
+    }else if(usernumber==2){
         userRef.set({
-            ready2 : 1,
+            ready2 : 2,
         }, { merge: true });
-    }else if(usercount==3){
+    }else if(usernumber==3){
         userRef.set({
-            ready3 : 1,
+            ready3 : 2,
         }, { merge: true });
-    }else if(usercount==4){
+    }else if(usernumber==4){
         userRef.set({
-            ready4 : 1,
+            ready4 : 2,
         }, { merge: true });
     };
     

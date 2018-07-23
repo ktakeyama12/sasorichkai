@@ -70,5 +70,6 @@
         <div id="ready4" style="display: none"></div>
     </div>
     <button id="reset" onclick="reset()">RESET</button>
+    <div id="usernumber"></div>
 </body>
 </html>
