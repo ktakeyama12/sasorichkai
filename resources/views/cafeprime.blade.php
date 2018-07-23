@@ -19,6 +19,9 @@
     <header>
         <h2>Cafe & Restaurant around office RANKING</h2>
     </header>
+    <header>
+        <h2>Shopping</h2>
+    </header>
     <center><b><font_size="20">人気度ランキング</font_size></b></center>
     <!--  least.js gallery -->
     <section>

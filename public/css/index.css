@@ -227,10 +227,15 @@ h4{
 a:visited {
   color : #626567  ;
 }
+.glyphicon glyphicon-arrow-right{
+ color : #626567  ; 
+}
+
+
 a:link { color:#3A322F; }
 
 a:hover { 
-  color: #f57; 
+  color: white; 
   text-decoration: none;
 }
 a:active { color: #f57; }
@@ -626,28 +631,25 @@ a:active { color: #f57; }
     z-index: 50;
 }
 
-#i1, #i3{
+#i1, #i3,#i2,#i4{
     width: 300px;
     height: auto;
+    margin-left: 13%   
     /*position: absolute;*/
     /*margin-top: 19%;*/
     /*left: 23%;*/
 }
 
-#i2{
-    width: 300px;
-    height: auto;
-    float:right;
-    /*position: absolute;*/
-    /*margin-top: 19%;*/
-    /*left: 23%;*/
+#i1, #i3,#i2,#i4 Container {
+	overflow: hidden;
 }
 
-#i4{
-    width: 270px;
-    height: auto;
-    float:right;
-    position: absolute;
-    right: 15%;
-    bottom: 16%
+#i1, #i3,#i2,#i4 Container:after {
+    clear: both;
 }
+
+
+
+
+
+

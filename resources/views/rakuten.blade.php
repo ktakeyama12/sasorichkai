@@ -49,8 +49,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>Rakuten Travel</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><p1>3,000円OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>契約宿泊施設 3,000円補助</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Travel</div>
@@ -64,8 +64,8 @@
                     <ul>
                         
                         <li><h3>Rakuten Hair Salon</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><p1>500円OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>500円分×10枚/年1回</p1></li>
                         
                     </ul>
                 </div>
@@ -79,8 +79,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>9F Fitness</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><p1>500円OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><p1>月額500円補助</p1></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Fitness</div>
@@ -89,6 +89,6 @@
         </ul>
     </section>
 
-
+<p>※2018年7月20日現在</p>
 </body>
 </html>

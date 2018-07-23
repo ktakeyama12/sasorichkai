@@ -1,27 +1,79 @@
 .box_6 {
-    width: 500px;
-    margin: 60px auto;
-    padding: 20px;
+    width: 100%;
+    padding: 30px;
     position: relative;
-    border: double 3px #009FB7;
-    top: 13%;
+    /*border: double 3px #009FB7;*/
+    top: 20%;
+    bottom: 0;
+    margin: 0 auto;
+    margin-top: 2%;
+    font-size: 12px;
     }
  
-.box_6 .box-title {
-    position: absolute;
-    display: inline-block;
-    top: -10px;
-    left: 210px;
-    padding: 0 9px;
-    line-height: 1;
-    font-size: 19px;
-    background: #FFF;
-    color: #009FB7;
-    font-weight: bold;
-    }
-    
+
 #rankingname{
     position: absolute;
     top: 49%;
     /*left: 37%;*/
+}
+.gardenden{
+    padding-top: 5%;
+    width: 100%;
+     padding-top: 2%;
+}
+
+.border2{
+    background-color: darkred;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    margin-top:2px;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    
+}
+.border3{
+    background-color: #F5F5F5;
+    font-size: 700%;
+    text-align: center;
+    color: black;
+    /*margin-top:2px;*/
+    /*margin-bottom: 2px;*/
+    /*padding-top: 2px;*/
+    /*padding-bottom: 4px;*/
+    
+}
+.hito{
+    height: 80%;
+    width: 80%;
+    padding-left: 10%;
+    padding-top: 8%;
+    color: black;
+    
+    
+}
+.circle{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgba( 255,255,255, 0.55 );
+    margin-left: 41%;
+    position: absolute;
+    top: 38%;
+}
+h1{
+    font-size: 200%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.komoji{
+    font-size: 2%;
+}
+.oomoji{
+    font-size: 600%;
+    width: 100%;
+}
+.tyuumoji{
+    font-size: 400%;
 }

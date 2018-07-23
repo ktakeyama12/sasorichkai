@@ -43,7 +43,7 @@
     
     <!--チャットのCSS-->
     <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
-    <!--<link rel="stylesheet" type="text/css" href="css/quiz.css">-->
+    <link rel="stylesheet" type="text/css" href="css/answer.css">
     
 		
 	</head>

@@ -22,12 +22,12 @@ var quizRef = firebase.firestore().collection('quizzes');
 
 quizRef.orderBy("date").get().then(function(querySnapshot) {
     var points = 0;
-    const quizData = []
-    const answerData = []
+    const quizData = [];
+    const answerData = [];
     querySnapshot.forEach(function(doc) {
         quizzes=[];
-        quizData.push(doc.data().question)
-        answerData.push(doc.data().answer)
+        quizData.push(doc.data().question);
+        answerData.push(doc.data().answer);
     });
     
     
@@ -41,14 +41,15 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
     	snapshot.docChanges.forEach(function(change) {
 	        readykana = change.doc.data().ready
 	        if(readykana==0){
-	        		    lastRef2.set({
-	        question: quizData[0],
-	        answer: answerData[0],
-	        kaitousha: "",
-	        bangou: "0",
-	    });
-	        }
-	        console.log(readykana)
+	        	const date = Date.now();
+	        	lastRef2.set({
+			        question: quizData[0],
+			        answer: answerData[0],
+			        kaitousha: "",
+			        bangou: "0",
+			        date: date
+	    		});
+	    	}
     	});
 	});
     
@@ -99,34 +100,38 @@ quizRef.orderBy("date").get().then(function(querySnapshot) {
                         var kaitousha = document.getElementById("hello").value;
                         console.log(kaitousha)
                         if(quizData[number]){
+                        	const date = Date.now();
                             lastRef.set({
                                 question: quizData[number],
                                 answer: answerData[number],
                                 oldanswer: answerData[number-1],
                                 kaitousha: kaitousha,
                                 bangou: number,
+                                date : date,
                             });
                         }else{
+                        	const date = Date.now();
                             lastRef.set({
                                 question: "おわり",
                                 answer: "",
                                 oldanswer: answerData[number-1],
                                 kaitousha: kaitousha,
                                 bangou: "owari",
+                                date : date,
                             });
                             
-                                                                    var readyRef2 = firebase.firestore().collection('ready').doc('ready');
+                            var readyRef2 = firebase.firestore().collection('ready').doc('ready');
         
-        readyRef2.set({
-            ready: 0,
-        });
-        var userRef = firebase.firestore().collection('users');
-        var jobskill_query = userRef;
-        jobskill_query.get().then(function(querySnapshot) {
-          querySnapshot.forEach(function(doc) {
-            doc.ref.delete();
-          });
-        });
+					        readyRef2.set({
+					            ready: 0,
+					        });
+					        var userRef = firebase.firestore().collection('users');
+					        var jobskill_query = userRef;
+					        jobskill_query.get().then(function(querySnapshot) {
+					          querySnapshot.forEach(function(doc) {
+					            doc.ref.delete();
+					          });
+					        });
                             
                         }
                         var username = document.getElementById("hello").value;
@@ -240,18 +245,26 @@ userRef.onSnapshot(function(snapshot) {
         var scoreall = ""
         var userplay = "<u>Users</u><br/>"
         Object.keys(userData).forEach(function(element){
+        	if(element==username){
+        		scoreall += '<div id="blink">'
+        	}
+        	scoreall += "<li>"
             scoreall += userData[element]
             scoreall += "は"
             scoreall += scoreData[element]
-            scoreall += "点<br />"
+            scoreall += "点</li>"
             userplay += userData[element]
             userplay += "<br />"
+                    	if(element==username){
+        		scoreall += '</div>'
+        	}
         })
-        $("#score").fadeOut();
+        
         // console.log(scoreData)
         document.getElementById("score").innerHTML = scoreall;
         document.getElementById("score2").innerHTML = userplay;
-        $("#score").fadeIn();
+        $("#blink").fadeOut();
+        $("#blink").fadeIn();
     });
 
 });
@@ -274,7 +287,7 @@ $('#reset').unbind().click(function() {
             ready: 0,
         });
         
-        // window.location.reload(true);
+        window.location.reload(true);
     }
 });
 
@@ -286,14 +299,16 @@ $('#reset2').unbind().click(function() {
             doc.ref.delete();
           });
         });
-        window.location.reload(true);
+        
         
         var readyRef2 = firebase.firestore().collection('ready').doc('ready');
         
         readyRef2.set({
             ready: 0,
         });
+        window.location.reload(true);
     }
+    
 });
 
 $('#ready').unbind().click(function() {
