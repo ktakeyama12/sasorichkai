@@ -16,6 +16,7 @@
 	     @include('layouts.navbar')
 	</head>
 	<body>
+
 		<div class="border">
 			<img class="gardenden" src="/images/rakuten_gallery/ent.png">
 			<div class="circle"><img class="hito" src="/images/rakuten_gallery/panda2.png"></div>
@@ -79,6 +80,7 @@
 				       </div>
 				    </center></p>
 			</div>
+
 		</div>
 	</body>
 
