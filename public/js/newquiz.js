@@ -256,6 +256,7 @@ function nyuushitsu(){
     		  user2 : name,
     		  ready2 : 1,
     	    }, { merge: true });
+    	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -269,6 +270,7 @@ function nyuushitsu(){
     		  user3 : name,
     		  ready3 : 1,
     	    }, { merge: true });
+    	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -282,6 +284,7 @@ function nyuushitsu(){
     		  user4 : name,
     		  ready4 : 1,
     	    }, { merge: true });
+    	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -315,9 +318,9 @@ function start(){
         }, { merge: true });
     };
     
-    document.getElementById("ready").style.display = "none";
-    document.getElementById("game").style.display = "block";
-    runQuiz();
+    // document.getElementById("ready").style.display = "none";
+    // document.getElementById("game").style.display = "block";
+    
 }
 
 function readyQuiz(){
@@ -355,6 +358,35 @@ function readyQuiz(){
                 $('#ready4').text("NOT READY");
                 document.getElementById("name4").style.display = "block";
                 document.getElementById("ready4").style.display = "block";
+            if(ready1==2){
+                $('#name1').text(name1);
+                $('#ready1').text("READY");
+                document.getElementById("name1").style.display = "block";
+                document.getElementById("ready1").style.display = "block";
+            }
+            if(ready2==2){
+                $('#name2').text(name2);
+                $('#ready2').text("READY");
+                document.getElementById("name2").style.display = "block";
+                document.getElementById("ready2").style.display = "block";
+            }
+            if(ready3==2){
+                $('#name3').text(name3);
+                $('#ready3').text("READY");
+                document.getElementById("name3").style.display = "block";
+                document.getElementById("ready3").style.display = "block";
+            }
+            if(ready4==2){
+                $('#name4').text(name4);
+                $('#ready4').text("READY");
+                document.getElementById("name4").style.display = "block";
+                document.getElementById("ready4").style.display = "block";
+            }
+            if(ready1==2 && ready2==2 && ready3==0){
+                document.getElementById("ready").style.display = "none";
+                document.getElementById("game").style.display = "block";
+                runQuiz();
+            }
             }
         });
     });
