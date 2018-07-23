@@ -316,7 +316,7 @@ function start(){
 }
 
 function readyQuiz(){
-    var userRef = firebase.firestore().collection('users').doc('users');
+    var userRef = firebase.firestore().collection('users');
     userRef.onSnapshot(function(snapshot) {
         snapshot.docChanges.forEach(function(change) {
             var ready1 = change.doc.data().ready1;
