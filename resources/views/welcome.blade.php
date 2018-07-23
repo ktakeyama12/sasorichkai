@@ -362,10 +362,12 @@
     <script src="js/loader.js"></script>
 
 <div>
+@auth
 <?php
 $prime = \Auth::user()->prime;
         if($prime == 0){
 ?>
+
       	  {!! Form::open(['route' => ['welcomePrime']]) !!}
              <input type="hidden" value="1" name="prime" />
               {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
@@ -376,6 +378,7 @@ $prime = \Auth::user()->prime;
             
         }
 ?>
+@endauth
                           
 </div>
 
