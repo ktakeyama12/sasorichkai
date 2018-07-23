@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="/css/fukuoka.css">
     <link rel="stylesheet" href="/css/nav.css">
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
+
+@include('layouts.navbar')
 </head>
 <body>
 <div class="cont_principal">
-   @include('layouts.navbar')
+   
   
   <br>
   <div id="container-example">
@@ -157,6 +159,12 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
+              <?php
+               $prime = \Auth::user()->prime;
+               if($prime == 0){
+               }
+               elseif($prime == 1){
+              ?>
               
                   福岡支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
@@ -195,6 +203,7 @@
                     <?php
                 }
               }
+               }
               ?>
             </div>        
       </div>

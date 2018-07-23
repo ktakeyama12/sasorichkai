@@ -349,7 +349,6 @@ readyRef.onSnapshot(function(snapshot) {
 
 
 var PageTransitions = (function() {
-
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
 		$iterate = $( '#usertouroku' ),

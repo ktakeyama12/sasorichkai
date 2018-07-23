@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,21 +12,20 @@
         <!-- Bootstrap JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        
-        
-        
 	    <title>Profile</title>
 	    <link rel="stylesheet" href="/css/profile.css">
 	     @include('layouts.navbar')
 	</head>
 	<body>
-	<div class="border">
-		<img class="gardenden" src="/images/s_entrance.png">
-		<div class="circle"><img class="hito" src="/images/rakuten_gallery/panda2.png"></div>
-	</div>
-	<div class="border2">
-		 <h1><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$user->name}} さん</h1>
-	</div>
+
+		<div class="border">
+			<img class="gardenden" src="/images/rakuten_gallery/ent.png">
+			<div class="circle"><img class="hito" src="/images/rakuten_gallery/panda2.png"></div>
+		</div>
+		<div class="border2">
+			 <h1><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$user->name}} さん</h1>
+		</div>
+
 	
 	<div class="border3">	
 		<div class="box_6">
@@ -78,6 +77,6 @@
 			    ?>
 			    </center></p>
 		</div>
-	</div>
 	</body>
+
 </html>

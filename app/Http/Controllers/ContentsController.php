@@ -64,7 +64,9 @@ class ContentsController extends Controller
             ]);
     }
     
-     public function tokyo()
+   
+    
+    public function tokyo()
     {
 
         
@@ -119,6 +121,10 @@ class ContentsController extends Controller
             ]);
     }
     
+<<<<<<< HEAD
+=======
+    
+>>>>>>> ff2ea3eb60eb4e765dd3b965ba8e2ff1c206cf81
     public function okinawa()
     {
         
