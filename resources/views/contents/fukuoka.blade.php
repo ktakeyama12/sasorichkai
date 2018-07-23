@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/fukuoka.css">
     <link rel="stylesheet" href="/css/nav.css">
     <!--<script type="text/javascript" src="/js/fukuoka.js"></script>-->
+
 @include('layouts.navbar')
 </head>
 <body>
