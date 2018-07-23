@@ -61,5 +61,6 @@
         <div id="welcome"></div>
         <button id="start" onclick="start()">READY</button>
     </div>
+    <button id="reset" onclick="reset()">RESET</button>
 </body>
 </html>

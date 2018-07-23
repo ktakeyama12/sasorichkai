@@ -231,7 +231,6 @@ function nyuushitsu(){
             $('#usercount').text(usercount);
         });
         usercount =  document.getElementById('usercount').innerHTML;
-        console.log(usercount)
         var name = document.getElementById("name").value;
         if(usercount==0){
             usercount++;
@@ -239,7 +238,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user1 : name,
-    	    });
+    	    }, { merge: true });
             document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
             $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー1です");
@@ -250,6 +249,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user2 : name,
+    		  ready1 : 1,
     	    }, { merge: true });
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -286,13 +286,53 @@ function nyuushitsu(){
 
 function start(){
     var userRef = firebase.firestore().collection('users').doc('users');
-            userRef.set({
-    		  usercount: usercount,
-    		  user2 : name,
-    	    }, { merge: true });
+    usercount =  document.getElementById('usercount').innerHTML;
+    console.log(usercount);
+    if(usercount==1){
+        userRef.set({
+            ready1 : 1,
+        }, { merge: true });
+    }else if(usercount==2){
+        userRef.set({
+            ready2 : 1,
+        }, { merge: true });
+    }else if(usercount==3){
+        userRef.set({
+            ready3 : 1,
+        }, { merge: true });
+    }else if(usercount==4){
+        userRef.set({
+            ready4 : 1,
+        }, { merge: true });
+    };
     
     document.getElementById("ready").style.display = "none";
     document.getElementById("game").style.display = "block";
     runQuiz();
+}
+
+function readyQuiz(){
+    var userRef = firebase.firestore().collection('users').doc('users');
+    userRef.onSnapshot(function(snapshot) {
+        snapshot.docChanges.forEach(function(change) {
+            var username = change.doc.data().username;
+        });
+    });
+}
+
+function reset(){
+    var userRef = firebase.firestore().collection('users').doc('users');
+    userRef.set({
+        ready1 : 0,
+        ready2 : 0,
+        ready3 : 0,
+        ready4 : 0,
+        usercount : 0,
+        user1 : "",
+        user2 : "",
+        user3 : "",
+        user4 : "",
+    });
+        
 }
 
