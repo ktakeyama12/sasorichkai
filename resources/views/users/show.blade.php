@@ -27,7 +27,6 @@
 	<div class="border2">
 		 <h1><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$user->name}} さん</h1>
 	</div>
-
 	
 	<div class="border3">	
 		<div class="box_6">
@@ -39,6 +38,7 @@
 			              }
 			              elseif($user->point >=50 && $user->point <200){
 			                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
+
 			              }
 			              else{
 			                $result = '<img src="images/rakuten_gallery/gold.jpg">';
