@@ -42,25 +42,80 @@ var coordinatesLeft = function(element) {
 }
 
 // draggableにする
-// $(function() {
-function draggable(leftPos){
-    $('#draggable').draggable({
+function draggable1(){
+    $('#user1').draggable({
         start: function(leftPos) {
-            coordinates('#draggable');
+            coordinates('#user1');
             // coordinatesTop('#draggable');
-            var leftPos = coordinatesLeft('#draggable');
+            var leftPos = coordinatesLeft('#user1');
             currentPos = getBox(leftPos);
             $('#leftPos').text(currentPos);
             // console.log(document.getElementById('leftPos').innerHTML)
         },
         stop: function(leftPos) {
-            coordinates('#draggable');
-            var leftPos = coordinatesLeft('#draggable');
+            coordinates('#user1');
+            var leftPos = coordinatesLeft('#user1');
             $('#leftPos').text(leftPos);
             currentPos = getBox(leftPos);
         }
     });
-// });
+};
+
+function draggable2(){
+    $('#user2').draggable({
+        start: function(leftPos) {
+            coordinates('#user2');
+            // coordinatesTop('#draggable');
+            var leftPos = coordinatesLeft('#user2');
+            currentPos = getBox(leftPos);
+            $('#leftPos').text(currentPos);
+            // console.log(document.getElementById('leftPos').innerHTML)
+        },
+        stop: function(leftPos) {
+            coordinates('#user2');
+            var leftPos = coordinatesLeft('#user2');
+            $('#leftPos').text(leftPos);
+            currentPos = getBox(leftPos);
+        }
+    });
+};
+
+function draggable3(){
+    $('#user3').draggable({
+        start: function(leftPos) {
+            coordinates('#user3');
+            // coordinatesTop('#draggable');
+            var leftPos = coordinatesLeft('#user3');
+            currentPos = getBox(leftPos);
+            $('#leftPos').text(currentPos);
+            // console.log(document.getElementById('leftPos').innerHTML)
+        },
+        stop: function(leftPos) {
+            coordinates('#user3');
+            var leftPos = coordinatesLeft('#user3');
+            $('#leftPos').text(leftPos);
+            currentPos = getBox(leftPos);
+        }
+    });
+};
+
+function draggable4(){
+    $('#user4').draggable({
+        start: function(leftPos) {
+            coordinates('#user4');
+            // coordinatesTop('#draggable');
+            var leftPos = coordinatesLeft('#user4');
+            currentPos = getBox(leftPos);
+            $('#leftPos').text(currentPos);
+            // console.log(document.getElementById('leftPos').innerHTML)
+        },
+        stop: function(leftPos) {
+            coordinates('#user4');
+            var leftPos = coordinatesLeft('#user4');
+            $('#leftPos').text(leftPos);
+            currentPos = getBox(leftPos);
+        }
+    });
 };
 
 // // 座標受信・移動
@@ -112,16 +167,21 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 score++;
                 $('#score').text(score);
                 storeScore(score);
-                $('#seikaiorfuseikai').text("seikai");
+                $("#seikaiorfuseikai").fadeIn();
+                $('#seikaiorfuseikai').text("正解");
+                $("#seikaiorfuseikai").fadeOut();
             }else{
-                $('#seikaiorfuseikai').text("fuseikai");  
+                $("#seikaiorfuseikai").fadeIn();
+                $('#seikaiorfuseikai').text("不正解");
+                $("#seikaiorfuseikai").fadeOut();
             }
             i++;
         }
     }, 1000);
 }
 
-$(function(quizData){
+// $(function(quizData){
+function runQuiz(){
     var quizRef = firebase.firestore().collection('quizzes');
     quizRef.get().then(function(querySnapshot) {
         quizData=[];
@@ -138,10 +198,11 @@ $(function(quizData){
             answerData4.push(doc.data().answer4);
             answerCorrect.push(doc.data().answer);
         });
-        draggable();
+        // draggable();
         quizInterval(quizData, answerData1, answerData2, answerData3, answerData4, answerCorrect);
     });
-});
+// });
+};
 
 
 function checkAnswer(answerSelected, answer){
@@ -160,4 +221,78 @@ function storeScore(score){
     });
 }
 
-// function ready
+usercount = 0;
+
+function nyuushitsu(){
+    var userRef = firebase.firestore().collection('users');
+    userRef.get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            var usercount = doc.data().usercount;
+            $('#usercount').text(usercount);
+        });
+        usercount =  document.getElementById('usercount').innerHTML;
+        console.log(usercount)
+        var name = document.getElementById("name").value;
+        if(usercount==0){
+            usercount++;
+            var userRef = firebase.firestore().collection('users').doc('users');
+            userRef.set({
+    		  usercount: usercount,
+    		  user1 : name,
+    	    });
+            document.getElementById("ready").style.display = "block";
+            document.getElementById("entry").style.display = "none";
+            $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー1です");
+            draggable1();
+        }else if(usercount==1){
+            usercount++;
+            var userRef = firebase.firestore().collection('users').doc('users');
+            userRef.set({
+    		  usercount: usercount,
+    		  user2 : name,
+    	    }, { merge: true });
+    	    document.getElementById("ready").style.display = "block";
+            document.getElementById("entry").style.display = "none";
+            $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー2です");
+            draggable2();
+        }else if(usercount==2){
+            usercount++;
+            var userRef = firebase.firestore().collection('users').doc('users');
+            userRef.set({
+    		  usercount: usercount,
+    		  user3 : name,
+    	    }, { merge: true });
+    	    document.getElementById("ready").style.display = "block";
+            document.getElementById("entry").style.display = "none";
+            $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー3です");
+            draggable3();
+        }else if(usercount==3){
+            usercount++;
+            var userRef = firebase.firestore().collection('users').doc('users');
+            userRef.set({
+    		  usercount: usercount,
+    		  user4 : name,
+    	    }, { merge: true });
+    	    document.getElementById("ready").style.display = "block";
+            document.getElementById("entry").style.display = "none";
+            $('#welcome').text("ようこそ" + name + "さん。あなたはユーザー4です");
+            draggable4();
+        }else{
+            $('#cantenter').text("満員です");
+        }
+    });
+    // runQuiz();
+}
+
+function start(){
+    var userRef = firebase.firestore().collection('users').doc('users');
+            userRef.set({
+    		  usercount: usercount,
+    		  user2 : name,
+    	    }, { merge: true });
+    
+    document.getElementById("ready").style.display = "none";
+    document.getElementById("game").style.display = "block";
+    runQuiz();
+}
+
