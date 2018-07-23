@@ -24,7 +24,7 @@
 
 .border2{
     background-color: darkred;
-    font-size: 200%;
+    font-size: 180%;
     text-align: center;
     color: white;
     margin-top:2px;
@@ -60,15 +60,12 @@
     background-color: rgba( 255,255,255, 0.55 );
     margin-left: 41%;
     position: absolute;
-    top: 38%;
+    top: 34%;
 }
 h1{
     font-size: 200%;
     margin-top: 2px;
     margin-bottom: 2px;
-}
-.komoji{
-    font-size: 2%;
 }
 .oomoji{
     font-size: 600%;
@@ -76,4 +73,7 @@ h1{
 }
 .tyuumoji{
     font-size: 400%;
+}
+.ranking{
+    font-size: 80px;
 }

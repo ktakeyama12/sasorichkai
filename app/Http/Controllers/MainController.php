@@ -153,7 +153,4 @@ class MainController extends BaseController
             
         }
     }
-    
-    
-    
 }

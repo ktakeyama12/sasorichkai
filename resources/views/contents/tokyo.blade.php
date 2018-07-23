@@ -156,7 +156,12 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
-              
+              <?php
+               $prime = \Auth::user()->prime;
+               if($prime == 0){
+               }
+               elseif($prime == 1){
+              ?>
                   東京本社についての感想や、疑問に思ったことをコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeT']) !!}
                     <div class='form-group'>
@@ -194,6 +199,7 @@
                     <?php
                 }
               }
+               }
               ?>
             </div>        
       </div>
