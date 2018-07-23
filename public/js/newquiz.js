@@ -335,9 +335,11 @@ function readyQuiz(){
             var name3 = change.doc.data().user3;
             var ready4 = change.doc.data().ready4;
             var name4 = change.doc.data().user4;
+            console.log(ready1);
             if(ready1==1){
                 $('#name1').text(name1);
                 $('#ready1').text("NOT READY");
+                $('#ready1').replaceWith("unchi");
                 document.getElementById("name1").style.display = "block";
                 document.getElementById("ready1").style.display = "block";
             }
@@ -359,6 +361,7 @@ function readyQuiz(){
                 document.getElementById("name4").style.display = "block";
                 document.getElementById("ready4").style.display = "block";
             if(ready1==2){
+                console.log("unchi");
                 $('#name1').text(name1);
                 $('#ready1').text("READY");
                 document.getElementById("name1").style.display = "block";
