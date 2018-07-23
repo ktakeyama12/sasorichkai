@@ -238,6 +238,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user1 : name,
+    		  ready1 : 1,
     	    }, { merge: true });
             document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -249,7 +250,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user2 : name,
-    		  ready1 : 1,
+    		  ready2 : 1,
     	    }, { merge: true });
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -261,6 +262,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user3 : name,
+    		  ready3 : 1,
     	    }, { merge: true });
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";
@@ -272,6 +274,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user4 : name,
+    		  ready4 : 1,
     	    }, { merge: true });
     	    document.getElementById("ready").style.display = "block";
             document.getElementById("entry").style.display = "none";

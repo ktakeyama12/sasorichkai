@@ -60,6 +60,14 @@
     <div id="ready" style="display: none">
         <div id="welcome"></div>
         <button id="start" onclick="start()">READY</button>
+        <div id="name1" style="display: none"></div>
+        <div id="ready1" style="display: none"></div>
+        <div id="name2" style="display: none"></div>
+        <div id="ready2" style="display: none"></div>
+        <div id="name3" style="display: none"></div>
+        <div id="ready3" style="display: none"></div>
+        <div id="name4" style="display: none"></div>
+        <div id="ready4" style="display: none"></div>
     </div>
     <button id="reset" onclick="reset()">RESET</button>
 </body>
