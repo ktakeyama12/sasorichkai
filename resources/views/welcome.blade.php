@@ -258,7 +258,7 @@
           <div class="el__content">
             <div class="el__text">
               <h1 class="el__text_title">楽天ギャラリー</h1>
-              <p><h3>楽天のおしゃれな写真をラインナップ！<br><br>スライドや資料、広報など使い道はたくさん。あなたにぴったりな写真が見つかるかも。<br><br>プライム会員（月額１０円）ならダウンロードし放題！</p>
+              <p><h3>楽天のおしゃれな写真をラインナップ！<br><br>スライドや資料、広報など使い道はたくさん。あなたにぴったりな写真が見つかるかも。<br><br>楽天プライム会員（入会費10円）ならダウンロードし放題！</p>
   </h3></p>
             
               <br>
@@ -362,10 +362,21 @@
     <script src="js/loader.js"></script>
 
 <div>
-	{!! Form::open(['route' => ['welcomePrime']]) !!}
-                               <input type="hidden" value="1" name="prime" />
-                                {!! Form::submit('プライム会員になる', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
-                            {!! Form::close() !!}
+<?php
+$prime = \Auth::user()->prime;
+        if($prime == 0){
+?>
+      	  {!! Form::open(['route' => ['welcomePrime']]) !!}
+             <input type="hidden" value="1" name="prime" />
+              {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
+          {!! Form::close() !!}
+<?php
+        }
+        elseif($prime == 1){
+            
+        }
+?>
+                          
 </div>
 
 </body>
