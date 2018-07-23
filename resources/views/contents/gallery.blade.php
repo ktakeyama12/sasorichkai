@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Rakuten Gallery</title>
+    <title>Rakuten gallery</title>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -31,7 +31,7 @@
         
         <ul id="gallery">
             <li id="fullPreview"></li>
-            <button id="button" class="btn btn-danger" type="button" onclick="history.back()"  >戻る</button>
+            
             <li>
                 <a href="images/rakuten_gallery/cafelogo.jpeg"></a>
                 <img data-original="images/rakuten_gallery/cafelogo t.jpeg" src="img/effects/white.gif" alt="Photo 1" />

@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('rpoint', 'HomeController@rpoint')->name('rpoint');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
 Route::get('rakutenprime', 'AController@rakutenprime')->name('rakutenprime');
@@ -124,3 +125,4 @@ Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answe
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
 Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
 
+Route::get('newquiz', 'AController@newquiz')->name('newquiz');

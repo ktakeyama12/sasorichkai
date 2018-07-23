@@ -39,5 +39,10 @@ class HomeController extends Controller
     {
         return view('contact');
     }
+    
+    public function rpoint()
+    {
+        return view('rpoint');
+    }
 }
 

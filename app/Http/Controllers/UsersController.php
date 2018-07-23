@@ -77,6 +77,24 @@ class UsersController extends Controller
         // }
          $user = \Auth::user();
          $users = User::all();
+         
+        $userdata = User::find($user->id);
+        $alldata = User::all()->sortByDesc('point');
+        $points =
+        $userdata->workinfo
+        + $userdata->rakuten
+        + $userdata->cafe
+        + $userdata->movie
+        + $userdata->amusement
+        + $userdata->shopping
+        + $userdata->branches
+        + $userdata->tokyo
+        + $userdata->osaka
+        + $userdata->fukuoka;
+        $userdata->point = $points;
+        $userdata->save();
+        $user = \Auth::user();
+        
          $content = new Content;
          $contents = Content::all();
          $count = Branchfavorites::where("favorite_id", 2)->count();
@@ -84,6 +102,10 @@ class UsersController extends Controller
         return view('contents.fukuoka',[
             'user' => $user,
             'users' =>$users,
+            
+            'points' => $points,
+            'alldata' => $alldata,
+            
             'content' => $content,
             'contents' => $contents,
             'count' => $count,
@@ -95,6 +117,25 @@ class UsersController extends Controller
         DB::table('branchfavorites')->where('favorite_id', 2)->where('user_id', $user_id)->delete();
         $user = \Auth::user();
         $users = User::all();
+        
+        $userdata = User::find($user->id);
+        $alldata = User::all()->sortByDesc('point');
+        $points =
+        $userdata->workinfo
+        + $userdata->rakuten
+        + $userdata->cafe
+        + $userdata->movie
+        + $userdata->amusement
+        + $userdata->shopping
+        + $userdata->branches
+        + $userdata->tokyo
+        + $userdata->osaka
+        + $userdata->fukuoka;
+        $userdata->point = $points;
+        $userdata->save();
+        $user = \Auth::user();
+        
+        
         $content = new Content;
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 2)->count();
@@ -102,6 +143,10 @@ class UsersController extends Controller
         return view('contents.fukuoka',[
             'user' => $user,
             'users' =>$users,
+            
+            'points' => $points,
+            'alldata' => $alldata,
+            
             'content' => $content,
             'contents' => $contents,
             'count' => $count,
@@ -122,6 +167,24 @@ class UsersController extends Controller
        
          $user = \Auth::user();
          $users = User::all();
+         
+         $userdata = User::find($user->id);
+        $alldata = User::all()->sortByDesc('point');
+        $points =
+        $userdata->workinfo
+        + $userdata->rakuten
+        + $userdata->cafe
+        + $userdata->movie
+        + $userdata->amusement
+        + $userdata->shopping
+        + $userdata->branches
+        + $userdata->tokyo
+        + $userdata->osaka
+        + $userdata->fukuoka;
+        $userdata->point = $points;
+        $userdata->save();
+        $user = \Auth::user();
+        
          $content = new Content;
          $contents = Content::all();
          $count = Branchfavorites::where("favorite_id", 1)->count();
@@ -129,6 +192,10 @@ class UsersController extends Controller
         return view('contents.tokyo',[
             'user' => $user,
             'users' =>$users,
+            
+            'points' => $points,
+            'alldata' => $alldata,
+            
             'content' => $content,
             'contents' => $contents,
             'count' => $count,
@@ -140,11 +207,80 @@ class UsersController extends Controller
         DB::table('branchfavorites')->where('favorite_id', 1)->where('user_id', $user_id)->delete();
         $user = \Auth::user();
         $users = User::all();
+        
+         $userdata = User::find($user->id);
+        $alldata = User::all()->sortByDesc('point');
+        $points =
+        $userdata->workinfo
+        + $userdata->rakuten
+        + $userdata->cafe
+        + $userdata->movie
+        + $userdata->amusement
+        + $userdata->shopping
+        + $userdata->branches
+        + $userdata->tokyo
+        + $userdata->osaka
+        + $userdata->fukuoka;
+        $userdata->point = $points;
+        $userdata->save();
+        $user = \Auth::user();
+        
+        
         $content = new Content;
         $contents = Content::all();
         $count = Branchfavorites::where("favorite_id", 1)->count();
         
         return view('contents.tokyo',[
+            'user' => $user,
+            'users' =>$users,
+            
+             'points' => $points,
+            'alldata' => $alldata,
+            
+            'content' => $content,
+            'contents' => $contents,
+            'count' => $count,
+            ]);
+    }
+    
+    
+     public function osakafavorite(Request $request)
+    {
+        $favorite_id = $request->osaka_id;
+        $user_id = \Auth::user()->id;
+        $param = [
+            'user_id' => $user_id,
+            'favorite_id' =>$favorite_id,
+            ];
+        
+        DB::table('branchfavorites')->insert($param);
+        
+       
+         $user = \Auth::user();
+         $users = User::all();
+         $content = new Content;
+         $contents = Content::all();
+         $count = Branchfavorites::where("favorite_id", 3)->count();
+        
+        return view('contents.osaka',[
+            'user' => $user,
+            'users' =>$users,
+            'content' => $content,
+            'contents' => $contents,
+            'count' => $count,
+            ]);
+    }
+         
+     public function osakaunfavorite(Request $request){
+        $user_id = \Auth::user()->id;
+        DB::table('branchfavorites')->where('favorite_id', 3)->where('user_id', $user_id)->delete();
+        $user = \Auth::user();
+        $users = User::all();
+        $content = new Content;
+        $contents = Content::all();
+        $count = Branchfavorites::where("favorite_id", 3)->count();
+        
+        return view('contents.osaka',[
             'user' => $user,
             'users' =>$users,
             'content' => $content,

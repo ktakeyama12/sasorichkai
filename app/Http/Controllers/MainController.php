@@ -94,7 +94,7 @@ class MainController extends BaseController
             return view("free");
         
         }elseif($prime == 1){
-            return view("gallery");
+            return view("contents.gallery");
             
         }
     }
@@ -153,7 +153,4 @@ class MainController extends BaseController
             
         }
     }
-    
-    
-    
 }
