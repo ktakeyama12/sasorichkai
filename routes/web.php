@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('rpoint', 'HomeController@rpoint')->name('rpoint');
 
 Route::get('rakuten', 'AController@rakuten')->name('rakuten');
 Route::get('rakutenprime', 'AController@rakutenprime')->name('rakutenprime');
