@@ -109,4 +109,8 @@ body{
 }
 h1{
     font-weight: bold;
+    color: gray;
+}
+#bananashow{
+    font-size: 30px;
 }
