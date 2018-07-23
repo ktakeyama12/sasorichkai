@@ -27,6 +27,16 @@
 	<div class="border2">
 		 <h1><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{$user->name}} さん</h1>
 	</div>
+	
+	<div class="primeButton">
+		<h2>あなたはプライム会員ですか？</h2>
+		
+		<form method="POST" action="/login">
+        <input type="button" name="yesButton" value="yesPrime"/>
+    	</form>
+    	
+
+	</div>
 
 	
 	<div class="border3">	
@@ -59,9 +69,21 @@
 			        }else{
 			        	echo $error;
 			        }
-			        
 			        ?>
 			        
+			        <?php
+			        
+			        if(isset($_POST["yesButton"])){
+			        	$loginuser = \Auth::user();
+        				$user = User::find($loginuser->id);
+        				if($user->prime==0){
+            				$user->prime = 1;
+            				$user->save();
+			        	}
+			        }
+                      ?>
+			        
+			        	<h2>{{$user->prime}}:this is prime status</h2>
 				
 					<br><div class="oomoji">{{$user->point}} ポイント</div> 
 			   
@@ -70,9 +92,31 @@
 				    foreach($alldata as $data){
 				    
 		        }
+		        
 			    ?>
-			    </center></p>
+			</center></p>
 		</div>
 	</div>
-	</body>
+</body>
+	
+<script>
+		//primeボタンの機能。Yesならprimeカラムに１ Noなら0
+		//ボタンを二つ作る。
+		//ボタンに機能をつける。－yesを押すとuserテーブルのprimeカラムに１が挿入され、noの場合は何も起こらない。
+		var status;
+		
+		function yesPrime(){
+			alert("あなたはプライム会員ですね？");
+			document.getElementById("prime").innerHTML = "あなたはプライム会員です";
+			
+		}
+		
+		function noPrime(){
+			alert("あなたは無料会員ですね？");
+			document.getElementById("prime").innerHTML = "あなたは無料会員です。今すぐプライム会員に登録！";
+		}
+		
+		
+		
+</script>
 </html>
