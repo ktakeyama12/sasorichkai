@@ -64,7 +64,9 @@ class ContentsController extends Controller
             ]);
     }
     
-     public function tokyo()
+   
+    
+    public function tokyo()
     {
 
         
@@ -118,6 +120,7 @@ class ContentsController extends Controller
             'count' => $count,
             ]);
     }
+    
     
     public function okinawa()
     {
