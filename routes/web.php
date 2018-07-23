@@ -120,6 +120,8 @@ Route::get('shoppingPrime', 'MainController@shoppingPrime')->name('shoppingPrime
 Route::get('cafePrime', 'MainController@cafePrime')->name('cafePrime');
 Route::get('moviePrime', 'MainController@moviePrime')->name('moviePrime');
 
+Route::post('welcomePrime', 'MainController@welcomePrime')->name('welcomePrime');
+
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');

@@ -37,6 +37,8 @@ class UsersController extends Controller
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();
+        
+       
 
         return view('users.show',[
             'user' => $user,

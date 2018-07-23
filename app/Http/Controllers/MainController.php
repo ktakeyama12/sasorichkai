@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use DB;
+use App\User;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -153,4 +156,39 @@ class MainController extends BaseController
             
         }
     }
+
+    
+    public function welcomePrime(Request $request){
+         $prime = $request->prime;
+        $id = \Auth::user()->id;
+        $user = User::find($id);
+        $user->prime=$prime;
+        $user->save();
+        
+       
+       
+        // $name = \Auth::user()->name;
+        // $password = \Auth::user()->password;
+        // $point = \Auth::user()->point;
+        // $workinfo = \Auth::user()->workinfo;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $name = \Auth::user()->name;
+        // $param = [
+        //      'prime' =>$prime,
+        //      'id'=>$id,
+        //      ];
+        // DB::table('users')->where('id', $id)->insert($param);
+            return view("welcome");
+    }
+    
+    
+    
+
 }

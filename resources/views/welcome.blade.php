@@ -361,8 +361,12 @@
     <script src="js/chat.js"></script>
     <script src="js/loader.js"></script>
 
-
-
+<div>
+	{!! Form::open(['route' => ['welcomePrime']]) !!}
+                               <input type="hidden" value="1" name="prime" />
+                                {!! Form::submit('プライム会員になる', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
+                            {!! Form::close() !!}
+</div>
 
 </body>
 
