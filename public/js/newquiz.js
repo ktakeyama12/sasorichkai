@@ -232,6 +232,7 @@ function nyuushitsu(){
         });
         usercount =  document.getElementById('usercount').innerHTML;
         var name = document.getElementById("name").value;
+        readyQuiz();
         if(usercount==0){
             usercount++;
             var userRef = firebase.firestore().collection('users').doc('users');
@@ -318,7 +319,13 @@ function readyQuiz(){
     var userRef = firebase.firestore().collection('users').doc('users');
     userRef.onSnapshot(function(snapshot) {
         snapshot.docChanges.forEach(function(change) {
-            var username = change.doc.data().username;
+            var ready1 = change.doc.data().ready1;
+            var name1 = change.doc.data().name1;
+            if(ready1==1){
+                $('#ready1').text("NOT READY");
+                document.getElementById("name1").style.display = "block";
+                document.getElementById("ready1").style.display = "block";
+            }
         });
     });
 }

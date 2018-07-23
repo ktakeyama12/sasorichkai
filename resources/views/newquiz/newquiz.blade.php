@@ -60,8 +60,8 @@
     <div id="ready" style="display: none">
         <div id="welcome"></div>
         <button id="start" onclick="start()">READY</button>
-        <div id="name1" style="display: none"></div>
-        <div id="ready1" style="display: none"></div>
+        <div id="name1" style="display: none">w</div>
+        <div id="ready1" style="display: none">w</div>
         <div id="name2" style="display: none"></div>
         <div id="ready2" style="display: none"></div>
         <div id="name3" style="display: none"></div>
