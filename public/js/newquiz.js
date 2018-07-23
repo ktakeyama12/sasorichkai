@@ -239,7 +239,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user1 : name,
-    		  ready1 : 1,
+    		  ready1 : "NOT READY",
     	    }, { merge: true });
     	    usernumber=usercount;
     	    console.log(usernumber)
@@ -254,7 +254,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user2 : name,
-    		  ready2 : 1,
+    		  ready2 : "NOT READY",
     	    }, { merge: true });
     	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
@@ -268,7 +268,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user3 : name,
-    		  ready3 : 1,
+    		  ready3 : "NOT READY",
     	    }, { merge: true });
     	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
@@ -282,7 +282,7 @@ function nyuushitsu(){
             userRef.set({
     		  usercount: usercount,
     		  user4 : name,
-    		  ready4 : 1,
+    		  ready4 : "NOT READY",
     	    }, { merge: true });
     	    usernumber=usercount;
     	    $('#usernumber').text(usernumber);
@@ -302,19 +302,19 @@ function start(){
     usernumber =  document.getElementById('usernumber').innerHTML;
     if(usernumber==1){
         userRef.set({
-            ready1 : 2,
+            ready1 : "READY",
         }, { merge: true });
     }else if(usernumber==2){
         userRef.set({
-            ready2 : 2,
+            ready2 : "READY",
         }, { merge: true });
     }else if(usernumber==3){
         userRef.set({
-            ready3 : 2,
+            ready3 : "READY",
         }, { merge: true });
     }else if(usernumber==4){
         userRef.set({
-            ready4 : 2,
+            ready4 : "READY",
         }, { merge: true });
     };
     
@@ -339,7 +339,6 @@ function readyQuiz(){
             if(ready1==1){
                 $('#name1').text(name1);
                 $('#ready1').text("NOT READY");
-                $('#ready1').replaceWith("unchi");
                 document.getElementById("name1").style.display = "block";
                 document.getElementById("ready1").style.display = "block";
             }
@@ -363,25 +362,25 @@ function readyQuiz(){
             if(ready1==2){
                 console.log("unchi");
                 $('#name1').text(name1);
-                $('#ready1').text("READY");
+                $('#ready1').html("READY");
                 document.getElementById("name1").style.display = "block";
                 document.getElementById("ready1").style.display = "block";
             }
             if(ready2==2){
                 $('#name2').text(name2);
-                $('#ready2').text("READY");
+                $('#ready2').html("READY");
                 document.getElementById("name2").style.display = "block";
                 document.getElementById("ready2").style.display = "block";
             }
             if(ready3==2){
                 $('#name3').text(name3);
-                $('#ready3').text("READY");
+                $('#ready3').html("READY");
                 document.getElementById("name3").style.display = "block";
                 document.getElementById("ready3").style.display = "block";
             }
             if(ready4==2){
                 $('#name4').text(name4);
-                $('#ready4').text("READY");
+                $('#ready4').html("READY");
                 document.getElementById("name4").style.display = "block";
                 document.getElementById("ready4").style.display = "block";
             }
