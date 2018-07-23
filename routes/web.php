@@ -124,3 +124,4 @@ Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answe
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
 Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
 
+Route::get('newquiz', 'AController@newquiz')->name('newquiz');
