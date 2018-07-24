@@ -181,7 +181,7 @@
               
               
               <?php
-              if(count($count)>0){
+              if($contents){
                 foreach($contents as $content){
               ?>
                     <div class="box5">

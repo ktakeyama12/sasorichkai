@@ -37,6 +37,8 @@ class UsersController extends Controller
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();
+        
+       
 
         return view('users.show',[
             'user' => $user,
@@ -271,6 +273,7 @@ class UsersController extends Controller
             ]);
     }
          
+
      public function osakaunfavorite(Request $request){
         $user_id = \Auth::user()->id;
         DB::table('branchfavorites')->where('favorite_id', 3)->where('user_id', $user_id)->delete();
@@ -288,5 +291,6 @@ class UsersController extends Controller
             'count' => $count,
             ]);
     }
+
   
 }
