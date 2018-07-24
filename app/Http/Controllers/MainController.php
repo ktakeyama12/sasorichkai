@@ -21,6 +21,10 @@ class MainController extends BaseController
     
     public function shooting()
     {
+        return view('shootingWelcome');
+    }
+    
+    public function shootingGame(){
         return view('shooting');
     }
     
