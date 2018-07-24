@@ -187,16 +187,17 @@ function getPos1(){
 // });
 
 function getBox(leftPos){
-    if(leftPos>=0 && leftPos<=25){
+    console.log(leftPos);
+    if(leftPos>=0 && leftPos<=21.7){
         $('#results1').text('1');
         return 1;
-    }else if(leftPos>25 && leftPos<=50){
+    }else if(leftPos>21.7 && leftPos<=47.5){
         $('#results1').text('2');
         return 2;
-    }else if(leftPos>50 && leftPos<=75){
+    }else if(leftPos>50 && leftPos<=73.5){
         $('#results1').text('3');
         return 3;
-    }else if(leftPos>75 && leftPos<=100){
+    }else if(leftPos>73.5 && leftPos<=100){
         $('#results1').text('4');
         return 4;
     }else{
