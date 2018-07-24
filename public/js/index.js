@@ -41,4 +41,6 @@ function WhichButton(event) {
     alert("まずはログインしてね")
 }
 
-$('#chat').draggable();
+// $( function() {
+//     $( "#a" ).draggable();
+//   } );

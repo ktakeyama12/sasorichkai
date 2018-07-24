@@ -84,10 +84,10 @@ function down(){
 }
 
 
-$(window).load(function(){
- $('#scroller').scrollTop($('#messages').height());
+// $(window).load(function(){
+//  $('#scroller').scrollTop($('#messages').height());
 
-});
+// });
 
 $("button").click(function(){
         $("#chat").fadeOut(1000);
