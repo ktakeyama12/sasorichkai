@@ -43,7 +43,7 @@
                     <ul>
                         <li><h3>Zoff</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>5% off</p1></li>
+                        <li><h3>5% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Drinking</div>
@@ -57,7 +57,7 @@
                     <ul>
                         <li><h3>高島屋</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>5% off(対象店舗限定)</p1></li>
+                        <li><h3>5% off(対象店舗限定)</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">McDonald's</div>
@@ -71,7 +71,7 @@
                     <ul>
                         <li><h3>ABC Mart</h3></h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -86,7 +86,7 @@
                     <ul>
                         <li><h3>L'OCCITANE</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -101,7 +101,7 @@
                     <ul>
                         <li><h3>john masters organics</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10～15% off</p1></li>
+                        <li><h3>10～15% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -117,7 +117,7 @@
                     <ul>
                         <li><h3>Tabio</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>5% off</p1></li>
+                        <li><h3>5% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -132,7 +132,7 @@
                     <ul>
                         <li><h3>AMPHI</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>20% off(不定期開催)</p1></li>
+                        <li><h3>20% off(不定期開催)</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -147,7 +147,7 @@
                     <ul>
                         <li><h3>ViS</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
