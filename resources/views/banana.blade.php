@@ -29,12 +29,18 @@
     
     <!--チャットのCSS-->
     <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
     
     
   
 </head>
 
 <body>
+    <div id="container-example">
+          <div class='strip colour-4'>
+            <a class="" onclick="history.back()">戻る</a>
+          </div>
+        </div>
     <div class="main">
     <div class="main_background-image"></div>    
         <h1>リアルタイムマジカルバナナ</h1>
