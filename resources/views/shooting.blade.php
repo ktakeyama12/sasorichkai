@@ -82,7 +82,6 @@
     <div class="laser" id="laser2"></div>
 
 
-
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
     
