@@ -29,7 +29,6 @@
 	
 	<div class="border3">	
 		<div class="box_6">
-			 
 			    <p><center>
 			    	<?php 
 			              if($user->point < 50){
@@ -62,21 +61,42 @@
 			        ?>
 			        
 				
-					<br><div class="oomoji">{{$user->point}} ポイント</div> 
-			   
-				<div class="tyuumoji">楽天理解度王者ランキング</div>
+				<br><div class="oomoji">{{$user->point}} ポイント</div> 
+			   	<br><br><br><br>
+			   	<div class="hako" title="楽天理解度王者ランキング">
+				<!--<div class="tyuumoji"></div>-->
+			    
+			    
+			    <div class="box" title="楽天理解度王者ランキング">
+
+				<br><br>
+			    <div class="komoji">
 			    <?php
 				    foreach($alldata as $data){
-				    		    	?><div class="box_6"><?php
+				    		    	?><?php
+				    		    	
+				    		    	foreach (($data) as $user => $count) {
+									    echo "{$count}位:";
+									  }
+				    		    	
+				
 	            print $data->name;
 	            print "さん ";
 	            print $data->point;
 	            print "ポイント";
-	            ?></div><?php
+	            ?>
+	            <br><br>
+	            <?php
 		        }
 			    ?>
+			    </div>
 			    </center></p>
+
+				</div>
+			    
+			    
 		</div>
+	</div>
 	</body>
 
 </html>
