@@ -16,14 +16,14 @@
     <script src="js/yontaku.js"></script>
 </head>
 <body>
-    <div id="entry">
-        <input type="text" name="name" id="name" value="" />
-        <button id="nyuushitsu" onclick="nyuushitsu()">送信</button>
-        <div id="cantenter"></div>
-        <div id="usercount"></div>
-    </div>
+    <!--<div id="entry">-->
+    <!--    <input type="text" name="name" id="name" value="" />-->
+    <!--    <button id="nyuushitsu" onclick="nyuushitsu()">送信</button>-->
+    <!--    <div id="cantenter"></div>-->
+    <!--    <div id="usercount"></div>-->
+    <!--</div>-->
 
-    <div id="game" style="display: none">
+    <div id="game">
         <div id="results"></div>
         <div id="results1"></div>
         <div id="leftPos"></div>
@@ -51,29 +51,30 @@
         <div id="seikaiorfuseikai"></div>
         Your Score:
         <div id="score"></div>
-        <img src="images/newquiz/1.jpg" id="user1" style="display: none">
-        <img src="images/newquiz/2.jpg" id="user2" style="display: none">
-        <img src="images/newquiz/3.jpg" id="user3" style="display: none">
-        <img src="images/newquiz/4.jpg" id="user4" style="display: none">
+        <img src="images/newquiz/1.jpg" id="user1">
+        <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
+        <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
+        <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->
+        <!--<img src="images/newquiz/4.jpg" id="user4" style="display: none">-->
         </div>
     </div>
-    <div id="ready" style="display: none">
-        <div id="welcome"></div>
-        <button id="ready" onclick="ready()">READY</button>
-        <button id="start" onclick="start()">start</button>
-        <div id="checkstart"></div>
-        <div id="name1">w</div>
-        <div id="ready1">w</div>
-        <div id="name2"></div>
-        <div id="ready2"></div>
-        <div id="name3"></div>
-        <div id="ready3"></div>
-        <div id="name4"></div>
-        <div id="ready4"></div>
-    </div>
-    <button id="reset" onclick="reset()">RESET</button>
-    <div id="usernumber"></div>
-    <div id="startcheck"></div>
-    <div id="dwd">www</div>
+    <!--<div id="ready" style="display: none">-->
+    <!--    <div id="welcome"></div>-->
+    <!--    <button id="ready" onclick="ready()">READY</button>-->
+    <!--    <button id="start" onclick="start()">start</button>-->
+    <!--    <div id="checkstart"></div>-->
+    <!--    <div id="name1">w</div>-->
+    <!--    <div id="ready1">w</div>-->
+    <!--    <div id="name2"></div>-->
+    <!--    <div id="ready2"></div>-->
+    <!--    <div id="name3"></div>-->
+    <!--    <div id="ready3"></div>-->
+    <!--    <div id="name4"></div>-->
+    <!--    <div id="ready4"></div>-->
+    <!--</div>-->
+    <!--<button id="reset" onclick="reset()">RESET</button>-->
+    <!--<div id="usernumber"></div>-->
+    <!--<div id="startcheck"></div>-->
+    <!--<div id="dwd">www</div>-->
 </body>
 </html>

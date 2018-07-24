@@ -284,7 +284,6 @@ function runQuiz(){
 // });
 };
 
-
 function checkAnswer(answerSelected, answer){
     if(answerSelected == answer){
         return true;
@@ -452,39 +451,41 @@ function reset(){
 }
 
 $(function(){
-    var timecounter = setInterval(function(){
-    ready1 =  document.getElementById('ready1').innerHTML;
-    ready2 =  document.getElementById('ready2').innerHTML;
-    ready3 =  document.getElementById('ready3').innerHTML;
-    ready4 =  document.getElementById('ready4').innerHTML;
-    if(ready1 == "READY" && ready2 == "READY" && ready3 == ""){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user1").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        runQuiz();
-        // getPos1();
-        clearInterval(timecounter)
-    }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == ""){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user1").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        document.getElementById("user3").style.display = "block";
+    // var timecounter = setInterval(function(){
+    // ready1 =  document.getElementById('ready1').innerHTML;
+    // ready2 =  document.getElementById('ready2').innerHTML;
+    // ready3 =  document.getElementById('ready3').innerHTML;
+    // ready4 =  document.getElementById('ready4').innerHTML;
+    // if(ready1 == "READY" && ready2 == "READY" && ready3 == ""){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user1").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     runQuiz();
+    //     // getPos1();
+    //     clearInterval(timecounter)
+    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == ""){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user1").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     document.getElementById("user3").style.display = "block";
         
-        runQuiz();
-        clearInterval(timecounter)
-    }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == "READY"){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        document.getElementById("user3").style.display = "block";
-        document.getElementById("user4").style.display = "block";
-        runQuiz();
-        clearInterval(timecounter)
-    }
+    //     runQuiz();
+    //     clearInterval(timecounter)
+    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == "READY"){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     document.getElementById("user3").style.display = "block";
+    //     document.getElementById("user4").style.display = "block";
+    //     runQuiz();
+    //     clearInterval(timecounter)
+    // }
 
-    }, 10);
+    // }, 10);
+    runQuiz();
+    draggable1();
 });
 
 function start(){
@@ -493,26 +494,3 @@ function start(){
         start : "1",
    }, {merge: true });
 }
-
-$('#dwd').draggable({
-        // start: function(leftPos) {
-        //     coordinates('#user1');
-        //     var leftPos = coordinatesLeft('#user1');
-        //     var topPos = coordinatesTop('#user1');
-        //     currentPos = getBox(leftPos);
-        //     $('#leftPos').text(currentPos);
-        //     // sendPos("user1", topPos, leftPos);
-        // },
-        // stop: function(leftPos) {
-        //     coordinates('#user1');
-        //     var leftPos = coordinatesLeft('#user1');
-        //     var topPos = coordinatesTop('#user1');
-        //     $('#leftPos').text(leftPos);
-        //     currentPos = getBox(leftPos);
-        //     sendPos1(topPos, leftPos);
-        // }
-    });
- window.onload = function() {   
-     $('#dwd').draggable();
-    document.getElementById('dwd').style.top = '50px';
- }
