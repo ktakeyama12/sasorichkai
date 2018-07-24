@@ -19,7 +19,7 @@
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/least.min.js"></script>
+    <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     
     
@@ -42,7 +42,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <a href="images/gallery/p1.jpg"></a>
+                <a href="images/gallery/h3.jpg"></a>
                 <img data-original="images/gallery/trip.jpg" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
@@ -50,7 +50,7 @@
                     <ul>
                         <li><h3>Rakuten Travel</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>契約宿泊施設 3,000円補助</p1></li>
+                        <li><h3>契約宿泊施設 3,000円補助</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Travel</div>
@@ -65,7 +65,7 @@
                         
                         <li><h3>Rakuten Hair Salon</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>500円分×10枚/年1回</p1></li>
+                        <li><h3>500円分×10枚/年1回</h3></li>
                         
                     </ul>
                 </div>
@@ -80,7 +80,7 @@
                     <ul>
                         <li><h3>9F Fitness</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>月額500円補助</p1></li>
+                        <li><h3>月額500円補助</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Fitness</div>

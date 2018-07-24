@@ -9,7 +9,11 @@
     
     <!--Chat機能 Firebase接続-->
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    
+    <!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
     
     <!--Bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -19,8 +23,8 @@
     
     
     
-              <!--JQuery-->
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--JQuery-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     
     <!--最初の画面-->
     <link rel="stylesheet" href="css/index.css">
@@ -28,7 +32,7 @@
     <!--チャットのCSS-->
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
-    
+    @include('layouts.navbar')
    
 </head>
 
@@ -41,7 +45,7 @@
 <div id="container" style="display:none">
   
 
-  @include('layouts.navbar')
+  
   
   <header>
     <br><br><br><br>
@@ -138,11 +142,11 @@ $prime = \Auth::user()->prime;
             <h3><br>生産性アップのカギはメリハリ！たまには仕事を離れて、レジャーを楽しもう！</h3>
                   <div class="coupon_index">
 
-                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('cafePrime', '  飲食店') !!} </span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('moviePrime', '  映画　＆　カラオケ') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('amusePrime', '  アミューズ') !!}</span></h2>
                       <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('shoppingPrime', '  ショッピング') !!}</span></h2>
+                      <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('rakutenPrime', '  社内で使えるサービス') !!}</span></h2>
 
                   </div>
          　
@@ -310,7 +314,6 @@ $prime = \Auth::user()->prime;
   </div>
   <!-- cont inner end -->
 </div>
-
 <div id="chat" style="display:none">
   
 @include('chat')

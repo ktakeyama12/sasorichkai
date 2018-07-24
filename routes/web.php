@@ -35,6 +35,8 @@ Route::get('shoppingprime', 'AController@shoppingprime')->name('shoppingprime');
 
 Route::get('workinfo', 'AController@workinfo')->name('workinfo');
 
+Route::get('game', 'AController@game')->name('game');
+
 
 
 Route::get('/banana', 'MainController@banana')->name('banana');
@@ -133,5 +135,7 @@ Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('sol
 Route::get('newquiz', 'AController@newquiz')->name('newquiz');
 Route::get('yontaku', 'AController@yontaku')->name('yontaku');
 Route::get('hirayama', 'AController@hirayama')->name('hirayama');
+Route::get('soy', 'AController@soy')->name('soy');
+
 
 

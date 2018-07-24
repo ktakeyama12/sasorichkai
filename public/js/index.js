@@ -24,7 +24,7 @@ $closeBtnsArr.forEach(function($btn) {
 
 // BOTAN
 function image1() {
-    window.location.href = "soloquiz.answer";
+    window.location.href = "game";
 }
 function image2() {
     window.location.href = "answer";
@@ -40,3 +40,7 @@ function image4() {
 function WhichButton(event) {
     alert("まずはログインしてね")
 }
+
+// $( function() {
+//     $( "#a" ).draggable();
+//   } );

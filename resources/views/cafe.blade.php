@@ -12,7 +12,7 @@
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/least.min.js"></script>
+    <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     
 </head>
@@ -41,7 +41,7 @@
                     <ul>
                         <li><h3>i Beer</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Drinking</div>
@@ -56,7 +56,7 @@
                     <ul>
                         <li><h3>McDonald's</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>ポテト全サイズ 150円</p1></li>
+                        <li><h3>ポテト全サイズ 150円</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">McDonald's</div>
@@ -70,7 +70,7 @@
                     <ul>
                         <li><h3>CINNABON</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -85,7 +85,7 @@
                     <ul>
                         <li><h3>KUAAINA</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% off</p1></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -100,7 +100,7 @@
                     <ul>
                         <li><h3>Bills</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>1 drinkサービス</p1></li>
+                        <li><h3>1 drinkサービス</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -116,7 +116,7 @@
                     <ul>
                         <li><h3>すみれ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>100円 off</p1></li>
+                        <li><h3>100円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -131,7 +131,7 @@
                     <ul>
                         <li><h3>温野菜</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>100円 off 予約時エントリー必須）</p1></li>
+                        <li><h3>100円 off <br>(予約時エントリー必須）</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -146,7 +146,7 @@
                     <ul>
                         <li><h3>Bubby's</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>100円 off (予約時エントリー必須)</p1></li>
+                        <li><h3>100円 off <br>(予約時エントリー必須)</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>

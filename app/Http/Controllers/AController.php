@@ -164,12 +164,22 @@ class AController extends BaseController
         return view("newquiz/newquiz");
     }
     
+
+    
+    public function game()
+    {
+        return view('game');
+    }
     public function yontaku(){
         return view("yontaku");
     }
     
     public function hirayama(){
         return view("quiz.hirayama");
+    }
+    
+    public function soy(){
+        return view("quiz.soy");
     }
 }
 

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
@@ -12,13 +14,13 @@
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/least.min.js"></script>
+    <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     
 </head>
 <body>
     <header>
-        <h2>Amusement park & pool</h2>
+        <h2>Amusement park & Pool</h2>
     </header>
 
     <!--  least.js gallery -->
@@ -42,7 +44,7 @@
                     <ul>
                         <li><h3>東京ディズニーリゾート</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>2000円分×4枚/年1</p1></li>
+                        <li><h3>2000円分×4枚/年1</h3></li>
 
                     </ul>
                 </div>
@@ -57,7 +59,7 @@
                     <ul>
                         <li><h3>よみうりランド</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>ワンデーパス 1,700～2,300円 off</p1></li>
+                        <li><h3>ワンデーパス<br> 1,700～2,300円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">McDonald's</div>
@@ -71,7 +73,7 @@
                     <ul>
                         <li><h3>東京ジョイポリス</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>パスポート(入場＋アトラクション乗り放題) 1,300円 off</p1></li>
+                        <li><h3>入場パス1,300円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -86,7 +88,7 @@
                     <ul>
                         <li><h3>新江ノ島水族館</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>入場料 930円 off</p1></li>
+                        <li><h3>入場料 930円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -101,7 +103,7 @@
                     <ul>
                         <li><h3>八景島シーパラダイス</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>アクアリゾートパス 600円 off<br>or<br>ワンデーパス 650円 off</p1></li>
+                        <li><h3>ワンデーパス 650円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -117,7 +119,7 @@
                     <ul>
                         <li><h3>鴨川シーワールド</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>入園料 350円 off</p1></li>
+                        <li><h3>入園料 350円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -132,7 +134,7 @@
                     <ul>
                         <li><h3>東京サマーランド</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>フリーパス 700～900円off</p1></li>
+                        <li><h3>フリーパス 700～900円off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -147,7 +149,7 @@
                     <ul>
                         <li><h3>箱根小涌園ユネッサン</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>パスポート(ユネッサン&森の湯) 1,800円 off</p1></li>
+                        <li><h3>パスポート(ユネッサン&森の湯) 1,800円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -161,7 +163,7 @@
                     <ul>
                         <li><h3>大磯ロングビーチ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>特別優待券 400円 off</p1></li>
+                        <li><h3>特別優待券 400円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -175,7 +177,7 @@
                     <ul>
                         <li><h3>オービィ横浜</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>パスポート 800円 off</p1></li>
+                        <li><h3>パスポート 800円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -187,9 +189,8 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>さがみ湖リゾート <br> プレジャーフォレスト</h3></li>
-                        <li><p>RELO</p></li>
-                        <li><p1>入園料＋乗り物乗り放題 100円 off</p1></li>
+                        <li><h3>さがみ湖リゾート<br>プレジャーフォレスト</h3></li>
+                        <li><h3>入園料＋乗り物乗り放題 100円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -203,7 +204,7 @@
                     <ul>
                         <li><h3>サンシャイン水族館</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>入場料 660円 off</p1></li>
+                        <li><h3>入場料 660円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>

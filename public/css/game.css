@@ -1,0 +1,23 @@
+.hirayama, .eigyouman, .kyaku{
+    width:430px; /* you can use % */
+    height: auto;
+    float: left;
+    padding:0 100px 0 0;
+    
+}
+
+.towa_picture{
+    margin-left:100px; 
+}
+
+.action-button shadow animate blue, 
+.action-button shadow animate red,
+.action-button shadow animate green{
+    float: left;
+    padding:0 100px 0 0;  
+}
+
+
+.button{
+    margin-left:107px; 
+}
