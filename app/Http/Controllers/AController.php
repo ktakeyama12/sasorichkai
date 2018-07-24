@@ -171,5 +171,9 @@ class AController extends BaseController
     public function hirayama(){
         return view("quiz.hirayama");
     }
+    
+    public function soy(){
+        return view("quiz.soy");
+    }
 }
 
