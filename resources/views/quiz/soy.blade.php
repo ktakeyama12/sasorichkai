@@ -58,7 +58,7 @@
             <h1>Your Score:</h1>
             <br><br>
             <div id="score"></div>
-            <img src="images/hirayama.png" id="user1">
+            <img src="images/characters/kyakubutton.gif" id="user1">
             <br>
             <font class = 'drag_hirayama'>正解のBOXに平山さんをドラッグ！</font>
             <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
