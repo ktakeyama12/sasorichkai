@@ -54,6 +54,8 @@
         Your Score:
         <div id="score"></div>
         <img src="images/hirayama.png" id="user1">
+        <br>
+        ↑ドラッグして選択肢に置いてね
         <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
         <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
         <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->

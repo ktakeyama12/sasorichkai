@@ -228,7 +228,7 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
             console.log(finalscore);
             $('#finalscore').text(finalscore);
         }
-        if(time==0){
+        if(time==-1){
             time=10;
             if(answerCorrect[i]==1){
                  $('#answerData1').fadeOut();
