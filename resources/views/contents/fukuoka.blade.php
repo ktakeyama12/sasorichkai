@@ -193,10 +193,10 @@
                                  $result = '<img src="images/rakuten_gallery/silver.jpg">';
                               }
                               elseif($content->user_point >=200){
-                                $result = '<img src="images/rakuten_gallery/gold.jpg">';
+                                $result = '<img src="images/rakuten_gallery/gold-ribon.jpg">';
                               }
                               echo $result;
-                        ?>  {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                        ?>  <br><br>{{ $content->user_name }}:<br><br>{{ $content->content }}</div>
                   
                     
                     
