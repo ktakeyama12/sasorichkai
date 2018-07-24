@@ -122,6 +122,7 @@ class ContentsController extends Controller
     }
     
     
+
     public function okinawa()
     {
         

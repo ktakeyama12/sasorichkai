@@ -50,9 +50,33 @@
 
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
-  <h4 >毎日のお勤めにワクワクをプラスする情報をお届けします。
-  <br>社員同士で交流できるサービスもご用意しています。</h4><br>
+  <h4 >毎日のお勤めにワクワクをプラスする情報や、社員同士の交流の場をお届けします。
+  <br><a href="/rpoint">Rポイント</a>を貯めて、楽天マスターになろう！</h4><br>
 </header>
+
+<div class = 'prime_button'>
+@auth
+<?php
+$prime = \Auth::user()->prime;
+        if($prime == 0){
+?>
+
+
+      	  {!! Form::open(['route' => ['welcomePrime']]) !!}
+             <input type="hidden" value="1" name="prime" />
+              {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+          {!! Form::close() !!}
+<?php
+        }
+        elseif($prime == 1){
+          print '';
+            
+        }
+?>
+@endauth
+                          
+</div>
+<br>
   
   
 
@@ -361,26 +385,7 @@
     <script src="js/chat.js"></script>
     <script src="js/loader.js"></script>
 
-<div>
-@auth
-<?php
-$prime = \Auth::user()->prime;
-        if($prime == 0){
-?>
 
-      	  {!! Form::open(['route' => ['welcomePrime']]) !!}
-             <input type="hidden" value="1" name="prime" />
-              {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-sm btn-block']) !!}
-          {!! Form::close() !!}
-<?php
-        }
-        elseif($prime == 1){
-            
-        }
-?>
-@endauth
-                          
-</div>
 
 </body>
 
