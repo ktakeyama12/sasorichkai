@@ -12,15 +12,15 @@
 </head>
 <body>
   <div class="towa_picture">
-  <img src="images/characters/hirayama.gif" class="hirayama">
-  <img src="images/characters/eigyouman.gif" class="eigyouman">
-  <img src="images/characters/kyaku.gif" class="kyaku">
+  <img src="images/characters/hira.jpg" class="hirayama">
+  <img src="images/characters/ecc.jpg" class="eigyouman">
+  <img src="images/characters/merchant.jpg" class="kyaku">
   </div>
   
-  
-  <a href="hirayama" class="action-button shadow animate blue">営業のプロ、平山さんから学べ！</a>
-  <a href="#" class="action-button shadow animate red">ECCの基礎知識を学べ！</a>
-  <a href="soy" class="action-button shadow animate green">楽天市場で輝く店舗から学べ！</a>
+  <div class="button">
+  <a href="hirayama" class="action-button shadow animate blue">営業の平山さんから学べ！</a>
+  <a href="#" class="action-button shadow animate red">ECCから基礎知識を学べ！</a>
+  <a href="soy" class="action-button shadow animate green">楽天市場の店舗から学べ！</a>
 </body>
 </html>
 
