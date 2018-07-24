@@ -40,3 +40,5 @@ function image4() {
 function WhichButton(event) {
     alert("まずはログインしてね")
 }
+
+$('#chat').draggable();
