@@ -19,7 +19,7 @@
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/least.min.js"></script>
+    <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     
     
