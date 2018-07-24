@@ -34,7 +34,7 @@
                     <ul>
                         <li><h3>1位：109 Cinemas</h3></li>
                         <li><p>Relo</p></li>
-                        <li><p1>1,300円</p1></li>
+                        <li><h3>1,300円</h3></li>
                     </ul>
                 </div>
                 

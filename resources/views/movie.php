@@ -44,7 +44,7 @@
                     <ul>
                         <li><h3>カラオケ館</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 30% off</p1></li>
+                        <li><h3>室料 30% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">Drinking</div>
@@ -58,7 +58,7 @@
                     <ul>
                         <li><h3>SHIDAX</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 20% off</p1></li>
+                        <li><h3>室料 20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">McDonald's</div>
@@ -72,7 +72,7 @@
                     <ul>
                         <li><h3>BIG ECHO</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 20～30% off</p1></li>
+                        <li><h3>室料 20～30% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -87,7 +87,7 @@
                     <ul>
                         <li><h3>歌広場</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 10～20% off</p1></li>
+                        <li><h3>室料 10～20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -102,7 +102,7 @@
                     <ul>
                         <li><h3>歌うんだ村</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 10% off</p1></li>
+                        <li><h3>室料 10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">CINNABON</div>
@@ -118,7 +118,7 @@
                     <ul>
                         <li><h3>コート・ダジュール</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 5～20% off</p1></li>
+                        <li><h3>室料 5～20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -133,7 +133,7 @@
                     <ul>
                         <li><h3>まねきねこ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 30% off <br>or<br> ポテトフライサービス</p1></li>
+                        <li><h3>室料 30% off <br>or<br> ポテトフライサービス</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -148,7 +148,7 @@
                     <ul>
                         <li><h3>カラオケの鉄人</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>室料 30% off</p1></li>
+                        <li><h3>室料 30% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -163,7 +163,7 @@
                     <ul>
                         <li><h3>109 cinemas</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>500円 off</p1></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -178,7 +178,7 @@
                     <ul>
                         <li><h3>イオンシネマ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>500円 off</p1></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -193,7 +193,7 @@
                     <ul>
                         <li><h3>シネマイクスピアリ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>500円 off</p1></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -208,7 +208,7 @@
                     <ul>
                         <li><h3>TOHO シネマズ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><p1>500円 off</p1></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
