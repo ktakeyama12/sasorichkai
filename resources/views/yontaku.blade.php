@@ -32,6 +32,7 @@
         <div id="results2"></div>
         <!--Question:-->
         <div id="quizData"></div>
+        <!--<div id="prevAns"></div>-->
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-3" style="background-color:lavender;">
@@ -59,6 +60,7 @@
         <!--<img src="images/newquiz/4.jpg" id="user4" style="display: none">-->
         </div>
     </div>
+    <div id="finish"></div>
     <!--<div id="ready" style="display: none">-->
     <!--    <div id="welcome"></div>-->
     <!--    <button id="ready" onclick="ready()">READY</button>-->

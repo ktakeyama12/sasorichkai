@@ -220,6 +220,9 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
         $('#results2').text(time);
         answerSelected =  document.getElementById('results1').innerHTML;
         time--;
+        if(i==9){
+            clearInterval(timecounter);
+        }
         if(time==0){
             time=10;
             if(checkAnswer(answerSelected, answerCorrect[i]) == true){
