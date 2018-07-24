@@ -30,35 +30,51 @@
 	<div class="border3">	
 		<div class="box_6">
 			    <p><center>
+			    	<div class = "account_info">
 			    	<?php 
 			              if($user->point < 50){
-			                 $result = '<img src="images/rakuten_gallery/bronze.jpg">';
+			                 $result = '<img src="images/rakuten_gallery/bronze-b.jpg">';
 			              }
 			              elseif($user->point >=50 && $user->point <200){
-			                 $result = '<img src="images/rakuten_gallery/silver.jpg">';
+			                 $result = '<img src="images/rakuten_gallery/silver-b.jpg">';
 
 			              }
 			              else{
-			                $result = '<img src="images/rakuten_gallery/gold.jpg">';
+			                $result = '<img src="images/rakuten_gallery/gold-ribon-b.jpg">';
 			              }
 			              echo $result;
 			              
 			              
+			              if($user->point < 50){
+			                 $medal = 'ブロンズ';
+			              }
+			              elseif($user->point >=50 && $user->point <200){
+			                 $medal = 'シルバー';
+
+			              }
+			              else{
+			                $medal = 'ゴールド';
+			              }
+			              
+			              
 			        $free = "あなたは無料会員です。";
-			        $prime = "あなたはプライム会員です。";
+			        $prime = "あなたはプライム会員";
 			        $error = "Who the hell are you? get the hell out of here";
-			        
+			        ?>
+			        <br>
+			        <?php
 			        if($user->prime == 0){
 			        	echo $free;
 			        }elseif($user->prime == 1){
-			        	$img = '<img src="images/prime.png">';
-			        	echo $img;
-			        	echo $prime;
+			        	// $img = '<img src="images/prime.png">';
+			        	// echo $img;
+			        	echo $prime . '(' . $medal . ')です。';
 			        }else{
 			        	echo $error;
 			        }
 			        
 			        ?>
+			 </div>
 			        
 				
 				<br><div class="oomoji">{{$user->point}} ポイント</div> 
@@ -72,18 +88,15 @@
 				<br><br>
 			    <div class="komoji">
 			    <?php
+			    	$count = count($users);
+			    	$i=0;
 				    foreach($alldata as $data){
-				    		    	?><?php
-				    		    	
-				    		    	foreach (($data) as $user => $count) {
-									    echo "{$count}位:";
-									  }
-				    		    	
-				
-	            print $data->name;
-	            print "さん ";
-	            print $data->point;
-	            print "ポイント";
+				    	$i++;
+				    	print $i . '位&nbsp;&nbsp;&nbsp;';
+			            print $data->name;
+			            print "さん&nbsp;&nbsp;&nbsp;";
+			            print $data->point;
+			            print "ポイント";
 	            ?>
 	            <br><br>
 	            <?php
