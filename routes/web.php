@@ -35,6 +35,8 @@ Route::get('shoppingprime', 'AController@shoppingprime')->name('shoppingprime');
 
 Route::get('workinfo', 'AController@workinfo')->name('workinfo');
 
+Route::get('game', 'AController@game')->name('game');
+
 
 
 Route::get('/banana', 'MainController@banana')->name('banana');
