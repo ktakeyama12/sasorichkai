@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <h2>Amusement park & poo</h2>
+        <h2>Amusement park & Pool</h2>
     </header>
     <center><b><font_size="20">人気度ランキング</font_size></b></center>
     <!--  least.js gallery -->

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
@@ -18,7 +20,7 @@
 </head>
 <body>
     <header>
-        <h2>Amusement park & pool</h2>
+        <h2>Amusement park & Pool</h2>
     </header>
 
     <!--  least.js gallery -->
