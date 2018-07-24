@@ -40,3 +40,7 @@ function image4() {
 function WhichButton(event) {
     alert("まずはログインしてね")
 }
+
+// $( function() {
+//     $( "#a" ).draggable();
+//   } );
