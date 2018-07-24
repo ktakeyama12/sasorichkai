@@ -37,6 +37,7 @@ class UsersController extends Controller
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();
+        $users = User::all();
         
        
 
@@ -44,6 +45,7 @@ class UsersController extends Controller
             'user' => $user,
             'points' => $points,
             'alldata' => $alldata,
+            'users' => $users
         ]);
     }
     

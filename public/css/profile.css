@@ -34,7 +34,7 @@
     
 }
 .border3{
-    background-color: #F5F5F5;
+    background-color: white;
     font-size: 700%;
     text-align: center;
     color: black;
@@ -76,7 +76,9 @@ h1{
     font-size: 400%;
 }
 .komoji{
-    font-size: 200%;
+    font-size: 100%;
+    display: inline-block;
+    text-align: left;
 }
 .ranking{
     font-size: 190px;
@@ -106,6 +108,10 @@ h1{
   text-align    : center;              /* BOXの文字位置           */
   border-radius : 10px;                /* タイトルの角丸          */
   width: 150%;
+}
+
+.account_info{
+    font-size:150%;
 }
  
  /* --- タイトル部分の定義 ----------------------------------------*/
