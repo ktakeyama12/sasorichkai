@@ -78,7 +78,7 @@
             </li>
             
             <li>
-                <a href="https://www.google.co.jp/search?rlz=1C1GGRV_enJP791JP792&ei=p1xRW_GpNsrJ0ASGu7qQCw&q=L%27OCCITANE&oq=L%27OCCITANE&gs_l=psy-ab.3..0l8.16320.17542.0.19110.5.4.0.0.0.0.95.255.3.3.0....0...1.1.64.psy-ab..3.2.180...0i67k1j0i131k1.0.YHkPw0-lFK8"></a>
+                <a href="https://www.google.co.jp/search?rlz=1C1GGRV_enJP791JP792&ei=h3xRW_GpNsrJ0ASGu7qQCw&q=L%27OCCITANE&oq=L%27OCCITANE&gs_l=psy-ab.3..0l8.16320.17542.0.19110.5.4.0.0.0.0.95.255.3.3.0....0...1.1.64.psy-ab..3.2.180...0i67k1j0i131k1.0.YHkPw0-lFK8"></a>
                 <img data-original="images//gallery/soap.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
@@ -145,7 +145,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>ViS</h3></li>
+                        <li><h3>Vis</h3></li>
                         <li><p>rise</p></li>
                         <li><h3>10% off</h3></li>
                     </ul>
