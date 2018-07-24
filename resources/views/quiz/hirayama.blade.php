@@ -13,7 +13,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/yontaku.js"></script>
+    <script src="js/hirayama.js"></script>
 </head>
 <body>
     <!--<div id="entry">-->
@@ -53,14 +53,17 @@
         <div id="seikaiorfuseikai"></div>
         Your Score:
         <div id="score"></div>
-        <img src="images/newquiz/1.jpg" id="user1">
+        <img src="images/hirayama.png" id="user1">
         <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
         <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
         <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->
         <!--<img src="images/newquiz/4.jpg" id="user4" style="display: none">-->
         </div>
     </div>
-    <div id="finish"></div>
+    <div id="finish" style="display: none">
+    <div id="finalscore1">おわり<br>あなたのスコアは：</div>
+    <div id="finalscore"></div>
+    </div>
     <!--<div id="ready" style="display: none">-->
     <!--    <div id="welcome"></div>-->
     <!--    <button id="ready" onclick="ready()">READY</button>-->
