@@ -78,7 +78,6 @@ $prime = \Auth::user()->prime;
 </div>
 <br>
   
-  
 
 @auth
  <div class="cont s--inactive">
@@ -102,7 +101,7 @@ $prime = \Auth::user()->prime;
           <div class="el__content">
             <div class="el__text">
             <h1 class="el__text_title">手当</h1>
-            <h3><br>ワークアズライフを充実させよう。<br><br>楽天で快適なワークスタイルを送るために必ず知っておくべき「休暇」「転勤時手当」などの社内情報について紹介。</h3>
+            <h3><br>ワークアズライフを充実させよう。<br><br>楽天で快適なワークスタイルを送るために必ず知っておくべき<br>「休暇」「転勤時手当」などの社内情報について紹介。</h3>
             
             <br>
             <h2><span class="glyphicon glyphicon-arrow-right">{!! link_to_route('workinfo', ' 手当一覧を見る') !!}</span></h2>
@@ -306,62 +305,7 @@ $prime = \Auth::user()->prime;
         </div>
       </div>
     </div>
-    <!-- el end -->
-        <!-- el start -->
-    <!--<div class="el">-->
-    <!--  <div class="el__overflow">-->
-    <!--    <div class="el__inner">-->
-    <!--      <div class="el__bg"></div>-->
-    <!--      <div class="el__preview-cont">-->
-    <!--        <h2 class="el__heading">RAKUTEN<br>GAME</h2>-->
-    <!--      </div>-->
-    <!--      <div class="el__content">-->
-    <!--        <div class="el__text">-->
-    <!--             {!! link_to_route('banana', 'banana') !!}<br>-->
-    <!--             {!! link_to_route('match', '自分に合った支社を見つけよう') !!}<br>-->
-    <!--             {!! link_to_route('shooting', 'Red Oceanを勝ち抜け！') !!}-->
-                 
-                
-    <!--        </div>-->
-    <!--        <div class="el__close-btn"></div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--  <div class="el__index">-->
-    <!--    <div class="el__index-back">E</div>-->
-    <!--    <div class="el__index-front">-->
-    <!--      <div class="el__index-overlay" data-index="E">E</div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</div>-->
-    <!-- el end -->
-    
-            <!-- el start -->
-    <!--<div class="el">-->
-    <!--  <div class="el__overflow">-->
-    <!--    <div class="el__inner">-->
-    <!--      <div class="el__bg"></div>-->
-    <!--      <div class="el__preview-cont">-->
-    <!--        <h2 class="el__heading">COFFEE<br>BREAK</h2>-->
-    <!--      </div>-->
-    <!--      <div class="el__content">-->
-    <!--        <div class="el__text">Let's have a cofee break!-->
-    <!--        @include('chat')-->
-            
-    <!--        </div>-->
-            
-    <!--        <div class="el__close-btn"></div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--  <div class="el__index">-->
-    <!--    <div class="el__index-back">N</div>-->
-    <!--    <div class="el__index-front">-->
-    <!--      <div class="el__index-overlay" data-index="N">N</div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-    <!--</div>-->
-    <!-- el end -->
+  
     
   </div>
   <!-- cont inner end -->
@@ -371,7 +315,17 @@ $prime = \Auth::user()->prime;
   
 @include('chat')
 <button><img src="images/buttons/close.png" id="close"></button> 
-</div>  
+</div>
+
+
+<div class = "prime_explanation">
+  <h1>「楽天プライム」とは？</h1>
+  <br><br>
+  <h3>楽天プライムは、新卒専用の「社内ポータルサイト」です。<br>
+  社内制度の情報や、仕事に役立つ情報をすぐに調べることができます。
+  楽天プライム会員になると、<br><br><br><br><br>aaa<br><br><br><br><br>aaa<br><br><br><br>
+  </h3>
+</div>
 
 <!--ロード時間計測-->
 <img src="images/rakuten_gallery/top_white/Slide7.JPG" id="loadtime1" style="display:none">
