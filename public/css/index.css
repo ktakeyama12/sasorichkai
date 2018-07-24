@@ -607,6 +607,19 @@ a:active { color: #f57; }
 .rpoint{
   color:red;
 }
+
+.prime_button{
+  width: 30%;
+  display:block;
+  margin: 10px auto;
+}
+
+a {color: #CC3333;}
+a:hover {
+  color: #CC3333;
+  font-weight:bold;
+  
+}
   
 
 /*ろーでぃんぐ*/
