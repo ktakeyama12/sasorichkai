@@ -602,6 +602,8 @@ a:active { color: #f57; }
 
 .coupon_index{
   font-size:24px;
+   display: inline-block;
+    text-align: left;
 }
   
 .rpoint{
