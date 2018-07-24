@@ -1,11 +1,19 @@
   // Initialize Firebase
+//   var config = {
+//     apiKey: "AIzaSyBXz2bkeatbZ1IbR1ZpWPFhM8-p51bQS84",
+//     authDomain: "test-df547.firebaseapp.com",
+//     databaseURL: "https://test-df547.firebaseio.com",
+//     projectId: "test-df547",
+//     storageBucket: "test-df547.appspot.com",
+//     messagingSenderId: "1081612857750"
+//   };
   var config = {
-    apiKey: "AIzaSyBXz2bkeatbZ1IbR1ZpWPFhM8-p51bQS84",
-    authDomain: "test-df547.firebaseapp.com",
-    databaseURL: "https://test-df547.firebaseio.com",
-    projectId: "test-df547",
-    storageBucket: "test-df547.appspot.com",
-    messagingSenderId: "1081612857750"
+    apiKey: "AIzaSyCNadNWOs1FDANXczqNqSx5ePdFCsKUZ0k",
+    authDomain: "chat-3e356.firebaseapp.com",
+    databaseURL: "https://chat-3e356.firebaseio.com",
+    projectId: "chat-3e356",
+    storageBucket: "",
+    messagingSenderId: "1051133717041"
   };
   firebase.initializeApp(config);
 

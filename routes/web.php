@@ -39,9 +39,12 @@ Route::get('workinfo', 'AController@workinfo')->name('workinfo');
 
 Route::get('/banana', 'MainController@banana')->name('banana');
 Route::get('/match', 'MainController@match')->name('match');
-Route::get('/shooting', 'MainController@shooting')->name('shooting');
+Route::get('/shootingGame', 'MainController@shootingGame')->name('shootingGame');
 Route::get('/quiz', 'MainController@quiz')->name('quiz');
 Route::get('/mihon', 'MainController@mihon')->name('mihon');
+Route::get('/shooting', 'MainController@shooting')->name('shooting');
+
+
 
 Route::get('index', 'ContentsController@index')->name('contents.index');
 
@@ -128,3 +131,5 @@ Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store'
 Route::post('soloquiz.answerinput', 'SoloquizController@answerinput')->name('soloquiz.answerinput');
 
 Route::get('newquiz', 'AController@newquiz')->name('newquiz');
+Route::get('yontaku', 'AController@yontaku')->name('yontaku');
+

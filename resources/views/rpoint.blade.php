@@ -20,19 +20,16 @@
   <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
   <input class="slider__nav" type="radio" name="slider" title="slide2"/>
   <input class="slider__nav" type="radio" name="slider" title="slide3"/>
-  <input class="slider__nav" type="radio" name="slider" title="slide4"/>
+  
   <div class="slider__inner">
     <div class="slider__contents"><i><img src="images/rakuten_circle.jpg" alt="rakuten circle" /></i>
       <h2 class="slider__caption">Rポイントへようこそ！</h2>
-      <p class="slider__txt">Rポイントとは、ポイントを貯めて<br>楽天のお得な情報を<br>ゲットできるサービスです。</p>
+      <p class="slider__txt">配属後どこに行っても<br>恥ずかしくないように<br>楽天理解度を深めておいて<br>損はない！<br><br>Rポイントで<br>楽天理解度を図りましょう！<br></p>
     </div>
     <div class="slider__contents"><i><img src="images/quality.png" alt="rakuten circle" /></i>
       <h2 class="slider__caption">Rポイントの魅力</h2>
-      <p class="slider__txt">Rポイントを貯めると、<br>プライム会員（月額10円）限定の<br>コンテンツの一部を無料会員でも<br>楽しめます。</p>
-    </div>
-    <div class="slider__contents"><i><img src="images/gallery.png" alt="rakuten circle" /></i>
-      <h2 class="slider__caption">ポイントの使い道</h2>
-      <p class="slider__txt">社内の膨大なお得情報を、<br>人気順に検索。<br><br>ビジネスマンの役に立つ<br>スペシャルコンテンツもゲット。<br></p>
+      <p class="slider__txt">Rポイントを貯めると、<br>あなたのランクが上がります。<br>たくさんポイントを貯めて<br>ゴールド会員を目指そう！<br><br>ステータスはマイページで<br>随時チェック！
+      <br><div class="link">{!! link_to_route('users.show', '今すぐポイント、ステータスを確認する！') !!}</div></p>
     </div>
     <div class="slider__contents"><i><img src="images/games.png" alt="rakuten circle" /></i>
       <h2 class="slider__caption">ポイントの貯め方</h2>

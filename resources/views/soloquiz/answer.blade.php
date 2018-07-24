@@ -11,10 +11,13 @@
     </head>
 
     <body>
+        
       <div class='box'>
           <div class='wave -one'></div>
           <div class='wave -two'></div>
           <div class='wave -three'></div>
+              
+              
               
           <!--ここに題名-->
           <div class='title'>QUIZ
@@ -42,6 +45,8 @@
                 
                 {!! Form::submit('投稿') !!}
                 <br>
+                <div id="container-example">
+         
                 <input type="hidden" value="{{$quiz->answer}}" name="oldanswer" />
                 <input type="hidden" value="{{$quiz->id}}" name="oldid" />
                 <?php
