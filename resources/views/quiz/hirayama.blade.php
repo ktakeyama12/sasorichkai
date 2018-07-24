@@ -16,6 +16,7 @@
     <script src="js/hirayama.js"></script>
 </head>
 <body>
+    <div id="bodyex">
     <!--<div id="entry">-->
     <!--    <input type="text" name="name" id="name" value="" />-->
     <!--    <button id="nyuushitsu" onclick="nyuushitsu()">送信</button>-->
@@ -27,7 +28,7 @@
         <br><br>
         <div id="results"  style="display: none"></div>
         <div id="results1"  style="display: none"></div>
-        <div id="leftPos"  style="display: none"></div>
+        <div id="leftPos"  ></div>
         <!--Time left:-->
         <div class='countdown'>
         残り秒数<br><br><br><br><div id="results2"></div>
@@ -90,5 +91,6 @@
     <!--<div id="usernumber"></div>-->
     <!--<div id="startcheck"></div>-->
     <!--<div id="dwd">www</div>-->
+    </div>
 </body>
 </html>
