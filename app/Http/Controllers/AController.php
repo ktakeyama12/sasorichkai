@@ -162,5 +162,11 @@ class AController extends BaseController
     public function newquiz(){
         return view("newquiz/newquiz");
     }
+    
+    
+    public function game()
+    {
+        return view('game');
+    }
 }
 
