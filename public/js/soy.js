@@ -249,11 +249,11 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 $('#score').text(score);
                 storeScore(score);
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("正解");
+                $('#seikaiorfuseikai').text("正解！");
                 $("#seikaiorfuseikai").fadeOut();
             }else{
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("不正解");
+                $('#seikaiorfuseikai').text("残念！");
                 $("#seikaiorfuseikai").fadeOut();
             }
             i++;
