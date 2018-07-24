@@ -188,19 +188,19 @@ function getPos1(){
 
 function getBox(leftPos){
     if(leftPos>=0 && leftPos<=25){
-        $('#results1').text('1');
+        // $('#results1').text('1');
         return 1;
     }else if(leftPos>25 && leftPos<=50){
-        $('#results1').text('2');
+        // $('#results1').text('2');
         return 2;
     }else if(leftPos>50 && leftPos<=75){
-        $('#results1').text('3');
+        // $('#results1').text('3');
         return 3;
     }else if(leftPos>75 && leftPos<=100){
-        $('#results1').text('4');
+        // $('#results1').text('4');
         return 4;
     }else{
-        $('#results1').text('5');
+        // $('#results1').text('5');
         return 5;
     }
 }
@@ -235,19 +235,19 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 $("#seikaiorfuseikai").fadeOut();
             }
             i++;
-            var posRef = firebase.firestore().collection('pos');
-            posRef.get().then(function(querySnapshot) {
-                querySnapshot.forEach(function(doc) {
-                    var topPos1 = doc.data().topPos1;
-                    var leftPos1 = doc.data().leftPos1;
-                    console.log(leftPos1)
-                    $("#user1").parent().css({position: 'relative'});
-                    $("#user1").css({top: topPos1, left: leftPos1, position:'absolute'});
-                    // $("#user1").css({top: 200, left: 200, position:'absolute'});
-                    // document.getElementById('user1').style.top = topPos1 + 'px';
-                    // document.getElementById('user1').style.left = leftPos1 + 'px';
-                });
-            });
+            // var posRef = firebase.firestore().collection('pos');
+            // posRef.get().then(function(querySnapshot) {
+            //     querySnapshot.forEach(function(doc) {
+            //         var topPos1 = doc.data().topPos1;
+            //         var leftPos1 = doc.data().leftPos1;
+            //         console.log(leftPos1)
+            //         $("#user1").parent().css({position: 'relative'});
+            //         $("#user1").css({top: topPos1, left: leftPos1, position:'absolute'});
+            //         // $("#user1").css({top: 200, left: 200, position:'absolute'});
+            //         // document.getElementById('user1').style.top = topPos1 + 'px';
+            //         // document.getElementById('user1').style.left = leftPos1 + 'px';
+            //     });
+            // });
 //             var positionRef = firebase.firestore().collection('pos');
 // positionRef.onSnapshot(function(snapshot) {
 //     snapshot.docChanges.forEach(function(change) {

@@ -24,12 +24,13 @@
     <!--</div>-->
 
     <div id="game">
-        <div id="results"></div>
-        <div id="results1"></div>
-        <div id="leftPos"></div>
-        Time left:
+        <br><br>
+        <div id="results"  style="display: none"></div>
+        <div id="results1"  style="display: none"></div>
+        <div id="leftPos"  style="display: none"></div>
+        <!--Time left:-->
         <div id="results2"></div>
-        Question:
+        <!--Question:-->
         <div id="quizData"></div>
         <div class="container-fluid">
           <div class="row">
@@ -46,8 +47,8 @@
                 <div id="answerData4"></div>
             </div>
         </div>
-        <div id="answerCorrect"></div>
-        <div id="seikai"></div>
+        <div id="answerCorrect"  style="display: none"></div>
+        <div id="seikai"  style="display: none"></div>
         <div id="seikaiorfuseikai"></div>
         Your Score:
         <div id="score"></div>
