@@ -187,16 +187,17 @@ function getPos1(){
 // });
 
 function getBox(leftPos){
-    if(leftPos>=0 && leftPos<=25){
+    console.log(leftPos);
+    if(leftPos>=0 && leftPos<=21.7){
         $('#results1').text('1');
         return 1;
-    }else if(leftPos>25 && leftPos<=50){
+    }else if(leftPos>21.7 && leftPos<=47.5){
         $('#results1').text('2');
         return 2;
-    }else if(leftPos>50 && leftPos<=75){
+    }else if(leftPos>50 && leftPos<=73.5){
         $('#results1').text('3');
         return 3;
-    }else if(leftPos>75 && leftPos<=100){
+    }else if(leftPos>73.5 && leftPos<=100){
         $('#results1').text('4');
         return 4;
     }else{
@@ -220,8 +221,29 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
         $('#results2').text(time);
         answerSelected =  document.getElementById('results1').innerHTML;
         time--;
-        if(time==0){
+        if(i==9){
+            clearInterval(timecounter);
+            document.getElementById("game").style.display = "none";
+            document.getElementById("finish").style.display = "block";
+            finalscore =  document.getElementById('score').innerHTML;
+            console.log(finalscore);
+            $('#finalscore').text(finalscore);
+        }
+        if(time==-1){
             time=10;
+            if(answerCorrect[i]==1){
+                 $('#answerData1').fadeOut();
+                 $('#answerData1').fadeIn();
+            }else if(answerCorrect[i]==2){
+                 $('#answerData2').fadeOut();
+                 $('#answerData2').fadeIn();
+            }else if(answerCorrect[i]==3){
+                 $('#answerData3').fadeOut();
+                 $('#answerData3').fadeIn();
+            }else if(answerCorrect[i]==4){
+                 $('#answerData4').fadeOut();
+                 $('#answerData4').fadeIn();
+            }
             if(checkAnswer(answerSelected, answerCorrect[i]) == true){
                 score++;
                 $('#score').text(score);
@@ -235,19 +257,19 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 $("#seikaiorfuseikai").fadeOut();
             }
             i++;
-            var posRef = firebase.firestore().collection('pos');
-            posRef.get().then(function(querySnapshot) {
-                querySnapshot.forEach(function(doc) {
-                    var topPos1 = doc.data().topPos1;
-                    var leftPos1 = doc.data().leftPos1;
-                    console.log(leftPos1)
-                    $("#user1").parent().css({position: 'relative'});
-                    $("#user1").css({top: topPos1, left: leftPos1, position:'absolute'});
-                    // $("#user1").css({top: 200, left: 200, position:'absolute'});
-                    // document.getElementById('user1').style.top = topPos1 + 'px';
-                    // document.getElementById('user1').style.left = leftPos1 + 'px';
-                });
-            });
+            // var posRef = firebase.firestore().collection('pos');
+            // posRef.get().then(function(querySnapshot) {
+            //     querySnapshot.forEach(function(doc) {
+            //         var topPos1 = doc.data().topPos1;
+            //         var leftPos1 = doc.data().leftPos1;
+            //         console.log(leftPos1)
+            //         $("#user1").parent().css({position: 'relative'});
+            //         $("#user1").css({top: topPos1, left: leftPos1, position:'absolute'});
+            //         // $("#user1").css({top: 200, left: 200, position:'absolute'});
+            //         // document.getElementById('user1').style.top = topPos1 + 'px';
+            //         // document.getElementById('user1').style.left = leftPos1 + 'px';
+            //     });
+            // });
 //             var positionRef = firebase.firestore().collection('pos');
 // positionRef.onSnapshot(function(snapshot) {
 //     snapshot.docChanges.forEach(function(change) {
@@ -262,8 +284,8 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
 
 // $(function(quizData){
 function runQuiz(){
-    var quizRef = firebase.firestore().collection('quizzes');
-    quizRef.get().then(function(querySnapshot) {
+    var quizRef = firebase.firestore().collection('soyquiz');
+    quizRef.orderBy('order').get().then(function(querySnapshot) {
         quizData=[];
         answerData1=[];
         answerData2=[];
@@ -283,7 +305,6 @@ function runQuiz(){
     });
 // });
 };
-
 
 function checkAnswer(answerSelected, answer){
     if(answerSelected == answer){
@@ -452,39 +473,41 @@ function reset(){
 }
 
 $(function(){
-    var timecounter = setInterval(function(){
-    ready1 =  document.getElementById('ready1').innerHTML;
-    ready2 =  document.getElementById('ready2').innerHTML;
-    ready3 =  document.getElementById('ready3').innerHTML;
-    ready4 =  document.getElementById('ready4').innerHTML;
-    if(ready1 == "READY" && ready2 == "READY" && ready3 == ""){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user1").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        runQuiz();
-        // getPos1();
-        clearInterval(timecounter)
-    }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == ""){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user1").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        document.getElementById("user3").style.display = "block";
+    // var timecounter = setInterval(function(){
+    // ready1 =  document.getElementById('ready1').innerHTML;
+    // ready2 =  document.getElementById('ready2').innerHTML;
+    // ready3 =  document.getElementById('ready3').innerHTML;
+    // ready4 =  document.getElementById('ready4').innerHTML;
+    // if(ready1 == "READY" && ready2 == "READY" && ready3 == ""){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user1").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     runQuiz();
+    //     // getPos1();
+    //     clearInterval(timecounter)
+    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == ""){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user1").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     document.getElementById("user3").style.display = "block";
         
-        runQuiz();
-        clearInterval(timecounter)
-    }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == "READY"){
-        document.getElementById("ready").style.display = "none";
-        document.getElementById("game").style.display = "block";
-        document.getElementById("user2").style.display = "block";
-        document.getElementById("user3").style.display = "block";
-        document.getElementById("user4").style.display = "block";
-        runQuiz();
-        clearInterval(timecounter)
-    }
+    //     runQuiz();
+    //     clearInterval(timecounter)
+    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == "READY"){
+    //     document.getElementById("ready").style.display = "none";
+    //     document.getElementById("game").style.display = "block";
+    //     document.getElementById("user2").style.display = "block";
+    //     document.getElementById("user3").style.display = "block";
+    //     document.getElementById("user4").style.display = "block";
+    //     runQuiz();
+    //     clearInterval(timecounter)
+    // }
 
-    }, 10);
+    // }, 10);
+    runQuiz();
+    draggable1();
 });
 
 function start(){
@@ -493,26 +516,3 @@ function start(){
         start : "1",
    }, {merge: true });
 }
-
-$('#dwd').draggable({
-        // start: function(leftPos) {
-        //     coordinates('#user1');
-        //     var leftPos = coordinatesLeft('#user1');
-        //     var topPos = coordinatesTop('#user1');
-        //     currentPos = getBox(leftPos);
-        //     $('#leftPos').text(currentPos);
-        //     // sendPos("user1", topPos, leftPos);
-        // },
-        // stop: function(leftPos) {
-        //     coordinates('#user1');
-        //     var leftPos = coordinatesLeft('#user1');
-        //     var topPos = coordinatesTop('#user1');
-        //     $('#leftPos').text(leftPos);
-        //     currentPos = getBox(leftPos);
-        //     sendPos1(topPos, leftPos);
-        // }
-    });
- window.onload = function() {   
-     $('#dwd').draggable();
-    document.getElementById('dwd').style.top = '50px';
- }

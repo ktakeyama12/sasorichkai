@@ -24,12 +24,15 @@
             top: 0px;
         }
         
-        #laser{
-            background:#00ff00;
-            width: 2px;
-            height: 50px;
-            position: absolute;
+        
+        .laser {
+          background: #00ff00;
+          width: 2px;
+          height: 50px;
+          position: absolute;
         }
+
+
         
         .enemy{
             background: white;
@@ -59,11 +62,6 @@
             visibility: hidden;
         }
         
-        #new{
-            left: 400px;
-            top: 600px;
-            color: solid green;
-        }
         
     </style>
     <script src="../js/jquery-1.7.1.min.js"></script>
@@ -73,13 +71,17 @@
     
 </head>
 <body>
-    <button id='new' onclick="reload()">new game</button>
     
     
     
     <div id='background'></div>
     <div id='hero'><img  id="heroImage" src="/images/rakuten.jpg"></div>
-    <div id = 'laser'></div>
+    
+    <div class="laser" id="laser0"></div>
+    <div class="laser" id="laser1"></div>
+    <div class="laser" id="laser2"></div>
+
+
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
     
@@ -104,8 +106,17 @@
     var enemies = new Array();
     
     
-    function reload() {
-        location.reload();
+    
+    
+
+    function getFireableLaser(){
+        var result=null;
+        for(var i=0; i < lasers.length; i++){
+            if(lasers[i].y <= -120){
+                result=lasers[i];
+            }
+        }
+        return result;
     }
     
     function createSprite(element, x, y, w, h){
@@ -178,25 +189,39 @@
                 hero.x += HERO_MOVEMENT;
             }
             if(controller.space){
-                laser.x = hero.x + 9;
-                laser.y = hero.y - laser.h;
+                var laser = getFireableLaser();
+                if(laser){
+                laser.x=hero.x+9;
+                laser.y=hero.y - laser.h;
+                }
             }
+            
             
              ensureBounds(hero);
         }
         
+        function getIntersectingLaser(enemy){
+            var result = null;
+            for(var i=0; i<lasers.length; i++){
+                if(intersects(lasers[i],enemy)){
+                    result=lasers[i];
+                    break;
+                }
+            }
+            return result;
+        }
+        
         function checkCollisions(){
             for(var i = 0; i < enemies.length; i++){
-                if(intersects(laser, enemies[i])){
+                var laser = getIntersectingLaser(enemies[i]);
+                if(laser){
                     var element = document.getElementById(enemies[i].element);
-                    element.style.visiblity = 'hidden';
+                    element.style.visibility = 'hidden';
                     element.parentNode.removeChild(element);
-                    enemies.splice(i,1);
+                    enemies.splice(i, 1);
                     i--;
                     laser.y = -laser.h;
                     score += 100;
-                    
-                    
                 }else if(intersects(hero, enemies[i])){
                     var element = document.getElementById(hero.element);
                     element.style.visibility = 'hidden';
@@ -223,9 +248,10 @@
         
         function showSprites(){
             setPosition(hero);
-            setPosition(laser);
-            
-            for(var i = 0; i < enemies.length; i++){
+            for(var i=0; i<lasers.length; i++){
+                 setPosition(lasers[i]);
+            }
+            for(var i=0; i<enemies.length; i++){
                 setPosition(enemies[i]);
             }
             
@@ -239,8 +265,15 @@
                 enemies[i].x += getRandom(7)-3;
                 ensureBounds(enemies[i],true);
             }
-            laser.y -= 12;
+            for(var i = 0; i < lasers.length; i++){
+                lasers[i].y -= 12;
+            }
             
+        }
+        
+        var lasers = new Array();
+        for(var i=0; i<3; i++){
+            lasers[i] = createSprite('laser' + i, 0, -120, 2, 50);
         }
         
         function addEnemy(){

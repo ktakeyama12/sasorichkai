@@ -51,25 +51,29 @@
         <div id="seikaiorfuseikai"></div>
         Your Score:
         <div id="score"></div>
-        <img src="images/newquiz/1.jpg" id="user1">
-        <img src="images/newquiz/2.jpg" id="user2">
-        <img src="images/newquiz/3.jpg" id="user3">
-        <img src="images/newquiz/4.jpg" id="user4">
+        <img src="images/newquiz/1.jpg" id="user1" style="display: none">
+        <img src="images/newquiz/2.jpg" id="user2" style="display: none">
+        <img src="images/newquiz/3.jpg" id="user3" style="display: none">
+        <img src="images/newquiz/4.jpg" id="user4" style="display: none">
         </div>
     </div>
     <div id="ready" style="display: none">
         <div id="welcome"></div>
-        <button id="start" onclick="start()">READY</button>
-        <div id="name1" style="display: none">w</div>
-        <div id="ready1" style="display: none">w</div>
-        <div id="name2" style="display: none"></div>
-        <div id="ready2" style="display: none"></div>
-        <div id="name3" style="display: none"></div>
-        <div id="ready3" style="display: none"></div>
-        <div id="name4" style="display: none"></div>
-        <div id="ready4" style="display: none"></div>
+        <button id="ready" onclick="ready()">READY</button>
+        <button id="start" onclick="start()">start</button>
+        <div id="checkstart"></div>
+        <div id="name1">w</div>
+        <div id="ready1">w</div>
+        <div id="name2"></div>
+        <div id="ready2"></div>
+        <div id="name3"></div>
+        <div id="ready3"></div>
+        <div id="name4"></div>
+        <div id="ready4"></div>
     </div>
     <button id="reset" onclick="reset()">RESET</button>
     <div id="usernumber"></div>
+    <div id="startcheck"></div>
+    <div id="dwd">www</div>
 </body>
 </html>
