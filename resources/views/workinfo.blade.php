@@ -44,7 +44,7 @@
     </head>
     
     <body>
-      <header><h2>Rakuten work info</h2></header>
+      <header><h2>Rakuten work info<div class="text">クリックして手当の詳細をcheckしよう！！</div></h2></header>
       
       <div class="cards">
         
