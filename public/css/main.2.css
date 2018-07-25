@@ -8,10 +8,29 @@ header {
     color:#666;
     display:block;
     font: 14px/1.3 Arial,sans-serif;
-    height:50px;
     position:relative;
     border-bottom:1px solid #000;
     margin:0;
+}
+
+header h2{
+    font-size: 40px;
+    margin: 0px auto;
+    padding: 10px 0;
+    width: 90%;
+    text-align: center;
+    color:#ccc;
+}
+
+
+.text{
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 1px 0;
+    width: 90%;
+    text-align: center;
+    color:#ccc;
+    
 }
 
 
@@ -45,14 +64,6 @@ p{
 
 
 
-header h2{
-    font-size: 20px;
-    margin: 0px auto;
-    padding: 10px 0;
-    width: 90%;
-    text-align: center;
-    color:#ccc;
-}
 header a, a:visited {
     text-decoration:none;
     color:#fcfcfc;
