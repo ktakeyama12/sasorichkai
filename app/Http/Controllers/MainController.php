@@ -107,6 +107,13 @@ class MainController extends BaseController
     }
     
      public function amusePrime(){
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->amusement==0){
+            $user->amusement = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         $prime = \Auth::user()->prime;
         if($prime == 0){
             return view("amusement");
@@ -118,6 +125,13 @@ class MainController extends BaseController
     }
     
      public function shoppingPrime(){
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->shopping==0){
+            $user->shopping = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         $prime = \Auth::user()->prime;
         if($prime == 0){
             return view("shopping");
@@ -129,6 +143,13 @@ class MainController extends BaseController
     }
     
      public function moviePrime(){
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->movie==0){
+            $user->movie = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         $prime = \Auth::user()->prime;
         if($prime == 0){
             return view("movie");
@@ -141,6 +162,13 @@ class MainController extends BaseController
     
      public function rakutenPrime(){
         $prime = \Auth::user()->prime;
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->rakuten==0){
+            $user->rakuten = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         if($prime == 0){
             return view("rakuten");
         
@@ -151,6 +179,13 @@ class MainController extends BaseController
     }
     
      public function cafePrime(){
+        $loginuser = \Auth::user();
+        $user = User::find($loginuser->id);
+        if($user->cafe==0){
+            $user->cafe = 10;
+            $user->point = $user->point + 10;
+            $user->save();
+        }
         $prime = \Auth::user()->prime;
         if($prime == 0){
             return view("cafe");
