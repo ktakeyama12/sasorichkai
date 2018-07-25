@@ -5,11 +5,12 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
+    
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
 
     <!-- add scripts -->
