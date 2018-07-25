@@ -124,7 +124,7 @@
             
             <li>
                 <a href="https://www.google.co.jp/search?num=30&rlz=1C1GGRV_enJP791JP791&ei=WDVRW7SCGY7N-QacnJLoCQ&q=%E6%B8%A9%E9%87%8E%E8%8F%9C&oq=%E6%B8%A9%E9%87%8E%E8%8F%9C&gs_l=psy-ab.3..0i67k1j0i4i37k1j0i67k1j0j0i4i37k1l3j0i67k1l2j0i4i37k1.13604.14499.0.14733.9.9.0.0.0.0.153.934.2j6.8.0....0...1c.1j4.64.psy-ab..3.6.709...35i39k1j0i4k1j0i131k1j0i4i10k1j0i4i10i42k1j0i10k1.0.cFfKsVOUcq8"></a>
-                <img data-original="images//gallery/pot.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/pot.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -144,7 +144,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>8位: Bubby's</h3></li>
+                        <li><h3>Bubby's</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>100円 off <br>(予約時エントリー必須)</h3></li>
                     </ul>

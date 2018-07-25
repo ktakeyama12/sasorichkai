@@ -177,8 +177,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>8位：歌広場</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 10～20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -186,14 +186,14 @@
             
              <li>
                 <a href="https://www.google.co.jp/search?q=%E6%AD%8C%E3%81%86%E3%82%93%E3%81%A0%E6%9D%91&rlz=1C1GGRV_enJP791JP792&oq=%E6%AD%8C%E3%81%86%E3%82%93%E3%81%A0%E6%9D%91&aqs=chrome..69i57j0l5.6449j0j7&sourceid=chrome&ie=UTF-8"></a>
-                <img data-original="images//gallery/rank/utamura.png" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/karaoke4.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
                         <li><h3>9位：歌うんだ村</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>室料10% OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
