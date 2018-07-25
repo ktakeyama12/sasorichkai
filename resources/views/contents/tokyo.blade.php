@@ -156,10 +156,32 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
+              <div class = 'prime_button'>
+                
+                  @auth
+                    <?php
+                    $prime = \Auth::user()->prime;
+                            if($prime == 0){
+                    ?>
+                    
+                    <h3>楽天プライム（入会費１０円）に登録すると<br>支社に関する口コミの投稿や閲覧ができます。</h3>
+                          	  {!! Form::open(['route' => ['welcomePrimeT']]) !!}
+                                 <input type="hidden" value="1" name="prime" />
+                                  {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+                              {!! Form::close() !!}
+                    <?php
+                            }
+                            elseif($prime == 1){
+                              print '';
+                                
+                            }
+                    ?>
+                @endauth
+              </div>
               <?php
                $prime = \Auth::user()->prime;
                if($prime == 0){
-                 print '東京本社に関する口コミを見たい場合は、楽天プライム（入会費10円）に登録！';
+                 print '';
                }
                elseif($prime == 1){
               ?>
