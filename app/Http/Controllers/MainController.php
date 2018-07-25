@@ -219,6 +219,8 @@ class MainController extends BaseController
             return redirect("osaka");
     }
     
+   
+    
     
     
 

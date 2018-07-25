@@ -130,6 +130,8 @@ Route::post('welcomePrimeF', 'MainController@welcomePrimeF')->name('welcomePrime
 Route::post('welcomePrimeT', 'MainController@welcomePrimeT')->name('welcomePrimeT');
 Route::post('welcomePrimeO', 'MainController@welcomePrimeO')->name('welcomePrimeO');
 
+
+
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
 Route::post('soloquiz.store', 'SoloquizController@store')->name('soloquiz.store');
