@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" >
-
+<title>Solo Quiz</title>
 
 <html lang="en">
 <head>

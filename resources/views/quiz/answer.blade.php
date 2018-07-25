@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Solo Quiz</title>
+		<title>Group Game</title>
 		<meta name="description" content="A Collection of Page Transitions with CSS Animations" />
 		<meta name="keywords" content="page transition, css animation, website, effect, css3, jquery" />
 		<meta name="author" content="Codrops" />
