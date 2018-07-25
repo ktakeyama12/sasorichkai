@@ -19,7 +19,7 @@
 <body>
     
     <header>
-        <h2>Rakuten Gallery<div class="text">プライム会員になればプレゼンに使えるあの写真がダウンロードし放題！！</div></h2>
+        <h2>Rakuten Gallery<div class="text">プライム会員になると、プレゼンや資料作成にぴったりのおしゃれな写真がダウンロードし放題！！</div></h2>
         
     </header>
 

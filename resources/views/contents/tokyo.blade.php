@@ -177,6 +177,7 @@
                             }
                     ?>
                 @endauth
+                <br><br><br><br>
               </div>
               <?php
                $prime = \Auth::user()->prime;
