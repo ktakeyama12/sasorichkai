@@ -19,9 +19,9 @@
 </head>
 <body>
     <header>
-        <h2>Movie & Karaoke</h2>
+        <h2>Movie & Karaoke<div class="text">人気度ランキング</div></h2>
     </header>
-    <center><b><font_size="20">人気度ランキング</font_size></b></center>
+    
     <!--  least.js gallery -->
     <section>
         
