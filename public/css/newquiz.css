@@ -51,7 +51,7 @@
     font-size:25px;
         position: absolute;
     left: 50%;
-    top: 17%;
+    top: 21%;
     transform: translate(-50%,-50%);
 }
 
@@ -186,7 +186,7 @@ h1{
 }
 
 .drag_hirayama{
-position: absolute;
+    position: absolute;
     left: 50%;
     top: 80%;
     transform: translate(-50%,-50%);
