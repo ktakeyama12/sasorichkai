@@ -103,7 +103,7 @@
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    top: 6%;
+    top: 8%;
     transform: translate(-50%,-50%);
 }
 
@@ -165,7 +165,7 @@ font-size:60px;
 float : left;
 position: absolute;
     left: 18%;
-    top: 66%;
+    top: 86%;
     transform: translate(-50%,-50%);
 }
 
@@ -181,7 +181,7 @@ position: absolute;
 h1{
     position: absolute;
     left: 18%;
-    top: 59%;
+    top: 70%;
     transform: translate(-50%,-50%);
 }
 
