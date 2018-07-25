@@ -8,6 +8,8 @@
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
 
     <!-- add scripts -->
     <script src="js/jquery.min.js"></script>
@@ -22,6 +24,12 @@
     <center><b><font_size="20">人気度ランキング</font_size></b></center>
     <!--  least.js gallery -->
     <section>
+        <div id="container-example">
+            <div class='strip colour-4'>
+                <a class="" onclick="history.back()">戻る</a>
+            </div>
+        </div>
+        
         <ul id="gallery">
             <li id="fullPreview"></li>
 
@@ -133,7 +141,7 @@
                     <ul>
                         <li><h3>5位：Vis</h3></li>
                         <li><p>rise</p></li>
-                        <li><h3>20% off</h3></li>
+                        <li><h3>10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
