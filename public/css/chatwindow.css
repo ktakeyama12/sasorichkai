@@ -1,0 +1,124 @@
+ul,li{
+    padding: 0;
+    margin: 0;
+    /*list-style-type: none;*/
+    /*text-align: left;*/
+}
+#scroller {
+    height: 600px;
+    overflow: auto;
+}
+.panel-body{
+    background:white;
+}
+/*.panel-default{*/
+/*    background-color: white;*/
+/*    width:400px;*/
+/*    height:100px;*/
+/*    position: fixed;*/
+/*    bottom: 30%;*/
+/*    right:0;*/
+/*}*/
+
+/*******************************
+* 左からの吹き出し
+********************************/
+.left_balloon {
+    position: relative;
+    background: grey;
+    border: 0px solid #777;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 400px;
+    clear: both;
+}
+
+/*******************************
+* 右からの吹き出し
+********************************/
+.right_balloon {
+    color: #fff;
+    position: relative;
+    background: #0084ff;
+    /*#0084ff*/
+    border: 0px solid #777;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    width: 300px;
+    clear: both;
+    /*float: right;*/
+}
+
+/*******************************
+* 割り込みを解除
+********************************/
+.clear_balloon{
+  clear: both;
+}
+
+
+
+.sender_name{
+    margin-bottom: -5px;
+    padding-left: 20px;
+    color: rgba(20, 0, 0, .40);
+}
+.sender_name.me{
+    float: right;
+    padding: 0 20px 0 0;
+}
+
+#close{
+    width: 31px;
+    height: auto;
+    position: fixed;
+    bottom: 40%;
+    right:0;
+}
+body{
+    text-align: center;
+    font-weight: bold;
+}
+.js{
+    text-align: center
+}
+.main_background-image {
+  position: fixed;
+  z-index: -1;   
+  /*width: 100%;*/
+  /*height: 100%;*/
+  background-image:url("/images/fruit_banana.png");
+  background-repeat:repeat;
+  /*background-size: cover;*/
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center;
+}
+.main{
+  /*width: 50px;*/
+  height: 50%;
+  margin-left: 0px;
+  /*margin-right: 0%;*/
+  /*align-items: center;  縦方向中央揃え */
+  /*justify-content: center; */
+}
+h1{
+    font-weight: bold;
+    color: gray;
+}
+#bananashow{
+    font-size: 30px;
+}
+
+.panel-footer1 {
+    padding: 3px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}

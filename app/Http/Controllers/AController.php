@@ -187,7 +187,7 @@ class AController extends BaseController
     }
     
     public function chat(){
-        return view("chat");
+        return view("chatwindow");
     }
 }
 
