@@ -3,6 +3,7 @@ var coordinates = function(element) {
     element2 = $('.japan');
     var childPos = element.offset();
     var parentPos = element2.offset();
+    console.log(parentPos)
     var childOffset = {
         top: childPos.top - parentPos.top,
         left: childPos.left - parentPos.left
