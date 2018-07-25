@@ -20,7 +20,7 @@
     
     
     <header>
-        <h2>Cafe & Restaurant around office</h2>
+        <h2>Cafe & Restaurant around office<div class="text">プライム会員になればランキングで人気なクーポンが見放題！！</div></h2>
     </header>
     <!--  least.js gallery -->
     <section>
