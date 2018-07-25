@@ -196,7 +196,7 @@
                 <div class="projectInfo">KUAAINA</div>
             </li>
             <li>
-                <a href="images/gallery/p3.jpghttps://www.google.co.jp/search?q=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E6%B0%B4%E6%97%8F%E9%A4%A8&rlz=1C1GGRV_enJP791JP792&oq=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E6%B0%B4%E6%97%8F%E9%A4%A8&aqs=chrome..69i57j0l5.11549j0j7&sourceid=chrome&ie=UTF-8"></a>
+                <a href="https://www.google.co.jp/search?q=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E6%B0%B4%E6%97%8F%E9%A4%A8&rlz=1C1GGRV_enJP791JP792&oq=%E3%82%B5%E3%83%B3%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%B3%E6%B0%B4%E6%97%8F%E9%A4%A8&aqs=chrome..69i57j0l5.11549j0j7&sourceid=chrome&ie=UTF-8"></a>
                 <img data-original="images//gallery/aqua5.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>

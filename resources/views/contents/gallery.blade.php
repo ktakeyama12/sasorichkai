@@ -27,10 +27,11 @@
 
     <!--  least.js gallery -->
     <section style="border:1px solid black;width:200px;height:800px;overflow:scroll;">
-        <div id="container-example">
+        
           <div class='strip colour-4'>
             <a class="" onclick="history.back()">戻る</a>
           </div>
+
         </div>
         <ul id="gallery">
             <li id="fullPreview"></li>

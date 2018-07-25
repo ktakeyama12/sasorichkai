@@ -126,6 +126,11 @@ Route::get('cafePrime', 'MainController@cafePrime')->name('cafePrime');
 Route::get('moviePrime', 'MainController@moviePrime')->name('moviePrime');
 
 Route::post('welcomePrime', 'MainController@welcomePrime')->name('welcomePrime');
+Route::post('welcomePrimeF', 'MainController@welcomePrimeF')->name('welcomePrimeF');
+Route::post('welcomePrimeT', 'MainController@welcomePrimeT')->name('welcomePrimeT');
+Route::post('welcomePrimeO', 'MainController@welcomePrimeO')->name('welcomePrimeO');
+
+
 
 Route::get('soloquiz.sakusei', 'SoloquizController@sakusei')->name('soloquiz.sakusei');
 Route::get('soloquiz.answer', 'SoloquizController@answer')->name('soloquiz.answer');
@@ -136,6 +141,7 @@ Route::get('newquiz', 'AController@newquiz')->name('newquiz');
 Route::get('yontaku', 'AController@yontaku')->name('yontaku');
 Route::get('hirayama', 'AController@hirayama')->name('hirayama');
 Route::get('soy', 'AController@soy')->name('soy');
-
+Route::get('ecc', 'AController@ecc')->name('ecc');
+Route::get('chat', 'AController@chat')->name('chat');
 
 

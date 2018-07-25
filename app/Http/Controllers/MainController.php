@@ -192,6 +192,35 @@ class MainController extends BaseController
             return redirect("/");
     }
     
+     public function welcomePrimeF(Request $request){
+        $prime = $request->prime;
+        $id = \Auth::user()->id;
+        $user = User::find($id);
+        $user->prime=$prime;
+        $user->save();
+            return redirect("fukuoka");
+    }
+    
+    public function welcomePrimeT(Request $request){
+        $prime = $request->prime;
+        $id = \Auth::user()->id;
+        $user = User::find($id);
+        $user->prime=$prime;
+        $user->save();
+            return redirect("tokyo");
+    }
+    
+     public function welcomePrimeO(Request $request){
+        $prime = $request->prime;
+        $id = \Auth::user()->id;
+        $user = User::find($id);
+        $user->prime=$prime;
+        $user->save();
+            return redirect("osaka");
+    }
+    
+   
+    
     
     
 

@@ -14,7 +14,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Bootstrap JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- add styles -->
+
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
@@ -22,15 +27,24 @@
     <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
         
+
         <title>Rakuten Work Info</title>
-        
-        
+
+    <style>
+      .yoda{
+        font-size: 1.5em;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+      }
+      
+    </style>
+
+    
     </head>
     
     <body>
-       <header>
-        Rakuten Work Info
-    </header>
+      <header><h2>Rakuten work info</h2></header>
+
       <div class="cards">
         
         <div id="container-example">
@@ -46,10 +60,10 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           有給の交付日
           
-      </h2>
+      </div>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -70,10 +84,10 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           特別休暇
           
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -101,9 +115,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           出産手当
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -124,9 +138,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           出産休暇期間
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -147,9 +161,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           育児休業
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -170,9 +184,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           転勤時の費用
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -194,9 +208,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           引越し費用
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
@@ -217,9 +231,9 @@
         <span class="left"></span>
         <span class="right"></span>
       </a>
-      <h2>
+      <div class="yoda">
           地方転勤
-      </h2>
+      </div class="yoda">
     </div>
     <div class="card-flap flap1">
       <div class="card-description">

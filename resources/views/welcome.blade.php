@@ -228,11 +228,12 @@ $prime = \Auth::user()->prime;
             <div class="el__text">
 
               <h1 class="el__text_title">
-                <img src="images/buttons/solobutton3.png" onclick="image1()" id="i1">     
+                <img src="images/buttons/alone.png" onclick="image1()" id="i1">     
                 <img src="images/buttons/solobutton4.png" onclick="image2()" id="i2">
               
-                <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">     
-                <img src="images/buttons/solobutton.png" onclick="image4()" id="i4">
+                     
+                <img src="images/buttons/shooting.png" onclick="image4()" id="i4">
+                <img src="images/buttons/solobutton2.png" onclick="image3()" id="i3">
                 <!--<a  href="soloanswer">-->
                   <!--<a href="soloanswer"><img src="images/buttons/solobutton.png" id="i1" border="0"></a></h1>-->
                                    <!--<a href="answer"><img src="images/buttons/solobutton2.png" id="i2" border="0"><a/>-->
@@ -240,7 +241,7 @@ $prime = \Auth::user()->prime;
                  <!--<a href="match"><img src="images/buttons/solobutton4.png" id="i4"><a/>-->
                   <!--<a/>-->
                   <br>
-                ↑CLICK</h1>
+                Rakuten Family Day 2018への出展が決まった渾身のゲームたち！</h1>
               <h3>
                 <!--<br>ゲームでショートブレイクをしませんか？<br>ゲームをしながら楽天について知識を深めることができます。-->
                 
@@ -327,9 +328,9 @@ $prime = \Auth::user()->prime;
 <button><img src="images/buttons/close.png" id="close"></button> 
 </div>
 
-<br>
+<br><br>
 <div id = "ribbon2-top">
-  <h3>「楽天プライム」とは？</h3>
+  <h3>&nbsp;&nbsp;「楽天プライム」とは？&nbsp;&nbsp;</h3>
 </div>
   <br><br>
   <div class = "prime_explanation">
@@ -464,6 +465,7 @@ $prime = \Auth::user()->prime;
             }
     ?>
 @endauth
+<br><br><br><br>
 </div>
 
 

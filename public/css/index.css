@@ -699,7 +699,7 @@ line-height:40px;
     line-height: 46px;
 }
 
-#ribbon2-top:before, .ribbon2:after{
+#ribbon2-top:before, #ribbon2-top:after{
   position: absolute;
   content: '';
   width: 0px;

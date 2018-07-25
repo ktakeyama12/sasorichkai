@@ -16,7 +16,7 @@
     <li><a id="login" class="nao" href="login">マイページ</a></li>
     @endauth
 
-    <li><a id="oto" class="nao" href="/contact">お問い合わせ</a></li>
+    <li><a id="oto" class="nao" href="/chat">チャット</a></li>
 
     @auth
     <li><a id="logout" class="nao" href="logout">ログアウト</a></li>

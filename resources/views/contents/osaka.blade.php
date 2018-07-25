@@ -112,9 +112,9 @@
               </div>
             <div class="cont_info_preparation">
               <p>京阪中之島線、渡辺橋駅【4番出口】より徒歩1分
-                地下鉄御堂筋線・京阪本線、淀屋橋駅【7番出口】より徒歩7分。
-                堂島川沿いにあり、落ち着いた雰囲気のオフェス街。
-                徒歩10分で梅田駅まで行けるので買い物、食事にも困りません。
+                <br>地下鉄御堂筋線・京阪本線、淀屋橋駅【7番出口】より徒歩7分。
+                <br><br>堂島川沿いにあり、落ち着いた雰囲気のオフェス街。
+                <br>徒歩10分で梅田駅まで行けるので買い物、食事にも困りません。
 
               <br>
               </p>
@@ -126,7 +126,7 @@
                 </div>
               <div class="cont_info_preparation">
                 <p>朝食、昼食、夕食、3食無料です。
-                カフェテリアは一箇所でコーヒーやお菓子数種類も、社内で購入できます。</p>
+                <br>カフェテリアは一箇所でコーヒーやお菓子数種類も、社内で購入できます。</p>
               </div>
         
             </div>
@@ -162,10 +162,33 @@
               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
               <br><br><br>
+              <div class = 'prime_button'>
+                
+                  @auth
+                    <?php
+                    $prime = \Auth::user()->prime;
+                            if($prime == 0){
+                    ?>
+                    
+                    <h3>楽天プライム（入会費１０円）に登録すると<br>支社に関する口コミの投稿や閲覧ができます。</h3>
+                          	  {!! Form::open(['route' => ['welcomePrimeO']]) !!}
+                                 <input type="hidden" value="1" name="prime" />
+                                  {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+                              {!! Form::close() !!}
+                    <?php
+                            }
+                            elseif($prime == 1){
+                              print '';
+                                
+                            }
+                    ?>
+                @endauth
+                <br><br><br><br>
+              </div>
               <?php
                $prime = \Auth::user()->prime;
                if($prime == 0){
-                print '大阪支社に関する口コミを見たい場合は、楽天プライム（入会費10円）に登録！';
+                print '';
                }
                elseif($prime == 1){
               ?>
