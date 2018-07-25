@@ -35,7 +35,7 @@
             <li id="fullPreview"></li>
 
             <li>
-                <a href="images/gallery/h3.jpg"></a>
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
                 <img data-original="images/gallery/trip.jpg" src="img/effects/white.gif" alt="Photo 1" />
 
                 <div class="overLayer"></div>
@@ -49,7 +49,8 @@
                 <div class="projectInfo">Travel</div>
             </li>
             <li>
-                <a href="images/gallery/p2.jpg"></a>
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
+            
                 <img data-original="images/gallery/haircut.jpg" src="img/effects/white.gif" alt="Photo 2" />
                 
                 <div class="overLayer"></div>
@@ -65,7 +66,8 @@
                 <div class="projectInfo">Hair Salon</div>
             </li>
             <li>
-                <a href="images/gallery/p3.jpg"></a>
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
+                
                 <img data-original="images//gallery/gym.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
