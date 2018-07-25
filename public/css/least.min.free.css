@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo);*{border:0;margin:0;padding:0;outline:0}ul{list-style:none}
 
-h2{font-family:Arvo,Arial,sans-serif;font-size:30px;line-height:50px;font-weight:800;text-transform:uppercase;color:#fff;letter-spacing:1px}
+h2{font-family:Arvo,Arial,sans-serif;font-size:30px;line-height:40px;font-weight:500;text-transform:uppercase;color:#fff;letter-spacing:1px}
 p{font-family:Georgia,Arial,sans-serif;font-size:15px;line-height:15px;font-weight:100;color:#fff}section{min-width:100%;width:100%;min-height:100%;text-align:center;padding:30px 0;margin-bottom:30px;background-color:#333;box-shadow:0 0 10px}
 section #fullPreview{background-color:#333;border-top:5px solid #333;border-bottom:2px solid #333;padding:50px 0 30px 0;display:none}
 section #fullPreview img,section #fullPreview .fullCaption{max-width:960px;width:100%;margin:0 auto;display:block}
