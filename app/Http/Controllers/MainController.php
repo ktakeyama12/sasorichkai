@@ -189,7 +189,7 @@ class MainController extends BaseController
         //      'id'=>$id,
         //      ];
         // DB::table('users')->where('id', $id)->insert($param);
-            return view("welcome");
+            return redirect("/");
     }
     
     

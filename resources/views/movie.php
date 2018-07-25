@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <h2>Movie & Karaoke</h2>
+        <h2>Movie & Karaoke<div class="text">プライム会員になればランキングで人気なクーポンが見放題！！</div></h2>
     </header>
 
     <!--  least.js gallery -->

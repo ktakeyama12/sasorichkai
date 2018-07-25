@@ -40,10 +40,11 @@
                         <li><h3>1位：温野菜</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>100円 off <br>(予約時エントリー必須）</h3></li>
+
                     </ul>
                 </div>
                 
-                <!--<a href="images/gallery/p1.jpg"></a>-->
+                <!--<a href="images/gallery/h3.jpg"></a>-->
                 <!--<img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />-->
 
                 <!--<div class="overLayer"></div>-->
@@ -51,7 +52,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>i Beer</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">Drinking</div>
@@ -64,6 +65,7 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>2位：Bills</h3></li>
+
                         <li><p>RELO</p></li>
                         <li><h3>1 drinkサービス</h3></li>
                     </ul>
@@ -75,7 +77,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>McDonald's</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>ポテト150円</p1></li>-->
+                <!--        <li><h3>ポテト150円</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo"></div>
@@ -90,6 +92,7 @@
                         <li><h3>3位：KUAAINA</h3></li>
                         <li><p>rise</p></li>
                         <li><h3>10% off</h3></li>
+
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/cinamon.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -99,7 +102,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>CINNABON</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">CINNABON</div>
@@ -115,6 +118,7 @@
                         <li><h3>4位：McDonald's</h3></li>
                         <li><p>rise</p></li>
                         <li><h3>ポテト全サイズ 150円</h3></li>
+
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -124,7 +128,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>KUAAINA</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">KUAAINA</div>
@@ -137,9 +141,11 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
+
                         <li><h3>5位：すみれ</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>100円 off</h3></li>
+
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -155,6 +161,7 @@
                         <li><h3>6位：i Beer</h3></li>
                         <li><p>rise</p></li>
                         <li><h3>10% off</h3></li>
+
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -170,6 +177,7 @@
                         <li><h3>7位：CINNABON</h3></li>
                         <li><p>rise</p></li>
                         <li><h3>10% off</h3></li>
+
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -178,14 +186,14 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/bubbys.jpg" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images/gallery/rank/bubbys.jpg" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>Bubby's</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><h3>8位: Bubby's</h3></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>100円 off <br>(予約時エントリー必須)</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>

@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <h2>Amusement park & Pool</h2>
+        <h2>Amusement park & Pool<div class="text">プライム会員になればランキングで人気なクーポンが見放題！！</div></h2>
     </header>
 
     <!--  least.js gallery -->
@@ -42,7 +42,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>東京ディズニーリゾート</h3></li>
+                        <li><h3>ディズニーランド</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>2000円分×4枚/年1</h3></li>
 
@@ -86,7 +86,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>新江ノ島水族館</h3></li>
+                        <li><h3>新江之島水族館</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>入場料 930円 off</h3></li>
                     </ul>
@@ -117,9 +117,9 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>鴨川シーワールド</h3></li>
+                        <li><h3>サマーランド</h3></li>
                         <li><p>RELO</p></li>
-                        <li><h3>入園料 350円 off</h3></li>
+                        <li><h3>700円off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -209,6 +209,8 @@
                 </div>
                 <div class="projectInfo">KUAAINA</div>
             </li>
+            
+            
         </ul>
     </section>
 

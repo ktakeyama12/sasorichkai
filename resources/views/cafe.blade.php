@@ -20,7 +20,7 @@
     
     
     <header>
-        <h2>Cafe & Restaurant around office</h2>
+        <h2>Cafe & Restaurant around office<div class="text">プライム会員になればランキングで人気なクーポンが見放題！！</div></h2>
     </header>
     <!--  least.js gallery -->
     <section>
@@ -144,7 +144,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>Bubby's</h3></li>
+                        <li><h3>8位: Bubby's</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>100円 off <br>(予約時エントリー必須)</h3></li>
                     </ul>

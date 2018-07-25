@@ -1,6 +1,8 @@
 <div class="panel-default">
     <div class="panel-heading">
-        最近何がありましたか？
+        同期トーーーーク！
+        <br>
+        自由にチャットしよう
     </div>
     <div id="scroller" class="panel-body">
         <ul id='messages'>
