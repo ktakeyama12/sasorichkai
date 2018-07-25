@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Rakuten Gallery</title>
+    <title>Cafe & Restaurant</title>
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />

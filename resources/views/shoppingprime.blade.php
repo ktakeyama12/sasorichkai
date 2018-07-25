@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Rakuten Gallery</title>
+    <title>Shopping</title>
 
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
     
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
 
@@ -24,6 +25,7 @@
     <center><b><font_size="20">人気度ランキング</font_size></b></center>
     <!--  least.js gallery -->
     <section>
+        
         <div id="container-example">
             <div class='strip colour-4'>
                 <a class="" onclick="history.back()">戻る</a>
@@ -41,7 +43,7 @@
                     <ul>
                         <li><h3>1位：john masters organics</h3></li>
                         <li><p>Relo</p></li>
-                        <li><h3>20% off</h3></li>
+                        <li><h3>10～15% off</h3></li>
                     </ul>
                 </div>
                 
@@ -66,8 +68,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>2位：高島屋</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><h3>5% off</h3></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>5% off(対象店舗限定)</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />-->
@@ -156,8 +158,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>6位：AMPHI</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><h3>20% off</h3></li>
+                        <li><p>rise</p></li>
+                        <li><h3>20% off(不定期開催)</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
