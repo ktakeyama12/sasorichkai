@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sasorich KAI２</title>
+    <title>Magical Banana</title>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     
     <!--Chat機能 Firebase接続-->
