@@ -31,7 +31,7 @@
     <div class="slider__contents"><i><img src="images/games.png" alt="rakuten circle" /></i>
       <h2 class="slider__caption">ポイントの貯め方</h2>
       <p class="slider__txt">ポイントの貯め方はとっても簡単！楽天プライムのコンテンツを購読したり、ゲームやクイズで遊ぶだけ！<br><br>他にもいろいろな方法でどんどん貯められます。
-      <div class="link">{!! link_to_route('shooting', '今すぐプレイしてポイントを貯める！') !!}</div></p>
+      <div class="link">{!! link_to_route('soloquiz.answer', '今すぐプレイしてポイントを貯める！') !!}</div></p>
     </div>
     
   </div>

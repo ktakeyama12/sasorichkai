@@ -226,7 +226,7 @@ h4{
 }
 
 a:visited {
-  color: #CC3333;;
+  color: #CC3333;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -738,8 +738,8 @@ border-bottom: dashed 2px #DB3561;
 
 a {color: #CC3333;}
 a:hover {
-  color: darkblue;
-  /*font-weight:bold;*/
+  color: #CC3333;
+  /*font-weight: lighter;*/
   
 }
   
@@ -809,4 +809,5 @@ a:hover {
 .ddd{
   font-weight: bold;
   column-count: black;
+  color: #CC3333;
 }
