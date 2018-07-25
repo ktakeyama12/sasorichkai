@@ -7,7 +7,7 @@ var coordinates = function(element) {
         top: childPos.top - parentPos.top,
         left: childPos.left - parentPos.left
     }
-    $('#results').text('X: ' + childOffset.top + ' ' + 'Y: ' + childOffset.left);
+    // $('#results').text('X: ' + childOffset.top + ' ' + 'Y: ' + childOffset.left);
     // var top = element.position().top - $(".japan").offset().top;
     // var left = element.position().left - $(".japan").offset().left;
     // $('#results').text('X: ' + left + ' ' + 'Y: ' + top);
