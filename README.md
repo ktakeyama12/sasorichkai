@@ -23,6 +23,8 @@ Yui
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+Firebase SDK is licensed under Apache 2.0 License
+
 jQuery is an open-sourced document licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 Bootstrap is released under the MIT license and is copyright 2018 Twitter.

@@ -14,6 +14,7 @@
 
 .button{
     margin-left:120px; 
+    font-family: "MS Sans Serif";
 }
 
 .action-button shadow animate blue,
@@ -22,3 +23,4 @@
     float: left;
     
 }
+

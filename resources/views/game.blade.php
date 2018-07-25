@@ -5,12 +5,12 @@
 
 <html lang="en">
 <head>
-  <meta name="author" content="www.twitter.com/cheeriottis">
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  
     <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
+  
   <div class="towa_picture">
 
   <img src="images/characters/merchant.jpg" class="kyaku">

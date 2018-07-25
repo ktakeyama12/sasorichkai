@@ -5,7 +5,7 @@ ul,li{
     /*text-align: left;*/
 }
 #scroller {
-    height: 200px;
+    height: 184px;
     overflow: auto;
 }
 .panel-body{

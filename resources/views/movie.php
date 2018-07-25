@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Movie & Karaoke</title>
 
+
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
@@ -131,7 +132,7 @@
                     <ul>
                         <li><h3>まねきねこ</h3></li>
                         <li><p>RELO</p></li>
-                        <li><h3>室料 30% off <br>or<br> ポテトフライサービス</h3></li>
+                        <li><h3>室料 30% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -159,7 +160,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>109 cinemas</h3></li>
+                        <li><h3>109 Cinemas</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>500円 off</h3></li>
                     </ul>

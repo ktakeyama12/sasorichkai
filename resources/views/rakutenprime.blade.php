@@ -33,7 +33,8 @@
 
             <li>
                 <img data-original="images//gallery/rank/rakuten.png" src="img/effects/white.gif" alt="Photo 3" />
-
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
+                
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
@@ -57,7 +58,7 @@
                 <div class="projectInfo">Drinking</div>
             </li>
             <li>
-                <a href="images/gallery/p2.jpg"></a>
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
                 <img data-original="images//gallery/rank/hair.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
@@ -81,7 +82,7 @@
                 <div class="projectInfo">Gym</div>
             </li>
             <li>
-                <a href="images/gallery/p3.jpg"></a>
+                <a href="https://corp.rakuten.co.jp/about/map/crimsonhouse/"></a>
                 <img data-original="images//gallery/rank/gym.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>

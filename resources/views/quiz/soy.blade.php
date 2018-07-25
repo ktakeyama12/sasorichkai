@@ -61,7 +61,7 @@
             <div id="score"></div>
             <img src="images/characters/kyakubutton.gif" id="user1">
             <br>
-            <font class = 'drag_hirayama'>正解のBOXに平山さんをドラッグ！</font>
+            <font class = 'drag_hirayama'>正解のBOXにお客様をドラッグ！</font>
             <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
             <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
             <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->
