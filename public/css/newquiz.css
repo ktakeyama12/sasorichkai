@@ -10,20 +10,25 @@
 /*#answerData4{*/
 /*    left : 75%;*/
 /*}*/
-
+#bodyex{
+    background: #fcfaf9;
+    background-color: #FFFAFA;
+    }
+    
 #answerData1, #answerData2, #answerData3, #answerData4{
     height : 10%;
     text-align: center;
     vertical-align: middle;
     line-height: 1000%; 
     font-size:2vw;
+    color:white;
+    border-radius: 50px;
     /*white-space: nowrap;*/
 }
 
 #seikaiorfuseikai {
     /*margin: auto;*/
     /*width: 50%;*/
-    border: 3px solid green;
     padding: 10px;
     display: none;
     font-size:100pt;
@@ -31,16 +36,23 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   
+   background: rgba(255,255,255,0.8);   
+  padding: 0.2em 0.2em 0.2em 0.2em;
     text-align: center;
 }
 
 #quizData{
-    top: 10%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    /*top: 10%;*/
+    /*-webkit-transform: translateY(-50%);*/
+    /*-ms-transform: translateY(-50%);*/
+    /*transform: translateY(-172%);*/
     text-align: center;
-    font-size:20px;
+    font-size:25px;
+        position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%,-50%);
 }
 
 #score{
@@ -54,6 +66,7 @@
 
 #rich{
     top: 30%;
+    
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -61,12 +74,61 @@
     font-size:20px;
 }
 
-#results2{
-    top: 5%;
+#user1{
+    top: 30%;
+    left:-14%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(100%);
     text-align: center;
+    font-size:20px;
+}
+
+#results2{
+    /*top: 5%;*/
+    /*-webkit-transform: translateY(-50%);*/
+    /*-ms-transform: translateY(-50%);*/
+    /*transform: translateY(-97%);*/
+    text-align: center;
+    font-size:40px;
+    color: #fff;
+    background:#f00;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%,-50%);
+}
+
+.countdown{
+width: 100px;
+margin:auto;
+ text-align: center;
+    /*display: inline-block;*/
+
+
+}
+.seikaiorfuseikai h1{
+    font-size:50px;
+    text-align: center;
+    display: inline-block;
+    width:50px;
+}
+
+.hirayama_icon{
+    width:100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.drag_hirayama{
     font-size:20px;
 }
 
@@ -83,7 +145,7 @@
     text-align: center;
 }
 
-#finalscore1 {
+#finalscore {
     /*margin: auto;*/
     /*width: 50%;*/
     border: 3px solid green;
@@ -94,4 +156,38 @@
    left: 50%;
    transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#score{
+width: 100px;
+margin:auto;
+font-size:60px;
+float : left;
+position: absolute;
+    left: 18%;
+    top: 66%;
+    transform: translate(-50%,-50%);
+}
+
+.row{
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(45%);
+    text-align: center;
+    font-size:20px;
+}
+
+h1{
+    position: absolute;
+    left: 18%;
+    top: 59%;
+    transform: translate(-50%,-50%);
+}
+
+.drag_hirayama{
+position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
 }

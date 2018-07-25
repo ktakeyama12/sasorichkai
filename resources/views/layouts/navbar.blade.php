@@ -9,7 +9,7 @@
 
 <ul id="menu">
     <li><a id="home" class="nao" href="/">ホーム</a></li>
-    <li><a id="oto" class="nao" href="/rpoint">Rポイントとは？</a></li>
+    <li><a id="oto" class="nao" href="/rpoint">らくプラポイントとは？</a></li>
     @auth
     <li><a id="mypage" class="nao" href="/users.show">マイページ</a></li>    
     @else

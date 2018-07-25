@@ -79,17 +79,49 @@ function draggable1(){
             coordinates('#user1');
             var leftPos = coordinatesLeft('#user1');
             var topPos = coordinatesTop('#user1');
-            currentPos = getBox(leftPos);
-            $('#leftPos').text(currentPos);
+            // currentPos = getBox(leftPos);
+            // $('#leftPos').text(currentPos);
             // sendPos("user1", topPos, leftPos);
         },
         stop: function(leftPos) {
             coordinates('#user1');
             var leftPos = coordinatesLeft('#user1');
             var topPos = coordinatesTop('#user1');
-            $('#leftPos').text(leftPos);
-            currentPos = getBox(leftPos);
+            // $('#leftPos').text(leftPos);
+            // currentPos = getBox(leftPos);
             // sendPos1(topPos, leftPos);
+        }
+    });
+    $("#answerData1").droppable({
+    //ドロップOKの要素を指定
+        accept :"#user1" ,
+        //ドロップ時の動作
+        drop : function(event , ui){
+          $('#leftPos').text("1");
+        }
+    });
+    $("#answerData2").droppable({
+    //ドロップOKの要素を指定
+        accept :"#user1" ,
+        //ドロップ時の動作
+        drop : function(event , ui){
+          $('#leftPos').text("2");
+        }
+    });
+    $("#answerData3").droppable({
+    //ドロップOKの要素を指定
+        accept :"#user1" ,
+        //ドロップ時の動作
+        drop : function(event , ui){
+          $('#leftPos').text("3");
+        }
+    });
+    $("#answerData4").droppable({
+    //ドロップOKの要素を指定
+        accept :"#user1" ,
+        //ドロップ時の動作
+        drop : function(event , ui){
+          $('#leftPos').text("4");
         }
     });
 };
@@ -112,6 +144,7 @@ function draggable2(){
             // sendPos2(topPos, leftPos);
         }
     });
+    
 };
 
 function draggable3(){
@@ -219,7 +252,7 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
         $('#answerData4').text(answerData4[i]);
         $('#answerCorrect').text(answerCorrect[i]);
         $('#results2').text(time);
-        answerSelected =  document.getElementById('results1').innerHTML;
+        answerSelected =  document.getElementById('leftPos').innerHTML;
         time--;
         if(i==9){
             clearInterval(timecounter);
@@ -249,11 +282,11 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 $('#score').text(score);
                 storeScore(score);
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("正解");
+                $('#seikaiorfuseikai').text("正解！");
                 $("#seikaiorfuseikai").fadeOut();
             }else{
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("不正解");
+                $('#seikaiorfuseikai').text("残念！");
                 $("#seikaiorfuseikai").fadeOut();
             }
             i++;
@@ -473,39 +506,6 @@ function reset(){
 }
 
 $(function(){
-    // var timecounter = setInterval(function(){
-    // ready1 =  document.getElementById('ready1').innerHTML;
-    // ready2 =  document.getElementById('ready2').innerHTML;
-    // ready3 =  document.getElementById('ready3').innerHTML;
-    // ready4 =  document.getElementById('ready4').innerHTML;
-    // if(ready1 == "READY" && ready2 == "READY" && ready3 == ""){
-    //     document.getElementById("ready").style.display = "none";
-    //     document.getElementById("game").style.display = "block";
-    //     document.getElementById("user1").style.display = "block";
-    //     document.getElementById("user2").style.display = "block";
-    //     runQuiz();
-    //     // getPos1();
-    //     clearInterval(timecounter)
-    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == ""){
-    //     document.getElementById("ready").style.display = "none";
-    //     document.getElementById("game").style.display = "block";
-    //     document.getElementById("user1").style.display = "block";
-    //     document.getElementById("user2").style.display = "block";
-    //     document.getElementById("user3").style.display = "block";
-        
-    //     runQuiz();
-    //     clearInterval(timecounter)
-    // }else if(ready1 == "READY" && ready2 == "READY" && ready3 == "READY" && ready4 == "READY"){
-    //     document.getElementById("ready").style.display = "none";
-    //     document.getElementById("game").style.display = "block";
-    //     document.getElementById("user2").style.display = "block";
-    //     document.getElementById("user3").style.display = "block";
-    //     document.getElementById("user4").style.display = "block";
-    //     runQuiz();
-    //     clearInterval(timecounter)
-    // }
-
-    // }, 10);
     runQuiz();
     draggable1();
 });

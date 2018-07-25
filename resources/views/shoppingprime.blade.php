@@ -31,13 +31,13 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>1位：john masters</h3></li>
+                        <li><h3>1位：john masters organics</h3></li>
                         <li><p>Relo</p></li>
-                        <li><p1>20% off</p1></li>
+                        <li><h3>20% off</h3></li>
                     </ul>
                 </div>
                 
-                <!--<a href="images/gallery/p1.jpg"></a>-->
+                <!--<a href="images/gallery/h3.jpg"></a>-->
                 <!--<img data-original="images/gallery/drinking.jpg" src="img/effects/white.gif" alt="Photo 1" />-->
 
                 <!--<div class="overLayer"></div>-->
@@ -45,7 +45,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>i Beer</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">Drinking</div>
@@ -59,7 +59,7 @@
                     <ul>
                         <li><h3>2位：高島屋</h3></li>
                         <li><p>Relo</p></li>
-                        <li><p1>5% off</p1></li>
+                        <li><h3>5% off</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />-->
@@ -69,7 +69,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>McDonald's</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>ポテト150円</p1></li>-->
+                <!--        <li><h3>ポテト150円</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">McDonald's</div>
@@ -83,7 +83,7 @@
                     <ul>
                         <li><h3>3位：L'OCCITANE</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><h3>10% OFF</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/cinamon.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -93,7 +93,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>CINNABON</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">CINNABON</div>
@@ -108,7 +108,7 @@
                     <ul>
                         <li><h3>4位：ABC Mart</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>10% OFF</p1></li>
+                        <li><h3>10% OFF</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -118,7 +118,7 @@
                 <!--    <ul>-->
                 <!--        <li><h3>KUAAINA</h3></li>-->
                 <!--        <li><p>rise</p></li>-->
-                <!--        <li><p1>10% OFF</p1></li>-->
+                <!--        <li><h3>10% OFF</h3></li>-->
                 <!--    </ul>-->
                 <!--</div>-->
                 <div class="projectInfo">KUAAINA</div>
@@ -126,14 +126,14 @@
             
             <li>
                 <a href="images/gallery/p3.jpg"></a>
-                <img data-original="images//gallery/rank/vis.png" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images/gallery/rank/vis.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
                         <li><h3>5位：Vis</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>20% off</p1></li>
+                        <li><h3>20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -149,7 +149,7 @@
                     <ul>
                         <li><h3>6位：AMPHI</h3></li>
                         <li><p>Riro</p></li>
-                        <li><p1>20% off</p1></li>
+                        <li><h3>20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -164,7 +164,7 @@
                     <ul>
                         <li><h3>7位：Tabio</h3></li>
                         <li><p>rise</p></li>
-                        <li><p1>5% off</p1></li>
+                        <li><h3>5% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>

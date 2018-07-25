@@ -114,3 +114,11 @@ h1{
 #bananashow{
     font-size: 30px;
 }
+
+.panel-footer1 {
+    padding: 3px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}

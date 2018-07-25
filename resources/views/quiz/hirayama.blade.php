@@ -16,6 +16,7 @@
     <script src="js/hirayama.js"></script>
 </head>
 <body>
+    <div id="bodyex">
     <!--<div id="entry">-->
     <!--    <input type="text" name="name" id="name" value="" />-->
     <!--    <button id="nyuushitsu" onclick="nyuushitsu()">送信</button>-->
@@ -27,39 +28,45 @@
         <br><br>
         <div id="results"  style="display: none"></div>
         <div id="results1"  style="display: none"></div>
-        <div id="leftPos"  style="display: none"></div>
+        <div id="leftPos"  ></div>
         <!--Time left:-->
-        <div id="results2"></div>
+        <div class='countdown'>
+        残り秒数<br><br><br><br><div id="results2"></div>
+        </div>
         <!--Question:-->
+        <br><br>
         <div id="quizData"></div>
         <!--<div id="prevAns"></div>-->
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-3" style="background-color:lavender;">
+            <div class="col-sm-3" style="background-color:#E44175;">
                 <div id="answerData1"></div>
             </div>
-            <div class="col-sm-3" style="background-color:lavenderblush;">
+            <div class="col-sm-3" style="background-color:#313198;">
                 <div id="answerData2"></div>
             </div>
-            <div class="col-sm-3" style="background-color:lavender;">
+            <div class="col-sm-3" style="background-color:#EFA92A;">
                 <div id="answerData3"></div>
             </div>
-            <div class="col-sm-3" style="background-color:lavenderblush;">
+            <div class="col-sm-3" style="background-color:#178D56;">
                 <div id="answerData4"></div>
             </div>
         </div>
-        <div id="answerCorrect"  style="display: none"></div>
-        <div id="seikai"  style="display: none"></div>
-        <div id="seikaiorfuseikai"></div>
-        Your Score:
-        <div id="score"></div>
-        <img src="images/hirayama.png" id="user1">
-        <br>
-        <font size=30>平山さんをドラッグ！</font>
-        <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
-        <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
-        <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->
-        <!--<img src="images/newquiz/4.jpg" id="user4" style="display: none">-->
+        <div class = "hirayama_icon">
+            <div id="answerCorrect"  style="display: none"></div>
+            <div id="seikai"  style="display: none"></div>
+            <div id="seikaiorfuseikai"></div>
+            <h1>Your Score:</h1>
+            <br><br>
+            <div id="score"></div>
+            <img src="images/characters/hirayamabutton.gif" id="user1">
+            <br>
+            <font class = 'drag_hirayama'>正解のBOXに平山さんをドラッグ！</font>
+            <!--<img src="images/newquiz/1.jpg" id="user1" style="display: none">-->
+            <!--<img src="images/newquiz/2.jpg" id="user2" style="display: none">-->
+            <!--<img src="images/newquiz/3.jpg" id="user3" style="display: none">-->
+            <!--<img src="images/newquiz/4.jpg" id="user4" style="display: none">-->
+            </div>
         </div>
     </div>
     <div id="finish" style="display: none">
@@ -84,5 +91,6 @@
     <!--<div id="usernumber"></div>-->
     <!--<div id="startcheck"></div>-->
     <!--<div id="dwd">www</div>-->
+    </div>
 </body>
 </html>

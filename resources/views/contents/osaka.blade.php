@@ -165,11 +165,12 @@
               <?php
                $prime = \Auth::user()->prime;
                if($prime == 0){
+                print '大阪支社に関する口コミを見たい場合は、楽天プライム（入会費10円）に登録！';
                }
                elseif($prime == 1){
               ?>
               
-                  大阪支社についての感想や、疑問に思ったことをコメントしてみよう！<br>
+                  大阪支社について知っていることや感想をコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeO']) !!}
                     <div class='form-group'>
                       {!! Form::label('content', ' ') !!}
