@@ -21,7 +21,7 @@
   
   <div class="button">
   <a href="soy" class="action-button shadow animate green">楽天市場の店舗から学べ！</a>
-  <a href="#" class="action-button shadow animate red">ECCから基礎知識を学べ！</a>
+  <a href="ecc" class="action-button shadow animate red">ECCから基礎知識を学べ！</a>
   
   <a href="hirayama" class="action-button shadow animate blue">営業の平山さんから学べ！</a>
 

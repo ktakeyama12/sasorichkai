@@ -136,6 +136,7 @@ Route::get('newquiz', 'AController@newquiz')->name('newquiz');
 Route::get('yontaku', 'AController@yontaku')->name('yontaku');
 Route::get('hirayama', 'AController@hirayama')->name('hirayama');
 Route::get('soy', 'AController@soy')->name('soy');
-
+Route::get('ecc', 'AController@ecc')->name('ecc');
+Route::get('chat', 'AController@chat')->name('chat');
 
 

@@ -181,5 +181,13 @@ class AController extends BaseController
     public function soy(){
         return view("quiz.soy");
     }
+    
+    public function ecc(){
+        return view("quiz.ecc");
+    }
+    
+    public function chat(){
+        return view("chat");
+    }
 }
 
