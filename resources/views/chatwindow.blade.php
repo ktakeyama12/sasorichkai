@@ -29,7 +29,7 @@
     <!--<link rel="stylesheet" href="css/index.css">-->
     
     <!--チャットのCSS-->
-    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link rel="stylesheet" type="text/css" href="css/chatwindow.css">
     
     @include('layouts.navbar')
    
