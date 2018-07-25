@@ -2,12 +2,19 @@
 
 <p align="center">
 TEAM KOLKATA
+<br>
 Members (In alphabetical order):
+<br>
 Kazu
+<br>
 Sasori
+<br>
 Sena
+<br>
 Towa
+<br>
 Yoda
+<br>
 Yui
 </p>
 
