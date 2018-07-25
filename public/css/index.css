@@ -19,7 +19,7 @@ body {
   display: block;
   margin:auto;
 }
-img{
+.el__index-back img{
   width: 270px;
   height: 270px;
 }
@@ -602,6 +602,8 @@ a:active { color: #f57; }
 
 .coupon_index{
   font-size:24px;
+   display: inline-block;
+    text-align: left;
 }
   
 .rpoint{
@@ -612,6 +614,123 @@ a:active { color: #f57; }
   width: 30%;
   display:block;
   margin: 10px auto;
+}
+
+.prime_explanation h3{
+ 
+color:gray;
+font-size:25px;
+line-height:40px;
+}
+
+.ribbon2 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 30px;/*フォントサイズ*/
+    font-weight:bold;
+    background: #DB3561;/*背景色*/
+    color: #FFF;/*文字色*/
+    box-sizing: border-box;
+    width:35%;
+}
+
+.ribbon2 h3 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 40px;
+    border-top: dashed 1px #FFF;/*上の破線*/
+    border-bottom: dashed 1px #FFF;/*下の破線*/
+    line-height: 46px;
+}
+
+.ribbon2:before, .ribbon2:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon2:before{/*左端の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+}
+
+.ribbon2:after{/*右端の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+#ribbon2-top {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 30px;/*フォントサイズ*/
+    font-weight:bold;
+    background: #DB3561;/*背景色*/
+    color: #FFF;/*文字色*/
+    box-sizing: border-box;
+    width:35%;
+}
+
+#ribbon2-top h3 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 40px;
+    border-top: dashed 1px #FFF;/*上の破線*/
+    border-bottom: dashed 1px #FFF;/*下の破線*/
+    line-height: 46px;
+}
+
+#ribbon2-top:before, .ribbon2:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+#ribbon2-top:before{/*左端の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+}
+
+#ribbon2-top:after{/*右端の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+.subtitle h1 {
+width:20%;
+padding-bottom: 8px;
+font-size:30px;
+font-weight:bold;
+text-align: center;
+display: inline-block;
+color: #DB3561;/*文字色*/
+border-bottom: dashed 2px #DB3561;
+/*線の種類（点線）2px 線色*/
 }
 
 a {color: #CC3333;}

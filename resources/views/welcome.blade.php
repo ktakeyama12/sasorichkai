@@ -55,10 +55,13 @@
   <h3 class="wakuwaku">― 楽天を使い倒せ！ ―</h3>
   
   <h4 >毎日のお勤めにワクワクをプラスする情報や、社員同士の交流の場をお届けします。
-  <br><a href="/rpoint">Rポイント</a>を貯めて、楽天マスターになろう！</h4><br>
+  <br><a class="rakupura" href="/rpoint">らくプラポイント</a>を貯めて、楽天マスターになろう！</h4><br>
+  <br><h2><a href="#ribbon2-top">楽天プライムとは？</a></h2>
 </header>
+<br>
 
 <div class = 'prime_button'>
+  
 @auth
 <?php
 $prime = \Auth::user()->prime;
@@ -73,7 +76,7 @@ $prime = \Auth::user()->prime;
 <?php
         }
         elseif($prime == 1){
-          print '';
+          print 'あなたは楽天プライム会員です！';
             
         }
 ?>
@@ -320,15 +323,145 @@ $prime = \Auth::user()->prime;
 <button><img src="images/buttons/close.png" id="close"></button> 
 </div>
 
-
-<div class = "prime_explanation">
-  <h1>「楽天プライム」とは？</h1>
-  <br><br>
-  <h3>楽天プライムは、新卒専用の「社内ポータルサイト」です。<br>
-  社内制度の情報や、仕事に役立つ情報をすぐに調べることができます。
-  楽天プライム会員になると、<br><br><br><br><br>aaa<br><br><br><br><br>aaa<br><br><br><br>
-  </h3>
+<br>
+<div id = "ribbon2-top">
+  <h3>「楽天プライム」とは？</h3>
 </div>
+  <br><br>
+  <div class = "prime_explanation">
+  <h3>楽天プライムは、新卒専用の「社内ポータルサイト」です。<br>
+  社員をサポートする社内制度や、仕事に役立つチップスなど、楽天にまつわる情報を 楽しく 簡単に 調べることができます。
+  <br><br>あなたのワークライフにワクワクをプラスするコンテンツが盛りだくさん！
+　<br>さぁ、楽天を使い倒せ！
+　<br>
+　</h3>
+  </div>
+<br><br><br><br><br><br>
+  <div class = "ribbon2">
+    <h3>&nbsp;&nbsp;何ができるの？&nbsp;&nbsp;</h3>
+  </div>
+    <br><br><br><br>
+  <div class = "subtitle">
+      <h1>社内手当一覧</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>休暇や転勤など、会社の手当はとても気になる！けれど、どこで調べたら良いのか分からない・・・。
+      <br>そんな悩みを解決する手当一覧ページ！
+    </h3>
+  </div>
+
+  <img src="/images/gallery/welfare.JPG">
+  <br><br><br><br><br><br><br><br>
+  
+  <div class = "subtitle">
+      <h1>社員優遇クーポン一覧</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>楽天社員なら知らないと損！<br>飲食店やショッピングモール、アミューズメントで使える社員優遇制度を、分かりやすく紹介。
+    <br><br>楽天プライム（入会費10円）に登録すると、<br>“社員にとくに使われている” 人気順にクーポンを検索することができます。
+
+    </h3>
+  </div>
+  <img src="/images/gallery/coupons.JPG">
+  <br><br><br><br><br><br><br><br>
+  <div class = "subtitle">
+      <h1>楽天支社情報</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>意外と知らない支社情報・・・。<br>様々な地域から人が集まった新卒コミュニティは情報の宝庫！
+    <br><br>楽天プライム（入会費10円）に登録すると、各支社に関する口コミの投稿や閲覧ができます。
+    </h3>
+  </div>
+  <img src="/images/gallery/osakabranch.JPG">
+  <br><br><br><br><br><br><br><br>
+  
+  <div class = "subtitle">
+      <h1>楽天ゲーム</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>ゲームをしながら、楽天に関する知識を積み上げよう！
+
+        <br>楽天で活躍する先輩社員へのインタビューから生まれた「仕事に役立つ楽天クイズ」や、<br>同期同士で気軽に交流しながら遊べる対戦ゲームをラインナップ！
+        <br><br>自分の会社のことをどれくらい知っていますか？<br>自信がない人は今すぐゲームで遊んでみよう！
+    </h3>
+    <br>
+  </div>
+  <img src="/images/gallery/rakutengames.JPG">
+  <br><br><br><br><br><br><br><br>
+  
+  <div class = "subtitle">
+      <h1>楽天ギャラリー</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>
+        <br>資料やスライド、個人の発信・・・何かとほしくなる楽天のおしゃれな写真をラインナップ！
+        <br><br>楽天プライム会員（入会費10円）でダウンロードし放題！
+
+    </h3>
+    <br>
+  </div>
+  <img src="/images/gallery/galleryphotos.JPG">
+  <br><br><br><br><br><br><br><br>
+  
+  <div class = "subtitle">
+      <h1>マイページ</h1>
+  </div>
+  <div class = "prime_explanation">
+    
+    <h3>楽天プライムのコンテンツを利用していくと、「らくプラポイント」が貯まっていきます。
+    </h3>
+    <br>
+  </div>
+  <img src="/images/gallery/mypage.JPG">
+  <div class = "prime_explanation">
+    <br><br>
+    <h3>
+        「らくプラポイント」をたくさん貯めて
+        <br>ブロンズ会員→シルバー会員→ゴールド会員へとランクアップしていこう！
+    </h3>
+    <br>
+  </div>
+  <img src="/images/gallery/medals.JPG">
+  <br><br><br><br>
+  
+  <div class = "prime_explanation">
+    
+    <h3>
+        「らくプラポイント」の獲得数は、楽天理解度の高さを証明！
+        <br>ポイントをたくさん貯めて、楽天理解度王者へのランクインを目指そう！
+    </h3>
+    <br>
+  </div>
+  <img src="/images/gallery/ranking.JPG">
+ 
+ <br><br>
+ <div class = 'prime_button'>
+  @auth
+    <?php
+    $prime = \Auth::user()->prime;
+            if($prime == 0){
+    ?>
+    
+    
+          	  {!! Form::open(['route' => ['welcomePrime']]) !!}
+                 <input type="hidden" value="1" name="prime" />
+                  {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+              {!! Form::close() !!}
+    <?php
+            }
+            elseif($prime == 1){
+              print '';
+                
+            }
+    ?>
+@endauth
+</div>
+
 
 <!--ロード時間計測-->
 <img src="images/rakuten_gallery/top_white/Slide7.JPG" id="loadtime1" style="display:none">
