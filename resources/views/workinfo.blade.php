@@ -16,28 +16,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Rakuten Work Info</title>
         
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-    <!-- add styles -->
-    <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
-    <link href="css/main.2.css" rel="stylesheet" type="text/css" />
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-
-    <!-- add scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/leastprime.min.js"></script>
-    <script src="js/jquery.lazyload.js"></script>
-        
-        
         
     </head>
     
     <body>
-       <header>
-        <h2>Rakuten Work Info</h2>
-    </header>
+      
       <div class="cards">
         
         <div id="container-example">
