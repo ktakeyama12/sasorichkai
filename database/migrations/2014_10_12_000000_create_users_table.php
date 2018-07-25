@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->integer('tokyo')->default(0);
             $table->integer('osaka')->default(0);
             $table->integer('fukuoka')->default(0);
+            $table->integer('postpoint')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -34,7 +34,7 @@ class UsersController extends Controller
         + $userdata->tokyo
         + $userdata->osaka
         + $userdata->fukuoka;
-        // + $userdata->points;
+        + $userdata->postpoints;
         $userdata->point = $points;
         $userdata->save();
         $user = \Auth::user();

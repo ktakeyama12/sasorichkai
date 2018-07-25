@@ -152,7 +152,7 @@ class ContentsController extends Controller
         
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
-        $user->point = $user->point + 10;
+        $user->postpoint = $user->postpoint + 10;
         $user->save();
         
          return view('contents.fukuoka',[
@@ -179,7 +179,7 @@ class ContentsController extends Controller
         
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
-        $user->point = $user->point + 10;
+        $user->postpoint = $user->postpoint + 10;
         $user->save();
        
         
@@ -207,7 +207,7 @@ class ContentsController extends Controller
         
         $loginuser = \Auth::user();
         $user = User::find($loginuser->id);
-        $user->point = $user->point + 10;
+        $user->postpoint = $user->postpoint + 10;
         $user->save();
        
         
