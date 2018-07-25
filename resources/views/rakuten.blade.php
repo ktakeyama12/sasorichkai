@@ -5,13 +5,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Rakuten Gallery</title>
     
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <!-- Bootstrap JavaScript-->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    
     <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
@@ -48,7 +41,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>Rakuten Travel</h3></li>
+                        <li><h3>楽天トラベル</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>契約宿泊施設 3,000円補助</h3></li>
                     </ul>
@@ -63,7 +56,7 @@
                 <div class="infoLayer">
                     <ul>
                         
-                        <li><h3>Rakuten Hair Salon</h3></li>
+                        <li><h3>9F 美容室</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>500円分×10枚/年1回</h3></li>
                         
@@ -78,7 +71,7 @@
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
-                        <li><h3>9F Fitness</h3></li>
+                        <li><h3>9F ジム</h3></li>
                         <li><p>RELO</p></li>
                         <li><h3>月額500円補助</h3></li>
                     </ul>
