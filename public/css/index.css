@@ -648,9 +648,9 @@ a:hover {
 }
 
 #i1, #i3,#i2,#i4{
-    width: 300px;
+    width: 250px;
     height: auto;
-    margin-left: 13%   
+    margin-left: 0
     /*position: absolute;*/
     /*margin-top: 19%;*/
     /*left: 23%;*/
