@@ -68,7 +68,7 @@ $prime = \Auth::user()->prime;
 
       	  {!! Form::open(['route' => ['welcomePrime']]) !!}
              <input type="hidden" value="1" name="prime" />
-              {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block']) !!}
+              {!! Form::submit('楽天プライム会員（入会費１０円）になる', ['class' => 'btn btn-danger  btn-lg btn-block', 'onclick'=>'alertPrime()']) !!}
           {!! Form::close() !!}
 <?php
         }

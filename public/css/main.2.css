@@ -8,6 +8,7 @@ header {
     color:#666;
     display:block;
     font: 14px/1.3 Arial,sans-serif;
+
     position:relative;
     border-bottom:1px solid #000;
     margin:0;
@@ -41,6 +42,7 @@ h3{
     width: 100%;
     text-align: center;
     color:#ccc;
+    font-weight: bold;
 }
 p1{
     font-size: 30px;
@@ -123,4 +125,7 @@ li#fullPreview .fullCaption{
 #container-example .colour-4 a:hover {
   background-position: top;
   color: #8d78b1;
+}
+body{
+    font-weight: bold;
 }

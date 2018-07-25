@@ -41,6 +41,6 @@ function WhichButton(event) {
     alert("まずはログインしてね")
 }
 
-// $( function() {
-//     $( "#a" ).draggable();
-//   } );
+function alertPrime() {
+    alert("プライム会員になりました！");
+}
