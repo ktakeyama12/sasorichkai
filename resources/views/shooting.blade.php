@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>shooting game</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
         #hero{
@@ -62,6 +63,15 @@
             visibility: hidden;
         }
         
+         #clear{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            left: 160px;
+            top: 200px;
+            visibility: hidden;
+        }
+        
         
     </style>
     <script src="../js/jquery-1.7.1.min.js"></script>
@@ -84,6 +94,8 @@
 
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
+    <div id='clear'><h1>クリア！</h1><p>ブラウザで戻るを押してください</p></div>
+    
     
     
     <script>
@@ -222,6 +234,9 @@
                     i--;
                     laser.y = -laser.h;
                     score += 100;
+                    if(score>=200){
+                        clear();
+                    }
                 }else if(intersects(hero, enemies[i])){
                     var element = document.getElementById(hero.element);
                     element.style.visibility = 'hidden';
@@ -243,6 +258,12 @@
         function gameOver(){
             var element = document.getElementById(hero, element);
             element = document.getElementById('gameover');
+            element.style.visibility = 'visible';
+        }
+        
+        function clear(){
+            var element = document.getElementById(hero, element);
+            element = document.getElementById('clear');
             element.style.visibility = 'visible';
         }
         

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     
-<title>W3.CSS</title>
+<title>shooting game</title>
 <head>
 <meta charset="utf-8" /> 
 <meta name="viewport"　content="width=device-width, initial-scale=1">
