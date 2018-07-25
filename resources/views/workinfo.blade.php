@@ -9,34 +9,27 @@
         <script type="text/javascript" src="js/workinfo.js"></script>
         
         <!-- Bootstrap CSS-->
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Bootstrap JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Rakuten Work Info</title>
         
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-    <!-- add styles -->
     <link href="css/least.min.2.css" rel="stylesheet" type="text/css" />
     <link href="css/main.2.css" rel="stylesheet" type="text/css" />
     <link href="css/nav.css" rel="stylesheet" type="text/css" />
-    
-    <link href="css/nav.css" rel="stylesheet" type="text/css" />
-
-    <!-- add scripts -->
-    <script src="js/jquery.min.js"></script>
+     <script src="js/jquery.min.js"></script>
     <script src="js/leastprime.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
         
+        <title>Rakuten Work Info</title>
         
         
     </head>
     
     <body>
        <header>
-        <h2>Rakuten Work Info</h2>
+        Rakuten Work Info
     </header>
       <div class="cards">
         

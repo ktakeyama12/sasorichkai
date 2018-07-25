@@ -225,14 +225,16 @@ h4{
 }
 
 a:visited {
-  color : #626567  ;
+  color: #CC3333;;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .glyphicon glyphicon-arrow-right{
  color : #626567  ; 
 }
 
 
-a:link { color:#3A322F; }
+/*a:link { color:#3A322F; }*/
 
 a:hover { 
   color: white; 
@@ -736,7 +738,7 @@ border-bottom: dashed 2px #DB3561;
 a {color: #CC3333;}
 a:hover {
   color: #CC3333;
-  font-weight:bold;
+  /*font-weight:bold;*/
   
 }
   
@@ -782,9 +784,28 @@ a:hover {
 #i1, #i3,#i2,#i4 Container:after {
     clear: both;
 }
-
-
-
-
-
-
+.hhh{
+  font-weight: bold;
+  color:#CC3333;;
+  background: yellow;
+  text-decoration: underline;
+  font-size: 25px;
+  margin-top: 10%;
+}
+.ttt{
+  font-weight: bold;
+  background: #ccc;
+}
+.rakupura{
+  font-weight: bold;
+  background: yellow;
+  text-decoration: underline;
+}
+.jjj{
+  border: 4px double pink;
+  padding: 5px;
+}
+.ddd{
+  font-weight: bold;
+  column-count: black;
+}
