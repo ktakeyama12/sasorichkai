@@ -234,7 +234,7 @@
                     i--;
                     laser.y = -laser.h;
                     score += 100;
-                    if(score>=200){
+                    if(score>=1500){
                         clear();
                     }
                 }else if(intersects(hero, enemies[i])){
