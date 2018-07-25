@@ -38,7 +38,7 @@
             {{ csrf_field() }}
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" class="forms_field-input" required autofocus />
+              <input type="text" name="name" placeholder="Your Nickname" class="forms_field-input" required autofocus />
             </div>
             <div class="forms_field">
               <input type="password" name="password" placeholder="Password" class="forms_field-input" required />
@@ -58,7 +58,7 @@
           {{ csrf_field() }}
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" name="name" placeholder="Full Name" value="" class="forms_field-input" required />
+              <input type="text" name="name" placeholder="Your Nickname" value="" class="forms_field-input" required />
             </div>
             
             <div class="forms_field">
