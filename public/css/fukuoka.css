@@ -542,5 +542,7 @@ box-shadow: 25px 10px 70px -5px rgba(0,0,0,0.3);
   background-position: top;
   color: #8d78b1;
 }
-
-
+.towa{
+  font-size:20px;
+  font-weight:bold;
+}

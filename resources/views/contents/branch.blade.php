@@ -24,7 +24,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/branch.css" rel="stylesheet" type="text/css"> 
         <link href="css/nav.css" rel="stylesheet" type="text/css"> 
-        
       
 </head>
     <body>
@@ -38,9 +37,10 @@
               <!--  <a class="" onclick="history.back()">戻る</a>-->
               <!--</div>-->
               <div class='strip colour-4'>
-                <a class="" href="/">戻る</a>
+                <a class="" href="/">ホームへ</a>
               </div>
             </div>
+            
         
             <div class="main">
                 <div id="setsumei">

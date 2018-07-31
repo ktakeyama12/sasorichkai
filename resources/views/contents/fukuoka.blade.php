@@ -180,7 +180,6 @@
                             }
                     ?>
                 @endauth
-                <br><br><br><br>
               </div>
               <?php
                $prime = \Auth::user()->prime;
@@ -189,9 +188,10 @@
                }
                elseif($prime == 1){
               ?>
-              
-                  福岡支社について知っていることや感想をコメントしてみよう！<br>
+              <div class='towa'>
+                  福岡支社についてコメントしてみよう！<br>
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
+                    </div>
                     <div class='form-group'>
                       {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
