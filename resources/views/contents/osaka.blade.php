@@ -199,7 +199,7 @@
                       {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
                     </div>
-                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-info'])!!}
+                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-info', 'onclick'=>'alertpost()'])!!}
                   {!! Form::close() !!}
             <br><br>
             <div>
@@ -223,10 +223,20 @@
                                 $result = '<img src="images/rakuten_gallery/gold-ribon.jpg">';
                               }
                               echo $result;
-                        ?> <br> {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                        ?> <br> {{ $content->user_name }}:<br><br>{{ $content->content }}
+                        <br>
+                        @if (Auth::user()->id == $content->user_id)
+                        <div class="btn-group">
+                            {!! Form::open(['route' => ['destroyosaka', $content->id], 'method' => 'delete']) !!}
+                            <input type="hidden" value="{{$content->id}}" name="id" />
+                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs', 'onclick'=>'alertdelete()']) !!}
+                            {!! Form::close() !!}
+                        </div>
+                    @endif   
+                        </div>
                   
                     
-                    
+                                     
                     <?php
                 }
               }
@@ -234,6 +244,14 @@
               ?>
             </div>        
       </div>
+                    <script>
+                function alertpost(){
+                  alert("投稿しました");
+                }
+                                function alertdelete(){
+                  alert("削除しました");
+                }
+              </script>
 
     
   </div>

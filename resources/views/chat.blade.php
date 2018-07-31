@@ -12,7 +12,7 @@
         <input type='text' class="form-control" id="nameInput" placeholder="ユーザー名を入力してください">
     </div>
     <div class="panel-footer1">
-        <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください">
+        <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください(ENTERで送信）">
     </div>
 </div>
 

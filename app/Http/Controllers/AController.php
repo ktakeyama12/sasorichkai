@@ -189,5 +189,10 @@ class AController extends BaseController
     public function chat(){
         return view("chatwindow");
     }
+    
+    public function explanation(){
+        return view("explanation");
+    }
+    
 }
 
