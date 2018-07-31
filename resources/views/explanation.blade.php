@@ -23,7 +23,7 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     
     <!--最初の画面-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index3.css">
     
     <!--チャットのCSS-->
     <link rel="stylesheet" type="text/css" href="css/chat.css">
@@ -34,6 +34,7 @@
 
 
 <div class="whole">
+ 
 <div id = "ribbon2-top">
   <h3>&nbsp;&nbsp;「楽天プライム」とは？&nbsp;&nbsp;</h3>
 </div>
@@ -51,12 +52,12 @@
     <h3>&nbsp;&nbsp;何ができるの？&nbsp;&nbsp;</h3>
   </div>
     <br><br><br><br>
-  <div class = "subtitle">
+  <div class = "subtitle" >
       <h1>社内手当一覧</h1>
   </div>
   <div class = "prime_explanation">
     
-    <h3>休暇や転勤など、<a class="ddd" >会社の手当</a>はとても気になる！けれど、どこで調べたら良いのか分からない・・・。
+    <h3>休暇や転勤など、<a class="ddd" href="workinfo">会社の手当</a>はとても気になる！けれど、どこで調べたら良いのか分からない・・・。
       <br>そんな悩みを解決する手当一覧ページ！
     </h3>
   </div>
@@ -69,8 +70,8 @@
   </div>
   <div class = "prime_explanation">
     
-    <h3>楽天社員なら知らないと損！<br>飲食店やショッピングモール、アミューズメントで使える<a class="ddd" >社員優遇制度</a>を、分かりやすく紹介。
-    <br><br><a class="ddd" >楽天プライム（入会費10円）</a>に登録すると、<br>“社員にとくに使われている” 人気順にクーポンを検索することができます。
+    <h3>楽天社員なら知らないと損！<br>飲食店やショッピングモール、アミューズメントで使える<a class="ddd" href="cafe">社員優遇制度</a>を、分かりやすく紹介。
+    <br><br><a class="ddd" href="/">楽天プライム（入会費10円）</a>に登録すると、<br>“社員にとくに使われている” 人気順にクーポンを検索することができます。
 
     </h3>
   </div>
@@ -81,8 +82,8 @@
   </div>
   <div class = "prime_explanation">
     
-    <h3>意外と知らない<a class="ddd" >支社情報</a>・・・。<br>様々な地域から人が集まった新卒コミュニティは情報の宝庫！
-    <br><br><a class="ddd" >楽天プライム（入会費10円）</a>に登録すると、各支社に関する口コミの投稿や閲覧ができます。
+    <h3>意外と知らない<a class="ddd" href="contents.branch">支社情報</a>・・・。<br>様々な地域から人が集まった新卒コミュニティは情報の宝庫！
+    <br><br><a class="ddd" href="/" >楽天プライム（入会費10円）</a>に登録すると、各支社に関する口コミの投稿や閲覧ができます。
     </h3>
   </div>
   <img src="/images/gallery/osakabranch.JPG">
@@ -95,7 +96,7 @@
     
     <h3>ゲームをしながら、楽天に関する知識を積み上げよう！
 
-        <br>楽天で活躍する先輩社員へのインタビューから生まれた<a class="ddd" >「仕事に役立つ楽天クイズ」</a>や、<br>同期同士で気軽に交流しながら遊べる<a class="ddd" >対戦ゲーム</a>をラインナップ！
+        <br>楽天で活躍する先輩社員へのインタビューから生まれた<a class="ddd" href="game">「仕事に役立つ楽天クイズ」</a>や、<br>同期同士で気軽に交流しながら遊べる<a class="ddd" href="answer">対戦ゲーム</a>をラインナップ！
         <br><br>自分の会社のことをどれくらい知っていますか？<br>自信がない人は今すぐゲームで遊んでみよう！
     </h3>
     <br>
@@ -109,8 +110,8 @@
   <div class = "prime_explanation">
     
     <h3>
-        <br>資料やスライド、個人の発信・・・何かとほしくなる<a class="ddd" >楽天のおしゃれな写真</a>をラインナップ！
-        <br><br><a class="ddd" >楽天プライム会員（入会費10円）</a>でダウンロードし放題！
+        <br>資料やスライド、個人の発信・・・何かとほしくなる<a class="ddd" href="member">楽天のおしゃれな写真</a>をラインナップ！
+        <br><br><a class="ddd" href="/">楽天プライム会員（入会費10円）</a>でダウンロードし放題！
 
     </h3>
     <br>
@@ -123,7 +124,7 @@
   </div>
   <div class = "prime_explanation">
     
-    <h3>楽天プライムのコンテンツを利用していくと、<a class="ddd" >「らくプラポイント」</a>が貯まっていきます。
+    <h3>楽天プライムのコンテンツを利用していくと、<a class="ddd" href="/rpoint">「らくプラポイント」</a>が貯まっていきます。
     </h3>
     <br>
   </div>
@@ -131,7 +132,7 @@
   <div class = "prime_explanation">
     <br><br>
     <h3>
-        <a class="ddd" >「らくプラポイント」</a>をたくさん貯めて
+        <a class="ddd" href="/rpoint">「らくプラポイント」</a>をたくさん貯めて
         <br>ブロンズ会員→シルバー会員→ゴールド会員へとランクアップしていこう！
     </h3>
     <br>
@@ -172,4 +173,5 @@
 @endauth
 <br><br><br><br>
 </div>
+
 </div>
