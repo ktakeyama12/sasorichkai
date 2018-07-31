@@ -28,6 +28,7 @@ class MainController extends BaseController
     }
     
     public function shootingGame(){
+        
         return view('shooting');
     }
     

@@ -19,9 +19,9 @@
 </head>
 <body>
     <header>
-        <h2>Movie & Karaoke</h2>
+        <h2>Movie & Karaoke<div class="text">人気度ランキング</div></h2>
     </header>
-    <center><b><font_size="20">人気度ランキング</font_size></b></center>
+    
     <!--  least.js gallery -->
     <section>
         
@@ -42,8 +42,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>1位：109 Cinemas</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><h3>1,300円</h3></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                
@@ -57,8 +57,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>2位：TOHO シネマズ</h3></li>
-                        <li><p>Relo</p></li>
-                        <li><p1>1,300円</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images/gallery/potato.jpg" src="img/effects/white.gif" alt="Photo 2" />-->
@@ -81,8 +81,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>3位：カラオケ館</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>室料30% OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 30% off</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/cinamon.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -106,8 +106,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>4位：BIG ECHO</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>室料20% OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 20～30% off</h3></li>
                     </ul>
                 </div>
                 <!--<img data-original="images//gallery/hamburger.jpg" src="img/effects/white.gif" alt="Photo 3" />-->
@@ -131,8 +131,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>5位：イオンシネマ</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>1300円</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>500円 off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -147,8 +147,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>6位：SHIDAX</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>室料20% OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -162,8 +162,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>7位：カラオケの鉄人</h3></li>
-                        <li><p>rise</p></li>
-                        <li><p1>30% off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 30% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -177,8 +177,8 @@
                 <div class="infoLayer">
                     <ul>
                         <li><h3>8位：歌広場</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>100円off</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 10～20% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
@@ -186,14 +186,14 @@
             
              <li>
                 <a href="https://www.google.co.jp/search?q=%E6%AD%8C%E3%81%86%E3%82%93%E3%81%A0%E6%9D%91&rlz=1C1GGRV_enJP791JP792&oq=%E6%AD%8C%E3%81%86%E3%82%93%E3%81%A0%E6%9D%91&aqs=chrome..69i57j0l5.6449j0j7&sourceid=chrome&ie=UTF-8"></a>
-                <img data-original="images//gallery/rank/utamura.png" src="img/effects/white.gif" alt="Photo 3" />
+                <img data-original="images//gallery/rank/karaoke4.png" src="img/effects/white.gif" alt="Photo 3" />
 
                 <div class="overLayer"></div>
                 <div class="infoLayer">
                     <ul>
                         <li><h3>9位：歌うんだ村</h3></li>
-                        <li><p>Riro</p></li>
-                        <li><p1>室料10% OFF</p1></li>
+                        <li><p>RELO</p></li>
+                        <li><h3>室料 10% off</h3></li>
                     </ul>
                 </div>
                 <div class="projectInfo">KUAAINA</div>
