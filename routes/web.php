@@ -144,9 +144,13 @@ Route::get('soy', 'AController@soy')->name('soy');
 Route::get('ecc', 'AController@ecc')->name('ecc');
 Route::get('chat', 'AController@chat')->name('chat');
 
+
+Route::get('explanation', 'AController@explanation')->name('explanation');
+
 Route::delete('destroyfukuoka', 'ContentsController@destroyfukuoka')->name('destroyfukuoka');
 Route::delete('destroyosaka', 'ContentsController@destroyosaka')->name('destroyosaka');
 Route::delete('destroytokyo', 'ContentsController@destroytokyo')->name('destroytokyo');
+
 
 
 
