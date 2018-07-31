@@ -44,7 +44,9 @@
         
             <div class="main">
                 <div id="setsumei">
-                    楽天パンダを行きたいところにドラッグしてね！
+                    <p style="background-color: #ffffff">
+                    <font color="black"><font size="4"><b>楽天パンダを行きたいところにドラッグしてね！</b></font>
+                    </style>
                 </div>
                 <div id="panda">
                     <img src="images/games/pandatravel.gif" class="resize">
