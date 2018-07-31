@@ -207,6 +207,7 @@
               ?>
                     <div class="box5">
                         <?php 
+                        
                               if($content->user_point < 50){
                                  $result = '<img src="images/rakuten_gallery/bronze.jpg">';
                               }
@@ -218,7 +219,14 @@
                               }
                               echo $result;
                         ?>  <br><br>{{ $content->user_name }}:<br><br>{{ $content->content }}</div>
-                  
+                    @if (Auth::user()->id == $content->user_id)
+                        <div class="btn-group">
+                            {!! Form::open(['route' => ['destroyfukuoka', $content->id], 'method' => 'delete']) !!}
+                            <input type="hidden" value="{{$content->id}}" name="id" />
+                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                            {!! Form::close() !!}
+                        </div>
+                    @endif
                     
                     
                     <?php

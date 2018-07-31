@@ -219,5 +219,39 @@ class ContentsController extends Controller
             'count' => $count,
             ]);
     }
+    
+        
+    public function destroyfukuoka(Request $request)
+    {
+        $content = Content::find($request->id);
+
+        if (\Auth::user()->id === $content->user_id) {
+            $content->delete();
+        }
+
+        return redirect("fukuoka");
+    }
+    
+    public function destroytokyo(Request $request)
+    {
+        $content = TokyoContent::find($request->id);
+
+        if (\Auth::user()->id === $content->user_id) {
+            $content->delete();
+        }
+
+        return redirect("tokyo");
+    }
+    
+        public function destroyosaka(Request $request)
+    {
+        $content = OsakaContent::find($request->id);
+
+        if (\Auth::user()->id === $content->user_id) {
+            $content->delete();
+        }
+
+        return redirect("osaka");
+    }
 
 }

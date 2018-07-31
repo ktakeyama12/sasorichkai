@@ -192,6 +192,7 @@
     <div class="card-flap flap1">
       <div class="card-description">
        礼金、仲介手数料、消毒料・抗菌施工代、鍵交換料、保証委託料は会社負担。
+       <br> 引っ越し時の家財運送費、車両1台分の輸送費は会社負担。
 
       </div>
       <div class="card-flap flap2">
@@ -202,28 +203,28 @@
     </div>
   </div>
   
-  <div class="card">
-    <img src="images/gallery/moving2.jpg">
-    <div class="card-title">
-      <a href="#" class="toggle-info btn">
-        <span class="left"></span>
-        <span class="right"></span>
-      </a>
-      <div class="yoda">
-          引越し費用
-      </div class="yoda">
-    </div>
-    <div class="card-flap flap1">
-      <div class="card-description">
-        家財運送費、車両1台分の輸送費は会社負担。
-      </div>
-      <div class="card-flap flap2">
-        <div class="card-actions">
+  <!--<div class="card">-->
+  <!--  <img src="images/gallery/moving2.jpg">-->
+  <!--  <div class="card-title">-->
+  <!--    <a href="#" class="toggle-info btn">-->
+  <!--      <span class="left"></span>-->
+  <!--      <span class="right"></span>-->
+  <!--    </a>-->
+  <!--    <div class="yoda">-->
+  <!--        引越し費用-->
+  <!--    </div class="yoda">-->
+  <!--  </div>-->
+  <!--  <div class="card-flap flap1">-->
+  <!--    <div class="card-description">-->
+  <!--      家財運送費、車両1台分の輸送費は会社負担。-->
+  <!--    </div>-->
+  <!--    <div class="card-flap flap2">-->
+  <!--      <div class="card-actions">-->
           <!--<a href="#" class="btn">Read more</a>-->
-        </div>
-      </div>
-    </div>
-  </div>
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</div>-->
 
   <div class="card">
     <img src="images/gallery/moving3.jpg">
@@ -233,7 +234,7 @@
         <span class="right"></span>
       </a>
       <div class="yoda">
-          地方転勤
+          地方手当
       </div class="yoda">
     </div>
     <div class="card-flap flap1">

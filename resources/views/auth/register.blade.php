@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+<head>
+    <title>Register</title>
+</head>
+<body>
     <div class="text-center">
         <h1>Sign up</h1>
     </div>
@@ -33,4 +38,5 @@
             {!! Form::close() !!}
         </div>
     </div>
+    </body>
 @endsection
