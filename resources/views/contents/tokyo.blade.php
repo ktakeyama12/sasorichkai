@@ -192,7 +192,7 @@
                       {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
                     </div>
-                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-info'])!!}
+                      <br>{!! Form::submit('投稿', ['class' => 'btn btn-info', 'onclick'=>'alertpost()'])!!}
                   {!! Form::close() !!}
             <br><br>
             <div>
@@ -222,7 +222,7 @@
                         <div class="btn-group">
                             {!! Form::open(['route' => ['destroytokyo', $content->id], 'method' => 'delete']) !!}
                             <input type="hidden" value="{{$content->id}}" name="id" />
-                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs', 'onclick'=>'alertdelete()']) !!}
                             {!! Form::close() !!}
                         </div>
                     @endif   
@@ -237,7 +237,14 @@
               ?>
             </div>        
       </div>
-
+              <script>
+                function alertpost(){
+                  alert("投稿しました");
+                }
+                                function alertdelete(){
+                  alert("削除しました");
+                }
+              </script>
     
   </div>
 
