@@ -7,10 +7,19 @@ ul,li{
 #scroller {
     height: 550px;
     overflow: auto;
+    text-align:center;
+    align-items: center;
+}
+.panel-heading{
+    padding-top:30px;
 }
 .panel-body{
     background:white;
-    height:100%;
+
+    display:inline-box;
+    text-align:center;
+    align-items: center;
+
 }
 /*.panel-default{*/
 /*    background-color: white;*/
@@ -33,6 +42,9 @@ ul,li{
     border-radius: 15px;
     width: 400px;
     clear: both;
+    display:inline-box;
+    text-align:center;
+    align-items: center;
 }
 
 /*******************************
@@ -64,6 +76,7 @@ ul,li{
 .sender_name{
     margin-bottom: -5px;
     padding-left: 20px;
+    text-align:left;
     color: rgba(20, 0, 0, .40);
 }
 .sender_name.me{
