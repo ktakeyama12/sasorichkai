@@ -10,6 +10,7 @@ ul,li{
 }
 .panel-body{
     background:white;
+    height:100%;
 }
 /*.panel-default{*/
 /*    background-color: white;*/
@@ -80,6 +81,7 @@ ul,li{
 body{
     text-align: center;
     font-weight: bold;
+    height:100%;
 }
 .js{
     text-align: center
@@ -121,4 +123,7 @@ h1{
     border-top: 1px solid #ddd;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+.panel-default{
+    height:100%;
 }
