@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="css/chat.css">
     
     @include('layouts.navbar')
+  </head>
    
 </head>
 
@@ -56,7 +57,7 @@
   
   <h4 >毎日のお勤めにワクワクをプラスする情報や、社員同士の交流の場をお届けします。
   <br><a class="rakupura" href="/rpoint">らくプラポイント</a>を貯めて、楽天マスターになろう！</h4><br>
-  <h2><a href="#ribbon2-top" class="hhh">{!! link_to_route('explanation', ' 楽天プライムの詳細を今すぐCHECK！') !!}</a></h2>
+  <h2><a href="#ribbon2-top" class="hhh">{!! link_to_route('explanation', '楽天プライムの詳細を今すぐCHECK!') !!}</a></h2>
 </header>
 <br>
 
