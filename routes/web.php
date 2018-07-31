@@ -144,4 +144,6 @@ Route::get('soy', 'AController@soy')->name('soy');
 Route::get('ecc', 'AController@ecc')->name('ecc');
 Route::get('chat', 'AController@chat')->name('chat');
 
+Route::get('explanation', 'AController@explanation')->name('explanation');
+
 
