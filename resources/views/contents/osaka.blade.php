@@ -223,10 +223,20 @@
                                 $result = '<img src="images/rakuten_gallery/gold-ribon.jpg">';
                               }
                               echo $result;
-                        ?> <br> {{ $content->user_name }}:<br><br>{{ $content->content }}</div>
+                        ?> <br> {{ $content->user_name }}:<br><br>{{ $content->content }}
+                        <br>
+                        @if (Auth::user()->id == $content->user_id)
+                        <div class="btn-group">
+                            {!! Form::open(['route' => ['destroyosaka', $content->id], 'method' => 'delete']) !!}
+                            <input type="hidden" value="{{$content->id}}" name="id" />
+                                {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                            {!! Form::close() !!}
+                        </div>
+                    @endif   
+                        </div>
                   
                     
-                    
+                                     
                     <?php
                 }
               }
