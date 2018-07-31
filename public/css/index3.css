@@ -813,3 +813,8 @@ a:hover {
   column-count: black;
   color: #CC3333;
 }
+.ddd:hover{
+  font-weight: bold;
+  column-count: black;
+  color: 	#000080;
+}
