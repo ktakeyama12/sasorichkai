@@ -24,7 +24,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/branch.css" rel="stylesheet" type="text/css"> 
         <link href="css/nav.css" rel="stylesheet" type="text/css"> 
-        
       
 </head>
     <body>
@@ -38,13 +37,16 @@
               <!--  <a class="" onclick="history.back()">戻る</a>-->
               <!--</div>-->
               <div class='strip colour-4'>
-                <a class="" href="/">戻る</a>
+                <a class="" href="/">ホームへ</a>
               </div>
             </div>
+            
         
             <div class="main">
                 <div id="setsumei">
-                    楽天パンダを行きたいところにドラッグしてね！
+                    <p style="background-color: #ffffff">
+                    <font color="black"><font size="4"><b>楽天パンダを行きたいところにドラッグしてね！</b></font>
+                    </style>
                 </div>
                 <div id="panda">
                     <img src="images/games/pandatravel.gif" class="resize">

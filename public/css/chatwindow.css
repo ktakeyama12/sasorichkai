@@ -5,11 +5,21 @@ ul,li{
     /*text-align: left;*/
 }
 #scroller {
-    height: 600px;
+    height: 550px;
     overflow: auto;
+    text-align:center;
+    align-items: center;
+}
+.panel-heading{
+    padding-top:30px;
 }
 .panel-body{
     background:white;
+
+    display:inline-box;
+    text-align:center;
+    align-items: center;
+
 }
 /*.panel-default{*/
 /*    background-color: white;*/
@@ -32,6 +42,9 @@ ul,li{
     border-radius: 15px;
     width: 400px;
     clear: both;
+    /*display:inline-box;*/
+    text-align:left;
+    float:left;
 }
 
 /*******************************
@@ -48,6 +61,10 @@ ul,li{
     border-radius: 15px;
     width: 300px;
     clear: both;
+    /*display:inline-box;*/
+    text-align:left;
+    float:right;
+   
     /*float: right;*/
 }
 
@@ -63,11 +80,13 @@ ul,li{
 .sender_name{
     margin-bottom: -5px;
     padding-left: 20px;
+    text-align:left;
     color: rgba(20, 0, 0, .40);
 }
 .sender_name.me{
     float: right;
     padding: 0 20px 0 0;
+    text-align:right;
 }
 
 #close{
@@ -80,6 +99,7 @@ ul,li{
 body{
     text-align: center;
     font-weight: bold;
+    height:100%;
 }
 .js{
     text-align: center
@@ -121,4 +141,7 @@ h1{
     border-top: 1px solid #ddd;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+.panel-default{
+    height:100%;
 }

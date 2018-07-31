@@ -50,7 +50,7 @@ class ContentsController extends Controller
          $user = \Auth::user();
          $users = User::all();
          $content = new Content;
-         $contents = Content::all();
+         $contents = Content::orderBy('id', 'desc')->get();
          $count = Branchfavorites::where("favorite_id", 2)->count();
         
                                     //  $count = DB::select('select count(favorite_id) from branchfavorites where favorite_id = 2');
@@ -73,7 +73,8 @@ class ContentsController extends Controller
          $user = \Auth::user();
          $users = User::all();
          $content = new TokyoContent;
-         $contents = TokyoContent::all();
+         $contents = TokyoContent::orderBy('id', 'desc')->get();
+            //  all();
          $count = Branchfavorites::where("favorite_id", 1)->count();
 
         $loginuser = \Auth::user();
@@ -101,7 +102,8 @@ class ContentsController extends Controller
        $user = \Auth::user();
          $users = User::all();
          $content = new OsakaContent;
-         $contents = OsakaContent::all();
+         $contents = OsakaContent::orderBy('id', 'desc')->get();
+            //  all();
          $count = Branchfavorites::where("favorite_id", 3)->count();
 
         $loginuser = \Auth::user();
@@ -154,14 +156,14 @@ class ContentsController extends Controller
         $user = User::find($loginuser->id);
         $user->postpoint = $user->postpoint + 10;
         $user->save();
-        
-         return view('contents.fukuoka',[
-            'user' => $user,
-            'users' =>$users,
-            'content' => $content,
-            'contents' => $contents,
-            'count' => $count,
-            ]);
+        return redirect("fukuoka");
+        //  return view('contents.fukuoka',[
+        //     'user' => $user,
+        //     'users' =>$users,
+        //     'content' => $content,
+        //     'contents' => $contents,
+        //     'count' => $count,
+        //     ]);
     }
     
      public function storeT(Request $request)
@@ -182,14 +184,14 @@ class ContentsController extends Controller
         $user->postpoint = $user->postpoint + 10;
         $user->save();
        
-        
-         return view('contents.tokyo',[
-            'user' => $user,
-            'users' =>$users,
-            'content' => $content,
-            'contents' => $contents,
-            'count' => $count,
-            ]);
+        return redirect("tokyo");
+        //  return view('contents.tokyo',[
+        //     'user' => $user,
+        //     'users' =>$users,
+        //     'content' => $content,
+        //     'contents' => $contents,
+        //     'count' => $count,
+        //     ]);
     }
     
     public function storeO(Request $request)
@@ -210,14 +212,14 @@ class ContentsController extends Controller
         $user->postpoint = $user->postpoint + 10;
         $user->save();
        
-        
-         return view('contents.osaka',[
-            'user' => $user,
-            'users' =>$users,
-            'content' => $content,
-            'contents' => $contents,
-            'count' => $count,
-            ]);
+        return redirect("osaka");
+        //  return view('contents.osaka',[
+        //     'user' => $user,
+        //     'users' =>$users,
+        //     'content' => $content,
+        //     'contents' => $contents,
+        //     'count' => $count,
+        //     ]);
     }
     
         

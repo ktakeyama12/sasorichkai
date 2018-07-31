@@ -180,7 +180,9 @@
                             }
                     ?>
                 @endauth
+
                 <br>
+
               </div>
               <?php
                $prime = \Auth::user()->prime;
@@ -189,8 +191,11 @@
                }
                elseif($prime == 1){
               ?>
+
                   福岡支社について知っていることや感想をコメントしてみよう！<br>
+
                   {!! Form::model($content, ['route' => 'contents.storeF']) !!}
+                    </div>
                     <div class='form-group'>
                       {!! Form::label('content', ' ') !!}
                       {!! Form::text('content',null, ['class' => 'form-control']) !!}
@@ -217,8 +222,9 @@
                                 $result = '<img src="images/rakuten_gallery/gold-ribon.jpg">';
                               }
                               echo $result;
-                        ?>  <br><br>{{ $content->user_name }}:<br><br>{{ $content->content }}</div>
-                    @if (Auth::user()->id == $content->user_id)
+                        ?>  <br><br>{{ $content->user_name }}:<br><br>{{ $content->content }}
+                        <br>
+                                           @if (Auth::user()->id == $content->user_id)
                         <div class="btn-group">
                             {!! Form::open(['route' => ['destroyfukuoka', $content->id], 'method' => 'delete']) !!}
                             <input type="hidden" value="{{$content->id}}" name="id" />
@@ -226,6 +232,8 @@
                             {!! Form::close() !!}
                         </div>
                     @endif
+                    </div>
+ 
                     
                     
                     <?php
