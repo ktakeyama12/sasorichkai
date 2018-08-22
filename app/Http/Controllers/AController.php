@@ -178,6 +178,10 @@ class AController extends BaseController
         return view("quiz.hirayama");
     }
     
+    public function family(){
+        return view("quiz.family");
+    }
+    
     public function soy(){
         return view("quiz.soy");
     }
