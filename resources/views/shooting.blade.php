@@ -3,11 +3,12 @@
 <head>
     <title>shooting game</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
     <style>
         #hero{
-            background: #ff0000;
-            height: 20px;
-            width: 20px;
+            background-image: url("/images/fighter.png");
+            height: 35px;
+            width: 35px;
             position: absolute;
         }
         
@@ -36,8 +37,7 @@
 
         
         .enemy{
-            background: white;
-            background-image: url("/images/amazon.ico");
+            background-image: url("/images/enemy.png");
             background-size: 35px 35px;
             width: 35px;
             height: 35px;
@@ -47,9 +47,11 @@
         
         
         #score{
-            color: #ffffff;
-            font-size: 18px;
+            color: black;
+            font-size: 140px;
             position: absolute;
+            left: 650px;
+            top:250px;
             
             
         }
@@ -64,13 +66,34 @@
         }
         
          #clear{
-            color: white;
-            font-size: 20px;
+            color: black;
+            font-size: 50px;
             position: absolute;
-            left: 160px;
-            top: 200px;
-            visibility: hidden;
+            left: 650px;
+            top: 100px;
+            visibility:hidden;
+            
         }
+        
+        #new{
+            position:absolute;
+            left:210px;
+            top:520px;
+        }
+        
+        
+        #license{
+            position:absolute;
+            top:700px;
+            
+        }
+        
+        #cense{
+            position:absolute;
+            top:720px;
+        }
+        
+        
         
         
     </style>
@@ -82,19 +105,19 @@
 </head>
 <body>
     
-    
-    
     <div id='background'></div>
-    <div id='hero'><img  id="heroImage" src="/images/rakuten.jpg"></div>
+    <<div id='hero'></div>
     
     <div class="laser" id="laser0"></div>
     <div class="laser" id="laser1"></div>
     <div class="laser" id="laser2"></div>
 
 
+    <div id="new"><button onclick="myFunction()">はじめから</button></div>
+    <div id="back"><button onclick="back()">もどる</button></div>
     <div id = 'score'></div>
     <div id = 'gameover'>GAME OVER</div>
-    <div id='clear'><h1>クリア！</h1><p>ブラウザで戻るを押してください</p></div>
+    <div id='clear'><h1>クリア！</h1></div>
     
     
     
@@ -120,6 +143,14 @@
     
     
     
+    function myFunction() {
+    location.reload();
+    }
+    
+    function back() {
+    view(shootingWelcome);
+    }
+
 
     function getFireableLaser(){
         var result=null;
@@ -277,7 +308,7 @@
             }
             
             var scoreElement = document.getElementById('score');
-            scoreElement.innerHTML = '利益: ' + score;
+            scoreElement.innerHTML = '得点: ' + score;
         }
         
         function updatePositions(){
@@ -348,7 +379,7 @@
             toggleKey(evt.keyCode, false);
         }
         
-        var hero = createSprite('hero', 250, 460, 20, 20);
+        var hero = createSprite('hero', 250, 460, 30, 30);
         var laser = createSprite('laser', 0, -120,2,50);
         
         
@@ -360,5 +391,7 @@
     </script>
     
     
+<div id="license">Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
 </body>
 </html>
