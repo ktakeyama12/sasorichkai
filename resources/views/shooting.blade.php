@@ -265,9 +265,6 @@
                     i--;
                     laser.y = -laser.h;
                     score += 100;
-                    if(score>=1500){
-                        clear();
-                    }
                 }else if(intersects(hero, enemies[i])){
                     var element = document.getElementById(hero.element);
                     element.style.visibility = 'hidden';
@@ -280,7 +277,7 @@
                     element.parentNode.removeChild(element);
                     enemies.splice(i,1);
                     i--;
-                    score-=50;
+                    score-=100;
                     }
                     
                 }
