@@ -182,6 +182,10 @@ class AController extends BaseController
         return view("quiz.family");
     }
     
+    public function familyenglish(){
+        return view("quiz.familyenglish");
+    }
+    
     public function soy(){
         return view("quiz.soy");
     }

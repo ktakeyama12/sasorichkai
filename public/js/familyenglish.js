@@ -317,7 +317,7 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
 
 // $(function(quizData){
 function runQuiz(){
-    var quizRef = firebase.firestore().collection('familyquiz');
+    var quizRef = firebase.firestore().collection('familyenglish');
     quizRef.get().then(function(querySnapshot) {
         quizData=[];
         answerData1=[];
