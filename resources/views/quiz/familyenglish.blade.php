@@ -71,7 +71,7 @@
         </div>
     </div>
     <div id="finish" style="display: none">
-    <div id="finalscore1">おわり<br>あなたのスコアは：</div>
+    <div id="finalscore1">Finish<br>Your Score：</div>
     <div id="finalscore"></div>
     </div>
     <!--<div id="ready" style="display: none">-->
