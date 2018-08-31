@@ -70,7 +70,7 @@
 　<div class="text">
   <h1>シューティングゲームへようこそ！</h1>
   <p>敵を撃ってポイントを稼ごう。</p>
-  <img class="shooting" src="images/shooting.gif">
+  <img class="shooting" src="images/game.gif">
   </div>
   
   <div class="howToPlay">
