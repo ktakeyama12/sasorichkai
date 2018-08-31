@@ -254,6 +254,7 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
         $('#results2').text(time);
         answerSelected =  document.getElementById('leftPos').innerHTML;
         time--;
+        console.log(i)
         if(i==5){
             clearInterval(timecounter);
             document.getElementById("game").style.display = "none";

@@ -254,6 +254,7 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
         $('#results2').text(time);
         answerSelected =  document.getElementById('leftPos').innerHTML;
         time--;
+        console.log(i)
         if(i==5){
             clearInterval(timecounter);
             document.getElementById("game").style.display = "none";
@@ -282,11 +283,11 @@ function quizInterval(quizData, answerData1, answerData2, answerData3, answerDat
                 $('#score').text(score);
                 storeScore(score);
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("正解！");
+                $('#seikaiorfuseikai').text("Corrrect!");
                 $("#seikaiorfuseikai").fadeOut();
             }else{
                 $("#seikaiorfuseikai").fadeIn();
-                $('#seikaiorfuseikai').text("残念！");
+                $('#seikaiorfuseikai').text("Incorrect");
                 $("#seikaiorfuseikai").fadeOut();
             }
             i++;
